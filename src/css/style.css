@@ -1,1 +1,33 @@
+:root {
+  --color-primary: #28a8a6;
+  --color-primary-light: #79dfdd;
+  --color-primary-dark: #0e3a3a;
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #eee;
+  --color-grey-dark-1: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+  --color-white: #fff;
+  --color-black: #000;
+  --default-font-size: 1.6rem; }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/*
+
+//Abstracts
+//Base
+//Components
+//Layout
+//Pages
+
+*/
