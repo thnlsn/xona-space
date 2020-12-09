@@ -11,6 +11,11 @@ html {
   box-sizing: inherit; // Now everything will inherit border-box from html above
 }
 
+::selection {
+  color: #000;
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
 body {
   // Anything common site-wide
 }

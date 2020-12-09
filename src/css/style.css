@@ -24,6 +24,10 @@ html {
   padding: 0;
   box-sizing: inherit; }
 
+::selection {
+  color: #000;
+  background-color: rgba(51, 51, 51, 0.3); }
+
 /*
 
 //Abstracts

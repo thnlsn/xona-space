@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/style.css';
 
-import Navigation from './components/Navigation';
+import Navigation from './components/Navigation/Navigation';
 
 function App() {
   return <div className='App'>Welcome to Xona Space Systems</div>;
