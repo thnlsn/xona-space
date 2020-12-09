@@ -13,6 +13,9 @@
   --color-white: #fff;
   --color-black: #000;
 
+  --tint: invert(74%) sepia(11%) saturate(2389%) hue-rotate(128deg)
+    brightness(74%) contrast(90%);
+
   // Font
   --default-font-size: 1.6rem;
 }
