@@ -44,14 +44,16 @@ function App() {
             { name: 'Careers', path: '/careers' },
           ]}
         />
-        {routes.map((route, index) => (
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            children={<route.main />}
-          />
-        ))}
+        <main className='main'>
+          {routes.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              exact={route.exact}
+              children={<route.main />}
+            />
+          ))}
+        </main>
       </Router>
     </div>
   );

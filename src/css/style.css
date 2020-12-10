@@ -103,7 +103,7 @@ body {
     .navigation__item:link, .navigation__item:visited {
       display: inline-block;
       text-align: center;
-      box-shadow: 0 0 5px #000;
+      text-shadow: 0 0 5px #000;
       color: currentColor;
       text-decoration: none;
       position: relative;
@@ -141,12 +141,12 @@ body {
   -webkit-transition: 0.5s ease; }
 
 .main {
-  padding-top: calc(var(--logo-height) + (var(--nav-padding) * 2));
   height: 500rem; }
 
-.home {
+.home-banner {
   background-image: url("../images/earth.jpg");
   background-size: cover;
+  padding: calc(var(--nav-height)) 20rem 0 20rem;
   height: calc(100vh); }
 
 /*
