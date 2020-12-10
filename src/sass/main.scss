@@ -2,10 +2,12 @@
 @import 'variables';
 
 // Base
+@import 'animations';
 @import 'base';
+@import 'typography';
 
 // Components
-@import 'components';
+@import './components/navigation'; // Navbar
 
 // Layout
 @import 'layout';

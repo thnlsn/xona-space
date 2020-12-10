@@ -1,0 +1,97 @@
+.navigation {
+  background-color: var(--color-black);
+
+  // Typography
+  color: var(--color-white);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  padding: 2rem 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  &__list {
+    // Organize and space out the navigation links
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+  }
+
+  &__item {
+    &:link,
+    &:visited {
+      display: inline-block; //
+      text-align: center; //
+      box-shadow: 0 0 5px #000;
+      color: currentColor; // White
+
+      text-decoration: none;
+
+      cursor: pointer;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: red;
+    }
+    &:before {
+      opacity: 0;
+      transform: translateY(8px);
+      transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0s;
+    }
+    &:after {
+      opacity: 0;
+      transform: translateY(0.2s/2);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0.2s;
+    }
+
+    &:hover,
+    &:focus {
+      &:before,
+      &:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &:before {
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+          opacity 0.2s;
+      }
+      &:after {
+        transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+          opacity 0s 0.2s;
+      }
+    }
+
+    //&:hover {
+    /*       background-color: $color-primary;
+      color: $color-white;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+      transform: translateY(-2px); */
+    //}
+
+    //&:active {
+    /*       box-shadow: 0 1rem 1rem rgba($color-black, 0.15);
+      transform: translateY(-0.5px); */
+    //}
+  }
+}
+
+.underline {
+  width: 0;
+  height: 5px;
+  background: rgba(100, 100, 200, 0);
+  //left: -50px;
+  top: 20px;
+  position: absolute;
+  -webkit-transition: 0.5s ease;
+}
