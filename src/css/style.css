@@ -71,7 +71,8 @@ body {
   box-shadow: 0 0 5px #000; }
 
 .navigation {
-  background-color: var(--color-black);
+  background-color: transparent;
+  /* background-color: var(--color-black); */
   position: fixed;
   top: 0;
   left: 0;
@@ -79,7 +80,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 700;
   padding: var(--nav-padding) 0;
   width: 100%;
   display: flex;
@@ -140,13 +141,13 @@ body {
   -webkit-transition: 0.5s ease; }
 
 .main {
-  margin-top: calc(var(--logo-height) + (var(--nav-padding) * 2));
-  padding: 1rem 10rem;
+  padding-top: calc(var(--logo-height) + (var(--nav-padding) * 2));
   height: 500rem; }
 
-.home-banner {
-  background-image: '../images/earth.jpg';
-  height: calc(1vh - var(--nav-height)); }
+.home {
+  background-image: url("../images/earth.jpg");
+  background-size: cover;
+  height: calc(100vh); }
 
 /*
 

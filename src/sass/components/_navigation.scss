@@ -1,5 +1,6 @@
 .navigation {
-  background-color: var(--color-black);
+  background-color: transparent;
+  /* background-color: var(--color-black); */
 
   position: fixed;
   top: 0;
@@ -10,7 +11,7 @@
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 700;
 
   padding: var(--nav-padding) 0;
   width: 100%;

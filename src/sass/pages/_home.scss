@@ -1,7 +1,5 @@
 .home {
-}
-
-.home-banner {
-  background-image: '../images/earth.jpg';
-  height: calc(1vh - var(--nav-height));
+  background-image: url('../images/earth.jpg');
+  background-size: cover;
+  height: calc(100vh /*  - var(--nav-height) */);
 }

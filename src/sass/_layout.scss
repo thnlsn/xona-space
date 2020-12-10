@@ -1,5 +1,4 @@
 .main {
-  margin-top: calc(var(--logo-height) + (var(--nav-padding) * 2));
-  padding: 1rem 10rem;
+  padding-top: calc(var(--logo-height) + (var(--nav-padding) * 2));
   height: 500rem; // Testing
 }
