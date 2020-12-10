@@ -18,4 +18,9 @@
 
   // Font
   --default-font-size: 1.6rem;
+
+  // Navbar height
+  --logo-height: 9.7rem;
+  --nav-padding: 2rem;
+  --nav-height: calc(var(--logo-height) + (var(--nav-padding) * 2));
 }

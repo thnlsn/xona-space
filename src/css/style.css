@@ -11,7 +11,10 @@
   --color-black: #100;
   --tint: invert(74%) sepia(11%) saturate(2389%) hue-rotate(128deg)
     brightness(74%) contrast(90%);
-  --default-font-size: 1.6rem; }
+  --default-font-size: 1.6rem;
+  --logo-height: 9.7rem;
+  --nav-padding: 2rem;
+  --nav-height: calc(var(--logo-height) + (var(--nav-padding) * 2)); }
 
 @keyframes fadeIn {
   0% {
@@ -31,8 +34,8 @@ html {
   box-sizing: inherit; }
 
 ::selection {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.5); }
+  color: var(--color-white);
+  background-color: rgba(121, 223, 221, 0.5); }
 
 body {
   background-color: #100; }
@@ -69,18 +72,26 @@ body {
 
 .navigation {
   background-color: var(--color-black);
+  position: fixed;
+  top: 0;
+  left: 0;
   color: var(--color-white);
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
-  padding: 2rem 0;
+  padding: var(--nav-padding) 0;
+  width: 100%;
   display: flex;
   justify-content: space-around; }
+  .navigation__brand {
+    object-fit: contain;
+    height: var(--logo-height); }
   .navigation__list {
     display: flex;
     align-items: flex-end;
-    gap: 3rem; }
+    gap: 3rem;
+    padding-bottom: 1rem; }
   .navigation__item {
     /*       background-color: $color-primary;
       color: $color-white;
@@ -94,22 +105,23 @@ body {
       box-shadow: 0 0 5px #000;
       color: currentColor;
       text-decoration: none;
+      position: relative;
       cursor: pointer; }
     .navigation__item:after {
       content: '';
       position: absolute;
-      bottom: 2px;
+      bottom: 0;
       left: 0;
       right: 0;
       height: 2px;
-      background-color: red; }
+      background-color: var(--color-white); }
     .navigation__item:before {
       opacity: 0;
-      transform: translateY(8px);
+      transform: translateY(-8px);
       transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s; }
     .navigation__item:after {
       opacity: 0;
-      transform: translateY(0.2s/2);
+      transform: translateY(8px/2);
       transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s; }
     .navigation__item:hover:before, .navigation__item:hover:after, .navigation__item:focus:before, .navigation__item:focus:after {
       opacity: 1;
@@ -128,8 +140,13 @@ body {
   -webkit-transition: 0.5s ease; }
 
 .main {
+  margin-top: calc(var(--logo-height) + (var(--nav-padding) * 2));
   padding: 1rem 10rem;
   height: 500rem; }
+
+.home-banner {
+  background-image: '../images/earth.jpg';
+  height: calc(1vh - var(--nav-height)); }
 
 /*
 

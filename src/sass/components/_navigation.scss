@@ -1,6 +1,10 @@
 .navigation {
   background-color: var(--color-black);
 
+  position: fixed;
+  top: 0;
+  left: 0;
+
   // Typography
   color: var(--color-white);
   font-family: 'Ubuntu', sans-serif;
@@ -8,16 +12,23 @@
   text-transform: uppercase;
   font-weight: 300;
 
-  padding: 2rem 0;
+  padding: var(--nav-padding) 0;
+  width: 100%;
 
   display: flex;
   justify-content: space-around;
+
+  &__brand {
+    object-fit: contain;
+    height: var(--logo-height);
+  }
 
   &__list {
     // Organize and space out the navigation links
     display: flex;
     align-items: flex-end;
     gap: 3rem;
+    padding-bottom: 1rem;
   }
 
   &__item {
@@ -30,27 +41,31 @@
 
       text-decoration: none;
 
+      position: relative;
+
       cursor: pointer;
     }
 
     &:after {
       content: '';
       position: absolute;
-      bottom: 2px;
+      bottom: 0;
       left: 0;
       right: 0;
       height: 2px;
-      background-color: red;
+      background-color: var(--color-white);
     }
     &:before {
+      // Initial animation state
       opacity: 0;
-      transform: translateY(8px);
+      transform: translateY(-8px);
       transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275),
         opacity 0s;
     }
     &:after {
+      // Initial animation state
       opacity: 0;
-      transform: translateY(0.2s/2);
+      transform: translateY(8px / 2);
       transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
         opacity 0.2s;
     }
