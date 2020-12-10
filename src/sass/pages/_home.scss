@@ -1,6 +1,98 @@
 .home-banner {
   background-image: url('../images/earth.jpg');
+  background-color: white;
   background-size: cover;
   padding: calc(var(--nav-height)) 20rem 0 20rem;
   height: calc(100vh /*  - var(--nav-height) */);
+
+  position: relative; // For the primary heading
+}
+
+.scroll-indicator {
+  width: 4rem;
+  text-shadow: 0 0 5px #000;
+
+  @include absolute-center(85%, 50%);
+
+  transform: translateY(-2rem);
+  opacity: 0;
+
+  -moz-animation: scrollDown 3.5s 2.5s infinite; /* Firefox */
+  -webkit-animation: scrollDown 3.5s 2.5s infinite; /* Safari and Chrome */
+  -o-animation: scrollDown 3.5s 2.5s infinite; /* Opera */
+  animation: scrollDown 3.5s 2.5s infinite;
+
+  stroke-dasharray: 0, 20;
+  stroke-dashoffset: -14.142135620117188;
+
+  path {
+    stroke-width: 1px;
+    stroke: var(--color-white);
+    fill: none;
+  }
+}
+
+.home-heading {
+  @include absolute-center(50%, 70%);
+
+  .emphasis {
+    display: block;
+    color: var(--color-primary);
+
+    text-align: right;
+  }
+}
+
+.main-quote {
+  position: relative;
+  height: 50rem;
+  padding: 10rem 20rem;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  text-shadow: 0 0 5px #000;
+
+  &__heading {
+    &:link,
+    &:visited {
+      display: inline-block; //
+      text-align: center; //
+      text-shadow: 0 0 5px #000;
+      color: currentColor; // White
+
+      text-decoration: none;
+
+      position: relative;
+
+      cursor: pointer;
+
+      transition: linear 0.2s;
+      border-bottom: 1px solid transparent;
+    }
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid currentColor;
+    }
+
+    &:active {
+      color: var(--color-primary);
+    }
+  }
+
+  &__text {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    text-shadow: 0 0 5px #000;
+  }
 }

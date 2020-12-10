@@ -7,8 +7,6 @@ const NavItem = ({ item, path }) => {
       <NavLink to={path} className='navigation__item'>
         {item}
       </NavLink>
-
-      <div class='underline'></div>
     </Fragment>
   );
 };

@@ -1,0 +1,13 @@
+// This mixin takes in arguments and will result in text with a gradient coloring
+@mixin text-gradient($direction, $colorOne, $colorTwo) {
+  background-image: linear-gradient($direction, $colorOne, $colorTwo);
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin absolute-center($top: 50%, $left: 50%) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%);
+}

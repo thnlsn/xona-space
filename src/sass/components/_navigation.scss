@@ -1,4 +1,6 @@
 .navigation {
+  z-index: 9999; // Highest z-index on the site
+
   background-color: transparent;
   /* background-color: var(--color-black); */
 
@@ -45,47 +47,18 @@
       position: relative;
 
       cursor: pointer;
-    }
 
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background-color: var(--color-white);
-    }
-    &:before {
-      // Initial animation state
-      opacity: 0;
-      transform: translateY(-8px);
-      transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-        opacity 0s;
-    }
-    &:after {
-      // Initial animation state
-      opacity: 0;
-      transform: translateY(8px / 2);
-      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-        opacity 0.2s;
+      transition: linear 0.2s;
+      border-bottom: 1px solid transparent;
     }
 
     &:hover,
     &:focus {
-      &:before,
-      &:after {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      &:before {
-        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-          opacity 0.2s;
-      }
-      &:after {
-        transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-          opacity 0s 0.2s;
-      }
+      border-bottom: 1px solid currentColor;
+    }
+
+    &:active {
+      color: var(--color-primary);
     }
 
     //&:hover {
