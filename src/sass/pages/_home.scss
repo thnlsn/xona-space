@@ -89,18 +89,20 @@
     }
 
     &:hover > .main-quote__rarr {
-      color: var(--color-primary);
+      color: var(--color-primary-light);
       transform: translateX(10px);
     }
 
-    &:active {
+    &:active > .main-quote__rarr {
+      transition: transform 0.25s, opacity 0.3s 0.1s;
+      transform: translateX(50px);
+      opacity: 0;
     }
   }
 
   &__rarr {
     transition: transform 0.5s;
     display: inline-block;
-    transition: transform 0.5s;
   }
 
   &__text {

@@ -69,16 +69,6 @@ html {
 body {
   background-color: #100; }
 
-.App {
-  opacity: 1;
-  -moz-animation: fadeIn 1s;
-  /* Firefox */
-  -webkit-animation: fadeIn 1s;
-  /* Safari and Chrome */
-  -o-animation: fadeIn 1s;
-  /* Opera */
-  animation: fadeIn 1s; }
-
 body {
   font-family: 'Lato', sans-serif;
   font-size: var(--default-font-size);
@@ -101,9 +91,9 @@ body {
 
 .navigation {
   z-index: 9999;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(8, 8, 8, 0.8);
   backdrop-filter: blur(15px);
-  border-bottom-right-radius: 50px;
+  border-bottom-right-radius: 128px;
   /* background-color: var(--color-black); */
   position: fixed;
   top: 0;
@@ -156,7 +146,15 @@ body {
   -webkit-transition: 0.5s ease; }
 
 .main {
-  height: 500rem; }
+  height: 500rem;
+  opacity: 1;
+  -moz-animation: fadeIn 1s;
+  /* Firefox */
+  -webkit-animation: fadeIn 1s;
+  /* Safari and Chrome */
+  -o-animation: fadeIn 1s;
+  /* Opera */
+  animation: fadeIn 1s; }
 
 .home-banner {
   background-image: url("../images/earth.jpg");
@@ -230,12 +228,15 @@ body {
     color: var(--color-grey-light-2);
     border-bottom: 1px solid currentColor; }
   .main-quote__heading:hover > .main-quote__rarr {
-    color: var(--color-primary);
+    color: var(--color-primary-light);
     transform: translateX(10px); }
+  .main-quote__heading:active > .main-quote__rarr {
+    transition: transform 0.25s, opacity 0.3s 0.1s;
+    transform: translateX(50px);
+    opacity: 0; }
   .main-quote__rarr {
     transition: transform 0.5s;
-    display: inline-block;
-    transition: transform 0.5s; }
+    display: inline-block; }
   .main-quote__text {
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
