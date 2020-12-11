@@ -4,6 +4,7 @@
   --color-primary-dark: #0e3a3a;
   --color-grey-light-1: #f7f7f7;
   --color-grey-light-2: #eee;
+  --color-grey-light-2: #c5c5c5;
   --color-grey-dark-1: #777;
   --color-grey-dark-2: #999;
   --color-grey-dark-3: #333;
@@ -86,7 +87,7 @@ body {
 
 .heading-primary {
   font-family: 'Open Sans', sans-serif;
-  font-size: 4.8rem;
+  font-size: 5.8rem;
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 0 0 5px #000; }
@@ -100,7 +101,9 @@ body {
 
 .navigation {
   z-index: 9999;
-  background-color: transparent;
+  background-color: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(15px);
+  border-bottom-right-radius: 50px;
   /* background-color: var(--color-black); */
   position: fixed;
   top: 0;
@@ -167,7 +170,7 @@ body {
   width: 4rem;
   text-shadow: 0 0 5px #000;
   position: absolute;
-  top: 85%;
+  top: 94.25%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform: translateY(-2rem);
@@ -183,7 +186,7 @@ body {
   stroke-dashoffset: -14.142135620117188; }
   .scroll-indicator path {
     stroke-width: 1px;
-    stroke: var(--color-white);
+    stroke: var(--color-black);
     fill: none; }
 
 .home-heading {
@@ -194,6 +197,8 @@ body {
   .home-heading .emphasis {
     display: block;
     color: var(--color-primary);
+    font-size: 1.3em;
+    font-weight: 600;
     text-align: right; }
 
 .main-quote {
@@ -202,9 +207,11 @@ body {
   padding: 10rem 20rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: flex-start;
+  gap: 3rem;
+  text-align: left;
   font-family: 'Lato', sans-serif;
-  font-size: 2rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 600;
   text-shadow: 0 0 5px #000; }
@@ -216,18 +223,26 @@ body {
     text-decoration: none;
     position: relative;
     cursor: pointer;
-    transition: linear 0.2s;
-    border-bottom: 1px solid transparent; }
-  .main-quote__heading:hover, .main-quote__heading:focus {
+    transition: linear 0.1s;
+    border-bottom: 1px solid var(--color-grey-light-1);
+    border-radius: 5px; }
+  .main-quote__heading:hover {
+    color: var(--color-grey-light-2);
     border-bottom: 1px solid currentColor; }
-  .main-quote__heading:active {
-    color: var(--color-primary); }
+  .main-quote__heading:hover > .main-quote__rarr {
+    color: var(--color-primary);
+    transform: translateX(10px); }
+  .main-quote__rarr {
+    transition: transform 0.5s;
+    display: inline-block;
+    transition: transform 0.5s; }
   .main-quote__text {
     font-family: 'Lato', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 300;
-    text-shadow: 0 0 5px #000; }
+    text-shadow: 0 0 5px #000;
+    max-width: 50%; }
 
 /*
 

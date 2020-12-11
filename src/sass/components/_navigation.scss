@@ -1,7 +1,9 @@
 .navigation {
   z-index: 9999; // Highest z-index on the site
 
-  background-color: transparent;
+  background-color: rgba($color: #0a0a0a, $alpha: 0.8);
+  backdrop-filter: blur(15px);
+  border-bottom-right-radius: 50px;
   /* background-color: var(--color-black); */
 
   position: fixed;

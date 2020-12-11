@@ -18,6 +18,7 @@ const Home = () => {
           target='_blank'
         >
           Over $300 billion per year relies on an unprotected navigation net
+          <span className='main-quote__rarr'>&rarr;</span>
         </a>
         <div className='main-quote__text'>
           Intelligent systems require a navigation solution that supports
