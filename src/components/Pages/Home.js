@@ -11,7 +11,7 @@ const Home = () => {
           <path d='M0 0 L10 10 L20 0'></path>
         </svg>
       </div>
-      <div className='main-quote'>
+      <section className='main-quote'>
         <a
           className='main-quote__heading'
           href='https://www.rti.org/sites/default/files/gps_finalreport.pdf'
@@ -25,7 +25,7 @@ const Home = () => {
           safety-critical operation, centimeter positioning, and cybersecurity
           for millions of users
         </div>
-      </div>
+      </section>
     </div>
   );
 };

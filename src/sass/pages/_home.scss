@@ -1,3 +1,4 @@
+// HOME BANNER
 .home-banner {
   background-image: url('../images/earth.jpg');
   background-color: white;
@@ -8,6 +9,7 @@
   position: relative; // For the primary heading
 }
 
+// SCROLL DOWNWARD CHEVRON
 .scroll-indicator {
   width: 4rem;
   text-shadow: 0 0 5px #000;
@@ -34,6 +36,7 @@
   }
 }
 
+// HEADING TEXT IN THE BANNER
 .home-heading {
   @include absolute-center(50%, 70%);
 
@@ -46,6 +49,7 @@
   }
 }
 
+// SECTION 2 QUOTE UNDER THE BANNER
 .main-quote {
   position: relative;
   height: 50rem;
@@ -64,6 +68,7 @@
 
   text-shadow: 0 0 5px #000;
 
+  // THE QUOTE ITSELF (link to gps document)
   &__heading {
     &:link,
     &:visited {
@@ -80,19 +85,21 @@
 
       transition: linear 0.1s;
       border-bottom: 1px solid var(--color-grey-light-1);
-      border-radius: 5px;
+      /* 
+      transform: translateY(10rem); */
     }
 
+    // When :hover, animate the link text
     &:hover {
       color: var(--color-grey-light-2);
       border-bottom: 1px solid currentColor;
     }
-
+    // When :hover, animate the right arrow
     &:hover > .main-quote__rarr {
       color: var(--color-primary-light);
       transform: translateX(10px);
     }
-
+    // When :active, animate the right arrow
     &:active > .main-quote__rarr {
       transition: transform 0.2s, opacity 0.3s 0.1s;
       transform: translateX(75px);
@@ -100,11 +107,13 @@
     }
   }
 
+  // ARROW TO SIGNIFY A LINK
   &__rarr {
     transition: transform 0.5s;
     display: inline-block;
   }
 
+  // THE TEXT UNDER THE QUOTE LINK
   &__text {
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
@@ -114,7 +123,8 @@
     text-shadow: 0 0 5px #000;
 
     max-width: 50%;
+    /* 
+    // Initial animation state
+    transform: translateY(10rem); */
   }
-
-  // Right arrow at the end of the header/link to the GPS final report document
 }

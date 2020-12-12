@@ -223,7 +223,8 @@ body {
     cursor: pointer;
     transition: linear 0.1s;
     border-bottom: 1px solid var(--color-grey-light-1);
-    border-radius: 5px; }
+    /* 
+      transform: translateY(10rem); */ }
   .main-quote__heading:hover {
     color: var(--color-grey-light-2);
     border-bottom: 1px solid currentColor; }
@@ -243,7 +244,10 @@ body {
     text-transform: uppercase;
     font-weight: 300;
     text-shadow: 0 0 5px #000;
-    max-width: 50%; }
+    max-width: 50%;
+    /* 
+    // Initial animation state
+    transform: translateY(10rem); */ }
 
 /*
 
