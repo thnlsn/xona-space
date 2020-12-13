@@ -1,4 +1,4 @@
-// HOME BANNER
+// ▓▓▓ HOME BANNER
 .home-banner {
   background-image: url('../images/earth.jpg');
   background-color: white;
@@ -9,7 +9,7 @@
   position: relative; // For the primary heading
 }
 
-// SCROLL DOWNWARD CHEVRON
+// ▓▓▓ SCROLL DOWNWARD CHEVRON
 .scroll-indicator {
   width: 4rem;
   text-shadow: 0 0 5px #000;
@@ -36,7 +36,7 @@
   }
 }
 
-// HEADING TEXT IN THE BANNER
+// ▓▓▓ HEADING TEXT IN THE BANNER
 .home-heading {
   @include absolute-center(50%, 70%);
 
@@ -49,11 +49,11 @@
   }
 }
 
-// SECTION 2 QUOTE UNDER THE BANNER
+// ▓▓▓ SECTION 2 QUOTE UNDER THE BANNER
 .main-quote {
   position: relative;
-  height: 50rem;
-  padding: 10rem 20rem;
+
+  padding: 20rem 20rem;
 
   display: flex;
   flex-direction: column;
@@ -67,6 +67,9 @@
   font-weight: 600;
 
   text-shadow: 0 0 5px #000;
+
+  clip-path: polygon(0 0, 0 100, 100 75, 100 0);
+  background-color: orangered;
 
   // THE QUOTE ITSELF (link to gps document)
   &__heading {
@@ -126,5 +129,69 @@
     /* 
     // Initial animation state
     transform: translateY(10rem); */
+  }
+}
+
+// ▓▓▓ XONA PULSAR SECTION (with the banner and images showcase it's applications)
+.xona-pulsar {
+  height: 60rem;
+  padding: 20rem 20rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  // ║║║ XONA PULSAR APPLICATIONS
+  &__images {
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid yellowgreen;
+    flex-basis: 50%;
+  }
+
+  // ║║║ XONA PULSAR CONTAINER (contains the logo, trademark text, and description text)
+  &__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+
+    padding: 4rem 10rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+      url('../images/stars.jpg');
+  }
+
+  // ║║║ TRADEMARK TEXT
+  &__icon {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+  }
+
+  // ║║║ TRADEMARK TEXT
+  &__tm {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10rem;
+    letter-spacing: 0.001rem;
+    font-weight: 400;
+
+    @include text-gradient(
+      to bottom,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+
+    & span {
+      color: currentColor;
+      font-size: 0.65em;
+    }
+  }
+
+  // ║║║ MAIN TEXT
+  &__text {
+    padding-top: 2rem;
+    color: var(--color-grey-light-2);
+    font-size: 2rem;
   }
 }

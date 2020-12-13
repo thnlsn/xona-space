@@ -2,6 +2,11 @@
 @import 'mixins';
 @import 'variables';
 
+// Aos
+@import './aos/core';
+@import './aos/easing';
+@import './aos/animations';
+
 // Base
 @import 'animations';
 @import 'base';
