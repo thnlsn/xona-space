@@ -1,6 +1,9 @@
 import React from 'react';
 
 import icon from '../../images/xona-icon.png';
+import xona_encryption from '../../images/xona-icon.png';
+import xona_strength from '../../images/xona-icon.png';
+import xona_convergence from '../../images/xona-icon.png';
 
 const Home = () => {
   return (
@@ -29,23 +32,30 @@ const Home = () => {
           for millions of users
         </div>
       </section>
+      {/* Xona Pulsar */}
       <section className='xona-pulsar'>
-        <div className='xona-pulsar__images'>
-          <div className='xona-pulsar__application'></div>
-          <div className='xona-pulsar__application'></div>
-          <div className='xona-pulsar__application'></div>
-        </div>
-        <div className='xona-pulsar__banner' data-aos='fade-left'>
-          <div className='xona-pulsar__icon'>
-            <img src={icon} alt='Xona Icon' />
-          </div>
-          <div className='xona-pulsar__tm'>
+        <div className='xona-pulsar__banner' data-aos='fade-up'>
+          <div className='xona-pulsar__tm' /* data-aos='fade-up' */>
+            <div className='xona-pulsar__icon' /* data-aos='fade-up' */>
+              <img src={icon} alt='Xona Icon' />
+            </div>
             xona pulsar<span>&trade;</span>
           </div>
-          <div className='xona-pulsar__text'>
+          <div className='xona-pulsar__text' /* data-aos='fade-up' */>
             With satellites in low Earth orbit, Xona's Pulsar™ Position,
             Navigation and Timing (PNT) service will provide the security,
             availability and accuracy needed to support the age of autonomy
+          </div>
+        </div>
+        <div className='xona-pulsar__images'>
+          <div className='xona-pulsar__application'>
+            <img src={icon} alt='Pulsar Encryption' />
+          </div>
+          <div className='xona-pulsar__application'>
+            <img src={icon} alt='Pulsar Strength' />
+          </div>
+          <div className='xona-pulsar__application'>
+            <img src={icon} alt='Pulsar Convergence' />
           </div>
         </div>
       </section>

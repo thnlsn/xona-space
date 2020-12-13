@@ -53,7 +53,8 @@
 .main-quote {
   position: relative;
 
-  padding: 20rem 20rem;
+  padding: 20.5rem 20rem 24.5rem 20rem; // The 25rem is to account for the lost space made by the polygon clip path, which 75% leaves out 5rem, so we add that back
+  z-index: 100;
 
   display: flex;
   flex-direction: column;
@@ -61,15 +62,8 @@
   gap: 3rem;
   text-align: left;
 
-  font-family: 'Lato', sans-serif;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 600;
-
-  text-shadow: 0 0 5px #000;
-
-  clip-path: polygon(0 0, 0 100, 100 75, 100 0);
-  background-color: orangered;
+  clip-path: polygon(0 0, 0 100%, 100% 75%, 100% 0);
+  background-color: var(--color-background);
 
   // THE QUOTE ITSELF (link to gps document)
   &__heading {
@@ -118,13 +112,6 @@
 
   // THE TEXT UNDER THE QUOTE LINK
   &__text {
-    font-family: 'Lato', sans-serif;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 300;
-
-    text-shadow: 0 0 5px #000;
-
     max-width: 50%;
     /* 
     // Initial animation state
@@ -134,22 +121,18 @@
 
 // ▓▓▓ XONA PULSAR SECTION (with the banner and images showcase it's applications)
 .xona-pulsar {
-  height: 60rem;
-  padding: 20rem 20rem;
+  margin-top: -17rem;
+  height: 100rem;
+  padding: 24.5rem 20rem 20rem 20rem; // The spacing of the container of the pulsar info
 
-  display: flex;
+  /*   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   position: relative;
 
-  // ║║║ XONA PULSAR APPLICATIONS
-  &__images {
-    display: flex;
-    justify-content: space-between;
-
-    border: 1px solid yellowgreen;
-    flex-basis: 50%;
-  }
+  background-image: linear-gradient(rgba(14, 58, 58, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/sky-large.jpg');
+  background-size: contain;
 
   // ║║║ XONA PULSAR CONTAINER (contains the logo, trademark text, and description text)
   &__banner {
@@ -157,25 +140,27 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 50%;
 
     padding: 4rem 10rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
-      url('../images/stars.jpg');
+    background-image: linear-gradient(
+      rgba(10, 10, 10, 0.5),
+      rgba(0, 0, 0, 0.8)
+    );
+
+    backdrop-filter: blur(1px);
+
+    border-radius: 10px;
   }
 
   // ║║║ TRADEMARK TEXT
   &__icon {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    // So it is placed next to the tm text
+    display: inline-block;
+    margin-right: 1rem;
   }
 
   // ║║║ TRADEMARK TEXT
   &__tm {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 10rem;
-    letter-spacing: 0.001rem;
-    font-weight: 400;
-
     @include text-gradient(
       to bottom,
       var(--color-primary-light),
@@ -191,7 +176,14 @@
   // ║║║ MAIN TEXT
   &__text {
     padding-top: 2rem;
-    color: var(--color-grey-light-2);
-    font-size: 2rem;
+  }
+
+  // ║║║ XONA PULSAR APPLICATIONS
+  &__images {
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem 0;
+
+    border: 1px solid yellowgreen;
   }
 }

@@ -10,6 +10,7 @@
   --color-grey-dark-3: #333;
   --color-white: #fff;
   --color-black: #100;
+  --color-background: #080808;
   --tint: invert(74%) sepia(11%) saturate(2389%) hue-rotate(128deg)
     brightness(74%) contrast(90%);
   --default-font-size: 1.6rem;
@@ -734,7 +735,7 @@ html {
   background-color: rgba(121, 223, 221, 0.45); }
 
 body {
-  background-color: #080808; }
+  background-color: var(--color-background); }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -754,6 +755,34 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 100;
+  text-shadow: 0 0 5px #000; }
+
+.main-quote {
+  font-family: 'Lato', sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 0 0 5px #000; }
+  .main-quote__text {
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-shadow: 0 0 5px #000; }
+
+.xona-pulsar__tm {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10rem;
+  letter-spacing: 0.001rem;
+  font-weight: 300; }
+
+.xona-pulsar__text {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: var(--color-grey-light-2);
   text-shadow: 0 0 5px #000; }
 
 .navigation {
@@ -814,14 +843,7 @@ body {
 
 .main {
   height: 500rem;
-  opacity: 1;
-  -moz-animation: fadeIn 1s;
-  /* Firefox */
-  -webkit-animation: fadeIn 1s;
-  /* Safari and Chrome */
-  -o-animation: fadeIn 1s;
-  /* Opera */
-  animation: fadeIn 1s; }
+  opacity: 1; }
 
 .home-banner {
   background-image: url("../images/earth.jpg");
@@ -868,19 +890,15 @@ body {
 
 .main-quote {
   position: relative;
-  padding: 20rem 20rem;
+  padding: 20.5rem 20rem 24.5rem 20rem;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 3rem;
   text-align: left;
-  font-family: 'Lato', sans-serif;
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-shadow: 0 0 5px #000;
-  clip-path: polygon(0 0, 0 100, 100 75, 100 0);
-  background-color: orangered; }
+  clip-path: polygon(0 0, 0 100%, 100% 75%, 100% 0);
+  background-color: var(--color-background); }
   .main-quote__heading:link, .main-quote__heading:visited {
     display: inline-block;
     text-align: center;
@@ -907,43 +925,34 @@ body {
     transition: transform 0.5s;
     display: inline-block; }
   .main-quote__text {
-    font-family: 'Lato', sans-serif;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    text-shadow: 0 0 5px #000;
     max-width: 50%;
     /* 
     // Initial animation state
     transform: translateY(10rem); */ }
 
 .xona-pulsar {
-  height: 60rem;
-  padding: 20rem 20rem;
-  display: flex;
+  margin-top: -17rem;
+  height: 100rem;
+  padding: 24.5rem 20rem 20rem 20rem;
+  /*   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: relative; }
-  .xona-pulsar__images {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid yellowgreen;
-    flex-basis: 50%; }
+  align-items: center; */
+  position: relative;
+  background-image: linear-gradient(rgba(14, 58, 58, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sky-large.jpg");
+  background-size: contain; }
   .xona-pulsar__banner {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 50%;
     padding: 4rem 10rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("../images/stars.jpg"); }
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(1px);
+    border-radius: 10px; }
   .xona-pulsar__icon {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)); }
+    display: inline-block;
+    margin-right: 1rem; }
   .xona-pulsar__tm {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 10rem;
-    letter-spacing: 0.001rem;
-    font-weight: 400;
     background-image: linear-gradient(to bottom, var(--color-primary-light), var(--color-primary-dark));
     background-clip: text;
     color: transparent; }
@@ -951,9 +960,12 @@ body {
       color: currentColor;
       font-size: 0.65em; }
   .xona-pulsar__text {
-    padding-top: 2rem;
-    color: var(--color-grey-light-2);
-    font-size: 2rem; }
+    padding-top: 2rem; }
+  .xona-pulsar__images {
+    display: flex;
+    justify-content: space-around;
+    padding: 10rem 0;
+    border: 1px solid yellowgreen; }
 
 /*
 
