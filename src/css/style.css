@@ -1,6 +1,6 @@
 :root {
   --color-primary: #28a8a6;
-  --color-primary-light: #79dfdd;
+  --color-primary-light: rgb(121, 223, 221);
   --color-primary-dark: #0e3a3a;
   --color-grey-light-1: #f7f7f7;
   --color-grey-light-2: #eee;
@@ -11,8 +11,6 @@
   --color-white: #ffffff;
   --color-black: #100;
   --color-background: #080808;
-  --tint: invert(74%) sepia(11%) saturate(2389%) hue-rotate(128deg)
-    brightness(74%) contrast(90%);
   --default-font-size: 1.6rem;
   --logo-height: 9.7rem;
   --nav-padding: 2rem;
@@ -791,13 +789,16 @@ body {
 .xona-pulsar__image-description {
   font-size: 3rem; }
 
-.application-heading {
+.applications__heading {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
-  font-size: 10rem;
+  font-size: 12rem;
   color: var(--color-white);
   font-weight: 200;
   letter-spacing: 2.5rem; }
+
+.apps__text {
+  font-size: 4rem; }
 
 .navigation {
   z-index: 9999;
@@ -998,7 +999,31 @@ body {
 
 .applications {
   text-align: center;
-  padding: 15rem 1rem; }
+  padding: 10rem 20rem; }
+
+.apps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5.25rem 0; }
+  .apps__app {
+    flex: 0 0 50%;
+    padding: 5rem; }
+  .apps__container {
+    border-radius: 15px;
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1rem solid rgba(121, 223, 221, 0.75);
+    border-right: 1rem solid rgba(121, 223, 221, 0.75); }
+    .apps__container--1 {
+      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/all-weather-autonomy.jpg"); }
+  .apps__text {
+    justify-self: center; }
 
 /*
 

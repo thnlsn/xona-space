@@ -75,11 +75,15 @@ body {
   }
 }
 
-.application-heading {
+.applications__heading {
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
-  font-size: 10rem;
+  font-size: 12rem;
   color: var(--color-white);
   font-weight: 200;
   letter-spacing: 2.5rem;
+}
+
+.apps__text {
+  font-size: 4rem;
 }

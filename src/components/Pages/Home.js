@@ -78,7 +78,39 @@ const Home = () => {
       Maritime
       */}
       <section className='applications'>
-        <h1 className='application-heading'>Applications</h1>
+        <h1 className='applications__heading'>Applications</h1>
+        <div className='apps'>
+          <div className='apps__app'>
+            <div className='apps__container apps__container--1'>
+              <div className='apps__text'>All Weather Autonomy</div>
+            </div>
+          </div>
+          <div className='apps__app'>
+            <div className='apps__container apps__container--2'>
+              <div className='apps__text'>Weather Data</div>
+            </div>
+          </div>
+          <div className='apps__app'>
+            <div className='apps__container apps__container--3'>
+              <div className='apps__text'>Critical Infrastructure</div>
+            </div>
+          </div>
+          <div className='apps__app'>
+            <div className='apps__container apps__container--4'>
+              <div className='apps__text'>Aerial Mobility</div>
+            </div>
+          </div>
+          <div className='apps__app'>
+            <div className='apps__container apps__container--5'>
+              <div className='apps__text'>Smart Agriculture</div>
+            </div>
+          </div>
+          <div className='apps__app'>
+            <div className='apps__container apps__container--6'>
+              <div className='apps__text'>Maritime</div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

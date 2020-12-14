@@ -1,7 +1,7 @@
 :root {
   // Color
   --color-primary: #28a8a6;
-  --color-primary-light: #79dfdd;
+  --color-primary-light: rgb(121, 223, 221);
   --color-primary-dark: #0e3a3a;
 
   --color-grey-light-1: #f7f7f7;
@@ -15,9 +15,6 @@
   --color-white: #ffffff;
   --color-black: #100;
   --color-background: #080808;
-
-  --tint: invert(74%) sepia(11%) saturate(2389%) hue-rotate(128deg)
-    brightness(74%) contrast(90%);
 
   // Font
   --default-font-size: 1.6rem;
