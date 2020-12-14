@@ -46,7 +46,7 @@ function App() {
             <Router>
                 <Navigation
                     items={[
-                        { name: 'Home', path: '/' },
+                        { name: 'Home', path: '/xona-space' },
                         { name: 'About', path: '/about' },
                         { name: 'Contact', path: '/contact' },
                         { name: 'Careers', path: '/careers' },
