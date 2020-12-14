@@ -1,9 +1,9 @@
 import React from 'react';
 
 import icon from '../../images/xona-icon.png';
-import xona_encryption from '../../images/xona-icon.png';
-import xona_strength from '../../images/xona-icon.png';
-import xona_convergence from '../../images/xona-icon.png';
+import xona_encryption from '../../images/encryption.jpg';
+import xona_strength from '../../images/strength.jpg';
+import xona_convergence from '../../images/convergence.jpg';
 
 const Home = () => {
   return (
@@ -44,18 +44,27 @@ const Home = () => {
           <div className='xona-pulsar__text' /* data-aos='fade-up' */>
             With satellites in low Earth orbit, Xona's Pulsar™ Position,
             Navigation and Timing (PNT) service will provide the security,
-            availability and accuracy needed to support the age of autonomy
+            availability and accuracy needed to support the age of autonomy.
           </div>
         </div>
         <div className='xona-pulsar__images'>
-          <div className='xona-pulsar__application'>
-            <img src={icon} alt='Pulsar Encryption' />
+          <div className='xona-pulsar__application' data-aos='fade-up'>
+            <img src={xona_encryption} alt='Pulsar Encryption' />
+            <div className='xona-pulsar__image-description'>
+              Encryption & Precision Corrections
+            </div>
           </div>
-          <div className='xona-pulsar__application'>
-            <img src={icon} alt='Pulsar Strength' />
+          <div className='xona-pulsar__application' data-aos='fade-up'>
+            <img src={xona_strength} alt='Pulsar Strength' />
+            <div className='xona-pulsar__image-description'>
+              Stronger Signals
+            </div>
           </div>
-          <div className='xona-pulsar__application'>
-            <img src={icon} alt='Pulsar Convergence' />
+          <div className='xona-pulsar__application' data-aos='fade-up'>
+            <img src={xona_convergence} alt='Pulsar Convergence' />
+            <div className='xona-pulsar__image-description'>
+              Faster Convergence
+            </div>
           </div>
         </div>
       </section>

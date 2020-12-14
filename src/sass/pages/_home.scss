@@ -62,7 +62,7 @@
   gap: 3rem;
   text-align: left;
 
-  clip-path: polygon(0 0, 0 100%, 100% 75%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
   background-color: var(--color-background);
 
   // THE QUOTE ITSELF (link to gps document)
@@ -72,7 +72,7 @@
       display: inline-block; //
       text-align: center; //
       text-shadow: 0 0 5px #000;
-      color: currentColor; // White
+      color: currentColor; //
 
       text-decoration: none;
 
@@ -121,16 +121,19 @@
 
 // ▓▓▓ XONA PULSAR SECTION (with the banner and images showcase it's applications)
 .xona-pulsar {
-  margin-top: -17rem;
-  height: 100rem;
-  padding: 24.5rem 20rem 20rem 20rem; // The spacing of the container of the pulsar info
+  margin-top: -14rem;
+
+  padding: 22.5rem 20rem 4.5rem 20rem; // The spacing of the container of the pulsar info
 
   /*   display: flex;
   justify-content: space-between;
   align-items: center; */
-  position: relative;
 
-  background-image: linear-gradient(rgba(14, 58, 58, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(14, 58, 58, 0.7),
+      rgba(0, 0, 0, 0.9)
+    ),
     url('../images/sky-large.jpg');
   background-size: contain;
 
@@ -143,13 +146,14 @@
 
     padding: 4rem 10rem;
     background-image: linear-gradient(
-      rgba(10, 10, 10, 0.5),
+      transparent,
+      rgba(19, 19, 19, 0.5),
       rgba(0, 0, 0, 0.8)
     );
 
     backdrop-filter: blur(1px);
 
-    border-radius: 10px;
+    border-radius: 15px;
   }
 
   // ║║║ TRADEMARK TEXT
@@ -164,7 +168,8 @@
     @include text-gradient(
       to bottom,
       var(--color-primary-light),
-      var(--color-primary-dark)
+      var(--color-primary-dark),
+      var(--color-primary)
     );
 
     & span {
@@ -182,8 +187,37 @@
   &__images {
     display: flex;
     justify-content: space-around;
-    padding: 10rem 0;
+    padding: 5rem 0;
 
-    border: 1px solid yellowgreen;
+    border: 1px solid transparent;
+  }
+  // ║║║ SPECIFIC APPLICATION IMAGE
+  &__application {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    flex: 0 0 26.2rem; // So that the text will forcefully wrap after its gone past the approximate width of the image
+
+    text-align: center;
+
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    background-image: linear-gradient(
+      rgba(10, 10, 10, 0.5),
+      rgba(0, 0, 0, 0.8)
+    );
+
+    img {
+      border-radius: 15px;
+      overflow: hidden;
+      object-fit: contain;
+    }
+
+    &__image-description {
+      width: 50%;
+    }
   }
 }

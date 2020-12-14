@@ -1,6 +1,11 @@
 // This mixin takes in arguments and will result in text with a gradient coloring
-@mixin text-gradient($direction, $colorOne, $colorTwo) {
-  background-image: linear-gradient($direction, $colorOne, $colorTwo);
+@mixin text-gradient($direction, $colorOne, $colorTwo, $colorThree) {
+  background-image: linear-gradient(
+    $direction,
+    $colorOne,
+    $colorThree,
+    $colorTwo
+  );
   background-clip: text;
   color: transparent;
 }
