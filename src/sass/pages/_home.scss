@@ -225,7 +225,12 @@
 // ▓▓▓ APPLICATIONS SECTION
 .applications {
   text-align: center;
-  padding: 10rem 20rem;
+  padding: 7.5rem 20rem 6.5rem 20rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    var(--color-primary-dark)
+  );
 }
 
 .apps {
@@ -233,7 +238,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  margin: 5.25rem 0;
+  margin: 0rem 0;
 
   &__app {
     flex: 0 0 50%;
@@ -250,8 +255,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 1rem solid rgba(121, 223, 221, 0.75);
-    border-right: 1rem solid rgba(121, 223, 221, 0.75);
+    border-left: 1rem solid var(--color-primary);
+    border-right: 1rem solid var(--color-primary);
+    background-clip: border-box;
+
+    // For the hover effect
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+
+    // To offset the text from center
+    padding-top: 8.5rem;
+
+    /*     &:hover {
+      transform: scale(1.04);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+    } */
 
     &--1 {
       background-image: linear-gradient(
@@ -261,9 +279,73 @@
         ),
         url('../images/all-weather-autonomy.jpg');
     }
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(14, 58, 58, 0.1),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url('../images/weather-data.jpg');
+    }
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(14, 58, 58, 0.1),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url('../images/critical-infrastructure.jpg');
+    }
+    &--4 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(14, 58, 58, 0.1),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url('../images/aerial-mobility.jpg');
+    }
+    &--5 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(14, 58, 58, 0.1),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url('../images/smart-agriculture.jpg');
+    }
+    &--6 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(14, 58, 58, 0.1),
+          rgba(0, 0, 0, 0.1)
+        ),
+        url('../images/maritime.jpg');
+    }
   }
 
   &__text {
     justify-self: center;
+  }
+}
+
+// ▓▓▓ NEWS SECTION
+.news {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-primary-dark) 0%,
+    rgb(0, 0, 0) 10%
+  );
+  height: 90rem;
+  padding: 10rem 20rem;
+  text-align: center;
+}
+
+.articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.333333333%; // The flex is 22.5%, and with 4 articles that leaves 10%, so the 3 gaps should split that into 3.333%
+
+  &__article {
+    height: 20rem;
+    flex: 0 0 22.5%;
   }
 }

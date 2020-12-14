@@ -1,7 +1,7 @@
 :root {
   --color-primary: #28a8a6;
-  --color-primary-light: rgb(121, 223, 221);
-  --color-primary-dark: #0e3a3a;
+  --color-primary-light: #79dfdd;
+  --color-primary-dark: rgb(14, 58, 58);
   --color-grey-light-1: #f7f7f7;
   --color-grey-light-2: #eee;
   --color-grey-light-2: #c5c5c5;
@@ -795,10 +795,12 @@ body {
   font-size: 12rem;
   color: var(--color-white);
   font-weight: 200;
-  letter-spacing: 2.5rem; }
+  letter-spacing: 2.5rem;
+  text-shadow: 0 0 5px #000; }
 
 .apps__text {
-  font-size: 4rem; }
+  font-size: 4rem;
+  text-shadow: 0 0 30px #000; }
 
 .navigation {
   z-index: 9999;
@@ -999,13 +1001,14 @@ body {
 
 .applications {
   text-align: center;
-  padding: 10rem 20rem; }
+  padding: 7.5rem 20rem 6.5rem 20rem;
+  background-image: linear-gradient(to bottom, black, var(--color-primary-dark)); }
 
 .apps {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 5.25rem 0; }
+  margin: 0rem 0; }
   .apps__app {
     flex: 0 0 50%;
     padding: 5rem; }
@@ -1018,12 +1021,45 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 1rem solid rgba(121, 223, 221, 0.75);
-    border-right: 1rem solid rgba(121, 223, 221, 0.75); }
+    border-left: 1rem solid var(--color-primary);
+    border-right: 1rem solid var(--color-primary);
+    background-clip: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    padding-top: 8.5rem;
+    /*     &:hover {
+      transform: scale(1.04);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+    } */ }
     .apps__container--1 {
       background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/all-weather-autonomy.jpg"); }
+    .apps__container--2 {
+      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/weather-data.jpg"); }
+    .apps__container--3 {
+      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/critical-infrastructure.jpg"); }
+    .apps__container--4 {
+      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/aerial-mobility.jpg"); }
+    .apps__container--5 {
+      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/smart-agriculture.jpg"); }
+    .apps__container--6 {
+      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/maritime.jpg"); }
   .apps__text {
     justify-self: center; }
+
+.news {
+  background-image: linear-gradient(to bottom, var(--color-primary-dark) 0%, black 10%);
+  height: 90rem;
+  padding: 10rem 20rem;
+  text-align: center; }
+
+.articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.333333333%; }
+  .articles__article {
+    height: 20rem;
+    flex: 0 0 22.5%; }
 
 /*
 
