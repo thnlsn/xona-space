@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/xona-space/static/css/main.87aaac33.chunk.css",
+    "main.js": "/xona-space/static/js/main.9911a91f.chunk.js",
+    "main.js.map": "/xona-space/static/js/main.9911a91f.chunk.js.map",
+    "runtime-main.js": "/xona-space/static/js/runtime-main.b98b0967.js",
+    "runtime-main.js.map": "/xona-space/static/js/runtime-main.b98b0967.js.map",
+    "static/js/2.2a83aac1.chunk.js": "/xona-space/static/js/2.2a83aac1.chunk.js",
+    "static/js/2.2a83aac1.chunk.js.map": "/xona-space/static/js/2.2a83aac1.chunk.js.map",
+    "index.html": "/xona-space/index.html",
+    "precache-manifest.9b685ec6b40c3955f387509d3a476f63.js": "/xona-space/precache-manifest.9b685ec6b40c3955f387509d3a476f63.js",
+    "service-worker.js": "/xona-space/service-worker.js",
+    "static/css/main.87aaac33.chunk.css.map": "/xona-space/static/css/main.87aaac33.chunk.css.map",
+    "static/js/2.2a83aac1.chunk.js.LICENSE.txt": "/xona-space/static/js/2.2a83aac1.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/xona-space/static/media/weather-data.b4688aaf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b98b0967.js",
+    "static/js/2.2a83aac1.chunk.js",
+    "static/css/main.87aaac33.chunk.css",
+    "static/js/main.9911a91f.chunk.js"
+  ]
+}
