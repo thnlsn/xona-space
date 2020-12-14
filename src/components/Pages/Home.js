@@ -1,6 +1,7 @@
 import React from 'react';
 
 import icon from '../../images/xona-icon.png';
+import icon_white from '../../images/xona-icon-white.png';
 import xona_encryption from '../../images/encryption.jpg';
 import xona_strength from '../../images/strength.jpg';
 import xona_convergence from '../../images/convergence.jpg';
@@ -67,6 +68,17 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* 
+      All Weather Autonomy
+      Weather Data
+      Critical Infrastructure
+      Aerial Mobility
+      Smart Agriculture
+      Maritime
+      */}
+      <section className='applications'>
+        <h1 className='application-heading'>Applications</h1>
       </section>
     </div>
   );
