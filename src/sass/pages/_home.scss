@@ -1,351 +1,351 @@
 // ▓▓▓ HOME BANNER
 .home-banner {
-  background-image: url('../images/earth.jpg');
-  background-color: white;
-  background-size: cover;
-  padding: calc(var(--nav-height)) 20rem 0 20rem;
-  height: calc(100vh /*  - var(--nav-height) */);
+    background-image: url('../images/earth.jpg');
+    background-color: white;
+    background-size: cover;
+    padding: calc(var(--nav-height)) 20rem 0 20rem;
+    height: calc(100vh /*  - var(--nav-height) */);
 
-  position: relative; // For the primary heading
+    position: relative; // For the primary heading
 }
 
 // ▓▓▓ SCROLL DOWNWARD CHEVRON
 .scroll-indicator {
-  width: 4rem;
-  text-shadow: 0 0 5px #000;
+    width: 4rem;
+    text-shadow: 0 0 5px #000;
 
-  @include absolute-center(94.25%, 50%);
+    @include absolute-center(94.25%, 50%);
 
-  // Initial animation state
-  transform: translateY(-2rem);
-  opacity: 0;
+    // Initial animation state
+    transform: translateY(-2rem);
+    opacity: 0;
 
-  // Animation
-  -moz-animation: scrollDown 3.5s 2.5s infinite; /* Firefox */
-  -webkit-animation: scrollDown 3.5s 2.5s infinite; /* Safari and Chrome */
-  -o-animation: scrollDown 3.5s 2.5s infinite; /* Opera */
-  animation: scrollDown 3.5s 2.5s infinite;
+    // Animation
+    -moz-animation: scrollDown 3.5s 2.5s infinite; /* Firefox */
+    -webkit-animation: scrollDown 3.5s 2.5s infinite; /* Safari and Chrome */
+    -o-animation: scrollDown 3.5s 2.5s infinite; /* Opera */
+    animation: scrollDown 3.5s 2.5s infinite;
 
-  stroke-dasharray: 0, 20;
-  stroke-dashoffset: -14.142135620117188;
+    stroke-dasharray: 0, 20;
+    stroke-dashoffset: -14.142135620117188;
 
-  path {
-    stroke-width: 1px;
-    stroke: var(--color-black);
-    fill: none;
-  }
+    path {
+        stroke-width: 1px;
+        stroke: var(--color-black);
+        fill: none;
+    }
 }
 
 // ▓▓▓ HEADING TEXT IN THE BANNER
 .home-heading {
-  @include absolute-center(50%, 70%);
+    @include absolute-center(50%, 70%);
 
-  .emphasis {
-    display: block;
-    color: var(--color-primary);
-    font-size: 1.3em;
-    font-weight: 600;
-    text-align: right;
-  }
+    .emphasis {
+        display: block;
+        color: var(--color-primary);
+        font-size: 1.3em;
+        font-weight: 600;
+        text-align: right;
+    }
 }
 
 // ▓▓▓ SECTION 2 QUOTE UNDER THE BANNER
 .main-quote {
-  position: relative;
+    position: relative;
 
-  padding: 20.5rem 20rem 24.5rem 20rem; // The 25rem is to account for the lost space made by the polygon clip path, which 75% leaves out 5rem, so we add that back
-  z-index: 100;
+    padding: 20.5rem 20rem 24.5rem 20rem; // The 25rem is to account for the lost space made by the polygon clip path, which 75% leaves out 5rem, so we add that back
+    z-index: 100;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3rem;
-  text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    text-align: left;
 
-  clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
-  background-color: var(--color-background);
+    clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
+    background-color: var(--color-background);
 
-  // THE QUOTE ITSELF (link to gps document)
-  &__heading {
-    &:link,
-    &:visited {
-      display: inline-block; //
-      text-align: center; //
-      text-shadow: 0 0 5px #000;
-      color: currentColor; //
+    // THE QUOTE ITSELF (link to gps document)
+    &__heading {
+        &:link,
+        &:visited {
+            display: inline-block; //
+            text-align: center; //
+            text-shadow: 0 0 5px #000;
+            color: currentColor; //
 
-      text-decoration: none;
+            text-decoration: none;
 
-      position: relative;
+            position: relative;
 
-      cursor: pointer;
+            cursor: pointer;
 
-      transition: linear 0.1s;
-      border-bottom: 1px solid var(--color-grey-light-1);
-      /* 
+            transition: linear 0.1s;
+            border-bottom: 1px solid var(--color-grey-light-1);
+            /* 
       transform: translateY(10rem); */
+        }
+
+        // When :hover, animate the link text
+        &:hover {
+            color: var(--color-grey-dark-2);
+            border-bottom: 1px solid currentColor;
+        }
+        // When :hover, animate the right arrow
+        &:hover > .main-quote__rarr {
+            color: var(--color-primary-light);
+            transform: translateX(15px);
+        }
+        // When :active, animate the right arrow
+        &:active > .main-quote__rarr {
+            transition: transform 0.2s, opacity 0.3s 0.1s;
+            transform: translateX(75px);
+            opacity: 0;
+        }
     }
 
-    // When :hover, animate the link text
-    &:hover {
-      color: var(--color-grey-light-2);
-      border-bottom: 1px solid currentColor;
+    // ARROW TO SIGNIFY A LINK
+    &__rarr {
+        transition: transform 0.5s;
+        display: inline-block;
     }
-    // When :hover, animate the right arrow
-    &:hover > .main-quote__rarr {
-      color: var(--color-primary-light);
-      transform: translateX(10px);
-    }
-    // When :active, animate the right arrow
-    &:active > .main-quote__rarr {
-      transition: transform 0.2s, opacity 0.3s 0.1s;
-      transform: translateX(75px);
-      opacity: 0;
-    }
-  }
 
-  // ARROW TO SIGNIFY A LINK
-  &__rarr {
-    transition: transform 0.5s;
-    display: inline-block;
-  }
-
-  // THE TEXT UNDER THE QUOTE LINK
-  &__text {
-    max-width: 50%;
-    /* 
+    // THE TEXT UNDER THE QUOTE LINK
+    &__text {
+        max-width: 50%;
+        /* 
     // Initial animation state
     transform: translateY(10rem); */
-  }
+    }
 }
 
 // ▓▓▓ XONA PULSAR SECTION (with the banner and images showcase it's applications)
 .xona-pulsar {
-  margin-top: -14rem;
+    margin-top: -14rem;
 
-  padding: 22.5rem 20rem 4.5rem 20rem; // The spacing of the container of the pulsar info
+    padding: 22.5rem 20rem 4.5rem 20rem; // The spacing of the container of the pulsar info
 
-  /*   display: flex;
+    /*   display: flex;
   justify-content: space-between;
   align-items: center; */
 
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(14, 58, 58, 0.7),
-      rgba(0, 0, 0, 0.9)
-    ),
-    url('../images/sky-large.jpg');
-  background-size: contain;
-
-  // ║║║ XONA PULSAR CONTAINER (contains the logo, trademark text, and description text)
-  &__banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    padding: 4rem 10rem;
     background-image: linear-gradient(
-      rgba(19, 19, 19, 0.35),
-      rgba(19, 19, 19, 0.5),
-      rgba(0, 0, 0, 0.8)
-    );
+            to right bottom,
+            rgba(14, 58, 58, 0.7),
+            rgba(0, 0, 0, 0.9)
+        ),
+        url('../images/sky-large.jpg');
+    background-size: cover;
 
-    /* backdrop-filter: blur(1px); */
+    // ║║║ XONA PULSAR CONTAINER (contains the logo, trademark text, and description text)
+    &__banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
-    border-radius: 15px;
-  }
+        padding: 4rem 10rem;
+        background-image: linear-gradient(
+            rgba(19, 19, 19, 0.35),
+            rgba(19, 19, 19, 0.5),
+            rgba(0, 0, 0, 0.8)
+        );
 
-  // ║║║ TRADEMARK TEXT
-  &__icon {
-    // So it is placed next to the tm text
-    display: inline-block;
-    margin-right: 1rem;
-  }
+        /* backdrop-filter: blur(1px); */
 
-  // ║║║ TRADEMARK TEXT
-  &__tm {
-    @include text-gradient(
-      to bottom,
-      var(--color-primary-light),
-      var(--color-primary-dark),
-      var(--color-primary)
-    );
-
-    & span {
-      color: currentColor;
-      font-size: 0.65em;
-    }
-  }
-
-  // ║║║ MAIN TEXT
-  &__text {
-    padding-top: 2rem;
-  }
-
-  // ║║║ XONA PULSAR APPLICATIONS
-  &__images {
-    display: flex;
-    justify-content: space-around;
-    padding: 5rem 0;
-
-    border: 1px solid transparent;
-  }
-  // ║║║ SPECIFIC APPLICATION IMAGE
-  &__application {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-
-    flex: 0 0 26.2rem; // So that the text will forcefully wrap after its gone past the approximate width of the image
-
-    text-align: center;
-
-    padding: 1rem 1rem;
-    border-radius: 15px;
-    background-image: linear-gradient(
-      rgba(10, 10, 10, 0.8),
-      rgba(0, 0, 0, 0.5)
-    );
-
-    img {
-      border-radius: 15px;
-      overflow: hidden;
-      object-fit: contain;
+        border-radius: 15px;
     }
 
-    &__image-description {
-      width: 50%;
+    // ║║║ TRADEMARK TEXT
+    &__icon {
+        // So it is placed next to the tm text
+        display: inline-block;
+        margin-right: 1rem;
     }
-  }
+
+    // ║║║ TRADEMARK TEXT
+    &__tm {
+        @include text-gradient(
+            to bottom,
+            var(--color-primary-light),
+            var(--color-primary-dark),
+            var(--color-primary)
+        );
+
+        & span {
+            color: currentColor;
+            font-size: 0.65em;
+        }
+    }
+
+    // ║║║ MAIN TEXT
+    &__text {
+        padding-top: 2rem;
+    }
+
+    // ║║║ XONA PULSAR APPLICATIONS
+    &__images {
+        display: flex;
+        justify-content: space-around;
+        padding: 5rem 0;
+
+        border: 1px solid transparent;
+    }
+    // ║║║ SPECIFIC APPLICATION IMAGE
+    &__application {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        flex: 0 0 26.2rem; // So that the text will forcefully wrap after its gone past the approximate width of the image
+
+        text-align: center;
+
+        padding: 1rem 1rem;
+        border-radius: 15px;
+        background-image: linear-gradient(
+            rgba(10, 10, 10, 0.8),
+            rgba(0, 0, 0, 0.5)
+        );
+
+        img {
+            border-radius: 15px;
+            overflow: hidden;
+            object-fit: contain;
+        }
+
+        &__image-description {
+            width: 50%;
+        }
+    }
 }
 
 // ▓▓▓ APPLICATIONS SECTION
 .applications {
-  text-align: center;
-  padding: 7.5rem 20rem 6.5rem 20rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 0, 0),
-    var(--color-primary-dark)
-  );
+    text-align: center;
+    padding: 7.5rem 20rem 6.5rem 20rem;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0),
+        var(--color-primary-dark)
+    );
 }
 
 .apps {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  margin: 0rem 0;
-
-  &__app {
-    flex: 0 0 50%;
-    padding: 5rem;
-  }
-
-  &__container {
-    border-radius: 15px;
-    height: 25rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1rem solid var(--color-primary);
-    border-right: 1rem solid var(--color-primary);
-    background-clip: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-    // For the hover effect
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    margin: 0rem 0;
 
-    // To offset the text from center
-    padding-top: 8.5rem;
+    &__app {
+        flex: 0 0 50%;
+        padding: 5rem;
+    }
 
-    /*     &:hover {
+    &__container {
+        border-radius: 15px;
+        height: 25rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 1rem solid var(--color-primary);
+        border-right: 1rem solid var(--color-primary);
+        background-clip: border-box;
+
+        // For the hover effect
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+
+        // To offset the text from center
+        padding-top: 8.5rem;
+
+        /*     &:hover {
       transform: scale(1.04);
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
     } */
 
-    &--1 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/all-weather-autonomy.jpg');
+        &--1 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    rgba(14, 58, 58, 0.1),
+                    rgba(0, 0, 0, 0.1)
+                ),
+                url('../images/all-weather-autonomy.jpg');
+        }
+        &--2 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    rgba(14, 58, 58, 0.1),
+                    rgba(0, 0, 0, 0.1)
+                ),
+                url('../images/weather-data.jpg');
+        }
+        &--3 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    rgba(14, 58, 58, 0.1),
+                    rgba(0, 0, 0, 0.1)
+                ),
+                url('../images/critical-infrastructure.jpg');
+        }
+        &--4 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    rgba(14, 58, 58, 0.1),
+                    rgba(0, 0, 0, 0.1)
+                ),
+                url('../images/aerial-mobility.jpg');
+        }
+        &--5 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    rgba(14, 58, 58, 0.1),
+                    rgba(0, 0, 0, 0.1)
+                ),
+                url('../images/smart-agriculture.jpg');
+        }
+        &--6 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    rgba(14, 58, 58, 0.1),
+                    rgba(0, 0, 0, 0.1)
+                ),
+                url('../images/maritime.jpg');
+        }
     }
-    &--2 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/weather-data.jpg');
-    }
-    &--3 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/critical-infrastructure.jpg');
-    }
-    &--4 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/aerial-mobility.jpg');
-    }
-    &--5 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/smart-agriculture.jpg');
-    }
-    &--6 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/maritime.jpg');
-    }
-  }
 
-  &__text {
-    justify-self: center;
-  }
+    &__text {
+        justify-self: center;
+    }
 }
 
 // ▓▓▓ NEWS SECTION
 .news {
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-primary-dark) 0%,
-    rgb(0, 0, 0) 10%
-  );
-  height: 90rem;
-  padding: 10rem 20rem;
-  text-align: center;
+    background-image: linear-gradient(
+        to bottom,
+        var(--color-primary-dark) 0%,
+        rgb(0, 0, 0) 10%
+    );
+    height: 90rem;
+    padding: 10rem 20rem;
+    text-align: center;
 }
 
 .articles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3.333333333%; // The flex is 22.5%, and with 4 articles that leaves 10%, so the 3 gaps should split that into 3.333%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.333333333%; // The flex is 22.5%, and with 4 articles that leaves 10%, so the 3 gaps should split that into 3.333%
 
-  &__article {
-    height: 20rem;
-    flex: 0 0 22.5%;
-  }
+    &__article {
+        height: 20rem;
+        flex: 0 0 22.5%;
+    }
 }

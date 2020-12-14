@@ -1,26 +1,26 @@
 :root {
-  // Color
-  --color-primary: #28a8a6;
-  --color-primary-light: #79dfdd;
-  --color-primary-dark: rgb(14, 58, 58);
+    // Color
+    --color-primary: #28a8a6;
+    --color-primary-light: #79dfdd;
+    --color-primary-dark: rgb(14, 58, 58);
 
-  --color-grey-light-1: #f7f7f7;
-  --color-grey-light-2: #eee;
-  --color-grey-light-2: #c5c5c5;
+    --color-grey-light-1: #f7f7f7;
+    --color-grey-light-2: #eee;
+    --color-grey-light-3: #c5c5c5;
 
-  --color-grey-dark-1: #777;
-  --color-grey-dark-2: #999;
-  --color-grey-dark-3: #333;
+    --color-grey-dark-1: #777;
+    --color-grey-dark-2: #999;
+    --color-grey-dark-3: #333;
 
-  --color-white: #ffffff;
-  --color-black: #100;
-  --color-background: #080808;
+    --color-white: #ffffff;
+    --color-black: #100;
+    --color-background: #080808;
 
-  // Font
-  --default-font-size: 1.6rem;
+    // Font
+    --default-font-size: 1.6rem;
 
-  // Navbar height
-  --logo-height: 9.7rem;
-  --nav-padding: 2rem;
-  --nav-height: calc(var(--logo-height) + (var(--nav-padding) * 2));
+    // Navbar height
+    --logo-height: 9.7rem;
+    --nav-padding: 2rem;
+    --nav-height: calc(var(--logo-height) + (var(--nav-padding) * 2));
 }

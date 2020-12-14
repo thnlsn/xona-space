@@ -4,7 +4,7 @@
   --color-primary-dark: rgb(14, 58, 58);
   --color-grey-light-1: #f7f7f7;
   --color-grey-light-2: #eee;
-  --color-grey-light-3: #c5c5c5;
+  --color-grey-light-2: #c5c5c5;
   --color-grey-dark-1: #777;
   --color-grey-dark-2: #999;
   --color-grey-dark-3: #333;
@@ -757,7 +757,7 @@ body {
 
 .main-quote {
   font-family: 'Lato', sans-serif;
-  font-size: 3.25rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 600;
   text-shadow: 0 0 5px #000; }
@@ -929,11 +929,11 @@ body {
     /* 
       transform: translateY(10rem); */ }
   .main-quote__heading:hover {
-    color: var(--color-grey-dark-2);
+    color: var(--color-grey-light-2);
     border-bottom: 1px solid currentColor; }
   .main-quote__heading:hover > .main-quote__rarr {
     color: var(--color-primary-light);
-    transform: translateX(15px); }
+    transform: translateX(10px); }
   .main-quote__heading:active > .main-quote__rarr {
     transition: transform 0.2s, opacity 0.3s 0.1s;
     transform: translateX(75px);
@@ -954,7 +954,7 @@ body {
   justify-content: space-between;
   align-items: center; */
   background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.7), rgba(0, 0, 0, 0.9)), url("../images/sky-large.jpg");
-  background-size: cover; }
+  background-size: contain; }
   .xona-pulsar__banner {
     display: flex;
     flex-direction: column;
