@@ -131,7 +131,7 @@ const Home = () => {
         </div>
       </section>
       <section className='news'>
-        <h1 className='news-heading'>News</h1>
+        <h1 className='news__heading'>News</h1>
         <div className='articles'>
           <div className='articles__article'>Article 1</div>
 

@@ -802,6 +802,10 @@ body {
   font-size: 4rem;
   text-shadow: 0 0 30px #000; }
 
+.news__heading {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 10rem; }
+
 .navigation {
   z-index: 9999;
   background-color: rgba(8, 8, 8, 0.8);
@@ -1058,8 +1062,9 @@ body {
   align-items: center;
   gap: 3.333333333%; }
   .articles__article {
-    height: 20rem;
-    flex: 0 0 22.5%; }
+    height: 50rem;
+    flex: 0 0 22.5%;
+    border: 1px solid rgba(255, 255, 255, 0.3); }
 
 /*
 
