@@ -88,13 +88,13 @@
 
     // When :hover, animate the link text
     &:hover {
-      color: var(--color-grey-light-2);
+      color: var(--color-grey-dark-2);
       border-bottom: 1px solid currentColor;
     }
     // When :hover, animate the right arrow
     &:hover > .main-quote__rarr {
       color: var(--color-primary-light);
-      transform: translateX(10px);
+      transform: translateX(15px);
     }
     // When :active, animate the right arrow
     &:active > .main-quote__rarr {
@@ -135,7 +135,7 @@
       rgba(0, 0, 0, 0.9)
     ),
     url('../images/sky-large.jpg');
-  background-size: contain;
+  background-size: cover;
 
   // ║║║ XONA PULSAR CONTAINER (contains the logo, trademark text, and description text)
   &__banner {

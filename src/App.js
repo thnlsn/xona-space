@@ -14,57 +14,57 @@ import Contact from './components/Pages/Contact';
 import Careers from './components/Pages/Careers';
 
 function App() {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []); // Empty array as second parameter mimics componentDidMount, so only fires on pageload
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, []); // Empty array as second parameter mimics componentDidMount, so only fires on pageload
 
-  const routes = [
-    {
-      path: '/',
-      exact: true,
-      main: () => <Home />,
-    },
-    {
-      path: '/about',
-      exact: true,
-      main: () => <About />,
-    },
-    {
-      path: '/contact',
-      exact: true,
-      main: () => <Contact />,
-    },
-    {
-      path: '/careers',
-      exact: true,
-      main: () => <Careers />,
-    },
-  ];
+    const routes = [
+        {
+            path: '/xona-space',
+            exact: true,
+            main: () => <Home />,
+        },
+        {
+            path: '/about',
+            exact: true,
+            main: () => <About />,
+        },
+        {
+            path: '/contact',
+            exact: true,
+            main: () => <Contact />,
+        },
+        {
+            path: '/careers',
+            exact: true,
+            main: () => <Careers />,
+        },
+    ];
 
-  return (
-    <div className='App'>
-      <Router>
-        <Navigation
-          items={[
-            { name: 'Home', path: '/' },
-            { name: 'About', path: '/about' },
-            { name: 'Contact', path: '/contact' },
-            { name: 'Careers', path: '/careers' },
-          ]}
-        />
-        <main className='main'>
-          {routes.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              exact={route.exact}
-              children={<route.main />}
-            />
-          ))}
-        </main>
-      </Router>
-    </div>
-  );
+    return (
+        <div className='App'>
+            <Router>
+                <Navigation
+                    items={[
+                        { name: 'Home', path: '/xona-space' },
+                        { name: 'About', path: '/about' },
+                        { name: 'Contact', path: '/contact' },
+                        { name: 'Careers', path: '/careers' },
+                    ]}
+                />
+                <main className='main'>
+                    {routes.map((route, index) => (
+                        <Route
+                            key={index}
+                            path={route.path}
+                            exact={route.exact}
+                            children={<route.main />}
+                        />
+                    ))}
+                </main>
+            </Router>
+        </div>
+    );
 }
 
 export default App;
