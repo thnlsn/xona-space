@@ -259,6 +259,8 @@
     border-right: 1rem solid var(--color-primary);
     background-clip: border-box;
 
+    position: relative; // For the images which I will attempt to make able to pass through in the component rather than here
+
     // For the hover effect
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);

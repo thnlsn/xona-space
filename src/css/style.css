@@ -1028,6 +1028,7 @@ body {
     border-left: 1rem solid var(--color-primary);
     border-right: 1rem solid var(--color-primary);
     background-clip: border-box;
+    position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     padding-top: 8.5rem;

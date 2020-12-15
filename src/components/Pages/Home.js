@@ -6,6 +6,9 @@ import xona_encryption from '../../images/encryption.jpg';
 import xona_strength from '../../images/strength.jpg';
 import xona_convergence from '../../images/convergence.jpg';
 
+// COMPONENTS
+import Article from '../Components/NewsArticle';
+
 const Home = () => {
   return (
     <div className='home'>
