@@ -36,23 +36,23 @@ const home = {
     },
     {
       text: 'Weather Data',
-      image: '../../images/backgroundImages/all-weather-economy.jpg',
+      image: '../../images/backgroundImages/weather-data.jpg',
     },
     {
       text: 'Critical Infrastructure',
-      image: '../../images/backgroundImages/all-weather-economy.jpg',
+      image: '../../images/backgroundImages/critical-infrastructure.jpg',
     },
     {
       text: 'Aerial Mobility',
-      image: '../../images/backgroundImages/all-weather-economy.jpg',
+      image: '../../images/backgroundImages/aerial-mobility.jpg',
     },
     {
       text: 'Smart Agriculture',
-      image: '../../images/backgroundImages/all-weather-economy.jpg',
+      image: '../../images/backgroundImages/smart-agriculture.jpg',
     },
     {
       text: 'Maritime',
-      image: '../../images/backgroundImages/all-weather-economy.jpg',
+      image: '../../images/backgroundImages/maritime.jpg',
     },
   ],
   // SECTION FIVE (News section)
