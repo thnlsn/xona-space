@@ -27,11 +27,42 @@ const home = {
       'Faster Convergence',
     ],
   },
+  // SECTION FOUR (Application for Xona Pulsar)
+  applications: [
+    // Each item in this array is one application, you can just remove or add another object {text: '', image: ''} and it will be added to the list
+    {
+      text: 'All Weather Economy',
+      image: '../../images/backgroundImages/all-weather-economy.jpg',
+    },
+    {
+      text: 'Weather Data',
+      image: '../../images/backgroundImages/all-weather-economy.jpg',
+    },
+    {
+      text: 'Critical Infrastructure',
+      image: '../../images/backgroundImages/all-weather-economy.jpg',
+    },
+    {
+      text: 'Aerial Mobility',
+      image: '../../images/backgroundImages/all-weather-economy.jpg',
+    },
+    {
+      text: 'Smart Agriculture',
+      image: '../../images/backgroundImages/all-weather-economy.jpg',
+    },
+    {
+      text: 'Maritime',
+      image: '../../images/backgroundImages/all-weather-economy.jpg',
+    },
+  ],
+  // SECTION FIVE (News section)
   news: [
     // Each item in this array is 1 news article component
     {
       date: 'November 19, 2020',
-      // You can put a url link to an image or the relative path, so add it to the newsImages folder and change the path below after newImages/ to the name and extension of the new image
+      // You can put a url link to an image or the relative path from this file
+      // So add it to the newsImages folder and change the path below after newImages/ to the name and extension (probably .jpg) of the new image
+      // Ex: '../images/newsImages/<IMAGE-NAME-HERE>.jpg'
       image: '../images/newsImages/bluetech-week-surface-navigation.jpg',
       title: 'Blue Tech Week 2020',
       description:

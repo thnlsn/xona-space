@@ -306,12 +306,7 @@
         url('../images/aerial-mobility.jpg');
     }
     &--5 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/smart-agriculture.jpg');
+      background-image: url('../images/smart-agriculture.jpg');
     }
     &--6 {
       background-image: linear-gradient(

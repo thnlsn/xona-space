@@ -6,6 +6,8 @@ import xona_encryption from '../../images/encryption.jpg';
 import xona_strength from '../../images/strength.jpg';
 import xona_convergence from '../../images/convergence.jpg';
 
+import smart_agriculture from '../../images/backgroundImages/smart-agriculture.jpg';
+
 // COMPONENTS
 import Article from '../Components/NewsArticle';
 
@@ -85,7 +87,10 @@ const Home = () => {
         <div className='apps'>
           <div className='apps__app'>
             <div
-              className='apps__container apps__container--1'
+              className='apps__container'
+              style={{
+                backgroundImage: `url('${smart_agriculture}')`,
+              }}
               data-aos='fade-up'
             >
               <div className='apps__text'>All Weather Autonomy</div>
