@@ -8,11 +8,14 @@ import xona_strength from '../../images/strength.jpg';
 import xona_convergence from '../../images/convergence.jpg';
 
 import smart_agriculture from '../../images/backgroundImages/smart-agriculture.jpg';
+import earth from '../../images/backgroundImages/earth.jpg';
 
 import { home } from '../../data/database';
 
 // COMPONENTS
 import Article from '../Components/NewsArticle';
+
+const { banner, documentLink, product, applications, news } = home;
 
 // BACKGROUND IMAGES
 console.log(home);
@@ -22,9 +25,9 @@ const Home = () => {
     <div className='home'>
       <div
         className='home-banner'
-        style={{
-          backgroundImage: `url(${home.banner.image})`,
-        }}
+        /*         style={{
+          backgroundImage: url(`${home.banner.background}`),
+        }} */
       >
         <h1 className='home-heading heading-primary'>
           <span className='emphasis'>{home.banner.emphazisedWord}</span>

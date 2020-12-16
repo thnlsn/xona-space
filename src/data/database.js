@@ -13,8 +13,10 @@ const home = {
     // The rest of the title, or the whole title in white if theres no emphasizedWord
     header: `for the age of autonomy`,
     // So together the emphasized word and header will come out as "Navigation for the age of autonomy"
-    background: 'images/backgroundImages/earth.jpg',
+    background: 'earth.jpg',
   },
+
+  /* background: 'images/backgroundImages/earth.jpg', */
 
   // SECTION TWO
   // The secondary header/link to the GPS Final Report document
