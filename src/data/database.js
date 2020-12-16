@@ -6,10 +6,14 @@
 
 const home = {
   // SECTION ONE (The main banner of the home page)
-  homeBanner: {
-    // The main header of the page
-    header: 'Navigation for the age of autonomy',
-    background: '',
+  banner: {
+    // If emphasizedWord value is present, it will appear first in the title and be blue
+    // If you do not want it simply leave an empty string there (Ex: '')
+    emphazisedWord: 'Navigation',
+    // The rest of the title, or the whole title in white if theres no emphasizedWord
+    header: `for the age of autonomy`,
+    // So together the emphasized word and header will come out as "Navigation for the age of autonomy"
+    background: 'images/backgroundImages/earth.jpg',
   },
 
   // SECTION TWO
@@ -30,12 +34,13 @@ const home = {
     // Short description of the product
     description:
       "With satellites in low Earth orbit, Xona's Pulsar™ Position, Navigation and Timing (PNT) service will provide the security, availability and accuracy needed to support the age of autonomy.",
-    // The three main benefits of the product || ADD IMAGES
+    // The three main benefits of the product
     benefits: [
-      'Encryption & Precision Corrections',
-      'Stronger Signals',
-      'Faster Convergence',
+      ['Encryption & Precision Corrections', '../images/encryption.jpg'],
+      ['Stronger Signals', '../images/strength.jpg'],
+      ['Faster Convergence', '../images/convergence.jpg'],
     ],
+    background: '../../images/backgroundImages/sky-large.jpg',
   },
   // SECTION FOUR (Application for Xona Pulsar)
   applications: [
@@ -232,3 +237,6 @@ const contact = {};
 //////////////////////////////////////////////////////////////////////////////////////////
 
 const careers = {};
+
+// EXPORT
+export { home, about, contact, careers };

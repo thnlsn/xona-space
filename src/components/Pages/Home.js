@@ -2,21 +2,33 @@ import React from 'react';
 
 import icon from '../../images/xona-icon.png';
 import icon_white from '../../images/xona-icon-white.png';
+
 import xona_encryption from '../../images/encryption.jpg';
 import xona_strength from '../../images/strength.jpg';
 import xona_convergence from '../../images/convergence.jpg';
 
 import smart_agriculture from '../../images/backgroundImages/smart-agriculture.jpg';
 
+import { home } from '../../data/database';
+
 // COMPONENTS
 import Article from '../Components/NewsArticle';
+
+// BACKGROUND IMAGES
+console.log(home);
 
 const Home = () => {
   return (
     <div className='home'>
-      <div className='home-banner'>
+      <div
+        className='home-banner'
+        style={{
+          backgroundImage: `url(${home.banner.image})`,
+        }}
+      >
         <h1 className='home-heading heading-primary'>
-          <span className='emphasis'>Navigation</span> for the age of autonomy
+          <span className='emphasis'>{home.banner.emphazisedWord}</span>
+          {home.banner.header}
         </h1>
         <svg className='scroll-indicator' viewBox='0 0 20 10' width='4rem'>
           <path d='M0 0 L10 10 L20 0'></path>
@@ -25,17 +37,15 @@ const Home = () => {
       <section className='main-quote'>
         <a
           className='main-quote__heading'
-          href='https://www.rti.org/sites/default/files/gps_finalreport.pdf'
+          href={home.documentLink.url}
           target='_blank'
           data-aos='fade-up'
         >
-          Over $300 billion per year relies on an unprotected navigation net
+          {home.documentLink.text}
           <span className='main-quote__rarr'>&rarr;</span>
         </a>
         <div className='main-quote__text' data-aos='fade-up'>
-          Intelligent systems require a navigation solution that supports
-          safety-critical operation, centimeter positioning, and cybersecurity
-          for millions of users
+          {home.documentLink.explanation}
         </div>
       </section>
       {/* Xona Pulsar */}

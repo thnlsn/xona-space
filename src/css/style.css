@@ -867,8 +867,7 @@ body {
   opacity: 1; }
 
 .home-banner {
-  background-image: url("../images/earth.jpg");
-  background-color: white;
+  /* background-image: url('../images/earth.jpg'); */
   background-size: cover;
   padding: calc(var(--nav-height)) 20rem 0 20rem;
   height: calc(100vh);
