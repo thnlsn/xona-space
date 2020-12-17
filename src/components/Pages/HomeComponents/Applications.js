@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Application from './Application';
-
 const Applications = ({ applications }) => {
   return (
     <div className='apps'>
