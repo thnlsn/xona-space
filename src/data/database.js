@@ -1,5 +1,3 @@
-import banner_background from '../images/backgroundImages/earth.jpg';
-
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 // DATA FOR THE HOME PAGE
@@ -57,27 +55,27 @@ const home = {
       // To change the image just change the name after the last / to match the name of the new image
       // Make sure you've added the new image to the backgroundImages folder in the images folder
       // Ex: '../../images/backgroundImages/<NEW-IMAGE-HERE>.jpg'
-      image: '../../images/backgroundImages/all-weather-economy.jpg',
+      image: require('../images/backgroundImages/all-weather-autonomy.jpg'),
     },
     {
       text: 'Weather Data',
-      image: '../../images/backgroundImages/weather-data.jpg',
+      image: require('../images/backgroundImages/weather-data.jpg'),
     },
     {
       text: 'Critical Infrastructure',
-      image: '../../images/backgroundImages/critical-infrastructure.jpg',
+      image: require('../images/backgroundImages/critical-infrastructure.jpg'),
     },
     {
       text: 'Aerial Mobility',
-      image: '../../images/backgroundImages/aerial-mobility.jpg',
+      image: require('../images/backgroundImages/aerial-mobility.jpg'),
     },
     {
       text: 'Smart Agriculture',
-      image: '../../images/backgroundImages/smart-agriculture.jpg',
+      image: require('../images/backgroundImages/smart-agriculture.jpg'),
     },
     {
       text: 'Maritime',
-      image: '../../images/backgroundImages/maritime.jpg',
+      image: require('../images/backgroundImages/maritime.jpg'),
     },
   ],
   // SECTION FIVE (News section)
