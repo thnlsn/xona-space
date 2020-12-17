@@ -12,6 +12,7 @@ import smart_agriculture from '../../images/backgroundImages/smart-agriculture.j
 import { home } from '../../data/database';
 
 // COMPONENTS
+import Applications from './HomeComponents/Applications';
 import Article from '../Components/NewsArticle';
 
 const { banner, documentLink, pulsar, applications, news } = home;
@@ -101,60 +102,9 @@ const Home = () => {
       */}
       <section className='applications' data-aos='fade'>
         <h1 className='applications__heading'>Applications</h1>
-        <div className='apps'>
-          <div className='apps__app'>
-            <div
-              className='apps__container'
-              style={{
-                backgroundImage: `url(${applications[0].image})`,
-              }}
-              data-aos='fade-up'
-            >
-              <div className='apps__text'>All Weather Autonomy</div>
-            </div>
-          </div>
-          <div className='apps__app'>
-            <div
-              className='apps__container apps__container--2'
-              data-aos='fade-up'
-            >
-              <div className='apps__text'>Weather Data</div>
-            </div>
-          </div>
-          <div className='apps__app'>
-            <div
-              className='apps__container apps__container--3'
-              data-aos='fade-up'
-            >
-              <div className='apps__text'>Critical Infrastructure</div>
-            </div>
-          </div>
-          <div className='apps__app'>
-            <div
-              className='apps__container apps__container--4'
-              data-aos='fade-up'
-            >
-              <div className='apps__text'>Aerial Mobility</div>
-            </div>
-          </div>
-          <div className='apps__app'>
-            <div
-              className='apps__container apps__container--5'
-              data-aos='fade-up'
-            >
-              <div className='apps__text'>Smart Agriculture</div>
-            </div>
-          </div>
-          <div className='apps__app'>
-            <div
-              className='apps__container apps__container--6'
-              data-aos='fade-up'
-            >
-              <div className='apps__text'>Maritime</div>
-            </div>
-          </div>
-        </div>
+        <Applications applications={applications} />
       </section>
+
       <section className='news'>
         <h1 className='news__heading'>News</h1>
         <div className='articles'>
