@@ -4,6 +4,8 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 
+import Applications from '../components/Pages/HomeComponents/Applications';
+
 const home = {
   // SECTION ONE (The main banner of the home page)
   banner: {
@@ -47,37 +49,41 @@ const home = {
     ],
     background: require('../images/backgroundImages/sky-large.jpg'),
   },
-  // SECTION FOUR (Application for Xona Pulsar)
-  applications: [
-    // Each item in this array is one application, you can just remove or add another object {text: '', image: ''} and it will be added to the list
-    {
-      text: 'All Weather Economy',
-      // To change the image just change the name after the last / to match the name of the new image
-      // Make sure you've added the new image to the backgroundImages folder in the images folder
-      // Ex: '../../images/backgroundImages/<NEW-IMAGE-HERE>.jpg'
-      image: require('../images/backgroundImages/all-weather-autonomy.jpg'),
-    },
-    {
-      text: 'Weather Data',
-      image: require('../images/backgroundImages/weather-data.jpg'),
-    },
-    {
-      text: 'Critical Infrastructure',
-      image: require('../images/backgroundImages/critical-infrastructure.jpg'),
-    },
-    {
-      text: 'Aerial Mobility',
-      image: require('../images/backgroundImages/aerial-mobility.jpg'),
-    },
-    {
-      text: 'Smart Agriculture',
-      image: require('../images/backgroundImages/smart-agriculture.jpg'),
-    },
-    {
-      text: 'Maritime',
-      image: require('../images/backgroundImages/maritime.jpg'),
-    },
-  ],
+  // SECTION FOUR (Applications for Xona Pulsar)
+  applications: {
+    // The main heading of the section
+    heading: 'Applications',
+    items: [
+      // Each item in this array is one application, you can just remove or add another object {text: '', image: ''} and it will be added to the list
+      {
+        text: 'All Weather Economy',
+        // To change the image just change the name after the last / to match the name of the new image
+        // Make sure you've added the new image to the backgroundImages folder in the images folder
+        // Ex: '../../images/backgroundImages/<NEW-IMAGE-HERE>.jpg'
+        image: require('../images/backgroundImages/all-weather-autonomy.jpg'),
+      },
+      {
+        text: 'Weather Data',
+        image: require('../images/backgroundImages/weather-data.jpg'),
+      },
+      {
+        text: 'Critical Infrastructure',
+        image: require('../images/backgroundImages/critical-infrastructure.jpg'),
+      },
+      {
+        text: 'Aerial Mobility',
+        image: require('../images/backgroundImages/aerial-mobility.jpg'),
+      },
+      {
+        text: 'Smart Agriculture',
+        image: require('../images/backgroundImages/smart-agriculture.jpg'),
+      },
+      {
+        text: 'Maritime',
+        image: require('../images/backgroundImages/maritime.jpg'),
+      },
+    ],
+  },
   // SECTION FIVE (News section)
   news: [
     // Each item in this array is 1 news article component

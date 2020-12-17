@@ -92,14 +92,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* 
-      All Weather Autonomy
-      Weather Data
-      Critical Infrastructure
-      Aerial Mobility
-      Smart Agriculture
-      Maritime
-      */}
+
       <section className='applications' data-aos='fade'>
         <h1 className='applications__heading'>Applications</h1>
         <Applications applications={applications} />
