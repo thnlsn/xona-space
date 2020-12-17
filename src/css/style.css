@@ -1020,7 +1020,7 @@ body {
 
 .apps {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0rem 0; }
   .apps__app {
@@ -1059,7 +1059,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3.333333333%; }
+  gap: 3.333333333%;
+  flex-wrap: wrap; }
 
 .article {
   height: 50rem;

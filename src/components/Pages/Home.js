@@ -2,7 +2,7 @@ import React from 'react';
 
 // COMPONENTS
 import Applications from './HomeComponents/Applications';
-import Article from '../Components/NewsArticle';
+import Articles from './HomeComponents/Articles';
 
 // Importing all image paths from the database file
 import { home, logos } from '../../data/database';
@@ -95,16 +95,7 @@ const Home = () => {
       </section>
 
       <section className='news'>
-        <h1 className='news__heading'>News</h1>
-        <div className='articles'>
-          <div className='articles__article'>Article 1</div>
-
-          <div className='articles__article'>Article 2</div>
-
-          <div className='articles__article'>Article 3</div>
-
-          <div className='articles__article'>Article 4</div>
-        </div>
+        <Articles news={news} />
       </section>
     </div>
   );
