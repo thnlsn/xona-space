@@ -6,6 +6,7 @@ const Articles = ({ heading, articles }) => {
     <Fragment>
       <h1 className='news__heading'>{heading}</h1>
       <div className='articles'>
+        {/* IIFE to loop and display the first 4 articles */}
         {(() => {
           let articlesArr = [];
           for (let i = 0; i < 4; i++) {
@@ -22,14 +23,6 @@ const Articles = ({ heading, articles }) => {
           }
           return articlesArr;
         })()}
-        {/* 
-        <Article
-          date={article.date}
-          image={article.image}
-          title={article.title}
-          description={article.description}
-          key={index}
-        /> */}
       </div>
     </Fragment>
   );

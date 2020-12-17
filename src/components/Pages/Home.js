@@ -17,6 +17,7 @@ console.log(home);
 const Home = () => {
   return (
     <div className='home'>
+      {/* HOME PAGE BANNER/HERO */}
       <div
         className='home-banner'
         style={{
@@ -31,6 +32,8 @@ const Home = () => {
           <path d='M0 0 L10 10 L20 0'></path>
         </svg>
       </div>
+
+      {/* INTRO SECTION */}
       <section className='main-quote'>
         <a
           className='main-quote__heading'
@@ -46,7 +49,8 @@ const Home = () => {
           {home.documentLink.explanation}
         </div>
       </section>
-      {/* Xona Pulsar */}
+
+      {/* XONA PULSAR SECTION */}
       <section
         className='xona-pulsar'
         style={{
@@ -88,6 +92,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/* APPLICATIONS SECTION */}
       <section className='applications' data-aos='fade'>
         <Applications
           heading={applications.heading}
@@ -95,6 +100,7 @@ const Home = () => {
         />
       </section>
 
+      {/* NEWS SECTION */}
       <section className='news'>
         <Articles heading={news.heading} articles={news.articles} />
       </section>
