@@ -304,6 +304,10 @@
   height: 90rem;
   padding: 10rem 20rem;
   text-align: center;
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
 }
 
 // ║║║ Container for the articles

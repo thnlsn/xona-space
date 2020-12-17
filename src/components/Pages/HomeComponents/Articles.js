@@ -6,14 +6,17 @@ const Articles = ({ news }) => {
     <Fragment>
       <h1 className='news__heading'>News</h1>
       <div className='articles'>
-        {news.map((article, index) => (
-          <Article
-            date={article.date}
-            image={article.image}
-            title={article.title}
-            description={article.description}
-          />
-        ))}
+        {() => {
+          let articles = null;
+        }}
+
+        <Article
+          date={article.date}
+          image={article.image}
+          title={article.title}
+          description={article.description}
+          key={index}
+        />
       </div>
     </Fragment>
   );

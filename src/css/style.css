@@ -1054,6 +1054,8 @@ body {
   height: 90rem;
   padding: 10rem 20rem;
   text-align: center; }
+  .news__heading {
+    margin-bottom: 2rem; }
 
 .articles {
   display: flex;
