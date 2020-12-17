@@ -1,3 +1,5 @@
+import banner_background from '../images/backgroundImages/earth.jpg';
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 // DATA FOR THE HOME PAGE
@@ -13,7 +15,7 @@ const home = {
     // The rest of the title, or the whole title in white if theres no emphasizedWord
     header: `for the age of autonomy`,
     // So together the emphasized word and header will come out as "Navigation for the age of autonomy"
-    background: 'earth.jpg',
+    background: require('../images/backgroundImages/earth.jpg'),
   },
 
   /* background: 'images/backgroundImages/earth.jpg', */
@@ -30,7 +32,7 @@ const home = {
       'Intelligent systems require a navigation solution that supports safety-critical operation, centimeter positioning, and cybersecurity for millions of users',
   },
   // SECTION THREE (Xona Pulsar showcase)
-  product: {
+  pulsar: {
     // The name of the product
     name: 'Xona Pulsar',
     // Short description of the product
@@ -38,11 +40,14 @@ const home = {
       "With satellites in low Earth orbit, Xona's Pulsar™ Position, Navigation and Timing (PNT) service will provide the security, availability and accuracy needed to support the age of autonomy.",
     // The three main benefits of the product
     benefits: [
-      ['Encryption & Precision Corrections', '../images/encryption.jpg'],
-      ['Stronger Signals', '../images/strength.jpg'],
-      ['Faster Convergence', '../images/convergence.jpg'],
+      [
+        'Encryption & Precision Corrections',
+        require('../images/encryption.jpg'),
+      ],
+      ['Stronger Signals', require('../images/strength.jpg')],
+      ['Faster Convergence', require('../images/convergence.jpg')],
     ],
-    background: '../../images/backgroundImages/sky-large.jpg',
+    background: require('../images/backgroundImages/sky-large.jpg'),
   },
   // SECTION FOUR (Application for Xona Pulsar)
   applications: [

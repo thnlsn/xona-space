@@ -8,14 +8,13 @@ import xona_strength from '../../images/strength.jpg';
 import xona_convergence from '../../images/convergence.jpg';
 
 import smart_agriculture from '../../images/backgroundImages/smart-agriculture.jpg';
-import earth from '../../images/backgroundImages/earth.jpg';
 
 import { home } from '../../data/database';
 
 // COMPONENTS
 import Article from '../Components/NewsArticle';
 
-const { banner, documentLink, product, applications, news } = home;
+const { banner, documentLink, pulsar, applications, news } = home;
 
 // BACKGROUND IMAGES
 console.log(home);
@@ -25,9 +24,9 @@ const Home = () => {
     <div className='home'>
       <div
         className='home-banner'
-        /*         style={{
-          backgroundImage: url(`${home.banner.background}`),
-        }} */
+        style={{
+          backgroundImage: `url(${home.banner.background})`,
+        }}
       >
         <h1 className='home-heading heading-primary'>
           <span className='emphasis'>{home.banner.emphazisedWord}</span>
@@ -52,15 +51,20 @@ const Home = () => {
         </div>
       </section>
       {/* Xona Pulsar */}
-      <section className='xona-pulsar'>
+      <section
+        className='xona-pulsar'
+        style={{
+          backgroundImage: `url(${pulsar.background})`,
+        }}
+      >
         <div className='xona-pulsar__banner' data-aos='fade-up'>
-          <div className='xona-pulsar__tm' /* data-aos='fade-up' */>
-            <div className='xona-pulsar__icon' /* data-aos='fade-up' */>
+          <div className='xona-pulsar__tm'>
+            <div className='xona-pulsar__icon'>
               <img src={icon} alt='Xona Icon' />
             </div>
             xona pulsar<span>&trade;</span>
           </div>
-          <div className='xona-pulsar__text' /* data-aos='fade-up' */>
+          <div className='xona-pulsar__text'>
             With satellites in low Earth orbit, Xona's Pulsar™ Position,
             Navigation and Timing (PNT) service will provide the security,
             availability and accuracy needed to support the age of autonomy.
@@ -68,19 +72,19 @@ const Home = () => {
         </div>
         <div className='xona-pulsar__images'>
           <div className='xona-pulsar__application' data-aos='fade-up'>
-            <img src={xona_encryption} alt='Pulsar Encryption' />
+            <img src={pulsar.benefits[0][1]} alt='Pulsar Encryption' />
             <div className='xona-pulsar__image-description'>
               Encryption & Precision Corrections
             </div>
           </div>
           <div className='xona-pulsar__application' data-aos='fade-up'>
-            <img src={xona_strength} alt='Pulsar Strength' />
+            <img src={pulsar.benefits[1][1]} alt='Pulsar Strength' />
             <div className='xona-pulsar__image-description'>
               Stronger Signals
             </div>
           </div>
           <div className='xona-pulsar__application' data-aos='fade-up'>
-            <img src={xona_convergence} alt='Pulsar Convergence' />
+            <img src={pulsar.benefits[2][1]} alt='Pulsar Convergence' />
             <div className='xona-pulsar__image-description'>
               Faster Convergence
             </div>
@@ -102,7 +106,7 @@ const Home = () => {
             <div
               className='apps__container'
               style={{
-                backgroundImage: `url('${smart_agriculture}')`,
+                backgroundImage: `url(${applications[0].image})`,
               }}
               data-aos='fade-up'
             >
