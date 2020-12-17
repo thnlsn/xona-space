@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const Articles = () => {
+const Articles = ({ news }) => {
   return (
     <Fragment>
       <h1 className='news__heading'>News</h1>
