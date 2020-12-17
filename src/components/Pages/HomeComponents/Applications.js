@@ -6,8 +6,8 @@ const Applications = ({ heading, applications }) => {
       <h1 className='applications__heading'>{heading}</h1>
       <div className='apps'>
         {/* Create an application for each object in the prop applications */}
-        {applications.map((application) => (
-          <div className='apps__app'>
+        {applications.map((application, index) => (
+          <div className='apps__app' key={index}>
             <div
               className='apps__container'
               style={{

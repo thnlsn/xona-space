@@ -9,7 +9,7 @@ import { home, logos } from '../../data/database';
 
 // Destructuring the data we need for this component
 const { banner, documentLink, pulsar, applications, news } = home;
-const { icon, iconWhite } = logos;
+const { icon /* iconWhite */ } = logos;
 
 // BACKGROUND IMAGES
 console.log(home);
@@ -20,12 +20,12 @@ const Home = () => {
       <div
         className='home-banner'
         style={{
-          backgroundImage: `url(${home.banner.background})`,
+          backgroundImage: `url(${banner.background})`,
         }}
       >
         <h1 className='home-heading heading-primary'>
-          <span className='emphasis'>{home.banner.emphazisedWord}</span>
-          {home.banner.header}
+          <span className='emphasis'>{banner.emphazisedWord}</span>
+          {banner.header}
         </h1>
         <svg className='scroll-indicator' viewBox='0 0 20 10' width='4rem'>
           <path d='M0 0 L10 10 L20 0'></path>
@@ -34,11 +34,12 @@ const Home = () => {
       <section className='main-quote'>
         <a
           className='main-quote__heading'
-          href={home.documentLink.url}
+          href={documentLink.url}
           target='_blank'
+          rel='noopener noreferrer' // For security purposes
           data-aos='fade-up'
         >
-          {home.documentLink.text}
+          {documentLink.text}
           <span className='main-quote__rarr'>&rarr;</span>
         </a>
         <div className='main-quote__text' data-aos='fade-up'>
@@ -95,7 +96,7 @@ const Home = () => {
       </section>
 
       <section className='news'>
-        <Articles news={news} />
+        <Articles heading={news.heading} articles={news.articles} />
       </section>
     </div>
   );
