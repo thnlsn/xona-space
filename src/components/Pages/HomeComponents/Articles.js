@@ -6,9 +6,9 @@ const Articles = ({ heading, articles }) => {
     <Fragment>
       <h1 className='news__heading'>{heading}</h1>
       <div className='articles'>
-        {/*         {() => {
+        {(() => {
           let articlesArr = [];
-          for (let i = 0; i < 5; i++) {
+          for (let i = 0; i < 4; i++) {
             console.log(articles[i]);
             articlesArr.push(
               <Article
@@ -21,7 +21,7 @@ const Articles = ({ heading, articles }) => {
             );
           }
           return articlesArr;
-        }} */}
+        })()}
         {/* 
         <Article
           date={article.date}
