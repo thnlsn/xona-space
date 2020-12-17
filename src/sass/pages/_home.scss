@@ -1,6 +1,5 @@
 // ▓▓▓ HOME BANNER
 .home-banner {
-  background-image: url('../images/earth.jpg');
   background-size: cover;
   padding: calc(var(--nav-height)) 20rem 0 20rem;
   height: calc(100vh /*  - var(--nav-height) */);
@@ -288,50 +287,6 @@
       transform: scale(1.04);
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
     } */
-
-    &--1 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/all-weather-autonomy.jpg');
-    }
-    &--2 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/weather-data.jpg');
-    }
-    &--3 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/critical-infrastructure.jpg');
-    }
-    &--4 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/aerial-mobility.jpg');
-    }
-    &--5 {
-      background-image: url('../images/smart-agriculture.jpg');
-    }
-    &--6 {
-      background-image: linear-gradient(
-          to right bottom,
-          rgba(14, 58, 58, 0.1),
-          rgba(0, 0, 0, 0.1)
-        ),
-        url('../images/maritime.jpg');
-    }
   }
 
   &__text {
@@ -356,11 +311,20 @@
   justify-content: center;
   align-items: center;
   gap: 3.333333333%; // The flex is 22.5%, and with 4 articles that leaves 10%, so the 3 gaps should split that into 3.333%
+}
 
-  &__article {
-    height: 50rem;
-    flex: 0 0 22.5%;
+.article {
+  height: 50rem;
+  flex: 0 0 22.5%;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  &__date {
+  }
+  &__image {
+  }
+  &__title {
+  }
+  &__description {
   }
 }

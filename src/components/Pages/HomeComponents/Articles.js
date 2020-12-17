@@ -5,13 +5,13 @@ const Articles = ({ news }) => {
     <Fragment>
       <h1 className='news__heading'>News</h1>
       <div className='articles'>
-        <div className='articles__article'>Article 1</div>
+        <div className='article'>Article 1</div>
 
-        <div className='articles__article'>Article 2</div>
+        <div className='article'>Article 2</div>
 
-        <div className='articles__article'>Article 3</div>
+        <div className='article'>Article 3</div>
 
-        <div className='articles__article'>Article 4</div>
+        <div className='article'>Article 4</div>
       </div>
     </Fragment>
   );

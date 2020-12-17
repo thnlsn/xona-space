@@ -867,7 +867,6 @@ body {
   opacity: 1; }
 
 .home-banner {
-  background-image: url("../images/earth.jpg");
   background-size: cover;
   padding: calc(var(--nav-height)) 20rem 0 20rem;
   height: calc(100vh);
@@ -1047,18 +1046,6 @@ body {
       transform: scale(1.04);
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
     } */ }
-    .apps__container--1 {
-      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/all-weather-autonomy.jpg"); }
-    .apps__container--2 {
-      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/weather-data.jpg"); }
-    .apps__container--3 {
-      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/critical-infrastructure.jpg"); }
-    .apps__container--4 {
-      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/aerial-mobility.jpg"); }
-    .apps__container--5 {
-      background-image: url("../images/smart-agriculture.jpg"); }
-    .apps__container--6 {
-      background-image: linear-gradient(to right bottom, rgba(14, 58, 58, 0.1), rgba(0, 0, 0, 0.1)), url("../images/maritime.jpg"); }
   .apps__text {
     justify-self: center; }
 
@@ -1073,10 +1060,11 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3.333333333%; }
-  .articles__article {
-    height: 50rem;
-    flex: 0 0 22.5%;
-    border: 1px solid rgba(255, 255, 255, 0.3); }
+
+.article {
+  height: 50rem;
+  flex: 0 0 22.5%;
+  border: 1px solid rgba(255, 255, 255, 0.3); }
 
 /*
 
