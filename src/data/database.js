@@ -4,7 +4,11 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 
-import Applications from '../components/Pages/HomeComponents/Applications';
+const logos = {
+  logo: require('../images/logos/xona-logo.png'), // The full logo with the whole name and subtitle
+  icon: require('../images/logos/xona-icon.png'), // Just the compass icon
+  iconWhite: require('../images/logos/xona-icon-white.png'), // All-white compass icon
+};
 
 const home = {
   // SECTION ONE (The main banner of the home page)
@@ -17,8 +21,6 @@ const home = {
     // So together the emphasized word and header will come out as "Navigation for the age of autonomy"
     background: require('../images/backgroundImages/earth.jpg'),
   },
-
-  /* background: 'images/backgroundImages/earth.jpg', */
 
   // SECTION TWO
   // The secondary header/link to the GPS Final Report document
@@ -250,4 +252,4 @@ const contact = {};
 const careers = {};
 
 // EXPORT
-export { home, about, contact, careers };
+export { logos, home, about, contact, careers };

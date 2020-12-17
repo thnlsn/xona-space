@@ -1,21 +1,15 @@
 import React from 'react';
 
-import icon from '../../images/xona-icon.png';
-import icon_white from '../../images/xona-icon-white.png';
-
-import xona_encryption from '../../images/encryption.jpg';
-import xona_strength from '../../images/strength.jpg';
-import xona_convergence from '../../images/convergence.jpg';
-
-import smart_agriculture from '../../images/backgroundImages/smart-agriculture.jpg';
-
-import { home } from '../../data/database';
-
 // COMPONENTS
 import Applications from './HomeComponents/Applications';
 import Article from '../Components/NewsArticle';
 
+// Importing all image paths from the database file
+import { home, logos } from '../../data/database';
+
+// Destructuring the data we need for this component
 const { banner, documentLink, pulsar, applications, news } = home;
+const { icon, iconWhite } = logos;
 
 // BACKGROUND IMAGES
 console.log(home);
@@ -94,8 +88,10 @@ const Home = () => {
       </section>
 
       <section className='applications' data-aos='fade'>
-        <h1 className='applications__heading'>Applications</h1>
-        <Applications applications={applications} />
+        <Applications
+          heading={applications.heading}
+          applications={applications.items}
+        />
       </section>
 
       <section className='news'>

@@ -1,10 +1,12 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
 
 import NavItem from './NavItem';
 
-import logo from '../../images/xona-logo.png';
+// Importing all image paths from the database file
+import { logos } from '../../data/database';
+// Destructuring the images we need for this component
+const { logo } = logos;
 
 const Navigation = ({ items }) => {
   return (
