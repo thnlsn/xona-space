@@ -3,6 +3,7 @@ import React from 'react';
 // COMPONENTS
 import Applications from './HomeComponents/Applications';
 import Articles from './HomeComponents/Articles';
+import XonaPulsar from './HomeComponents/XonaPulsar';
 
 // Importing all image paths from the database file
 import { home, logos } from '../../data/database';
