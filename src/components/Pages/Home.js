@@ -62,7 +62,7 @@ const Home = () => {
           icon={icon}
           name={pulsar.name}
           description={pulsar.description}
-          benefits={pulsar.benefits}
+          abilities={pulsar.abilities}
         />
       </section>
 

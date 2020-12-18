@@ -41,7 +41,7 @@ const home = {
     description:
       "With satellites in low Earth orbit, Xona's Pulsar™ Position, Navigation and Timing (PNT) service will provide the security, availability and accuracy needed to support the age of autonomy.",
     // The three main benefits of the product
-    benefits: [
+    abilities: [
       [
         'Encryption & Precision Corrections',
         require('../images/encryption.jpg'),
