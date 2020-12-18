@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Ability from './PulsarAbility';
 
 const XonaPulsar = ({ icon, name, description, abilities }) => {
   return (
@@ -14,22 +15,9 @@ const XonaPulsar = ({ icon, name, description, abilities }) => {
         <div className='xona-pulsar__text'>{description}</div>
       </div>
       <div className='xona-pulsar__images'>
-        <div className='xona-pulsar__ability' data-aos='fade-up'>
-          <img src={abilities[0][1]} alt='Pulsar Encryption' />
-          <div className='xona-pulsar__image-description'>
-            Encryption & Precision Corrections
-          </div>
-        </div>
-        <div className='xona-pulsar__ability' data-aos='fade-up'>
-          <img src={abilities[1][1]} alt='Pulsar Strength' />
-          <div className='xona-pulsar__image-description'>Stronger Signals</div>
-        </div>
-        <div className='xona-pulsar__ability' data-aos='fade-up'>
-          <img src={abilities[2][1]} alt='Pulsar Convergence' />
-          <div className='xona-pulsar__image-description'>
-            Faster Convergence
-          </div>
-        </div>
+        {abilities.map((ability) => (
+          <Ability ability={ability} />
+        ))}
       </div>
     </Fragment>
   );
