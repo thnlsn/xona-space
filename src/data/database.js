@@ -11,8 +11,8 @@ const logos = {
 };
 
 const home = {
-  // SECTION ONE (The main banner of the home page)
-  banner: {
+  // SECTION ONE (The main hero of the home page)
+  hero: {
     // If emphasizedWord value is present, it will appear first in the title and be blue
     // If you do not want it simply leave an empty string there (Ex: '')
     emphazisedWord: 'Navigation',
@@ -24,7 +24,7 @@ const home = {
 
   // SECTION TWO
   // The secondary header/link to the GPS Final Report document
-  documentLink: {
+  link: {
     // The actual text for the link
     text: 'Over $300 billion per year relies on an unprotected navigation net',
     // The url that the link should route to
