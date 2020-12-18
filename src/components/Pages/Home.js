@@ -7,7 +7,7 @@ import XonaPulsar from './HomeComponents/XonaPulsar';
 import Applications from './HomeComponents/Applications';
 import Articles from './HomeComponents/Articles';
 
-// Importing all image paths from the database file
+// Importing all data for this component from the database file
 import { home, logos } from '../../data/database';
 
 // Destructuring the data we need for this component
@@ -20,7 +20,7 @@ console.log(home);
 const Home = () => {
   return (
     <div className='home'>
-      {/* ▓▓▓ HOME PAGE BANNER/HERO */}
+      {/* ▉ HOME PAGE BANNER/HERO */}
       <div
         className='home-banner'
         style={{
@@ -30,7 +30,7 @@ const Home = () => {
         <Hero emphasis={hero.emphazisedWord} header={hero.header} />
       </div>
 
-      {/* ▓▓▓ INTRO SECTION */}
+      {/* ▉ INTRO SECTION */}
       <section className='main-quote'>
         <DocumentLink
           text={link.text}
@@ -39,7 +39,7 @@ const Home = () => {
         />
       </section>
 
-      {/* ▓▓▓ XONA PULSAR SECTION */}
+      {/* ▉ XONA PULSAR SECTION */}
       <section
         className='xona-pulsar'
         style={{
@@ -54,7 +54,7 @@ const Home = () => {
         />
       </section>
 
-      {/* ▓▓▓ APPLICATIONS SECTION */}
+      {/* ▉ APPLICATIONS SECTION */}
       <section className='applications' data-aos='fade'>
         <Applications
           heading={applications.heading}
@@ -62,7 +62,7 @@ const Home = () => {
         />
       </section>
 
-      {/* ▓▓▓ NEWS SECTION */}
+      {/* ▉ NEWS SECTION */}
       <section className='news'>
         <Articles heading={news.heading} articles={news.articles} />
       </section>
