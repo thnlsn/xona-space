@@ -1078,6 +1078,7 @@ body {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
   border-radius: 10px;
   padding: 1rem;

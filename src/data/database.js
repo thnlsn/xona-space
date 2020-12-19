@@ -93,10 +93,17 @@ const home = {
     // Each item in this array is 1 news article component
     articles: [
       {
-        date: 'November 19, 2020',
+        date: 'December 18, 2020',
         // You can put a url link to an image or the relative path from this file
         // So add it to the newsImages folder and change the path below after newImages/ to the name and extension (probably .jpg) of the new image
         // Ex: '../images/newsImages/<IMAGE-NAME-HERE>.jpg'
+        image: require('../images/newsImages/winner-pitch-to-the-moon.jpg'),
+        title: 'Winner of the Pitch to the Moon Competition',
+        description:
+          'Xona is selected as the winner of the Pitch to the Moon competition at TC Sessions: Space 2020',
+      },
+      {
+        date: 'November 19, 2020',
         image: require('../images/newsImages/bluetech-week-surface-navigation.jpg'),
         title: 'Blue Tech Week 2020',
         description:
