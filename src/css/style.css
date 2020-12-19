@@ -1,7 +1,8 @@
 :root {
   --color-primary: #28a8a6;
   --color-primary-light: #79dfdd;
-  --color-primary-dark: rgb(14, 58, 58);
+  --color-primary-dark: #0e3a3a;
+  --color-primary-gradient-dark: rgb(14, 58, 58);
   --color-grey-light-1: #f7f7f7;
   --color-grey-light-2: #eee;
   --color-grey-light-3: #c5c5c5;
@@ -1021,11 +1022,7 @@ body {
 .applications {
   text-align: center;
   padding: 7.5rem 20rem 6.5rem 20rem;
-  /*   background-image: linear-gradient(
-    to bottom,
-    rgb(0, 0, 0),
-    var(--color-primary-dark)
-  ); */ }
+  background-image: radial-gradient(circle, #080808 0%, #218a88 0%, #0e3a3a 100%); }
 
 .apps {
   display: flex;
@@ -1044,12 +1041,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 1rem solid var(--color-primary);
-    border-right: 1rem solid var(--color-primary);
+    /*     border: 1rem solid var(--color-primary); */
     background-clip: border-box;
     position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 29px 13px rgba(0, 0, 0, 0.55);
     padding-top: 8.5rem;
     /*     &:hover {
       transform: scale(1.04);
@@ -1059,12 +1055,6 @@ body {
     justify-self: center; }
 
 .news {
-  /*   background-image: linear-gradient(
-    to bottom,
-    var(--color-primary-dark) 0%,
-    rgb(0, 0, 0) 10%
-  ); */
-  background-image: linear-gradient(var(--color-primary-light), var(--color-primary-dark));
   height: 90rem;
   padding: 3.5rem 20rem;
   text-align: center; }
@@ -1088,10 +1078,12 @@ body {
   gap: 1rem;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #080808; }
+  background-color: rgba(10, 10, 10, 0.7);
+  /*   backdrop-filter: blur(10px); */ }
   .article__date {
     font-size: 2rem;
     font-weight: 300;
+    color: var(--color-grey-dark-2);
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--color-grey-dark-3); }
   .article__image {
@@ -1100,7 +1092,12 @@ body {
     object-fit: cover;
     border-radius: 10px; }
   .article__title {
-    font-size: 2rem; }
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-grey-dark-3); }
+  .article__description {
+    font-weight: 300; }
 
 /*
 

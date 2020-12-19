@@ -241,11 +241,13 @@
 .applications {
   text-align: center;
   padding: 7.5rem 20rem 6.5rem 20rem;
-  /*   background-image: linear-gradient(
-    to bottom,
-    rgb(0, 0, 0),
-    var(--color-primary-dark)
-  ); */
+
+  background-image: radial-gradient(
+    circle,
+    rgba(8, 8, 8, 1) 0%,
+    rgba(33, 138, 136, 1) 0%,
+    rgba(14, 58, 58, 1) 100%
+  );
 }
 
 .apps {
@@ -270,15 +272,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 1rem solid var(--color-primary);
-    border-right: 1rem solid var(--color-primary);
+    /*     border: 1rem solid var(--color-primary); */
+
     background-clip: border-box;
 
     position: relative; // For the images which I will attempt to make able to pass through in the component rather than here
 
     // For the hover effect
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 29px 13px rgba(0, 0, 0, 0.55);
 
     // To offset the text from center
     padding-top: 8.5rem;
@@ -296,15 +298,6 @@
 
 // ▓▓▓ NEWS SECTION
 .news {
-  /*   background-image: linear-gradient(
-    to bottom,
-    var(--color-primary-dark) 0%,
-    rgb(0, 0, 0) 10%
-  ); */
-  background-image: linear-gradient(
-    var(--color-primary-light),
-    var(--color-primary-dark)
-  );
   height: 90rem;
   padding: 3.5rem 20rem;
   text-align: center;
@@ -338,11 +331,13 @@
   border-radius: 10px;
   padding: 1rem;
 
-  background-color: rgb(8, 8, 8);
+  background-color: rgba(10, 10, 10, 0.7);
+  /*   backdrop-filter: blur(10px); */
 
   &__date {
     font-size: 2rem;
     font-weight: 300;
+    color: var(--color-grey-dark-2);
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--color-grey-dark-3);
   }
@@ -354,7 +349,11 @@
   }
   &__title {
     font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-grey-dark-3);
   }
   &__description {
+    font-weight: 300;
   }
 }
