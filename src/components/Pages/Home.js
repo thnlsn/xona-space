@@ -55,7 +55,7 @@ const Home = () => {
       </section>
 
       {/* ▉ APPLICATIONS SECTION */}
-      <section className='applications' data-aos='fade'>
+      <section className='applications'>
         <Applications
           heading={applications.heading}
           applications={applications.items}

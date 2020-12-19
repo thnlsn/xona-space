@@ -283,7 +283,7 @@
     box-shadow: 0px 5px 29px 13px rgba(0, 0, 0, 0.55);
 
     // To offset the text from center
-    padding-top: 8.5rem;
+    padding-top: 9rem;
 
     /*     &:hover {
       transform: scale(1.04);
@@ -293,6 +293,13 @@
 
   &__text {
     justify-self: center;
+    border-radius: 5px;
+    padding: 0.1rem 1rem 0.35rem 1rem;
+
+    background-image: linear-gradient(
+      rgba(10, 10, 10, 0.8),
+      rgba(0, 0, 0, 0.5)
+    );
   }
 }
 

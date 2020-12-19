@@ -3,7 +3,9 @@ import React, { Fragment } from 'react';
 const Applications = ({ heading, applications }) => {
   return (
     <Fragment>
-      <h1 className='applications__heading'>{heading}</h1>
+      <h1 className='applications__heading' data-aos='fade'>
+        {heading}
+      </h1>
       <div className='apps'>
         {/* Create an application for each object in the prop applications */}
         {applications.map((application, index) => (
