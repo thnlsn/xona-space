@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Article from './Article';
 
-const Articles = ({ heading, articles }) => {
+const Articles = ({ heading, articles, amount }) => {
   return (
     <Fragment>
       <h1 className='news__heading'>{heading}</h1>
@@ -9,7 +9,7 @@ const Articles = ({ heading, articles }) => {
         {/* IIFE to loop and display the first 4 articles */}
         {(() => {
           let articlesArr = [];
-          for (let i = 0; i < 4; i++) {
+          for (let i = 0; i < amount; i++) {
             console.log(articles[i]);
             articlesArr.push(
               <Article

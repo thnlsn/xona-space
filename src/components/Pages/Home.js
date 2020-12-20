@@ -64,7 +64,11 @@ const Home = () => {
 
       {/* ▉ NEWS SECTION */}
       <section className='news'>
-        <Articles heading={news.heading} articles={news.articles} />
+        <Articles
+          heading={news.heading}
+          articles={news.articles}
+          amount={news.amountShown}
+        />
       </section>
     </div>
   );

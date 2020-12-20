@@ -1,4 +1,5 @@
 .btn {
+  z-index: 1; // New context
   cursor: pointer;
   &, // This selection is only for <button/> elements, since they do not come with :link & :visited states, we have to target itself
     // link and visited are pseudo-classes, so we write the style for these specific states of the anchor element
@@ -45,7 +46,7 @@
     z-index: -1; // Set behind the real button so it does not cover the text
     background-color: var(--color-white);
 
-    transition: height 0.2s cubic-bezier(1, 0.04, 0.84, 0.89);
+    transition: height 0.2s cubic-bezier(0.38, 1.1, 0.64, 0.96);
     height: 0; // 100% of the height of .btn
   }
 }

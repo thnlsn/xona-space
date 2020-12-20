@@ -90,6 +90,8 @@ const home = {
   news: {
     heading: 'News',
     newsArchiveHeading: 'News Archive',
+    // This is the amount of news articles shown on the home page, all will be shown on the news archive page
+    amountShown: 6,
     // Each item in this array is 1 news article component
     articles: [
       {
@@ -101,6 +103,7 @@ const home = {
         title: 'Winner of the Pitch to the Moon Competition',
         description:
           'Xona is selected as the winner of the Pitch to the Moon competition at TC Sessions: Space 2020',
+        url: '#',
       },
       {
         date: 'November 19, 2020',
@@ -108,12 +111,14 @@ const home = {
         title: 'Blue Tech Week 2020',
         description:
           "Xona's CTO Tyler Reid on the Future of Surface Navigation at TMA Blue Tech's Blue Tech Week",
+        url: 'https://www.tmabluetech.org/bluetech-week/agenda',
       },
       {
         date: 'September 1, 2020',
         image: require('../images/newsImages/gnss-interview-pt1.jpg'),
         title: "Part 1 of Only GNSS' interview with Xona's CTO Dr. Tyler Reid",
         description: "The story behind the first spec's for autonomous cars",
+        url: 'https://youtu.be/RTcOz7yTKtQ',
       },
       {
         date: 'July 10, 2020',
@@ -121,6 +126,7 @@ const home = {
         title: 'Xona Space in BBC News',
         description:
           'Xona weighs in on the benefits of PNT from LEO with BBC News',
+        url: 'https://www.bbc.com/news/science-environment-53370930',
       },
       {
         date: 'July 9, 2020',
@@ -128,6 +134,7 @@ const home = {
         title: 'Xona Featured Article in SatMagazine July 2020',
         description:
           "Xona's CTO Dr. Tyler Reid writes a SatMagazine featured article on the Road to Robust Navigation",
+        url: 'http://www.satmagazine.com/story.php?number=458493854',
       },
       {
         date: 'July 6, 2020',
@@ -135,6 +142,8 @@ const home = {
         title: "Xona's CTO Awarded RTCA's William E. Jackson Award for 2020",
         description:
           'Check out the RTCA Aviation Technology Connect Webinar! Xona’s CTO Dr. Tyler Reid was presented with the 2020 William E. Jackson Award for outstanding graduate student in the field of aviation electronics and telecommunications.',
+        url:
+          'https://www.bigmarker.com/rtca-inc/RTCA-Aviation-Technology-Connect-Webinar?bmid=19f4c287a953',
       },
       {
         date: 'July 1, 2020',
@@ -142,6 +151,8 @@ const home = {
         title: 'Curious About Sat-Nav from LEO?',
         description:
           'Check out this 2016 study by our co-founders investigating LEO mega-constellations for GPS-level navigation',
+        url:
+          'https://www.researchgate.net/publication/308795972_Leveraging_Commercial_Broadband_LEO_Constellations_for_Navigation',
       },
       {
         date: 'June 23, 2020',
@@ -149,6 +160,7 @@ const home = {
         title: "Virtus Groups' West Coast's Finest Newsletter",
         description:
           "Xona makes Virtus Groups' list of best West Coast emerging startups",
+        url: 'https://virtusgroups.com/newsletters/xona-space-systems-23-june/',
       },
       {
         date: 'June 7, 2020',
@@ -156,6 +168,7 @@ const home = {
         title: 'LEO Successor to GNSS Comes Knocking',
         description:
           'Xona Space Systems is featured in this InsideGNSS article',
+        url: 'https://insidegnss.com/leo-successor-to-gnss-comes-knocking/',
       },
       {
         date: 'May 26, 2020',
@@ -163,6 +176,8 @@ const home = {
         title: 'Xona Space in The Telegraph',
         description:
           "Xona's Brian Manning and Miguel Seun Cardoso discuss Xona's goals and UK presence with the Telegraph",
+        url:
+          'https://www.telegraph.co.uk/technology/2020/05/26/american-satellite-start-up-founded-spacex-veteran-expands-uk/',
       },
       {
         date: 'May, 20, 2020',
@@ -170,6 +185,8 @@ const home = {
         title: 'Satellite Navigation for the Age of Autonomy',
         description:
           'Xona Space Systems publishes invited paper at ION/IEEE PLANS conference on Satellite Navigation for the Age of Autonomy',
+        url:
+          'https://47aedb56-b7fb-4217-8689-071c1c74189a.usrfiles.com/ugd/47aedb_93a208ee2b5f421ea4be80a7c3d9bea4.pdf',
       },
       {
         date: 'May 14, 2020',
@@ -177,6 +194,8 @@ const home = {
         title: 'Xona Space in TechCrunch',
         description:
           'Xona Space Systems raises $1 million to improve satellite based navigation services',
+        url:
+          'https://techcrunch.com/2020/05/14/xona-space-systems-raises-1-million-to-improve-satellite-based-navigation-services/',
       },
       {
         date: 'May 14, 2020',
@@ -184,6 +203,7 @@ const home = {
         title: 'Xona Space Systems raises $1M',
         description:
           'Xona Space Systems raises $1M pre-seed round from 1517, Seraphim Capital, Trucks Venture Capital and Stellar Solutions',
+        url: 'http://www.xonaspace.com/pr20200514',
       },
       {
         date: 'February 28, 2020',
@@ -191,6 +211,8 @@ const home = {
         title: 'Xona collaborates with Swift Navigation',
         description:
           'Xona collaborates with Swift Navigation on a white paper that reviews recent developments in modern GNSS and its impact on autonomous driving architectures',
+        url:
+          'https://www.swiftnav.com/sites/default/files/whitepapers/swift_nav_modern_gnss_autonomous_vehicles.pdf',
       },
       {
         date: 'February 5, 2020',
@@ -198,6 +220,7 @@ const home = {
         title: 'Winner of the 2020 SmallSat Symposium Start-Up Competition',
         description:
           'Xona Space Systems is the winner of the SmallSat Symposium 2020 Start-Up Competition in Silicon Valley!',
+        url: 'https://2020.smallsatshow.com/conference-proceedings/',
       },
       {
         date: 'January 29, 2020',
@@ -205,12 +228,15 @@ const home = {
         title: 'SmallSat Symposium 2020',
         description:
           "Xona's Brian Manning will be taking part in the SmallSat Startup Pitch session at 4:30 on Feb. 5th at the Silicon Valley Computer History Museum.",
+        url: 'https://2020.smallsatshow.com/sessions/smallsat-startup-pitch/',
       },
       {
         date: 'January 7, 2020',
         image: require('../images/newsImages/inside-gnss-rtk-north-american-highways.jpg'),
         title: 'Standalone and RTK GNSS on North American Highways',
         description: 'Xona contributes to this Inside GNSS article!',
+        url:
+          'https://insidegnss.com/standalone-and-rtk-gnss-on-north-american-highways/',
       },
       {
         date: 'November 6, 2019',
@@ -218,6 +244,7 @@ const home = {
         title: 'We’re a Deep Tech Pioneer!',
         description:
           'Xona Space Systems has been named one of Hello Tomorrow’s Deep Tech Pioneers, from over 5,000 applications from 128 countries! Come and meet us at the Hello Tomorrow Global Summit in Paris on 12th-13th March 2020!',
+        url: 'https://hello-tomorrow.org/summit/',
       },
       {
         date: 'October 26, 2019',
@@ -225,6 +252,8 @@ const home = {
         title: 'Catalyst Campus Innovation Days Event',
         description:
           'Xona Space Systems stands out at the Catalyst Campus’ Innovation Days event as covered by the Gazette.',
+        url:
+          'https://gazette.com/business/truck-stops-in-space-among-innovations-that-could-help-drive/article_242e1cda-f751-11e9-ab5d-eb1fafdf931b.html?utm_medium=social&utm_source=twitter&utm_campaign=user-share',
       },
       {
         date: 'May 16, 2019',
@@ -232,6 +261,8 @@ const home = {
         title: 'Seraphim Spacecamp Launches Mission 3',
         description:
           'Xona Space Systems is announced as one of the 7 participating startups in the Seraphim Space Camp',
+        url:
+          'https://www.spacecamp.vc/insight/news/seraphim-space-camp-launches-mission-3?utm_content=buffer2c596&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer',
       },
     ],
   },

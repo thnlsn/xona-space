@@ -24,4 +24,24 @@ body {
 .App {
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(44, 44, 44, 0.25);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-grey-dark-3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 // ▓▓▓ ▍▍▍║║║ ✎
