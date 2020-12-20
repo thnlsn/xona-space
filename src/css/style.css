@@ -898,14 +898,15 @@ body {
     width: 60%;
     padding: 1.5rem 0 1.5rem 0;
     position: relative;
-    transition: color 0.15s 0.115s;
+    transition: color 0.15s 0.009s, transform 0.1s;
     color: var(--color-white); }
   .btn:hover {
     color: var(--color-black); }
     .btn:hover::after {
       height: 100%; }
   .btn:active, .btn:focus {
-    outline: none; }
+    outline: none;
+    transform: scale(0.98); }
   .btn::after {
     content: '';
     display: inline-block;

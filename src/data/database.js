@@ -91,7 +91,7 @@ const home = {
     heading: 'News',
     newsArchiveHeading: 'News Archive',
     // This is the amount of news articles shown on the home page, all will be shown on the news archive page
-    amountShown: 6,
+    amountShown: 4,
     // Each item in this array is 1 news article component
     articles: [
       {

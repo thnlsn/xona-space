@@ -4,7 +4,9 @@ import Article from './Article';
 const Articles = ({ heading, articles, amount }) => {
   return (
     <Fragment>
-      <h1 className='news__heading'>{heading}</h1>
+      <h1 className='news__heading' data-aos='fade'>
+        {heading}
+      </h1>
       <div className='articles'>
         {/* IIFE to loop and display the first 4 articles */}
         {(() => {
