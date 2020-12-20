@@ -338,7 +338,7 @@
   border-radius: 10px;
   padding: 1rem;
 
-  background-color: rgba(10, 10, 10, 0.7);
+  /* background-color: rgba(10, 10, 10, 0.7); */
   /*   backdrop-filter: blur(10px); */
 
   &__date {
@@ -365,6 +365,6 @@
   }
 
   .btn {
-    margin-top: auto;
+    margin: auto auto 0 auto;
   }
 }
