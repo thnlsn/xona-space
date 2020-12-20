@@ -8,6 +8,16 @@
   // animation: fadeIn 1s;
 }
 
+.footer {
+  background-color: var(--color-grey-dark-5);
+  height: 15rem;
+  text-align: center;
+}
+
 // ▓▓▓ HOME PAGE LAYOUT ▓▓▓
 .home {
+}
+
+.news {
+  margin-top: calc(var(--nav-height));
 }

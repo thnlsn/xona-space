@@ -7,6 +7,7 @@ import Aos from 'aos';
 // Remember to add a concat:css task to the build process for this aos stylesheet
 
 import Navigation from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
 
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
@@ -68,6 +69,7 @@ function App() {
             />
           ))}
         </main>
+        <Footer />
       </Router>
     </div>
   );
