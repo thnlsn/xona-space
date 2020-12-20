@@ -17,6 +17,7 @@ const Articles = ({ heading, articles }) => {
                 image={articles[i].image}
                 title={articles[i].title}
                 description={articles[i].description}
+                url={articles[i].url}
                 key={i}
               />
             );
