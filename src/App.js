@@ -12,6 +12,7 @@ import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Contact from './components/Pages/Contact';
 import Careers from './components/Pages/Careers';
+import News from './components/Pages/News';
 
 function App() {
   useEffect(() => {
@@ -38,6 +39,11 @@ function App() {
       path: '/xona-space/careers',
       exact: true,
       main: () => <Careers />,
+    },
+    {
+      path: '/xona-space/news',
+      exact: true,
+      main: () => <News />,
     },
   ];
 
