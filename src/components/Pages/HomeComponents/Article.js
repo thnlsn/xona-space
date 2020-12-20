@@ -8,7 +8,7 @@ const Article = ({ date, image, title, description, url }) => {
       <div className='article__title'>{title}</div>
       <div className='article__description'>{description}</div>
 
-      <a href='#' className='btn btn--white btn--animated'>
+      <a href='#' className='btn'>
         Read more
       </a>
     </div>
