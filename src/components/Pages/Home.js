@@ -70,9 +70,14 @@ const Home = () => {
           articles={news.articles}
           amount={news.amountShown}
         />
+        <Link
+          to={'/xona-space/news'}
+          className='btn btn--archive'
+          data-aos='fade'
+        >
+          View all news <span className='btn__rarr'>&rarr;</span>
+        </Link>
       </section>
-
-      <Link to={'/xona-space/news'}>View all news</Link>
     </div>
   );
 };

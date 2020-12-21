@@ -1,53 +1,98 @@
 .btn {
-  z-index: 1; // New context
   cursor: pointer;
   &, // This selection is only for <button/> elements, since they do not come with :link & :visited states, we have to target itself
     // link and visited are pseudo-classes, so we write the style for these specific states of the anchor element
     &:link,
     &:visited {
-    border: 1px solid var(--color-white);
     text-decoration: none;
-    text-transform: capitalize;
-
-    width: 60%;
-    padding: 1.5rem 0 1.5rem 0;
-
-    position: relative; // So ::after is based on btn position
-
-    transition: color 0.15s 0.009s, transform 0.1s;
-    color: var(--color-white);
   }
 
   &:hover {
-    // Text should turn black
-    color: var(--color-black);
-    // ::after styles will occur when btn is hovered
-    &::after {
-      height: 100%;
-    }
   }
 
-  &:active,
-  &:focus {
+  &:active/* ,
+  &:focus */ {
     // This is for <button/> elements, as they come with a blue outline on focus
     outline: none;
     transform: scale(0.98);
   }
 
-  // ::active is a pseudo-element, it is not in the html markup, but it does exist on the page
-  &::after {
-    content: '';
-    display: inline-block;
-    width: 100%; // 100% of the height of .btn
+  &--basic {
+    z-index: 1; // New context
+    &:link,
+    &:visited {
+      border: 1px solid var(--color-white);
+      text-decoration: none;
+      text-transform: capitalize;
 
-    position: absolute;
-    bottom: 0; // Coordinates defined based on the nearest parent with position: relative (so .btn)
-    left: 0;
+      width: 60%;
+      padding: 1.5rem 1rem 1.5rem 1rem;
 
-    z-index: -1; // Set behind the real button so it does not cover the text
-    background-color: var(--color-white);
+      position: relative; // So ::after is based on btn position
 
-    transition: height 0.2s cubic-bezier(0.38, 1.1, 0.64, 0.96);
-    height: 0; // 100% of the height of .btn
+      transition: color 0.15s 0.009s, transform 0.1s;
+      color: currentColor;
+    }
+    &:hover {
+      // Text should turn black
+      color: var(--color-black);
+      // ::after styles will occur when btn is hovered
+      &::after {
+        height: 100%;
+      }
+    }
+
+    // ::active is a pseudo-element, it is not in the html markup, but it does exist on the page
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%; // 100% of the height of .btn
+
+      position: absolute;
+      bottom: 0; // Coordinates defined based on the nearest parent with position: relative (so .btn)
+      left: 0;
+
+      z-index: -1; // Set behind the real button so it does not cover the text
+      background-color: var(--color-white);
+
+      transition: height 0.2s cubic-bezier(0.38, 1.1, 0.64, 0.96);
+      height: 0; // 100% of the height of .btn
+    }
+  }
+
+  &--archive {
+    &:link,
+    &:visited {
+      display: inline-block; //
+      text-shadow: 0 0 5px #000;
+      color: currentColor; //
+
+      font-size: 2rem;
+
+      transition: linear 0.1s;
+      border-bottom: 1px solid var(--color-white);
+    }
+
+    // ARROW TO SIGNIFY A LINK
+    .btn__rarr {
+      transition: transform 0.5s;
+      display: inline-block;
+    }
+
+    // When :hover, animate the link text
+    &:hover {
+      border-bottom: 1px solid currentColor;
+    }
+    // When :hover, animate the right arrow
+    &:hover > .btn__rarr {
+      color: var(--color-primary-light);
+      transform: translateX(15px);
+    }
+    // When :active, animate the right arrow
+    &:active > .btn__rarr {
+      transition: transform 0.2s, opacity 0.3s 0.05s;
+      transform: translateX(75px);
+      opacity: 0;
+    }
   }
 }
