@@ -967,16 +967,16 @@ body {
     text-shadow: 0 0 5px #000;
     color: currentColor;
     font-size: 2rem;
-    transition: linear 0.1s;
+    transition: color 1.2s;
     border-bottom: 1px solid var(--color-white); }
   .btn--archive .btn__rarr {
-    transition: transform 0.5s;
+    transition: transform 0.5s, color 0.5s;
     display: inline-block; }
   .btn--archive:hover {
     border-bottom: 1px solid currentColor; }
   .btn--archive:hover > .btn__rarr {
     color: var(--color-primary-light);
-    transform: translateX(15px); }
+    transform: translateX(5px); }
   .btn--archive:active > .btn__rarr {
     transition: transform 0.2s, opacity 0.3s 0.05s;
     transform: translateX(75px);
@@ -1073,7 +1073,7 @@ body {
     transform: translateX(75px);
     opacity: 0; }
   .main-quote__rarr {
-    transition: transform 0.5s;
+    transition: transform 0.5s, color 0.5s;
     display: inline-block; }
   .main-quote__text {
     max-width: 50%;
