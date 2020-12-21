@@ -1,6 +1,6 @@
 // This component is simply the container for news articles ON THE HOME PAGE, not the archive page
 import React, { Fragment } from 'react';
-import Article from './Article';
+import Article from '../../Components/Article';
 
 const Articles = ({ heading, articles, amount }) => {
   return (

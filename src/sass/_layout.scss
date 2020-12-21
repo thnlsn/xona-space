@@ -21,6 +21,11 @@
 
 // ▓▓▓ ARCHIVE PAGE LAYOUT ▓▓▓
 .news-archive {
-  margin-top: calc(var(--nav-height));
+  margin-top: calc(var(--nav-height) + 3rem);
   padding: 0 15rem 0 15rem;
+
+  &__heading {
+    text-align: center;
+    margin: 0 0 3rem 0;
+  }
 }

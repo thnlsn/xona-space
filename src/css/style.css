@@ -929,8 +929,11 @@ body {
   text-align: center; }
 
 .news-archive {
-  margin-top: calc(var(--nav-height));
+  margin-top: calc(var(--nav-height) + 3rem);
   padding: 0 15rem 0 15rem; }
+  .news-archive__heading {
+    text-align: center;
+    margin: 0 0 3rem 0; }
 
 .home-banner {
   background-size: cover;
