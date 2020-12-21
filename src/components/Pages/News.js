@@ -12,11 +12,20 @@ const {
 
 const News = () => {
   return (
-    <div className='news'>
-      <h1 className='home-heading heading-primary'>{newsArchiveHeading}</h1>
-      <svg className='scroll-indicator' viewBox='0 0 20 10' width='4rem'>
-        <path d='M0 0 L10 10 L20 0'></path>
-      </svg>
+    <div className='news-archive'>
+      <h1 className='news-heading'>{newsArchiveHeading}</h1>
+      <div className='archive'>
+        {articles.map((article, index) => (
+          <Article
+            date={article.date}
+            image={article.image}
+            title={article.title}
+            description={article.description}
+            url={article.url}
+            key={index}
+          />
+        ))}
+      </div>
     </div>
   );
 };
