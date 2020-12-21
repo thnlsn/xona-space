@@ -15,7 +15,7 @@ import Contact from './components/Pages/Contact';
 import Careers from './components/Pages/Careers';
 import News from './components/Pages/News';
 
-function App() {
+const App = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []); // Empty array as second parameter mimics componentDidMount, so only fires on pageload
@@ -73,6 +73,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;

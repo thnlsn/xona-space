@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // COMPONENTS
 import Hero from './HomeComponents/Hero';
@@ -70,6 +71,8 @@ const Home = () => {
           amount={news.amountShown}
         />
       </section>
+
+      <Link to={'/xona-space/news'}>View all news</Link>
     </div>
   );
 };
