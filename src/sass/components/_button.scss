@@ -1,19 +1,26 @@
 .btn {
-  cursor: pointer;
   &, // This selection is only for <button/> elements, since they do not come with :link & :visited states, we have to target itself
     // link and visited are pseudo-classes, so we write the style for these specific states of the anchor element
     &:link,
     &:visited {
     text-decoration: none;
+    display: inline-block; // This forces the block model to work and not allow the padding to overlap the above elements (a tags are inline by default)
+
+    // This is code for making this class usable on <button/> (for use in forms) elements which come with some unwanted side effects
+    border: none;
+    cursor: pointer;
+
+    font-size: var(--default-font-size);
   }
 
   &:hover {
   }
 
-  &:active/* ,
-  &:focus */ {
+  &:active,
+  &:focus {
     // This is for <button/> elements, as they come with a blue outline on focus
     outline: none;
+
     transform: scale(0.98);
   }
 

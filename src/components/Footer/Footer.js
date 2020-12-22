@@ -19,13 +19,13 @@ const Footer = ({ socials }) => {
         </div>
         <div className='footer__section'>
           <div className='footer__heading'>Subscribe to our newsletter</div>
-          <form action='#' className='footer__form'>
+          <form action='#' className='subscribe-form'>
             <input
               type='text'
               placeholder='Your email'
-              className='footer__input'
+              className='subscribe-form__input'
             />
-            <button className='btn'>Subscribe</button>
+            <button className='subscribe-form__btn'>Subscribe</button>
           </form>
           <div className='footer__socials'>
             {socials.map((social) => (
