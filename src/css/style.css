@@ -897,11 +897,11 @@ body {
   padding: 2rem 4rem;
   text-align: left;
   border-top: 1px solid var(--color-grey-dark-4);
-  border-bottom: 1px solid var(--color-grey-dark-4);
+  /* border-bottom: 1px solid var(--color-grey-dark-4); */
   display: flex;
   flex-direction: column; }
   .footer__logo {
-    margin: 0 auto -4rem auto;
+    margin: 0 auto -5rem auto;
     height: 6.5rem;
     width: 6.5rem; }
   .footer__container {
@@ -922,12 +922,21 @@ body {
     gap: 1rem;
     margin: 1rem 0 0 0; }
   .footer__svg {
-    background-color: white;
     padding: 3px;
-    border-radius: 50%;
+    border-radius: 10px;
     color: var(--color-white);
     height: 3rem;
-    width: 3rem; }
+    width: 3rem;
+    transition: all 0.15s;
+    background-color: var(--color-white); }
+    .footer__svg:hover {
+      background-color: var(--color-grey-light-3);
+      transform: scale(1.01); }
+  .footer__form {
+    display: flex; }
+    .footer__form .btn {
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: var(--color-primary); }
 
 .btn {
   cursor: pointer; }
