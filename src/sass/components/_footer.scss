@@ -2,7 +2,7 @@
   background-color: var(--color-grey-dark-5);
   color: var(--color-grey-light-3);
 
-  padding: 2rem 4rem;
+  padding: 4rem 30rem;
   text-align: left;
 
   border-top: 1px solid var(--color-grey-dark-4);
@@ -12,14 +12,14 @@
   flex-direction: column;
 
   &__logo {
-    margin: 0 auto -5rem auto;
-    height: 6.5rem;
-    width: 6.5rem;
+    justify-self: center;
+    height: 3rem;
+    width: 3rem;
   }
 
   &__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   &__section {
@@ -30,12 +30,11 @@
   &__heading {
     color: var(--color-white);
     font-weight: 600;
-    margin-bottom: 0.5rem;
   }
 
   &__copyright {
     color: var(--color-grey-dark-1);
-    text-align: center;
+    text-align: left;
   }
 
   &__socials {
@@ -65,16 +64,29 @@
 .subscribe-form {
   display: flex;
   height: 4rem;
-  border-radius: 7.5px;
+  border: 1.5px solid var(--color-white);
+  /*   border-radius: 7.5px; */
   overflow: hidden;
 
   &__input {
     padding: 1rem;
     border: none;
+    background-color: transparent;
+    color: var(--color-white);
 
-    &:active,
+    border-bottom: 3px solid transparent;
+
+    transition: all 0.25s;
+
     &:focus {
-      outline: 0;
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.1);
+      border-bottom: 2px solid var(--color-primary-light);
+
+      &:invalid {
+        // Only on a focused element, should this apply (and only when it is invalid)
+        border-bottom: 2px solid red;
+      }
     }
   }
 
@@ -84,22 +96,27 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: var(--default-font-size);
 
-    background-color: var(--color-primary);
+    background-color: transparent;
     color: var(--color-white);
     padding: 1rem;
 
     border: none;
+    border-left: 1.5px solid var(--color-white);
     cursor: pointer;
 
     transition: all 0.15s;
 
     &:hover {
-      filter: brightness(95%);
+      background-color: var(--color-primary);
     }
 
     &:active,
     &:focus {
       outline: 0;
+    }
+
+    &:active {
+      transform: scale(0.99);
     }
   }
 }
