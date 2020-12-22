@@ -1,8 +1,15 @@
 import React from 'react';
 
+// Importing all data for this component from the database file
+import { logos } from '../../data/database';
+
+// Destructuring the data we need for this component
+const { iconWhite } = logos;
+
 const Footer = ({ socials }) => {
   return (
     <footer className='footer'>
+      <img src={iconWhite} alt='Xona Space' className='footer__logo' />
       <div className='footer__container'>
         <div className='footer__section'>
           <div className='footer__heading'>Contact us</div>
@@ -20,25 +27,24 @@ const Footer = ({ socials }) => {
             />
             <button className='btn'>Subscribe</button>
           </form>
-        </div>
-        <div className='footer__section footer__section--column'>
-          {socials.map((social) => (
-            <a
-              href={social.link}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='footer__github'
-            >
-              <img
-                className='footer__svg'
-                src={social.icon}
-                alt={`${social.name} Link`}
-              />
-            </a>
-          ))}
+          <div className='footer__socials'>
+            {socials.map((social) => (
+              <a
+                href={social.link}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='footer__github'
+              >
+                <img
+                  className='footer__svg'
+                  src={social.icon}
+                  alt={`${social.name} Link`}
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-
       <div className='footer__copyright'>
         &copy; 2020 Xona Space Systems, Inc. All rights reserved.
       </div>
