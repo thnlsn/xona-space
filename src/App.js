@@ -15,6 +15,12 @@ import Contact from './components/Pages/Contact';
 import Careers from './components/Pages/Careers';
 import News from './components/Pages/News';
 
+// Importing all data for this component from the database file
+import { footer } from './data/database';
+
+// Destructuring the data we need for this component
+const { socials } = footer;
+
 const App = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -69,7 +75,7 @@ const App = () => {
             />
           ))}
         </main>
-        <Footer linkedIn={require('./images/linkedin.svg')} />
+        <Footer socials={socials} />
       </Router>
     </div>
   );

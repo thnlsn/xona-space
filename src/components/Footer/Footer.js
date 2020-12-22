@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = ({ linkedIn }) => {
+const Footer = ({ socials }) => {
   return (
     <footer className='footer'>
       <div className='footer__container'>
@@ -21,8 +21,21 @@ const Footer = ({ linkedIn }) => {
             <button className='btn'>Subscribe</button>
           </form>
         </div>
-        <div className='footer__section'>
-          <img className='footer__svg' src={linkedIn} alt='' />
+        <div className='footer__section footer__section--column'>
+          {socials.map((social) => (
+            <a
+              href={social.link}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='footer__github'
+            >
+              <img
+                className='footer__svg'
+                src={social.icon}
+                alt={`${social.name} Link`}
+              />
+            </a>
+          ))}
         </div>
       </div>
 

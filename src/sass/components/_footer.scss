@@ -13,6 +13,24 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+
+    &--column {
+      flex-direction: column;
+    }
+  }
+
+  &__svg {
+    background-color: white;
+    padding: 3px;
+    border-radius: 50%;
+    color: var(--color-white);
+    height: 2rem;
+    width: 2rem;
   }
 }

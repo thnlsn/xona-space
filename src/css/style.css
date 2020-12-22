@@ -899,7 +899,19 @@ body {
   flex-direction: column; }
   .footer__container {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around; }
+  .footer__section {
+    display: flex;
+    flex-direction: column; }
+    .footer__section--column {
+      flex-direction: column; }
+  .footer__svg {
+    background-color: white;
+    padding: 3px;
+    border-radius: 50%;
+    color: var(--color-white);
+    height: 2rem;
+    width: 2rem; }
 
 .btn {
   cursor: pointer; }

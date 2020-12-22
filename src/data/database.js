@@ -15,14 +15,17 @@ const footer = {
     {
       name: 'LinkedIn',
       icon: require('../images/icons/linkedin.svg'),
+      link: 'https://www.linkedin.com/company/xona-space-systems',
     },
     {
       name: 'Twitter',
       icon: require('../images/icons/twitter.svg'),
+      link: 'https://twitter.com/XonaSpace',
     },
     {
       name: 'Instagram',
       icon: require('../images/icons/instagram.svg'),
+      link: 'https://www.instagram.com/XonaSpace/',
     },
   ],
 };
@@ -310,4 +313,4 @@ const contact = {};
 const careers = {};
 
 // EXPORT
-export { logos, home, about, contact, careers };
+export { logos, home, about, contact, careers, footer };
