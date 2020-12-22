@@ -10,6 +10,23 @@ const logos = {
   iconWhite: require('../images/logos/xona-icon-white.png'), // All-white compass icon
 };
 
+const footer = {
+  socials: [
+    {
+      name: 'LinkedIn',
+      icon: require('../images/icons/linkedin.svg'),
+    },
+    {
+      name: 'Twitter',
+      icon: require('../images/icons/twitter.svg'),
+    },
+    {
+      name: 'Instagram',
+      icon: require('../images/icons/instagram.svg'),
+    },
+  ],
+};
+
 const home = {
   // SECTION ONE (The main hero of the home page)
   hero: {

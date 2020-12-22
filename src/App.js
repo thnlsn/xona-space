@@ -69,7 +69,7 @@ const App = () => {
             />
           ))}
         </main>
-        <Footer />
+        <Footer linkedIn={require('./images/linkedin.svg')} />
       </Router>
     </div>
   );
