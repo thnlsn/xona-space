@@ -1,0 +1,57 @@
+.about {
+  height: 400rem;
+  margin-top: calc(var(--nav-height));
+  padding: 0rem 30rem 6.5rem 30rem;
+
+  background-image: linear-gradient(
+    var(--color-background),
+    var(--color-grey-dark-5)
+  );
+}
+
+.about-banner {
+  display: flex;
+  height: 25vh;
+
+  &__left {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-right: 1px solid var(--color-grey-dark-4);
+  }
+
+  &__right {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-left: 1px solid var(--color-grey-dark-4);
+  }
+
+  &__heading-left {
+    font-size: 6rem;
+    text-transform: uppercase;
+    width: 30rem;
+    text-align: right;
+  }
+  &__heading-right {
+    font-size: 3.5rem;
+    width: 30rem;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.about-description {
+  text-align: center;
+  width: 50%;
+  font-size: 2rem;
+  padding: 5rem 2rem 2rem 2rem;
+  margin: 0 auto;
+
+  border-top: 2px solid var(--color-grey-dark-4);
+}
