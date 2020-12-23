@@ -1308,7 +1308,7 @@ body {
 .about-banner {
   display: flex;
   height: 25vh;
-  width: 80%;
+  width: 100%;
   margin: 0 auto; }
   .about-banner__left, .about-banner__right {
     flex: 0 0 50%;
@@ -1328,7 +1328,7 @@ body {
       height: 100%;
       width: 100%;
       z-index: 0;
-      background-image: linear-gradient(to right bottom, rgba(8, 8, 8, 0.7), #080808); }
+      background-image: linear-gradient(to right bottom, #080808, rgba(8, 8, 8, 0.7), #080808); }
   .about-banner__right {
     border-left: 1px solid var(--color-grey-dark-4); }
     .about-banner__right:before {
@@ -1339,11 +1339,15 @@ body {
       height: 100%;
       width: 100%;
       z-index: 0;
-      background-image: linear-gradient(to left bottom, rgba(8, 8, 8, 0.7), #080808); }
+      background-image: linear-gradient(to left bottom, #080808, rgba(8, 8, 8, 0.6), #080808); }
   .about-banner__heading-left, .about-banner__heading-right {
-    z-index: 1; }
+    z-index: 1;
+    text-shadow: 0 0 5px #000; }
   .about-banner__heading-left {
+    font-family: 'Open Sans', sans-serif;
     font-size: 6rem;
+    font-weight: 600;
+    line-height: 6rem;
     text-transform: uppercase;
     width: 30rem;
     text-align: right;
@@ -1360,6 +1364,8 @@ body {
   text-align: center;
   width: 65%;
   font-size: 2rem;
+  line-height: 3rem;
+  text-shadow: 0 0 5px #000;
   padding: 5rem 2rem 5rem 2rem;
   margin: 0 auto;
   border-bottom: 2px solid var(--color-grey-dark-4); }
@@ -1370,7 +1376,6 @@ body {
   font-size: 2rem;
   padding: 5rem 2rem 5rem 2rem;
   margin: 0 auto;
-  border-top: 2px solid var(--color-grey-dark-4);
   position: relative; }
   .xona-team:before {
     content: 'We are Xona';

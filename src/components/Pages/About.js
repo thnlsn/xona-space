@@ -19,7 +19,12 @@ const About = () => {
         >
           <div className='about-banner__heading-left'>What Drives Us</div>
         </div>
-        <div className='about-banner__right'>
+        <div
+          className='about-banner__right'
+          style={{
+            backgroundImage: `url(${hero.rightImage})`,
+          }}
+        >
           <div className='about-banner__heading-right'>
             Enabling intelligent systems to operate safely in any environment.
           </div>
