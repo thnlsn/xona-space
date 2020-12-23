@@ -1,10 +1,22 @@
 import React from 'react';
 
+// Importing all data for this component from the database file
+import { about } from '../../data/database';
+
+// Destructuring the data we need for this component
+const { hero } = about;
+// const { icon /* iconWhite */ } = logos;
+
 const About = () => {
   return (
     <div className='about'>
       <div className='about-banner'>
-        <div className='about-banner__left'>
+        <div
+          className='about-banner__left'
+          /*           style={{
+            backgroundImage: `url(${hero.leftImage})`,
+          }} */
+        >
           <div className='about-banner__heading-left'>What Drives Us</div>
         </div>
         <div className='about-banner__right'>
