@@ -72,10 +72,10 @@ const Home = () => {
         />
         <Link
           to={'/xona-space/news'}
-          className='btn btn--archive'
+          className='btn btn__arrow'
           data-aos='fade'
         >
-          View all news <span className='btn__rarr'>&rarr;</span>
+          View all news <span className='btn__arrow--rarr'>&rarr;</span>
         </Link>
       </section>
     </div>

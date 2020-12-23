@@ -6,6 +6,8 @@ import './css/style.css';
 import Aos from 'aos';
 // Remember to add a concat:css task to the build process for this aos stylesheet
 
+import ScrollToTop from './components/Components/ScrollToTop';
+
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 
@@ -57,6 +59,7 @@ const App = () => {
   return (
     <div className='App'>
       <Router>
+        <ScrollToTop />
         <Navigation
           items={[
             { name: 'Home', path: '/xona-space' },

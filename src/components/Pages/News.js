@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Article from '../Components/Article';
 
@@ -26,6 +27,9 @@ const News = () => {
           />
         ))}
       </div>
+      <Link to={'/xona-space'} className='btn btn__arrow' data-aos='fade'>
+        <span className='btn__arrow--larr'>&larr;</span> Go home
+      </Link>
     </div>
   );
 };

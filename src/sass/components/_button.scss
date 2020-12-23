@@ -67,7 +67,7 @@
     }
   }
 
-  &--archive {
+  &__arrow {
     &:link,
     &:visited {
       display: inline-block; //
@@ -80,25 +80,38 @@
       border-bottom: 1px solid var(--color-white);
     }
 
-    // ARROW TO SIGNIFY A LINK
-    .btn__rarr {
+    // RIGHT ARROW TO SIGNIFY A LINK
+    .btn__arrow--rarr {
+      transition: transform 0.5s, color 0.5s;
+      display: inline-block;
+    }
+    // LEFT ARROW TO SIGNIFY A LINK
+    .btn__arrow--larr {
       transition: transform 0.5s, color 0.5s;
       display: inline-block;
     }
 
-    // When :hover, animate the link text
-    &:hover {
-      border-bottom: 1px solid currentColor;
-    }
     // When :hover, animate the right arrow
-    &:hover > .btn__rarr {
+    &:hover > .btn__arrow--rarr {
       color: var(--color-primary-light);
       transform: translateX(5px);
     }
     // When :active, animate the right arrow
-    &:active > .btn__rarr {
+    &:active > .btn__arrow--rarr {
       transition: transform 0.2s, opacity 0.3s 0.05s;
       transform: translateX(75px);
+      opacity: 0;
+    }
+
+    // When :hover, animate the right arrow
+    &:hover > .btn__arrow--larr {
+      color: var(--color-primary-light);
+      transform: translateX(-5px);
+    }
+    // When :active, animate the right arrow
+    &:active > .btn__arrow--larr {
+      transition: transform 0.2s, opacity 0.3s 0.05s;
+      transform: translateX(-75px);
       opacity: 0;
     }
   }

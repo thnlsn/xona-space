@@ -1010,7 +1010,7 @@ body {
     transition: height 0.2s cubic-bezier(0.38, 1.1, 0.64, 0.96);
     height: 0; }
 
-.btn--archive:link, .btn--archive:visited {
+.btn__arrow:link, .btn__arrow:visited {
   display: inline-block;
   text-shadow: 0 0 5px #000;
   color: currentColor;
@@ -1018,20 +1018,30 @@ body {
   transition: linear 1.2s;
   border-bottom: 1px solid var(--color-white); }
 
-.btn--archive .btn__rarr {
+.btn__arrow .btn__arrow--rarr {
   transition: transform 0.5s, color 0.5s;
   display: inline-block; }
 
-.btn--archive:hover {
-  border-bottom: 1px solid currentColor; }
+.btn__arrow .btn__arrow--larr {
+  transition: transform 0.5s, color 0.5s;
+  display: inline-block; }
 
-.btn--archive:hover > .btn__rarr {
+.btn__arrow:hover > .btn__arrow--rarr {
   color: var(--color-primary-light);
   transform: translateX(5px); }
 
-.btn--archive:active > .btn__rarr {
+.btn__arrow:active > .btn__arrow--rarr {
   transition: transform 0.2s, opacity 0.3s 0.05s;
   transform: translateX(75px);
+  opacity: 0; }
+
+.btn__arrow:hover > .btn__arrow--larr {
+  color: var(--color-primary-light);
+  transform: translateX(-5px); }
+
+.btn__arrow:active > .btn__arrow--larr {
+  transition: transform 0.2s, opacity 0.3s 0.05s;
+  transform: translateX(-75px);
   opacity: 0; }
 
 .article {
@@ -1086,7 +1096,7 @@ body {
 
 .news-archive {
   margin-top: calc(var(--nav-height));
-  padding: 0rem 15rem 10rem 15rem; }
+  padding: 0rem 15rem 6.5rem 15rem; }
 
 .home-banner {
   background-size: cover;
@@ -1284,26 +1294,28 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3.333333333%;
-  flex-wrap: wrap;
-  margin-bottom: 1rem; }
+  flex-wrap: wrap; }
 
 .archive {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3.333333333%;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 3.5rem 0; }
 
-.news-archive__heading {
-  text-align: center;
-  margin: 0 0 3rem 0;
-  font-size: 20rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  background-image: linear-gradient(to bottom, var(--color-grey-dark-5), var(--color-grey-dark-5), transparent);
-  background-clip: text;
-  color: transparent; }
+.news-archive {
+  text-align: center; }
+  .news-archive__heading {
+    text-align: center;
+    margin: 0 0 3rem 0;
+    font-size: 20rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, var(--color-grey-dark-5), var(--color-grey-dark-5), transparent);
+    background-clip: text;
+    color: transparent; }
 
 /*
 
