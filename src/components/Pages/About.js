@@ -13,9 +13,9 @@ const About = () => {
       <div className='about-banner'>
         <div
           className='about-banner__left'
-          /*           style={{
+          style={{
             backgroundImage: `url(${hero.leftImage})`,
-          }} */
+          }}
         >
           <div className='about-banner__heading-left'>What Drives Us</div>
         </div>
@@ -32,7 +32,11 @@ const About = () => {
         helped put over 50 vehicles in space and have published over 50
         scientific papers advancing navigation technology.
       </div>
-      <div className='xona-team'>hello</div>
+      <div className='about-banner about-banner--spacer'>
+        <div className='about-banner__left'></div>
+        <div className='about-banner__right'></div>
+      </div>
+      <div className='xona-team'></div>
     </div>
   );
 };

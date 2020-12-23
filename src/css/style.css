@@ -1300,47 +1300,61 @@ body {
   height: 200rem;
   margin-top: calc(var(--nav-height));
   padding: 0rem 30rem 6.5rem 30rem;
-  background-image: linear-gradient(var(--color-background), var(--color-grey-dark-5)); }
+  /*   background-image: linear-gradient(
+    var(--color-background),
+    var(--color-grey-dark-5)
+  ); */ }
 
 .about-banner {
   display: flex;
   height: 25vh;
-  width: 65%;
+  width: 80%;
   margin: 0 auto; }
-  .about-banner__left {
+  .about-banner__left, .about-banner__right {
     flex: 0 0 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid var(--color-grey-dark-4);
     position: relative;
-    /*     &:before {
+    border-bottom: 2px solid var(--color-grey-dark-4); }
+  .about-banner__left {
+    border-right: 1px solid var(--color-grey-dark-4);
+    background-size: cover; }
+    .about-banner__left:before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(#000000, $alpha: 0.9);
-
-      z-index: 1;
-    } */ }
+      z-index: 0;
+      background-image: linear-gradient(to right bottom, rgba(8, 8, 8, 0.7), #080808); }
   .about-banner__right {
-    flex: 0 0 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-left: 1px solid var(--color-grey-dark-4); }
+    .about-banner__right:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      background-image: linear-gradient(to left bottom, rgba(8, 8, 8, 0.7), #080808); }
+  .about-banner__heading-left, .about-banner__heading-right {
+    z-index: 1; }
   .about-banner__heading-left {
     font-size: 6rem;
     text-transform: uppercase;
     width: 30rem;
-    text-align: right; }
+    text-align: right;
+    color: var(--color-primary); }
   .about-banner__heading-right {
     font-size: 3.5rem;
     width: 30rem;
     display: flex;
     justify-content: center; }
+  .about-banner--spacer {
+    height: 10vh; }
 
 .about-description {
   text-align: center;
@@ -1348,17 +1362,27 @@ body {
   font-size: 2rem;
   padding: 5rem 2rem 5rem 2rem;
   margin: 0 auto;
-  border-top: 2px solid var(--color-grey-dark-4);
   border-bottom: 2px solid var(--color-grey-dark-4); }
 
 .xona-team {
   text-align: center;
-  width: 65%;
+  width: 100%;
   font-size: 2rem;
   padding: 5rem 2rem 5rem 2rem;
   margin: 0 auto;
   border-top: 2px solid var(--color-grey-dark-4);
-  border-bottom: 2px solid var(--color-grey-dark-4); }
+  position: relative; }
+  .xona-team:before {
+    content: 'We are Xona';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-background);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+    color: var(--color-primary); }
 
 .archive {
   display: flex;
