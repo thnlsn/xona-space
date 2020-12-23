@@ -1091,9 +1091,6 @@ body {
   /*   height: 500rem; // Testing */
   /* opacity: 1; */ }
 
-.home {
-  padding-bottom: 3rem; }
-
 .news-archive {
   margin-top: calc(var(--nav-height));
   padding: 0rem 15rem 6.5rem 15rem; }
@@ -1287,7 +1284,7 @@ body {
     backdrop-filter: blur(3px); }
 
 .news {
-  padding: 3.5rem 20rem;
+  padding: 6.5rem 20rem;
   text-align: center; }
   .news__heading {
     margin-bottom: 5rem; }
@@ -1300,14 +1297,16 @@ body {
   flex-wrap: wrap; }
 
 .about {
-  height: 400rem;
+  height: 200rem;
   margin-top: calc(var(--nav-height));
   padding: 0rem 30rem 6.5rem 30rem;
   background-image: linear-gradient(var(--color-background), var(--color-grey-dark-5)); }
 
 .about-banner {
   display: flex;
-  height: 25vh; }
+  height: 25vh;
+  width: 65%;
+  margin: 0 auto; }
   .about-banner__left {
     flex: 0 0 50%;
     display: flex;
@@ -1345,11 +1344,21 @@ body {
 
 .about-description {
   text-align: center;
-  width: 50%;
+  width: 65%;
   font-size: 2rem;
   padding: 5rem 2rem 5rem 2rem;
   margin: 0 auto;
-  border-top: 2px solid var(--color-grey-dark-4); }
+  border-top: 2px solid var(--color-grey-dark-4);
+  border-bottom: 2px solid var(--color-grey-dark-4); }
+
+.xona-team {
+  text-align: center;
+  width: 65%;
+  font-size: 2rem;
+  padding: 5rem 2rem 5rem 2rem;
+  margin: 0 auto;
+  border-top: 2px solid var(--color-grey-dark-4);
+  border-bottom: 2px solid var(--color-grey-dark-4); }
 
 .archive {
   display: flex;

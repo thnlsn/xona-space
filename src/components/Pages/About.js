@@ -32,6 +32,7 @@ const About = () => {
         helped put over 50 vehicles in space and have published over 50
         scientific papers advancing navigation technology.
       </div>
+      <div className='xona-team'>hello</div>
     </div>
   );
 };

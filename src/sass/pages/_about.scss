@@ -1,5 +1,5 @@
 .about {
-  height: 400rem;
+  height: 200rem;
   margin-top: calc(var(--nav-height));
   padding: 0rem 30rem 6.5rem 30rem;
 
@@ -12,6 +12,8 @@
 .about-banner {
   display: flex;
   height: 25vh;
+  width: 65%;
+  margin: 0 auto;
 
   &__left {
     flex: 0 0 50%;
@@ -62,10 +64,21 @@
 
 .about-description {
   text-align: center;
-  width: 50%;
+  width: 65%;
   font-size: 2rem;
   padding: 5rem 2rem 5rem 2rem;
   margin: 0 auto;
 
   border-top: 2px solid var(--color-grey-dark-4);
+  border-bottom: 2px solid var(--color-grey-dark-4);
+}
+.xona-team {
+  text-align: center;
+  width: 65%;
+  font-size: 2rem;
+  padding: 5rem 2rem 5rem 2rem;
+  margin: 0 auto;
+
+  border-top: 2px solid var(--color-grey-dark-4);
+  border-bottom: 2px solid var(--color-grey-dark-4);
 }
