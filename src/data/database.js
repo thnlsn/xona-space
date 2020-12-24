@@ -305,6 +305,7 @@ const about = {
   members: [
     {
       name: 'Brian Manning',
+      image: require('../images/team/brian-manning.jpg'),
       linkedIn: 'https://www.linkedin.com/in/brian-manning-x/',
       role: 'CEO',
       experience: [
@@ -319,6 +320,7 @@ const about = {
     },
     {
       name: 'Tyler Reid',
+      image: require('../images/team/tyler-reid.jpg'),
       linkedIn: 'https://www.linkedin.com/in/tyler-reid-06398936/',
       role: 'CTO',
       experience: [
@@ -336,6 +338,7 @@ const about = {
     },
     {
       name: 'Bryan Chan',
+      image: require('../images/team/bryan-chan.jpg'),
       linkedIn: 'https://www.linkedin.com/in/bryancchan/',
       role: 'Business Development Director',
       experience: [
@@ -350,6 +353,7 @@ const about = {
     },
     {
       name: 'Adrien Perkins',
+      image: require('../images/team/adrien-perkins.jpg'),
       linkedIn: 'https://www.linkedin.com/in/adrien-perkins/',
       role: 'Director of Navigation Systems',
       experience: [
@@ -364,6 +368,7 @@ const about = {
     },
     {
       name: 'Andrew Neish',
+      image: require('../images/team/andrew-neish.jpg'),
       linkedIn: 'https://www.linkedin.com/in/andrew-neish-32355488/',
       role: 'Navigation Signals & Security Lead',
       experience: [
@@ -381,6 +386,7 @@ const about = {
     },
     {
       name: 'Kazuma Gunning',
+      image: require('../images/team/kazuma-gunning.jpg'),
       linkedIn: 'https://www.linkedin.com/in/kgunning/',
       role: 'Navigation Algorithms & Architecture Lead',
       experience: [
@@ -398,6 +404,7 @@ const about = {
     },
     {
       name: 'Jerami Martin',
+      image: require('../images/team/jerami-martin.jpg'),
       linkedIn: 'https://www.linkedin.com/in/jerami-m-martin-/',
       role: 'Mechanical Lead',
       experience: [
@@ -414,6 +421,7 @@ const about = {
     },
     {
       name: 'Miguel Seun Cardoso',
+      image: require('../images/team/miguel-seun-cardoso.jpg'),
       linkedIn: 'https://www.linkedin.com/in/miguel-seun-cardoso-22693914/',
       role: 'European Operations Lead',
       experience: [
@@ -431,6 +439,7 @@ const about = {
     },
     {
       name: 'Ashish Goel',
+      image: require('../images/team/ashish-goel.jpg'),
       linkedIn: 'https://www.linkedin.com/in/ashish-goel-4765621a/',
       role: 'Consultant',
       experience: [

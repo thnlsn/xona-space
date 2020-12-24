@@ -2,9 +2,10 @@ import React from 'react';
 
 // Importing all data for this component from the database file
 import { about } from '../../data/database';
+import MemberCard from './AboutComponents/MemberCard';
 
 // Destructuring the data we need for this component
-const { hero } = about;
+const { hero, members } = about;
 // const { icon /* iconWhite */ } = logos;
 
 const About = () => {
@@ -43,6 +44,17 @@ const About = () => {
       </div>
       <section className='xona-team'>
         <div className='xona-team__heading'>We are Xona</div>
+        <div className='xona-team__container'>
+          {members.map((member) => (
+            <div className='member'>
+              <img
+                src='#'
+                alt={`${member.name}, ${member.role}`}
+                className='member__image'
+              />
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
