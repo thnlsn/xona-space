@@ -10,7 +10,7 @@ const { hero } = about;
 const About = () => {
   return (
     <div className='about'>
-      <div className='about-banner'>
+      <section className='about-banner'>
         <div
           className='about-banner__left'
           style={{
@@ -29,21 +29,21 @@ const About = () => {
             Enabling intelligent systems to operate safely in any environment.
           </div>
         </div>
-      </div>
-      <div className='about-description'>
+      </section>
+      <section className='about-description'>
         We are a group of space ninjas, engineers, GPS nerds, motorcycle racers,
         and adventurers. Our experience comes from SpaceX, Blue Origin, Booz
         Allen Hamilton, NASA, Ford Motor Company, and Stanford GPS Lab. We
         helped put over 50 vehicles in space and have published over 50
         scientific papers advancing navigation technology.
-      </div>
+      </section>
       <div className='about-banner about-banner--spacer'>
         <div className='about-banner__left about-banner__left--spacer'></div>
         <div className='about-banner__right about-banner__right--spacer'></div>
       </div>
-      <div className='xona-team'>
+      <section className='xona-team'>
         <div className='xona-team__heading'>We are Xona</div>
-      </div>
+      </section>
     </div>
   );
 };
