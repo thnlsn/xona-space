@@ -25,6 +25,7 @@ const Footer = ({ socials }) => {
               type='email'
               placeholder='Your email'
               className='subscribe-form__input'
+              required
             />
             <button className='subscribe-form__btn'>Subscribe</button>
           </form>
