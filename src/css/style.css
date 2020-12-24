@@ -1087,6 +1087,10 @@ body {
   .article .btn {
     margin: auto auto 0 auto; }
 
+.member__image {
+  border-radius: 100px;
+  overflow: hidden; }
+
 .main {
   /*   height: 500rem; // Testing */
   /* opacity: 1; */ }

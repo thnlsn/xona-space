@@ -53,14 +53,19 @@ const About = () => {
                 className='member__image'
               />
               <div className='member__name'>{member.name}</div>
-              <div className='member__title'>{member.role}</div>
+              <div className='member__role'>{member.role}</div>
               <div className='member__experience'>
                 {member.experience.map((position) => (
                   <Fragment>
-                    <div className='member__title'>{position.title}</div>
-                    <div className='member__title'>{position.location}</div>
+                    <div className='member__experience-title'>
+                      {position.title}
+                    </div>
+                    <div className='member__experience-location'>
+                      {position.location}
+                    </div>
                   </Fragment>
                 ))}
+                <div className='member__hobbies'>{member.hobbies}</div>
               </div>
             </div>
           ))}

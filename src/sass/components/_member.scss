@@ -1,3 +1,27 @@
 .member {
-    &__
+  // The headshot of the team member
+  &__image {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  // The current position of the team member
+  &__role {
+  }
+
+  // The container for each item of past experience
+  &__experience {
+  }
+
+  // The title/name of the single item of experience
+  &__experience-title {
+  }
+
+  // The location of the single item of experience
+  &__experience-location {
+  }
+
+  // The hobbies of the team member
+  &__hobbies {
+  }
 }
