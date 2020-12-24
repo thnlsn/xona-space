@@ -62,10 +62,10 @@ const App = () => {
         <ScrollToTop />
         <Navigation
           items={[
-            { name: 'Home', path: '/xona-space' },
-            { name: 'About', path: '/xona-space/about' },
-            { name: 'Contact', path: '/xona-space/contact' },
-            { name: 'Careers', path: '/xona-space/careers' },
+            { name: 'Home', path: '/xona-space', exact: true },
+            { name: 'About', path: '/xona-space/about', exact: false },
+            { name: 'Contact', path: '/xona-space/contact', exact: false },
+            { name: 'Careers', path: '/xona-space/careers', exact: false },
           ]}
         />
         <main className='main'>

@@ -18,7 +18,12 @@ const Navigation = ({ items }) => {
 
       <ul className='navigation__list'>
         {items.map((item, index) => (
-          <NavItem item={item.name} path={item.path} key={index} />
+          <NavItem
+            item={item.name}
+            path={item.path}
+            exact={item.exact}
+            key={index}
+          />
         ))}
       </ul>
     </nav>

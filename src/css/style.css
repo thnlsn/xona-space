@@ -881,7 +881,7 @@ body {
       cursor: pointer;
       transition: linear 0.2s;
       border-bottom: 1px solid transparent; }
-    .navigation__item:hover, .navigation__item:focus {
+    .navigation__item:hover {
       border-bottom: 1px solid currentColor; }
     .navigation__item:active {
       color: var(--color-primary); }
