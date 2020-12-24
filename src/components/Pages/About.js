@@ -56,14 +56,14 @@ const About = () => {
               <div className='member__role'>{member.role}</div>
               <div className='member__experience'>
                 {member.experience.map((position) => (
-                  <Fragment>
+                  <div className='member__experience-container'>
                     <div className='member__experience-title'>
                       {position.title}
                     </div>
                     <div className='member__experience-location'>
                       {position.location}
                     </div>
-                  </Fragment>
+                  </div>
                 ))}
                 <div className='member__hobbies'>{member.hobbies}</div>
               </div>

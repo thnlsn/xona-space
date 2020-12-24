@@ -99,3 +99,50 @@ body {
   letter-spacing: 2.5rem;
   text-shadow: 0 0 5px #000;
 }
+
+.member {
+  // The headshot of the team member
+  &__image {
+  }
+
+  // The name of the team member
+  &__name {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+
+    color: var(--color-white);
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px;
+  }
+
+  // The current position of the team member
+  &__role {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+  // The container for all items of past experience
+  &__experience {
+  }
+
+  // The container for a single item of past experience (the title and location)
+  &__experience-container {
+    font-size: var(--default-font-size);
+  }
+
+  // The title/name of the single item of experience
+  &__experience-title {
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  // The location of the single item of experience
+  &__experience-location {
+  }
+
+  // The hobbies of the team member
+  &__hobbies {
+    font-size: var(--default-font-size);
+  }
+}

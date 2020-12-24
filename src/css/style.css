@@ -838,6 +838,28 @@ body {
   letter-spacing: 2.5rem;
   text-shadow: 0 0 5px #000; }
 
+.member__name {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  color: var(--color-white);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 2px; }
+
+.member__role {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
+
+.member__experience-container {
+  font-size: var(--default-font-size); }
+
+.member__experience-title {
+  font-style: italic;
+  font-weight: 300; }
+
+.member__hobbies {
+  font-size: var(--default-font-size); }
+
 .navigation {
   z-index: 9999;
   background-color: rgba(8, 8, 8, 0.8);
@@ -1087,9 +1109,17 @@ body {
   .article .btn {
     margin: auto auto 0 auto; }
 
-.member__image {
-  border-radius: 100px;
-  overflow: hidden; }
+.member {
+  border-radius: 10px;
+  background-color: grey;
+  padding: 1rem; }
+  .member__image {
+    border-radius: 10px;
+    overflow: hidden; }
+  .member__role {
+    font-family: 'Lato', sans-serif; }
+  .member__experience-container {
+    background-color: orangered; }
 
 .main {
   /*   height: 500rem; // Testing */
@@ -1409,6 +1439,12 @@ body {
     text-decoration: underline;
     text-decoration-color: var(--color-primary);
     text-decoration-thickness: 2px; }
+  .xona-team__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.333333333%;
+    flex-wrap: wrap; }
 
 .archive {
   display: flex;

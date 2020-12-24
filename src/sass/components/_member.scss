@@ -1,4 +1,9 @@
+// ║║║ INDIVIDUAL MEMBER COMPONENT
 .member {
+  border-radius: 10px;
+  background-color: grey;
+  padding: 1rem;
+
   // The headshot of the team member
   &__image {
     border-radius: 10px;
@@ -7,6 +12,12 @@
 
   // The current position of the team member
   &__role {
+    font-family: 'Lato', sans-serif;
+  }
+
+  // The container for a single item of past experience (the title and location)
+  &__experience-container {
+    background-color: orangered;
   }
 
   // The container for each item of past experience
