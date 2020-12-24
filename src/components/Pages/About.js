@@ -48,7 +48,7 @@ const About = () => {
           {members.map((member) => (
             <div className='member'>
               <img
-                src='#'
+                src={member.image}
                 alt={`${member.name}, ${member.role}`}
                 className='member__image'
               />
