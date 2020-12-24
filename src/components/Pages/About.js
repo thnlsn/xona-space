@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 // Importing all data for this component from the database file
 import { about } from '../../data/database';
@@ -52,6 +52,16 @@ const About = () => {
                 alt={`${member.name}, ${member.role}`}
                 className='member__image'
               />
+              <div className='member__name'>{member.name}</div>
+              <div className='member__title'>{member.role}</div>
+              <div className='member__experience'>
+                {member.experience.map((position) => (
+                  <Fragment>
+                    <div className='member__title'>{position.title}</div>
+                    <div className='member__title'>{position.location}</div>
+                  </Fragment>
+                ))}
+              </div>
             </div>
           ))}
         </div>
