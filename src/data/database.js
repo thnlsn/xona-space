@@ -302,6 +302,155 @@ const about = {
       'Enabling intelligent systems to operate safely in any environment',
     rightImage: require('../images/backgroundImages/city.jpg'),
   },
+  members: [
+    {
+      name: 'Brian Manning',
+      linkedIn: 'https://www.linkedin.com/in/brian-manning-x/',
+      role: 'CEO',
+      experience: [
+        { title: 'Structures Engineer', location: 'SpaceX' },
+        { title: 'MBA', location: 'London Business School' },
+        {
+          title: 'MS Aeronautics & Astronautics',
+          location: 'Stanford University',
+        },
+      ],
+      hobbies: 'Motorcycle Racing, Snowboarding, Crossfit',
+    },
+    {
+      name: 'Tyler Reid',
+      linkedIn: 'https://www.linkedin.com/in/tyler-reid-06398936/',
+      role: 'CTO',
+      experience: [
+        {
+          title: 'Researcher, Autonomous Driving',
+          location: 'Ford Motor Company',
+        },
+        { title: 'Researcher, GPS Lab', location: 'Stanford University' },
+        {
+          title: 'PhD & MS Aeronautics & Astronautics',
+          location: 'Stanford University',
+        },
+      ],
+      hobbies: 'Electric Guitar, Hiking, Exploring',
+    },
+    {
+      name: 'Bryan Chan',
+      linkedIn: 'https://www.linkedin.com/in/bryancchan/',
+      role: 'Business Development Director',
+      experience: [
+        { title: 'Co-founder', location: 'Night Crew Labs' },
+        { title: 'Program Manager', location: 'Space Systems Loral (Maxar)' },
+        {
+          title: 'MS Aeronautics & Astronautics',
+          location: 'Stanford University',
+        },
+      ],
+      hobbies: 'Bicycling, Homebrewing, Photography',
+    },
+    {
+      name: 'Adrien Perkins',
+      linkedIn: 'https://www.linkedin.com/in/adrien-perkins/',
+      role: 'Director of Navigation Systems',
+      experience: [
+        { title: 'Lead Software Developer', location: 'Callsnapp' },
+        { title: 'Researcher, GPS Lab', location: 'Stanford University' },
+        {
+          title: 'PhD & MS Aeronautics & Astronautics',
+          location: 'Stanford University',
+        },
+      ],
+      hobbies: 'Skiing, Board Games',
+    },
+    {
+      name: 'Andrew Neish',
+      linkedIn: 'https://www.linkedin.com/in/andrew-neish-32355488/',
+      role: 'Navigation Signals & Security Lead',
+      experience: [
+        {
+          title: 'New Shepard and New Glenn Navigation',
+          location: 'Blue Origin',
+        },
+        { title: 'Researcher, GPS Lab', location: 'Stanford University' },
+        {
+          title: 'PhD & MS Aeronautics & Astronautics',
+          location: 'Stanford University',
+        },
+      ],
+      hobbies: 'Backpacking, Trumpet, Photography',
+    },
+    {
+      name: 'Kazuma Gunning',
+      linkedIn: 'https://www.linkedin.com/in/kgunning/',
+      role: 'Navigation Algorithms & Architecture Lead',
+      experience: [
+        {
+          title: 'GPS III, OCX Modeling, & Simulation',
+          location: 'Booz Allen Hamilton',
+        },
+        { title: 'Researcher, GPS Lab', location: 'Stanford University' },
+        {
+          title: 'PhD & MS Aeronautics & Astronautics',
+          location: 'Stanford University',
+        },
+      ],
+      hobbies: 'Movies, MMA',
+    },
+    {
+      name: 'Jerami Martin',
+      linkedIn: 'https://www.linkedin.com/in/jerami-m-martin-/',
+      role: 'Mechanical Lead',
+      experience: [
+        {
+          title: 'Mechanical Design Engineer',
+          location: 'Pumpkin Space Systems',
+        },
+        {
+          title: 'PhD & MS Aeronautics & Astronautics',
+          location: 'Stanford University',
+        },
+      ],
+      hobbies: 'Backpacking, Traveling, Art & Design',
+    },
+    {
+      name: 'Miguel Seun Cardoso',
+      linkedIn: 'https://www.linkedin.com/in/miguel-seun-cardoso-22693914/',
+      role: 'European Operations Lead',
+      experience: [
+        {
+          title: 'MIF London Business School',
+          location: 'International Exchange Colombia Business School',
+        },
+        { title: 'Director', location: 'SimplyAds Media' },
+        {
+          title: 'Investment Banking',
+          location: 'FBNQuest',
+        },
+      ],
+      hobbies: 'Morning Workouts, Traveling, Afrobeats',
+    },
+    {
+      name: 'Ashish Goel',
+      linkedIn: 'https://www.linkedin.com/in/ashish-goel-4765621a/',
+      role: 'Consultant',
+      experience: [
+        {
+          title: 'Research Technologist',
+          location: 'NASA Jet Propulsion Laboratory',
+        },
+        {
+          title: 'Postdoctoral Researcher',
+          title2: 'Graduate Aerospace Laboratories',
+          location: 'Stanford University',
+        },
+        {
+          title: 'PhD & MS Aeronautics & Astronautics',
+          location: 'Stanford University',
+        },
+      ],
+      hobbies: 'Hiking, Mountaineering, Skiing, Climbing, Birding',
+    },
+  ],
 };
 
 //////////////////////////////////////////////////////////////////////////////////////////

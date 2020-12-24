@@ -38,10 +38,12 @@ const About = () => {
         scientific papers advancing navigation technology.
       </div>
       <div className='about-banner about-banner--spacer'>
-        <div className='about-banner__left'></div>
-        <div className='about-banner__right'></div>
+        <div className='about-banner__left about-banner__left--spacer'></div>
+        <div className='about-banner__right about-banner__right--spacer'></div>
       </div>
-      <div className='xona-team'></div>
+      <div className='xona-team'>
+        <div className='xona-team__heading'>We are Xona</div>
+      </div>
     </div>
   );
 };
