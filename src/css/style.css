@@ -1387,7 +1387,7 @@ body {
 
 .about {
   margin-top: calc(var(--nav-height));
-  padding: 0rem 30rem 6.5rem 30rem;
+  padding: 0rem 25rem 6.5rem 25rem;
   /*   background-image: linear-gradient(
     var(--color-background),
     var(--color-grey-dark-5)
@@ -1475,7 +1475,7 @@ body {
   text-align: center;
   width: 100%;
   font-size: 2rem;
-  padding: 5rem 3rem 0 3rem;
+  padding: 5rem 4rem 0 4rem;
   margin: 0 auto;
   position: relative;
   border-top: 2px solid var(--color-grey-dark-4);
