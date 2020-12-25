@@ -1,5 +1,4 @@
 .about {
-  height: 200rem;
   margin-top: calc(var(--nav-height));
   padding: 0rem 30rem 6.5rem 30rem;
 
@@ -143,7 +142,7 @@
   text-align: center;
   width: 100%;
   font-size: 2rem;
-  padding: 5rem 2rem 5rem 2rem;
+  padding: 5rem 3rem 0 3rem;
   margin: 0 auto;
 
   position: relative;
@@ -168,8 +167,7 @@
 
   &__container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     gap: 3.333333333%; // The flex is 22.5%, and with 4 articles that leaves 10%, so the 3 gaps should split that into 3.333%
     flex-wrap: wrap;
   }

@@ -840,7 +840,7 @@ body {
 
 .member__name {
   font-family: 'Lato', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-white);
   text-decoration: underline;
   text-decoration-color: var(--color-primary);
@@ -848,17 +848,20 @@ body {
 
 .member__role {
   font-family: 'Lato', sans-serif;
-  font-weight: 400; }
+  color: var(--color-grey-light-3);
+  font-weight: 300;
+  padding: 0 1rem; }
 
-.member__experience-container {
+.member__experience {
   font-size: var(--default-font-size); }
 
-.member__experience-title {
+.member__experience-location {
   font-style: italic;
   font-weight: 300; }
 
 .member__hobbies {
-  font-size: var(--default-font-size); }
+  font-weight: 500;
+  color: var(--color-grey-light-3); }
 
 .navigation {
   z-index: 9999;
@@ -1110,16 +1113,54 @@ body {
     margin: auto auto 0 auto; }
 
 .member {
-  border-radius: 10px;
-  background-color: grey;
-  padding: 1rem; }
+  flex: 0 0 22.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  border: 1px dotted var(--color-primary);
+  /*   border-bottom: 2px solid var(--color-grey-dark-5);
+  border-top: 2px solid var(--color-grey-dark-5);
+  border-radius: 25px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(19, 19, 19) 0%,
+    rgba(8, 8, 8, 0.5018382352941176) 50%,
+    rgb(19, 19, 19) 100%
+  ); */ }
+  .member:not(:last-child) {
+    margin-bottom: 3rem; }
   .member__image {
     border-radius: 10px;
-    overflow: hidden; }
-  .member__role {
-    font-family: 'Lato', sans-serif; }
+    object-fit: cover;
+    filter: grayscale(0.5);
+    border: 2px solid var(--color-grey-dark-5); }
+  .member__experience {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-bottom: 2px solid var(--color-grey-dark-5);
+    border-top: 2px solid var(--color-grey-dark-5);
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #131313 0%, rgba(8, 8, 8, 0.501838) 50%, #131313 100%); }
   .member__experience-container {
-    background-color: orangered; }
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-grey-dark-5);
+    padding: 0 0 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .member__experience-title {
+    text-align: left;
+    flex: 0 0 50%; }
+  .member__experience-location {
+    text-align: right;
+    flex: 0 0 50%; }
+  .member__hobbies {
+    margin-top: 1rem;
+    justify-self: flex-end; }
 
 .main {
   /*   height: 500rem; // Testing */
@@ -1331,7 +1372,6 @@ body {
   flex-wrap: wrap; }
 
 .about {
-  height: 200rem;
   margin-top: calc(var(--nav-height));
   padding: 0rem 30rem 6.5rem 30rem;
   /*   background-image: linear-gradient(
@@ -1421,7 +1461,7 @@ body {
   text-align: center;
   width: 100%;
   font-size: 2rem;
-  padding: 5rem 2rem 5rem 2rem;
+  padding: 5rem 3rem 0 3rem;
   margin: 0 auto;
   position: relative;
   border-top: 2px solid var(--color-grey-dark-4);
@@ -1441,8 +1481,7 @@ body {
     text-decoration-thickness: 2px; }
   .xona-team__container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     gap: 3.333333333%;
     flex-wrap: wrap; }
 

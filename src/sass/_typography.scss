@@ -108,7 +108,7 @@ body {
   // The name of the team member
   &__name {
     font-family: 'Lato', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 
     color: var(--color-white);
     text-decoration: underline;
@@ -119,30 +119,33 @@ body {
   // The current position of the team member
   &__role {
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    color: var(--color-grey-light-3);
+    font-weight: 300;
+    padding: 0 1rem;
   }
 
   // The container for all items of past experience
   &__experience {
+    font-size: var(--default-font-size);
   }
 
   // The container for a single item of past experience (the title and location)
   &__experience-container {
-    font-size: var(--default-font-size);
   }
 
   // The title/name of the single item of experience
   &__experience-title {
-    font-style: italic;
-    font-weight: 300;
   }
 
   // The location of the single item of experience
   &__experience-location {
+    font-style: italic;
+    font-weight: 300;
   }
 
   // The hobbies of the team member
   &__hobbies {
-    font-size: var(--default-font-size);
+    font-weight: 500;
+    color: var(--color-grey-light-3);
   }
 }
