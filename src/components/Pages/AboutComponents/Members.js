@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import Member from './MemberCard';
 
-const Members = ({ members }) => {
+const Members = ({ heading, members, linkedInIcon }) => {
   return (
     <Fragment>
-      <div className='xona-team__heading'>We are Xona</div>
+      <div className='xona-team__heading'>{heading}</div>
       <div className='xona-team__members'>
         {members.map((member, index) => (
           <Member
@@ -14,6 +14,7 @@ const Members = ({ members }) => {
             experience={member.experience}
             hobbies={member.hobbies}
             linkedIn={member.linkedIn}
+            linkedInIcon={linkedInIcon}
             key={index}
           />
         ))}

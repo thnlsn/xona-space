@@ -1131,10 +1131,23 @@ body {
   .member:not(:last-child) {
     margin-bottom: 3rem; }
   .member__image {
-    border-radius: 10px;
+    border-radius: 5px;
     object-fit: cover;
     filter: grayscale(0.5);
-    border: 2px solid var(--color-grey-dark-5); }
+    border: 1px dotted var(--color-primary);
+    margin-bottom: 0.25rem; }
+  .member__link {
+    align-self: flex-end; }
+  .member__linkedin-icon {
+    margin-bottom: -1rem;
+    padding: 2px;
+    border-radius: 10px;
+    width: 2.5rem;
+    height: auto;
+    transition: all 0.15s;
+    background-color: var(--color-white); }
+    .member__linkedin-icon:hover {
+      background-color: var(--color-grey-light-3); }
   .member__experience {
     display: flex;
     flex-direction: column;
@@ -1160,7 +1173,8 @@ body {
     flex: 0 0 50%; }
   .member__hobbies {
     margin-top: 1rem;
-    justify-self: flex-end; }
+    justify-self: flex-end;
+    padding: 0 1rem; }
 
 .main {
   /*   height: 500rem; // Testing */

@@ -6,7 +6,7 @@ import Hero from './AboutComponents/AboutHero';
 import Members from './AboutComponents/Members';
 
 // Destructuring the data we need for this component
-const { hero, description, teamHeading, members } = about;
+const { hero, description, teamHeading, members, linkedInIcon } = about;
 // const { icon /* iconWhite */ } = logos;
 
 const About = () => {
@@ -29,7 +29,11 @@ const About = () => {
         <div className='about-banner__right about-banner__right--spacer'></div>
       </div>
       <section className='xona-team'>
-        <Members heading={teamHeading} members={members} />
+        <Members
+          heading={teamHeading}
+          members={members}
+          linkedInIcon={linkedInIcon}
+        />
       </section>
     </div>
   );

@@ -30,12 +30,13 @@ const Footer = ({ socials }) => {
             <button className='subscribe-form__btn'>Subscribe</button>
           </form>
           <div className='footer__socials'>
-            {socials.map((social) => (
+            {socials.map((social, index) => (
               <a
                 href={social.link}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='footer__github'
+                key={index}
               >
                 <img
                   className='footer__svg'

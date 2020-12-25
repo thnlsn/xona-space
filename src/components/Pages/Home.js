@@ -15,9 +15,6 @@ import { home, logos } from '../../data/database';
 const { hero, link, pulsar, applications, news } = home;
 const { icon /* iconWhite */ } = logos;
 
-// BACKGROUND IMAGES
-console.log(home);
-
 const Home = () => {
   return (
     <div className='home'>

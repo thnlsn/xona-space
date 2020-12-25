@@ -311,6 +311,8 @@ const about = {
   scientific papers advancing navigation technology.`,
   // SECTION THREE (The members section, the heading as well as all the member card components)
   teamHeading: 'We are Xona',
+  // The LinkedIn icon to be used for each members LinkedIn Link
+  linkedInIcon: require('../images/icons/linkedin.svg'),
   members: [
     {
       name: 'Brian Manning',

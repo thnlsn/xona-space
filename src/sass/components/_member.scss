@@ -27,10 +27,31 @@
 
   // The headshot of the team member
   &__image {
-    border-radius: 10px;
+    border-radius: 5px;
     object-fit: cover;
     filter: grayscale(0.5);
-    border: 2px solid var(--color-grey-dark-5);
+    border: 1px dotted var(--color-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  &__link {
+    align-self: flex-end;
+  }
+
+  &__linkedin-icon {
+    margin-bottom: -1rem;
+    padding: 2px;
+    border-radius: 10px;
+    width: 2.5rem;
+    height: auto;
+
+    // Initial animation state
+    transition: all 0.15s;
+    background-color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-grey-light-3);
+    }
   }
 
   // The current position of the team member
@@ -85,5 +106,6 @@
   &__hobbies {
     margin-top: 1rem;
     justify-self: flex-end;
+    padding: 0 1rem;
   }
 }
