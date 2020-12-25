@@ -22,14 +22,14 @@ const Home = () => {
   return (
     <div className='home'>
       {/* ▉ HOME PAGE BANNER/HERO */}
-      <div
+      <section
         className='home-banner'
         style={{
           backgroundImage: `url(${hero.background})`,
         }}
       >
         <Hero emphasis={hero.emphazisedWord} header={hero.header} />
-      </div>
+      </section>
 
       {/* ▉ INTRO SECTION */}
       <section className='main-quote'>

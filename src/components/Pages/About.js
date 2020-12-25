@@ -1,8 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 // Importing all data for this component from the database file
 import { about } from '../../data/database';
-import MemberCard from './AboutComponents/MemberCard';
+import Hero from './AboutComponents/AboutHero';
+import Members from './AboutComponents/Members';
+import Member from './AboutComponents/MemberCard';
 
 // Destructuring the data we need for this component
 const { hero, members } = about;
@@ -12,24 +14,12 @@ const About = () => {
   return (
     <div className='about'>
       <section className='about-banner'>
-        <div
-          className='about-banner__left'
-          style={{
-            backgroundImage: `url(${hero.leftImage})`,
-          }}
-        >
-          <div className='about-banner__heading-left'>What Drives Us</div>
-        </div>
-        <div
-          className='about-banner__right'
-          style={{
-            backgroundImage: `url(${hero.rightImage})`,
-          }}
-        >
-          <div className='about-banner__heading-right'>
-            Enabling intelligent systems to operate safely in any environment.
-          </div>
-        </div>
+        <Hero
+          leftHeading={hero.leftHeading}
+          rightHeading={hero.rightHeading}
+          leftImage={hero.leftImage}
+          rightImage={hero.rightImage}
+        />
       </section>
       <section className='about-description'>
         We are a group of space ninjas, engineers, GPS nerds, motorcycle racers,
@@ -38,13 +28,14 @@ const About = () => {
         helped put over 50 vehicles in space and have published over 50
         scientific papers advancing navigation technology.
       </section>
+      {/* Serves as a spacer between the team description and the team members section (with all the member cards) */}
       <div className='about-banner about-banner--spacer'>
         <div className='about-banner__left about-banner__left--spacer'></div>
         <div className='about-banner__right about-banner__right--spacer'></div>
       </div>
       <section className='xona-team'>
         <div className='xona-team__heading'>We are Xona</div>
-        <div className='xona-team__container'>
+        <div className='xona-team__members'>
           {members.map((member) => (
             <div className='member'>
               <img

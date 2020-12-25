@@ -1479,7 +1479,7 @@ body {
     text-decoration: underline;
     text-decoration-color: var(--color-primary);
     text-decoration-thickness: 2px; }
-  .xona-team__container {
+  .xona-team__members {
     display: flex;
     justify-content: space-around;
     gap: 3.333333333%;
