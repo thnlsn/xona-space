@@ -4,7 +4,6 @@ import React from 'react';
 import { about } from '../../data/database';
 import Hero from './AboutComponents/AboutHero';
 import Members from './AboutComponents/Members';
-import Member from './AboutComponents/MemberCard';
 
 // Destructuring the data we need for this component
 const { hero, description, teamHeading, members } = about;
@@ -30,7 +29,7 @@ const About = () => {
         <div className='about-banner__right about-banner__right--spacer'></div>
       </div>
       <section className='xona-team'>
-        <Members />
+        <Members heading={teamHeading} members={members} />
       </section>
     </div>
   );
