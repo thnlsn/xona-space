@@ -7,12 +7,13 @@ import Members from './AboutComponents/Members';
 import Member from './AboutComponents/MemberCard';
 
 // Destructuring the data we need for this component
-const { hero, members } = about;
+const { hero, description, teamHeading, members } = about;
 // const { icon /* iconWhite */ } = logos;
 
 const About = () => {
   return (
     <div className='about'>
+      {/* ▉ ABOUT PAGE BANNER/HERO */}
       <section className='about-banner'>
         <Hero
           leftHeading={hero.leftHeading}
@@ -21,46 +22,15 @@ const About = () => {
           rightImage={hero.rightImage}
         />
       </section>
-      <section className='about-description'>
-        We are a group of space ninjas, engineers, GPS nerds, motorcycle racers,
-        and adventurers. Our experience comes from SpaceX, Blue Origin, Booz
-        Allen Hamilton, NASA, Ford Motor Company, and Stanford GPS Lab. We
-        helped put over 50 vehicles in space and have published over 50
-        scientific papers advancing navigation technology.
-      </section>
-      {/* Serves as a spacer between the team description and the team members section (with all the member cards) */}
+      {/* ▉ ABOUT PAGE DESCRIPTION */}
+      <section className='about-description'>{description}</section>
+      {/*  ▉ SPACER - to provide some space between the team description and the team members section (with all the member cards) */}
       <div className='about-banner about-banner--spacer'>
         <div className='about-banner__left about-banner__left--spacer'></div>
         <div className='about-banner__right about-banner__right--spacer'></div>
       </div>
       <section className='xona-team'>
-        <div className='xona-team__heading'>We are Xona</div>
-        <div className='xona-team__members'>
-          {members.map((member) => (
-            <div className='member'>
-              <img
-                src={member.image}
-                alt={`${member.name}, ${member.role}`}
-                className='member__image'
-              />
-              <div className='member__name'>{member.name}</div>
-              <div className='member__role'>{member.role}</div>
-              <div className='member__experience'>
-                {member.experience.map((position) => (
-                  <div className='member__experience-container'>
-                    <div className='member__experience-title'>
-                      {position.title}
-                    </div>
-                    <div className='member__experience-location'>
-                      {position.location}
-                    </div>
-                  </div>
-                ))}
-                <div className='member__hobbies'>{member.hobbies}</div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Members />
       </section>
     </div>
   );

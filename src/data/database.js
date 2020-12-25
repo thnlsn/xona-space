@@ -295,6 +295,7 @@ const home = {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 const about = {
+  // SECTION ONE (The banner of the about page, so the left and right images and the text headings within them)
   hero: {
     leftHeading: 'What Drives Us',
     leftImage: require('../images/backgroundImages/team.jpg'),
@@ -302,6 +303,14 @@ const about = {
       'Enabling intelligent systems to operate safely in any environment',
     rightImage: require('../images/backgroundImages/city.jpg'),
   },
+  // SECTION TWO (The team description right under the banner)
+  description: `We are a group of space ninjas, engineers, GPS nerds, motorcycle racers,
+  and adventurers. Our experience comes from SpaceX, Blue Origin, Booz
+  Allen Hamilton, NASA, Ford Motor Company, and Stanford GPS Lab. We
+  helped put over 50 vehicles in space and have published over 50
+  scientific papers advancing navigation technology.`,
+  // SECTION THREE (The members section, the heading as well as all the member card components)
+  teamHeading: 'We are Xona',
   members: [
     {
       name: 'Brian Manning',
