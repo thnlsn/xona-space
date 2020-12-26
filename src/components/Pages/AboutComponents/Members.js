@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Member from './MemberCard';
 
-const Members = ({ heading, members, linkedInIcon }) => {
+const Members = ({ heading, members }) => {
   return (
     <Fragment>
       <div className='xona-team__heading'>{heading}</div>
@@ -14,7 +14,6 @@ const Members = ({ heading, members, linkedInIcon }) => {
             experience={member.experience}
             hobbies={member.hobbies}
             linkedIn={member.linkedIn}
-            linkedInIcon={linkedInIcon}
             key={index}
           />
         ))}

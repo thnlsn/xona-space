@@ -1,14 +1,6 @@
 import React from 'react';
 
-const MemberCard = ({
-  image,
-  name,
-  role,
-  experience,
-  hobbies,
-  linkedIn,
-  linkedInIcon,
-}) => {
+const MemberCard = ({ image, name, role, experience, hobbies, linkedIn }) => {
   return (
     <div className='member'>
       <div className='member__image-container'>
