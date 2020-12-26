@@ -1203,6 +1203,14 @@ body {
   margin-top: calc(var(--nav-height));
   padding: 0rem 15rem 6.5rem 15rem; }
 
+.about {
+  margin-top: calc(var(--nav-height));
+  padding: 0rem 25rem 6.5rem 25rem; }
+
+.contact {
+  margin-top: calc(var(--nav-height));
+  padding: 0rem 15rem 6.5rem 15rem; }
+
 .home-banner {
   background-size: cover;
   padding: 0 20rem 0 20rem;
@@ -1404,14 +1412,6 @@ body {
   gap: 3.333333333%;
   flex-wrap: wrap; }
 
-.about {
-  margin-top: calc(var(--nav-height));
-  padding: 0rem 25rem 6.5rem 25rem;
-  /*   background-image: linear-gradient(
-    var(--color-background),
-    var(--color-grey-dark-5)
-  ); */ }
-
 .about-banner {
   display: flex;
   height: 25vh;
@@ -1517,6 +1517,11 @@ body {
     justify-content: space-around;
     gap: 3.333333333%;
     flex-wrap: wrap; }
+
+.google-maps {
+  border: 0;
+  width: 600px;
+  height: 450px; }
 
 .archive {
   display: flex;
