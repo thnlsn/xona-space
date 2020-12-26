@@ -15,43 +15,52 @@
 
   border: 1px dotted var(--color-primary);
 
-  /*   border-bottom: 2px solid var(--color-grey-dark-5);
-  border-top: 2px solid var(--color-grey-dark-5);
-  border-radius: 25px;
-  background-image: linear-gradient(
-    180deg,
-    rgb(19, 19, 19) 0%,
-    rgba(8, 8, 8, 0.5018382352941176) 50%,
-    rgb(19, 19, 19) 100%
-  ); */
+  // The container for the headshot image of the member as well as the link to linkedin profile
+  &__image-container {
+    border-bottom: 2px solid var(--color-grey-dark-5);
+    border-top: 2px solid var(--color-grey-dark-5);
+    border-radius: 5px;
+    background-image: linear-gradient(
+      180deg,
+      rgb(19, 19, 19) 0%,
+      rgba(8, 8, 8, 0.5018382352941176) 50%,
+      rgb(19, 19, 19) 100%
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+
+  // The link tag, which holds just the linkedin icon
+  &__linkedin-link {
+    align-self: flex-end;
+  }
+
+  // The actual svg linkedin icon
+  &__linkedin-icon {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.35rem 0.25rem 0 0;
+
+    transition: fill 0.15s;
+    fill: var(--color-white);
+
+    &:hover {
+      fill: var(--color-grey-light-3);
+    }
+  }
 
   // The headshot of the team member
   &__image {
     border-radius: 5px;
     object-fit: cover;
     filter: grayscale(0.5);
-    border: 1px dotted var(--color-primary);
+    /* border: 1px dotted var(--color-primary); */
     margin-bottom: 0.25rem;
-  }
-
-  &__link {
-    align-self: flex-end;
-  }
-
-  &__linkedin-icon {
-    margin-bottom: -1rem;
-    padding: 2px;
-    border-radius: 10px;
-    width: 2.5rem;
-    height: auto;
-
-    // Initial animation state
-    transition: all 0.15s;
-    background-color: var(--color-white);
-
-    &:hover {
-      background-color: var(--color-grey-light-3);
-    }
   }
 
   // The current position of the team member
@@ -109,3 +118,24 @@
     padding: 0 1rem;
   }
 }
+
+/*   &__link {
+    align-self: flex-end;
+  }
+
+  &__linkedin {
+
+    margin-bottom: -1rem;
+    padding: 2px;
+    border-radius: 10px;
+    width: 2.5rem;
+    height: auto;
+
+    // Initial animation state
+    transition: all 0.15s;
+    background-color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-grey-light-3);
+    }
+  } */

@@ -1118,36 +1118,35 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 2rem 1.5rem 1rem 1.5rem;
-  border: 1px dotted var(--color-primary);
-  /*   border-bottom: 2px solid var(--color-grey-dark-5);
-  border-top: 2px solid var(--color-grey-dark-5);
-  border-radius: 25px;
-  background-image: linear-gradient(
-    180deg,
-    rgb(19, 19, 19) 0%,
-    rgba(8, 8, 8, 0.5018382352941176) 50%,
-    rgb(19, 19, 19) 100%
-  ); */ }
+  border: 1px dotted var(--color-primary); }
   .member:not(:last-child) {
     margin-bottom: 3rem; }
+  .member__image-container {
+    border-bottom: 2px solid var(--color-grey-dark-5);
+    border-top: 2px solid var(--color-grey-dark-5);
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, #131313 0%, rgba(8, 8, 8, 0.501838) 50%, #131313 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+    padding: 1rem 1rem 0.5rem 1rem; }
+  .member__linkedin-link {
+    align-self: flex-end; }
+  .member__linkedin-icon {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.35rem 0.25rem 0 0;
+    transition: fill 0.15s;
+    fill: var(--color-white); }
+    .member__linkedin-icon:hover {
+      fill: var(--color-grey-light-3); }
   .member__image {
     border-radius: 5px;
     object-fit: cover;
     filter: grayscale(0.5);
-    border: 1px dotted var(--color-primary);
+    /* border: 1px dotted var(--color-primary); */
     margin-bottom: 0.25rem; }
-  .member__link {
-    align-self: flex-end; }
-  .member__linkedin-icon {
-    margin-bottom: -1rem;
-    padding: 2px;
-    border-radius: 10px;
-    width: 2.5rem;
-    height: auto;
-    transition: all 0.15s;
-    background-color: var(--color-white); }
-    .member__linkedin-icon:hover {
-      background-color: var(--color-grey-light-3); }
   .member__experience {
     display: flex;
     flex-direction: column;
@@ -1176,6 +1175,26 @@ body {
     justify-self: flex-end;
     padding: 0 1rem; }
 
+/*   &__link {
+    align-self: flex-end;
+  }
+
+  &__linkedin {
+
+    margin-bottom: -1rem;
+    padding: 2px;
+    border-radius: 10px;
+    width: 2.5rem;
+    height: auto;
+
+    // Initial animation state
+    transition: all 0.15s;
+    background-color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-grey-light-3);
+    }
+  } */
 .main {
   /*   height: 500rem; // Testing */
   /* opacity: 1; */ }
