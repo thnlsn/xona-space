@@ -60,60 +60,74 @@ const Contact = () => {
             <div className='contact-form__container'>
               {/* Text input 1 */}
               <div className='contact-form__group'>
-                <input
-                  type='text'
-                  className='contact-form__input'
-                  placeholder='First name'
-                  id='first-name'
-                />
+                <div className='contact-form__input-box'>
+                  <input
+                    type='text'
+                    className='contact-form__input'
+                    placeholder='First name'
+                    id='first-name'
+                  />
+                </div>
                 <label htmlFor='first-name' className='form__label'>
                   First name
                 </label>
               </div>
+
               {/* Text input 2 */}
               <div className='contact-form__group'>
-                <input
-                  type='text'
-                  className='contact-form__input'
-                  placeholder='Last name'
-                  id='last-name'
-                />
+                <div className='contact-form__input-box'>
+                  <input
+                    type='text'
+                    className='contact-form__input'
+                    placeholder='Last name'
+                    id='last-name'
+                  />
+                </div>
                 <label htmlFor='last-name' className='form__label'>
                   Last name
                 </label>
               </div>
+
               {/* Text input 3 */}
               <div className='contact-form__group'>
-                <input
-                  type='email'
-                  className='contact-form__input'
-                  placeholder='Email'
-                  id='email'
-                />
+                <div className='contact-form__input-box'>
+                  <input
+                    type='email'
+                    className='contact-form__input'
+                    placeholder='Email'
+                    id='email'
+                  />
+                </div>
                 <label htmlFor='email' className='form__label'>
                   Email
                 </label>
               </div>
+
               {/* Text input 4 */}
               <div className='contact-form__group'>
-                <input
-                  type='text'
-                  className='contact-form__input'
-                  placeholder='Subject'
-                  id='subject'
-                />
+                <div className='contact-form__input-box'>
+                  <input
+                    type='text'
+                    className='contact-form__input'
+                    placeholder='Subject'
+                    id='subject'
+                  />
+                </div>
                 <label htmlFor='subject' className='form__label'>
                   Subject
                 </label>
               </div>
+
               {/* Text input 5 */}
-              <div className='contact-form__message'>
-                <textarea
-                  type='text'
-                  className='contact-form__input'
-                  placeholder='Message'
-                  id='message'
-                />
+              <div className='contact-form__group contact-form__group--message'>
+                <div className='contact-form__input-box'>
+                  <textarea
+                    type='text'
+                    className='contact-form__input'
+                    placeholder='Message'
+                    id='message'
+                  />
+                </div>
                 <label htmlFor='message' className='form__label'>
                   Leave us a message...
                 </label>
