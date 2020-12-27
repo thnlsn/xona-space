@@ -14,6 +14,7 @@
   --color-white: #ffffff;
   --color-black: #100;
   --color-background: #080808;
+  --color-invalid: #ca1551;
   --default-font-size: 1.6rem;
   --logo-height: 9.7rem;
   --nav-padding: 2rem;
@@ -863,6 +864,46 @@ body {
   font-weight: 500;
   color: var(--color-grey-light-3); }
 
+.about-banner__heading-left {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 6rem;
+  text-transform: uppercase;
+  color: var(--color-white);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 3px;
+  text-shadow: 0 0 5px #000; }
+
+.about-banner__heading-right {
+  font-size: 3.5rem;
+  text-shadow: 0 0 5px #000; }
+
+.about-description {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-shadow: 0 0 5px #000; }
+
+.xona-team {
+  font-size: 2rem; }
+  .xona-team__heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+    color: var(--color-white);
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px; }
+
+.contact-form__input-box {
+  font-size: 2.8rem; }
+  .contact-form__input-box input,
+  .contact-form__input-box textarea {
+    font-size: inherit; }
+  .contact-form__input-box textarea {
+    font-size: 5rem; }
+
 .navigation {
   z-index: 9999;
   background-color: rgba(8, 8, 8, 0.8);
@@ -977,7 +1018,7 @@ body {
       outline: none;
       border-bottom: 2px solid var(--color-primary-light); }
       .subscribe-form__input:focus:invalid {
-        border-bottom: 2px solid red; }
+        border-bottom: 2px solid var(--color-invalid); }
   .subscribe-form__btn {
     display: inline-block;
     font-family: 'Josefin Sans', sans-serif;
@@ -1458,20 +1499,10 @@ body {
     z-index: 1;
     text-shadow: 0 0 5px #000; }
   .about-banner__heading-left {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 6rem;
-    font-weight: 600;
-    line-height: 6rem;
-    text-transform: uppercase;
     width: 30rem;
     text-align: right;
-    padding: 1rem 1.5rem;
-    color: var(--color-white);
-    text-decoration: underline;
-    text-decoration-color: var(--color-primary);
-    text-decoration-thickness: 3px; }
+    padding: 1rem 1.5rem; }
   .about-banner__heading-right {
-    font-size: 3.5rem;
     width: 30rem;
     display: flex;
     justify-content: center; }
@@ -1481,9 +1512,6 @@ body {
 .about-description {
   text-align: center;
   width: 65%;
-  font-size: 2rem;
-  line-height: 3rem;
-  text-shadow: 0 0 5px #000;
   padding: 5rem 2rem 5rem 2rem;
   margin: 0 auto;
   border-bottom: 2px solid var(--color-grey-dark-4);
@@ -1492,7 +1520,6 @@ body {
 .xona-team {
   text-align: center;
   width: 100%;
-  font-size: 2rem;
   padding: 5rem 4rem 0 4rem;
   margin: 0 auto;
   position: relative;
@@ -1503,14 +1530,7 @@ body {
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--color-background);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
-    padding: 1rem 1.5rem;
-    color: var(--color-white);
-    text-decoration: underline;
-    text-decoration-color: var(--color-primary);
-    text-decoration-thickness: 2px; }
+    background-color: var(--color-background); }
   .xona-team__members {
     display: flex;
     justify-content: space-around;
@@ -1529,8 +1549,10 @@ body {
   align-items: center;
   gap: 10rem;
   padding: 5rem;
-  background-color: var(--color-grey-dark-5);
-  border-radius: 10px; }
+  border-bottom: 2px solid var(--color-grey-dark-5);
+  border-top: 2px solid var(--color-grey-dark-5);
+  border-radius: 25px;
+  background-image: linear-gradient(180deg, #131313 0%, rgba(8, 8, 8, 0.501838) 50%, #131313 100%); }
   .contact-banner__info-container {
     display: flex;
     flex-direction: column; }
@@ -1584,12 +1606,14 @@ body {
     color: yellowgreen; }
   .contact-form__container {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-between; }
   .contact-form__group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex: 1 0 50%; }
+    gap: 0.5rem;
+    flex: 0 0 35%; }
     .contact-form__group:not(:last-child) {
       margin-bottom: 3rem; }
     .contact-form__group--message {
@@ -1599,28 +1623,25 @@ body {
         width: 100%;
         height: 100%; }
         .contact-form__group--message .contact-form__input-box textarea {
-          width: 100%;
           height: 10rem;
           resize: none;
           vertical-align: top;
           overflow: auto; }
     .contact-form__group .contact-form__input-box {
       border: 1.5px solid var(--color-white);
-      padding: 0; }
-    .contact-form__group input,
-    .contact-form__group textarea {
-      padding: 1rem;
-      border: none;
-      border-bottom: 3px solid transparent;
-      background-color: transparent;
-      color: var(--color-white); }
-      .contact-form__group input:focus,
-      .contact-form__group textarea:focus {
-        outline: none;
-        border-bottom: 3px solid var(--color-primary-light); }
-        .contact-form__group input:focus:invalid,
-        .contact-form__group textarea:focus:invalid {
-          border-bottom: 3px solid red; }
+      width: 100%; }
+  .contact-form__input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 3px solid transparent;
+    background-color: transparent;
+    color: var(--color-white); }
+    .contact-form__input:focus {
+      outline: none;
+      border-bottom: 3px solid var(--color-primary-light); }
+      .contact-form__input:focus:invalid {
+        border-bottom: 3px solid red; }
 
 .archive {
   display: flex;

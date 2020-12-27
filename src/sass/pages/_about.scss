@@ -85,24 +85,13 @@
   }
 
   &__heading-left {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 6rem;
-    font-weight: 600;
-    line-height: 6rem;
-    text-transform: uppercase;
     width: 30rem;
     text-align: right;
 
     padding: 1rem 1.5rem;
-
-    color: var(--color-white);
-    text-decoration: underline;
-    text-decoration-color: var(--color-primary);
-    text-decoration-thickness: 3px;
   }
 
   &__heading-right {
-    font-size: 3.5rem;
     width: 30rem;
 
     display: flex;
@@ -118,10 +107,6 @@
   text-align: center;
   width: 65%;
 
-  font-size: 2rem;
-  line-height: 3rem;
-  text-shadow: 0 0 5px #000;
-
   padding: 5rem 2rem 5rem 2rem;
   margin: 0 auto;
   border-bottom: 2px solid var(--color-grey-dark-4);
@@ -131,7 +116,6 @@
 .xona-team {
   text-align: center;
   width: 100%;
-  font-size: 2rem;
   padding: 5rem 4rem 0 4rem;
   margin: 0 auto;
 
@@ -144,15 +128,6 @@
     @include absolute-center(0, 50%);
 
     background-color: var(--color-background);
-
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
-    padding: 1rem 1.5rem;
-
-    color: var(--color-white);
-    text-decoration: underline;
-    text-decoration-color: var(--color-primary);
-    text-decoration-thickness: 2px;
   }
 
   // The container of all the xona team members

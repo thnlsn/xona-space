@@ -84,7 +84,7 @@
 
       &:invalid {
         // Only on a focused element, should this apply (and only when it is invalid)
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid var(--color-invalid);
       }
     }
   }
