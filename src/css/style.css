@@ -1520,24 +1520,31 @@ body {
 
 .google-maps {
   border: 1px solid var(--color-primary);
-  width: 600px;
-  height: 450px; }
+  width: 50rem;
+  height: 35rem; }
 
-.contact-banner__socials {
+.contact-banner {
   display: flex;
-  gap: 1rem; }
-
-.contact-banner__svg {
-  padding: 3px;
-  border-radius: 10px;
-  color: var(--color-white);
-  height: 3rem;
-  width: 3rem;
-  transition: all 0.15s;
-  background-color: var(--color-white); }
-  .contact-banner__svg:hover {
-    background-color: var(--color-grey-light-3);
-    transform: scale(1.01); }
+  justify-content: center;
+  gap: 10rem; }
+  .contact-banner__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+  .contact-banner__socials {
+    display: flex;
+    gap: 1rem; }
+  .contact-banner__svg {
+    padding: 3px;
+    border-radius: 10px;
+    color: var(--color-white);
+    height: 3rem;
+    width: 3rem;
+    transition: all 0.15s;
+    background-color: var(--color-white); }
+    .contact-banner__svg:hover {
+      background-color: var(--color-grey-light-3);
+      transform: scale(1.01); }
 
 .archive {
   display: flex;

@@ -17,9 +17,11 @@ const Contact = () => {
           allowFullScreen
         ></iframe>
         <div className='contact-banner__info'>
-          <div className='contact-banner__heading'>Get in touch</div>
+          <div className='contact-banner__heading'>{hero.heading}</div>
           <div className='contact-banner__address-container'>
-            <div className='contact-banner__address-heading'>Address</div>
+            <div className='contact-banner__address-heading'>
+              {hero.subHeading1}
+            </div>
             <div className='contact-banner__address'>
               <span>157 South Blvd</span>
               <span>San Mateo, CA 94402</span>
