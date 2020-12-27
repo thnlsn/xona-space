@@ -19,16 +19,18 @@ const Contact = () => {
         <div className='contact-banner__info'>
           <div className='contact-banner__heading'>{hero.heading}</div>
           <div className='contact-banner__address-container'>
-            <div className='contact-banner__address-heading'>
+            <div className='contact-banner__sub-heading'>
               {hero.subHeading1}
             </div>
             <div className='contact-banner__address'>
-              <span>157 South Blvd</span>
-              <span>San Mateo, CA 94402</span>
+              <span>{hero.address.line1}</span>
+              <span>{hero.address.line2}</span>
             </div>
           </div>
           <div className='contact-banner__socials-container'>
-            <div className='contact-banner__socials-heading'>Follow Us</div>
+            <div className='contact-banner__sub-heading'>
+              {hero.subHeading2}
+            </div>
             <div className='contact-banner__socials'>
               {socials.map((social, index) => (
                 <a

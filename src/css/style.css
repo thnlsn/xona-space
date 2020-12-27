@@ -1519,18 +1519,40 @@ body {
     flex-wrap: wrap; }
 
 .google-maps {
-  border: 1px solid var(--color-primary);
+  border: 2px solid var(--color-primary);
   width: 50rem;
-  height: 35rem; }
+  height: 35rem;
+  border-radius: 10px; }
 
 .contact-banner {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10rem; }
   .contact-banner__info {
     display: flex;
     flex-direction: column;
-    gap: 2rem; }
+    gap: 2rem;
+    border-bottom: 2px solid var(--color-grey-dark-5);
+    border-top: 2px solid var(--color-grey-dark-5);
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, #131313 0%, rgba(8, 8, 8, 0.501838) 50%, #131313 100%);
+    padding: 1rem 2rem; }
+  .contact-banner__heading {
+    font-size: 3.5rem;
+    color: yellowgreen; }
+  .contact-banner__sub-heading {
+    font-size: 2.5rem;
+    color: violet;
+    flex: 0 0 50%; }
+  .contact-banner__address-container, .contact-banner__socials-container {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 300;
+    border-top: 2px solid var(--color-grey-dark-5);
+    padding: 2rem 0 0 0; }
+  .contact-banner__address span {
+    display: block; }
   .contact-banner__socials {
     display: flex;
     gap: 1rem; }
