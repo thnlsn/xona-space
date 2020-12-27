@@ -1580,18 +1580,19 @@ body {
       background-color: var(--color-grey-light-3);
       transform: scale(1.01); }
 
-.contact-form__heading {
-  color: yellowgreen; }
-
-.contact-form__container {
+.contact-form {
   display: flex;
-  flex-wrap: wrap; }
-
-.contact-form__group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1 0 50%; }
+  flex-direction: column; }
+  .contact-form__heading {
+    color: yellowgreen; }
+  .contact-form__container {
+    display: flex;
+    flex-wrap: wrap; }
+  .contact-form__group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 50%; }
 
 .archive {
   display: flex;

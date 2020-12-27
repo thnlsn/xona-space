@@ -97,7 +97,7 @@ const Contact = () => {
               {/* Text input 4 */}
               <div className='contact-form__group'>
                 <input
-                  type='subject'
+                  type='text'
                   className='contact-form__input'
                   placeholder='Subject'
                   id='subject'
@@ -107,15 +107,15 @@ const Contact = () => {
                 </label>
               </div>
               {/* Text input 5 */}
-              <div className='contact-form__group'>
-                <input
-                  type='message'
+              <div className='contact-form__message'>
+                <textarea
+                  type='text'
                   className='contact-form__input'
-                  placeholder='message'
+                  placeholder='Message'
                   id='message'
                 />
                 <label htmlFor='message' className='form__label'>
-                  message
+                  Leave us a message...
                 </label>
               </div>
             </div>
