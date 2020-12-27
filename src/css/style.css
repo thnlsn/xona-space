@@ -1208,7 +1208,7 @@ body {
   padding: 0rem 25rem 6.5rem 25rem; }
 
 .contact {
-  margin-top: calc(var(--nav-height));
+  margin-top: calc(var(--nav-height) + 2rem);
   padding: 0rem 15rem 6.5rem 15rem; }
 
 .home-banner {
@@ -1519,7 +1519,7 @@ body {
     flex-wrap: wrap; }
 
 .google-maps {
-  border: 0;
+  border: 1px solid var(--color-primary);
   width: 600px;
   height: 450px; }
 
