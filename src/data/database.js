@@ -10,26 +10,23 @@ const logos = {
   iconWhite: require('../images/logos/xona-icon-white.png'), // All-white compass icon
 };
 
-const footer = {
-  socials: [
-    {
-      name: 'LinkedIn',
-      icon: require('../images/icons/linkedin.svg'),
-      link: 'https://www.linkedin.com/company/xona-space-systems',
-    },
-    {
-      name: 'Twitter',
-      icon: require('../images/icons/twitter.svg'),
-      link: 'https://twitter.com/XonaSpace',
-    },
-    {
-      name: 'Instagram',
-      icon: require('../images/icons/instagram.svg'),
-      link: 'https://www.instagram.com/XonaSpace/',
-    },
-  ],
-};
-
+const socials = [
+  {
+    name: 'LinkedIn',
+    icon: require('../images/icons/linkedin.svg'),
+    link: 'https://www.linkedin.com/company/xona-space-systems',
+  },
+  {
+    name: 'Twitter',
+    icon: require('../images/icons/twitter.svg'),
+    link: 'https://twitter.com/XonaSpace',
+  },
+  {
+    name: 'Instagram',
+    icon: require('../images/icons/instagram.svg'),
+    link: 'https://www.instagram.com/XonaSpace/',
+  },
+];
 const home = {
   // SECTION ONE (The main hero of the home page)
   hero: {
@@ -477,7 +474,17 @@ const about = {
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 
-const contact = {};
+const contact = {
+  hero: {
+    heading: 'Get in touch',
+    subHeading1: 'Address',
+    subHeading2: 'Follow Us',
+    address: {
+      line1: '157 South Blvd',
+      line2: 'San Mateo, CA 94402',
+    },
+  },
+};
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -488,4 +495,4 @@ const contact = {};
 const careers = {};
 
 // EXPORT
-export { logos, home, about, contact, careers, footer };
+export { logos, home, about, contact, careers, socials };

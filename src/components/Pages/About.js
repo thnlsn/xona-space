@@ -1,9 +1,10 @@
 import React from 'react';
 
-// Importing all data for this component from the database file
-import { about } from '../../data/database';
 import Hero from './AboutComponents/AboutHero';
 import Members from './AboutComponents/Members';
+
+// Importing all data for this component from the database file
+import { about } from '../../data/database';
 
 // Destructuring the data we need for this component
 const { hero, description, teamHeading, members } = about;

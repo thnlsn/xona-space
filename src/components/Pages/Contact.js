@@ -6,9 +6,9 @@ const Contact = () => {
       <div className='contact-banner'>
         <iframe
           className='google-maps'
-          frameborder='0'
+          frameBorder='0'
           src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&q=Xona+Space+Systems`}
-          allowfullscreen='true'
+          allowFullScreen
         ></iframe>
         <div className='contact-banner__info'>
           <div className='contact-banner__heading'>Get in touch</div>
