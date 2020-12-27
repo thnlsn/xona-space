@@ -1523,6 +1523,22 @@ body {
   width: 600px;
   height: 450px; }
 
+.contact-banner__socials {
+  display: flex;
+  gap: 1rem; }
+
+.contact-banner__svg {
+  padding: 3px;
+  border-radius: 10px;
+  color: var(--color-white);
+  height: 3rem;
+  width: 3rem;
+  transition: all 0.15s;
+  background-color: var(--color-white); }
+  .contact-banner__svg:hover {
+    background-color: var(--color-grey-light-3);
+    transform: scale(1.01); }
+
 .archive {
   display: flex;
   justify-content: center;

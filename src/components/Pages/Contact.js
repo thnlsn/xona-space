@@ -1,5 +1,11 @@
 import React from 'react';
 
+// Importing all data for this component from the database file
+import { contact, socials } from '../../data/database';
+
+// Destructuring the data we need for this component
+const { hero } = contact;
+
 const Contact = () => {
   return (
     <div className='contact'>
@@ -21,7 +27,23 @@ const Contact = () => {
           </div>
           <div className='contact-banner__socials-container'>
             <div className='contact-banner__socials-heading'>Follow Us</div>
-            <div className='contact-banner__socials-links'></div>
+            <div className='contact-banner__socials'>
+              {socials.map((social, index) => (
+                <a
+                  href={social.link}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='contact-banner__social-link'
+                  key={index}
+                >
+                  <img
+                    className='contact-banner__svg'
+                    src={social.icon}
+                    alt={`${social.name} Link`}
+                  />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>

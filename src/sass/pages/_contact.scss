@@ -3,3 +3,27 @@
   width: 600px;
   height: 450px;
 }
+
+.contact-banner {
+  &__socials {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__svg {
+    padding: 3px;
+    border-radius: 10px;
+    color: var(--color-white);
+    height: 3rem;
+    width: 3rem;
+
+    // Initial animation state
+    transition: all 0.15s;
+    background-color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-grey-light-3);
+      transform: scale(1.01);
+    }
+  }
+}
