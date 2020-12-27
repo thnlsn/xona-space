@@ -10,12 +10,6 @@ const Contact = () => {
   return (
     <div className='contact'>
       <div className='contact-banner'>
-        <iframe
-          className='google-maps'
-          frameBorder='0'
-          src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&q=Xona+Space+Systems`}
-          allowFullScreen
-        ></iframe>
         <div className='contact-banner__info'>
           <div className='contact-banner__heading'>{hero.heading}</div>
           <div className='contact-banner__address-container'>
@@ -50,6 +44,13 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
+        <iframe
+          className='google-maps'
+          frameBorder='0'
+          src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&q=Xona+Space+Systems`}
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   );
