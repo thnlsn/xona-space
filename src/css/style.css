@@ -936,7 +936,7 @@ body {
   z-index: 9999;
   background-color: rgba(8, 8, 8, 0.8);
   backdrop-filter: blur(15px);
-  border-bottom-right-radius: 128px;
+  /* border-bottom-right-radius: 128px; */
   /* background-color: var(--color-black); */
   position: fixed;
   top: 0;
