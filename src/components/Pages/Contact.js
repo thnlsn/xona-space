@@ -117,22 +117,23 @@ const Contact = () => {
                   Subject
                 </label>
               </div>
-
-              {/* Text input 5 */}
-              <div className='contact-form__group contact-form__group--message'>
-                <div className='contact-form__input-box'>
-                  <textarea
-                    type='text'
-                    className='contact-form__input'
-                    placeholder='Message'
-                    id='message'
-                  />
-                </div>
-                <label htmlFor='message' className='form__label'>
-                  Leave us a message...
-                </label>
-              </div>
             </div>
+
+            {/* Text input 5 */}
+            <div className='contact-form__group contact-form__group--message'>
+              <div className='contact-form__input-box'>
+                <textarea
+                  type='text'
+                  className='contact-form__input'
+                  placeholder='Message'
+                  id='message'
+                />
+              </div>
+              <label htmlFor='message' className='form__label'>
+                Leave us a message...
+              </label>
+            </div>
+
             {/* A <button/> element automatically acts as a submit for a form */}
             <button className='btn btn--basic'>Submit</button>
           </form>

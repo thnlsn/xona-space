@@ -89,12 +89,15 @@
   display: flex;
   flex-direction: column;
 
-  gap: 2rem;
+  &__heading {
+    margin-bottom: 2rem;
+  }
 
   &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 
     flex: 1;
   }
@@ -111,12 +114,10 @@
     // All inputs take 50% space so that they wrap in groups of 2
     flex: 0 0 45%;
 
-    /*     &:not(:last-child) {
-      margin-bottom: 3rem;
-    } */
+    margin-bottom: 2rem;
 
     &--message {
-      flex: 1 0 100%;
+      flex: 1;
 
       .contact-form__input-box {
         border: 1.5px solid var(--color-white);
@@ -125,7 +126,6 @@
         textarea {
           height: 100%;
           resize: none;
-          vertical-align: top;
           overflow: auto;
         }
       }
@@ -142,6 +142,7 @@
     padding: 1rem; // Spacing inside the input so the text/placeholder isn't cramped
     border: none;
     border-bottom: 4px solid transparent;
+    vertical-align: bottom;
 
     background-color: transparent;
     color: var(--color-white);
@@ -157,5 +158,10 @@
         border-bottom: 4px solid var(--color-invalid);
       }
     }
+  }
+
+  .btn {
+    align-self: center;
+    padding: 1.5rem 3rem;
   }
 }
