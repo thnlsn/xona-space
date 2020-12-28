@@ -139,6 +139,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <div className='world-map-section'></div>
     </div>
   );
 };

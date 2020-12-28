@@ -3,9 +3,7 @@
   flex: 0 0 22.5%;
 
   // Not the last child so that it doesnt mess with layout margins/spacing, we only want this bottom margin between rows for spacing reasons
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
+  margin-bottom: 3rem;
 
   display: flex;
   flex-direction: column;
