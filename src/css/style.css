@@ -1046,6 +1046,7 @@ body {
   display: inline-block;
   border: none;
   cursor: pointer;
+  position: relative;
   font-size: var(--default-font-size); }
 
 .btn:active, .btn:focus {
@@ -1054,7 +1055,8 @@ body {
 
 .btn--basic {
   z-index: 1; }
-  .btn--basic:link, .btn--basic:visited {
+  .btn--basic, .btn--basic:link, .btn--basic:visited {
+    background-color: transparent;
     border: 1px solid var(--color-white);
     text-decoration: none;
     text-transform: capitalize;

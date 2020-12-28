@@ -1,8 +1,9 @@
 .btn {
-  &, // This selection is only for <button/> elements, since they do not come with :link & :visited states, we have to target itself
-    // link and visited are pseudo-classes, so we write the style for these specific states of the anchor element
-    &:link,
-    &:visited {
+  // This selection is only for <button/> elements, since they do not come with :link & :visited states, we have to target itself
+  // link and visited are pseudo-classes, so we write the style for these specific states of the anchor element
+  &,
+  &:link,
+  &:visited {
     text-decoration: none;
     display: inline-block; // This forces the block model to work and not allow the padding to overlap the above elements (a tags are inline by default)
 
@@ -10,6 +11,7 @@
     border: none;
     cursor: pointer;
 
+    position: relative; // This is being set here so that the ::after pseudo-element uses it for its position: absolute calculations (instead of the header where is was also set)
     font-size: var(--default-font-size);
   }
 
@@ -26,8 +28,12 @@
 
   &--basic {
     z-index: 1; // New context
+
+    // Self farget with & so that it works on buttons elements too
+    &,
     &:link,
     &:visited {
+      background-color: transparent;
       border: 1px solid var(--color-white);
       text-decoration: none;
       text-transform: capitalize;

@@ -133,6 +133,8 @@ const Contact = () => {
                 </label>
               </div>
             </div>
+            {/* A <button/> element automatically acts as a submit for a form */}
+            <button className='btn btn--basic'>Submit</button>
           </form>
         </div>
       </div>
