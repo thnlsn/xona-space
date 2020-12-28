@@ -12,7 +12,7 @@ const Contact = () => {
       <div className='contact-banner'>
         <div className='contact-banner__info-container'>
           <div className='contact-banner__info'>
-            <div className='contact-banner__heading'>{hero.heading}</div>
+            <h2 className='contact-banner__heading'>{hero.heading}</h2>
             <div className='contact-banner__address-container'>
               <div className='contact-banner__sub-heading'>
                 {hero.subHeading1}
