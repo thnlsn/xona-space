@@ -29,7 +29,7 @@
   &--basic {
     z-index: 1; // New context
 
-    // Self farget with & so that it works on buttons elements too
+    // Self target with & so that it works on buttons elements too
     &,
     &:link,
     &:visited {
@@ -38,7 +38,6 @@
       text-decoration: none;
       text-transform: capitalize;
 
-      width: 60%;
       padding: 1.5rem 1rem 1.5rem 1rem;
 
       position: relative; // So ::after is based on btn position
@@ -46,6 +45,7 @@
       transition: color 0.15s 0.009s, transform 0.1s;
       color: currentColor;
     }
+
     &:hover {
       // Text should turn black
       color: var(--color-black);

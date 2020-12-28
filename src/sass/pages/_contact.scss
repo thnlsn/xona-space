@@ -40,14 +40,7 @@
     margin-bottom: 2rem;
   }
 
-  &__heading {
-    font-size: 3.5rem;
-    color: yellowgreen;
-  }
-
   &__sub-heading {
-    font-size: 2.5rem;
-    color: violet;
     flex: 0 0 50%;
   }
 
@@ -98,16 +91,10 @@
 
   gap: 2rem;
 
-  &__heading {
-    font-size: 3.5rem;
-    color: yellowgreen;
-  }
-
   &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: space-between;
 
     flex: 1;
   }
@@ -124,22 +111,21 @@
     // All inputs take 50% space so that they wrap in groups of 2
     flex: 0 0 45%;
 
-    &:not(:last-child) {
+    /*     &:not(:last-child) {
       margin-bottom: 3rem;
-    }
+    } */
 
     &--message {
       flex: 1 0 100%;
 
       .contact-form__input-box {
         border: 1.5px solid var(--color-white);
-        width: 100%;
         height: 100%;
 
         textarea {
           height: 100%;
           resize: none;
-          vertical-align: top; //
+          vertical-align: top;
           overflow: auto;
         }
       }
