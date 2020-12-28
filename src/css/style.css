@@ -922,7 +922,7 @@ body {
   text-decoration-thickness: 2px; }
 
 .contact-form__input-box {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Lato', sans-serif;
   font-weight: 400; }
   .contact-form__input-box input,
@@ -1279,7 +1279,7 @@ body {
 
 .contact {
   margin-top: calc(var(--nav-height) + 2rem);
-  padding: 0rem 15rem 6.5rem 15rem; }
+  padding: 0rem 30rem 6.5rem 30rem; }
 
 .home-banner {
   background-size: cover;
