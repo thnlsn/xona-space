@@ -22,7 +22,7 @@
 // ▓▓▓ ABOUT  PAGE LAYOUT ▓▓▓
 .about {
   margin-top: calc(var(--nav-height));
-  padding: 0rem 25rem 6.5rem 25rem;
+  padding: 0rem 25rem 3.5rem 25rem; // 3.5 because 6.5 - 3 -- this is because of the bottom-margin of 3rem under each member component
 }
 
 // ▓▓▓ CONTACT PAGE LAYOUT ▓▓▓
@@ -33,8 +33,6 @@
 
 // ▓▓▓ CAREERS PAGE LAYOUT ▓▓▓
 .careers {
-  margin-top: calc(var(--nav-height));
+  margin-top: calc(var(--nav-height) - 1rem);
   padding: 0rem 0rem 6.5rem 0rem;
-
-  height: 100rem;
 }

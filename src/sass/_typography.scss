@@ -296,3 +296,24 @@ body {
     font-weight: 300;
   }
 }
+
+.availabilities {
+  &__heading {
+    font-size: 3rem;
+
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px;
+    text-shadow: 0 0 5px #000;
+  }
+  &__positions {
+  }
+}
+
+.position {
+  font-size: 2.5rem;
+
+  &__details {
+    font-size: 2rem;
+  }
+}

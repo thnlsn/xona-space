@@ -960,6 +960,18 @@ body {
   text-shadow: 0 0 5px #000;
   font-weight: 300; }
 
+.availabilities__heading {
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 2px;
+  text-shadow: 0 0 5px #000; }
+
+.position {
+  font-size: 2.5rem; }
+  .position__details {
+    font-size: 2rem; }
+
 .navigation {
   z-index: 9999;
   background-color: rgba(8, 8, 8, 0.8);
@@ -1302,16 +1314,15 @@ body {
 
 .about {
   margin-top: calc(var(--nav-height));
-  padding: 0rem 25rem 6.5rem 25rem; }
+  padding: 0rem 25rem 3.5rem 25rem; }
 
 .contact {
   margin-top: calc(var(--nav-height) + 2rem);
   padding: 0rem 30rem 6.5rem 30rem; }
 
 .careers {
-  margin-top: calc(var(--nav-height));
-  padding: 0rem 0rem 6.5rem 0rem;
-  height: 100rem; }
+  margin-top: calc(var(--nav-height) - 1rem);
+  padding: 0rem 0rem 6.5rem 0rem; }
 
 .home-banner {
   background-size: cover;
@@ -1727,17 +1738,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 3rem;
-  padding: 6.5rem 15rem 6.5rem 15rem; }
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 6rem 15rem 6rem 15rem; }
   .benefits__item {
     text-align: center;
-    flex: 17.6rem; }
+    flex: 17.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* 
+    background-image: radial-gradient(
+      var(--color-primary),
+      transparent,
+      transparent
+    ); */ }
   .benefits ion-icon {
     font-size: 16rem;
     color: var(--color-white);
     --ionicon-stroke-width: 16px; }
-  .benefits__heading {
-    margin-bottom: 1rem; }
+  .benefits__description {
+    padding: 0 1rem; }
 
 /* ion-icon {
     --ionicon-stroke-width: 16px;
@@ -1745,6 +1767,24 @@ body {
   ion-icon {
     font-size: 16rem;
   } */
+.availabilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; }
+
+.position {
+  display: flex;
+  gap: 4rem; }
+  .position__details {
+    display: flex;
+    gap: 0.5rem;
+    list-style-type: none; }
+    .position__details :not(:last-child) {
+      padding-right: 0.5rem;
+      border-right: 2px solid var(--color-primary); }
+
 .archive {
   display: flex;
   justify-content: center;
