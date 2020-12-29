@@ -1697,8 +1697,16 @@ body {
     z-index: 0;
     background-image: linear-gradient(to right bottom, rgba(41, 122, 122, 0.562), rgba(27, 63, 63, 0.664)); }
 
-.benefits ion-icon {
-  font-size: 16rem; }
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+  padding: 10rem 15rem 10rem 15rem; }
+  .benefits__item {
+    text-align: center; }
+  .benefits ion-icon {
+    font-size: 16rem; }
 
 /* ion-icon {
     --ionicon-stroke-width: 16px;

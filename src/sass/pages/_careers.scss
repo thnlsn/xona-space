@@ -23,9 +23,18 @@
   }
 }
 
+// The container for the benefits section
 .benefits {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+
+  padding: 10rem 15rem 10rem 15rem;
+
   // The individual benefit item, with the icon, heading, and description text
   &__item {
+    text-align: center;
   }
 
   // This is specifically the ion-icon within the benefit item
