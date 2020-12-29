@@ -499,6 +499,69 @@ const careers = {
     subHeading: 'Join us!',
     backgroundImage: require('../images/backgroundImages/weather-data.jpg'),
   },
+  benefits: [
+    {
+      icon: 'train-outline',
+      heading: 'Close to Public Transportation',
+      text:
+        'Our office is within walking distance of the Hayward Park Caltrain Station and has easy access to highways 101 and 92',
+    },
+    {
+      icon: 'airplane-outline',
+      heading: 'Open Vacation Policy',
+      text:
+        'We love our hobbies and value work-life balance so we offer an open vacation policy',
+    },
+    {
+      icon: 'cafe-outline',
+      heading: 'Free Snacks and Beverages',
+      text:
+        'Whatever snacks and beverages you need to help get you through the day',
+    },
+    {
+      icon: 'heart-outline',
+      heading: 'Health Care',
+      text: 'We offer comprehensive medical, dental, and vision insurance',
+    },
+    {
+      icon: 'calendar-outline',
+      heading: 'Parental Leave',
+      text:
+        'Twelve weeks fully paid parental leave with the flexibility to use it when you need to',
+    },
+  ],
+  availabilities: {
+    heading: 'Available Positions',
+    buttonText: 'More Info',
+  },
+  // Every available position should be listed in this array
+  positions: [
+    {
+      title: 'Sr. Software Engineer',
+      area: 'Engineering',
+      location: 'San Mateo, CA',
+      time: 'Full-time',
+      // Descriptions are seperated up by paragraph, and all will de displayed in order on that specific positions page
+      description: [
+        'Modern intelligent systems such as self-driving cars, aerial mobility, and mobile robotics have phenomenal potential to make all forms of transportation more efficient and safer. However, to realize the full extent of this potential, these systems must be able to navigate safely in any environment, anywhere on the planet. The most ubiquitous and widely used source of navigation, GNSS (commonly referred to as GPS), cannot deliver the precision or security needed to support these industries.',
+        'Xona is at the forefront of making precise and resilient navigation available on a global scale to help the age of autonomy expand its reach to everyone who can stand to benefit from it. Our success is dependent upon building an agile and diverse team that is excited about building things that have a real-world impact. We are curious, passionate, innovative, and thrive in a collaborative environment. Experience with space-tech is not required, and even if you don’t meet many of the desired qualifications below we would still love to connect and receive an application from you!',
+        'Xona is looking for a Sr. Software Engineer to join our Navigation Systems team. Here you’ll be responsible for leading the development of state-of-the-art software for a new generation of satellite navigation systems. You’ll work hand-in-hand with domain experts to implement and deploy novel algorithms and schema for precision navigation and state estimation on test and flight hardware. As we progress towards the first launch you’ll support system integration, debugging, and hardware in the loop testing with the flight hardware to get your hard work into space!',
+      ],
+      // Each will de diplsayed in order
+      desiredQualifications: [
+        'Bachelor’s or Master’s degree in Computer Science, Electrical Engineering, Mechanical Engineering, Aerospace Engineering or a relevant field',
+        '5+ years of professional software development experience',
+        'Experience with embedded software design and implementation for automotive, industrial, aerospace/military, or other safety-critical systems',
+        'Proven success in a fast-paced, cross-functional engineering team environment',
+        'Experience building and executing test plans to validate software for production release',
+        'Understanding of GPS, GNSS, or other forms of navigation / localization',
+        'Familiarity with orbital mechanics, estimation theory, Kalman Filtering',
+      ],
+      requiredQualifications: [
+        'All candidates must be either a U.S. Citizen or Permanent Resident (Green Card holder) due to U.S. export control regulations.',
+      ],
+    },
+  ],
 };
 
 // EXPORT
