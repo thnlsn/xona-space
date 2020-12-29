@@ -1614,13 +1614,7 @@ body {
   border-bottom: 2px solid var(--color-grey-dark-4);
   border-top: 2px solid var(--color-grey-dark-4);
   border-radius: 25px;
-  /*   background-image: linear-gradient(
-    180deg,
-    rgb(19, 19, 19) 0%,
-    rgba(8, 8, 8, 0.5018382352941176) 50%,
-    rgb(19, 19, 19) 100%
-  ); */
-  background-color: #131313; }
+  background-image: linear-gradient(180deg, #131313 0%, rgba(14, 14, 14, 0.502) 50%, #131313 100%); }
   .contact-banner__info-container {
     display: flex;
     flex-direction: column; }
