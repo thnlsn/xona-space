@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Careers = () => {
+const Careers = ({ backgroundImage }) => {
   return (
     <div className='careers'>
-      <ion-icon name='heart'></ion-icon>
+      <div
+        className='careers-banner'
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
+      ></div>
     </div>
   );
 };

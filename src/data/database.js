@@ -492,7 +492,14 @@ const contact = {
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
 
-const careers = {};
+const careers = {
+  hero: {
+    heading:
+      'At Xona, our success is dependent upon building an agile team that thrives on doing more with less',
+    subHeading: 'Join us!',
+    backgroundImage: require('../images/backgroundImages/weather-data.jpg'),
+  },
+};
 
 // EXPORT
 export { logos, home, about, contact, careers, socials };

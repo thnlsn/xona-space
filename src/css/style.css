@@ -763,6 +763,9 @@ body {
 .u-marbot-small {
   margin-bottom: 0.5rem; }
 
+ion-icon {
+  --ionicon-stroke-width: 16px; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: var(--default-font-size);
@@ -1679,6 +1682,12 @@ body {
   .contact-form .btn {
     align-self: center;
     padding: 1.5rem 3rem; }
+
+ion-icon {
+  --ionicon-stroke-width: 16px; }
+
+ion-icon {
+  font-size: 16rem; }
 
 .archive {
   display: flex;
