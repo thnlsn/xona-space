@@ -1285,7 +1285,7 @@ body {
 
 .careers {
   margin-top: calc(var(--nav-height));
-  padding: 0rem 25rem 6.5rem 25rem;
+  padding: 0rem 0rem 6.5rem 0rem;
   height: 100rem; }
 
 .home-banner {
@@ -1683,10 +1683,24 @@ body {
     align-self: center;
     padding: 1.5rem 3rem; }
 
-ion-icon {
+.careers-banner {
+  height: 40rem;
+  background-size: cover;
+  position: relative; }
+  .careers-banner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-image: linear-gradient(to right bottom, rgba(41, 122, 122, 0.562), rgba(27, 63, 63, 0.664)); }
+
+.careers-benefits ion-icon {
   --ionicon-stroke-width: 16px; }
 
-ion-icon {
+.careers-benefits ion-icon {
   font-size: 16rem; }
 
 .archive {

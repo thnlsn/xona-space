@@ -1,6 +1,32 @@
-ion-icon {
-  --ionicon-stroke-width: 16px;
+.careers-banner {
+  height: 40rem;
+  background-size: cover;
+
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: 0;
+
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(41, 122, 122, 0.562),
+      rgba(27, 63, 63, 0.664)
+    );
+  }
 }
-ion-icon {
-  font-size: 16rem;
+
+.careers-benefits {
+  ion-icon {
+    --ionicon-stroke-width: 16px;
+  }
+  ion-icon {
+    font-size: 16rem;
+  }
 }

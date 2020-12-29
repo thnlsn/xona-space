@@ -497,7 +497,7 @@ const careers = {
     heading:
       'At Xona, our success is dependent upon building an agile team that thrives on doing more with less',
     subHeading: 'Join us!',
-    backgroundImage: require('../images/backgroundImages/weather-data.jpg'),
+    backgroundImage: require('../images/backgroundImages/star-trails.jpg'),
   },
   benefits: [
     {
