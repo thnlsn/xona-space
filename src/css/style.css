@@ -1697,12 +1697,15 @@ body {
     z-index: 0;
     background-image: linear-gradient(to right bottom, rgba(41, 122, 122, 0.562), rgba(27, 63, 63, 0.664)); }
 
-.careers-benefits ion-icon {
-  --ionicon-stroke-width: 16px; }
-
-.careers-benefits ion-icon {
+.benefits ion-icon {
   font-size: 16rem; }
 
+/* ion-icon {
+    --ionicon-stroke-width: 16px;
+  }
+  ion-icon {
+    font-size: 16rem;
+  } */
 .archive {
   display: flex;
   justify-content: center;

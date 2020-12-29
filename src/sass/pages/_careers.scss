@@ -23,11 +23,28 @@
   }
 }
 
-.careers-benefits {
+.benefits {
+  // The individual benefit item, with the icon, heading, and description text
+  &__item {
+  }
+
+  // This is specifically the ion-icon within the benefit item
   ion-icon {
+    font-size: 16rem;
+  }
+
+  // The heading of the benefit
+  &__heading {
+  }
+
+  // The short description detailing the benefit
+  &__description {
+  }
+}
+
+/* ion-icon {
     --ionicon-stroke-width: 16px;
   }
   ion-icon {
     font-size: 16rem;
-  }
-}
+  } */
