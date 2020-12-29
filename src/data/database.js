@@ -501,6 +501,11 @@ const careers = {
   },
   benefits: [
     {
+      // The strings stored in icon are from Ionicons, which is a free source of SVG icons.
+      // The string provided, if it matches an icon in their database, will output that icon on the site.
+      // Look through available icons here: https://ionicons.com/
+      // Click on one and you will get the web component code, but ignore that and just copy and paste the value listed in the name="<COPY-THIS-VALUE>"
+      // It will be something like "heart" or "heart-outline" or "heart-sharp"
       icon: 'train-outline',
       heading: 'Close to Public Transportation',
       text:
