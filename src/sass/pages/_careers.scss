@@ -47,6 +47,8 @@
   // This is specifically the ion-icon within the benefit item
   ion-icon {
     font-size: 16rem;
+    color: var(--color-white);
+    --ionicon-stroke-width: 16px;
   }
 
   // The heading of the benefit

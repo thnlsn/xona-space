@@ -935,9 +935,6 @@ body {
 .benefits__item {
   text-align: center; }
 
-.benefits ion-icon {
-  font-size: 16rem; }
-
 .navigation {
   z-index: 9999;
   background-color: rgba(8, 8, 8, 0.8);
@@ -1716,7 +1713,9 @@ body {
   .benefits__item {
     text-align: center; }
   .benefits ion-icon {
-    font-size: 16rem; }
+    font-size: 16rem;
+    color: var(--color-white);
+    --ionicon-stroke-width: 16px; }
 
 /* ion-icon {
     --ionicon-stroke-width: 16px;
