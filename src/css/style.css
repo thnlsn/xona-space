@@ -1280,6 +1280,11 @@ body {
   margin-top: calc(var(--nav-height) + 2rem);
   padding: 0rem 30rem 6.5rem 30rem; }
 
+.careers {
+  margin-top: calc(var(--nav-height));
+  padding: 0rem 25rem 6.5rem 25rem;
+  height: 100rem; }
+
 .home-banner {
   background-size: cover;
   padding: 0 20rem 0 20rem;
