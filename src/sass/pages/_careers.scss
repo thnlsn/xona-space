@@ -4,6 +4,7 @@
 
   position: relative;
 
+  // Overlay to give a tint to the banner
   &:after {
     content: '';
     position: absolute;
