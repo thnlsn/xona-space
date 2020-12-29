@@ -245,3 +245,65 @@ body {
     }
   }
 }
+// // // // // // // // // // // // // // // // //
+// CAREERS PAGE
+// // // // // // // // // // // // // // // // //
+.careers-banner {
+  height: 40rem;
+  background-size: cover;
+
+  position: relative;
+
+  // Overlay to give a tint to the banner
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: 0;
+
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(41, 122, 122, 0.562),
+      rgba(27, 63, 63, 0.664)
+    );
+  }
+
+  &__heading {
+    position: relative; // So that this z-index will work
+    z-index: 1;
+
+    @include absolute-center(50%, 50%);
+  }
+}
+
+// The container for the benefits section
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+
+  padding: 10rem 15rem 10rem 15rem;
+
+  // The individual benefit item, with the icon, heading, and description text
+  &__item {
+    text-align: center;
+  }
+
+  // This is specifically the ion-icon within the benefit item
+  ion-icon {
+    font-size: 16rem;
+  }
+
+  // The heading of the benefit
+  &__heading {
+  }
+
+  // The short description detailing the benefit
+  &__description {
+  }
+}

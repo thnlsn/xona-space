@@ -21,6 +21,13 @@
       rgba(27, 63, 63, 0.664)
     );
   }
+
+  &__heading {
+    position: relative; // So that this z-index will work
+    z-index: 1;
+
+    @include absolute-center(50%, 50%);
+  }
 }
 
 // The container for the benefits section
