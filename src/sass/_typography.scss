@@ -3,9 +3,7 @@
 // font-family: 'Ubuntu Condensed', sans-serif;     ||
 // font-family: 'Josefin Sans', sans-serif;         ||   100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700
 
-ion-icon {
-  --ionicon-stroke-width: 16px;
-}
+// ▓▓▓ DEFAULT TYPOGRAPHY ▓▓▓
 
 // These is the default typography for the site
 body {
@@ -14,6 +12,8 @@ body {
   color: var(--color-white);
   font-weight: 400;
 }
+
+// ▓▓▓ HOME PAGE TYPOGRAPHY ▓▓▓
 
 .heading-primary {
   font-family: 'Open Sans', sans-serif;
@@ -104,6 +104,8 @@ body {
   letter-spacing: 2.5rem;
   text-shadow: 0 0 5px #000;
 }
+
+// ▓▓▓ ABOUT PAGE TYPOGRAPHY ▓▓▓
 
 .member {
   // The headshot of the team member
@@ -196,6 +198,8 @@ body {
   }
 }
 
+// ▓▓▓ CONTACT PAGE TYPOGRAPHY ▓▓▓
+
 .contact-banner {
   &__heading {
     font-family: 'Josefin Sans', sans-serif;
@@ -245,50 +249,16 @@ body {
     }
   }
 }
-// // // // // // // // // // // // // // // // //
-// CAREERS PAGE
-// // // // // // // // // // // // // // // // //
+
+// ▓▓▓ CAREERS PAGE TYPOGRAPHY ▓▓▓
+
 .careers-banner {
-  height: 40rem;
-  background-size: cover;
-
-  position: relative;
-
-  // Overlay to give a tint to the banner
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-
-    z-index: 0;
-
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(41, 122, 122, 0.562),
-      rgba(27, 63, 63, 0.664)
-    );
-  }
-
   &__heading {
-    position: relative; // So that this z-index will work
-    z-index: 1;
-
-    @include absolute-center(50%, 50%);
   }
 }
 
 // The container for the benefits section
 .benefits {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 3rem;
-
-  padding: 10rem 15rem 10rem 15rem;
-
   // The individual benefit item, with the icon, heading, and description text
   &__item {
     text-align: center;

@@ -763,9 +763,6 @@ body {
 .u-marbot-small {
   margin-bottom: 0.5rem; }
 
-ion-icon {
-  --ionicon-stroke-width: 16px; }
-
 body {
   font-family: 'Lato', sans-serif;
   font-size: var(--default-font-size);
@@ -935,37 +932,11 @@ body {
     font-family: inherit;
     font-weight: inherit; }
 
-.careers-banner {
-  height: 40rem;
-  background-size: cover;
-  position: relative; }
-  .careers-banner:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-    background-image: linear-gradient(to right bottom, rgba(41, 122, 122, 0.562), rgba(27, 63, 63, 0.664)); }
-  .careers-banner__heading {
-    position: relative;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+.benefits__item {
+  text-align: center; }
 
-.benefits {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 3rem;
-  padding: 10rem 15rem 10rem 15rem; }
-  .benefits__item {
-    text-align: center; }
-  .benefits ion-icon {
-    font-size: 16rem; }
+.benefits ion-icon {
+  font-size: 16rem; }
 
 .navigation {
   z-index: 9999;
