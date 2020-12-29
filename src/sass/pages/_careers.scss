@@ -16,9 +16,10 @@
     z-index: 0;
 
     background-image: linear-gradient(
-      to right bottom,
-      rgba(41, 122, 122, 0.562),
-      rgba(27, 63, 63, 0.664)
+      to bottom,
+      rgba(8, 8, 8, 1),
+      rgba(8, 8, 8, 0.6),
+      rgba(8, 8, 8, 1)
     );
   }
 
@@ -37,11 +38,12 @@
   align-items: stretch;
   gap: 3rem;
 
-  padding: 10rem 15rem 10rem 15rem;
+  padding: 6.5rem 15rem 6.5rem 15rem;
 
   // The individual benefit item, with the icon, heading, and description text
   &__item {
     text-align: center;
+    flex: 17.6rem;
   }
 
   // This is specifically the ion-icon within the benefit item
@@ -53,6 +55,7 @@
 
   // The heading of the benefit
   &__heading {
+    margin-bottom: 1rem;
   }
 
   // The short description detailing the benefit

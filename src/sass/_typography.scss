@@ -212,12 +212,14 @@ body {
     text-decoration: underline;
     text-decoration-color: var(--color-primary);
     text-decoration-thickness: 2px;
+    text-shadow: 0 0 5px #000;
   }
 
   &__sub-heading {
     font-size: 2.5rem;
     font-weight: 400;
     flex: 0 0 50%;
+    text-shadow: 0 0 5px #000;
   }
 }
 
@@ -233,6 +235,7 @@ body {
     text-decoration: underline;
     text-decoration-color: var(--color-primary);
     text-decoration-thickness: 2px;
+    text-shadow: 0 0 5px #000;
   }
 
   &__input-box {
@@ -254,6 +257,10 @@ body {
 
 .careers-banner {
   &__heading {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 4.5rem;
+    text-shadow: 0 0 5px #000;
+    font-weight: 300;
   }
 }
 
@@ -270,9 +277,22 @@ body {
 
   // The heading of the benefit
   &__heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 0 0 5px #000;
+    font-weight: 400;
+
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px;
+    text-shadow: 0 0 5px #000;
   }
 
   // The short description detailing the benefit
   &__description {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-shadow: 0 0 5px #000;
+    font-weight: 300;
   }
 }

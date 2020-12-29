@@ -904,12 +904,14 @@ body {
   color: var(--color-white);
   text-decoration: underline;
   text-decoration-color: var(--color-primary);
-  text-decoration-thickness: 2px; }
+  text-decoration-thickness: 2px;
+  text-shadow: 0 0 5px #000; }
 
 .contact-banner__sub-heading {
   font-size: 2.5rem;
   font-weight: 400;
-  flex: 0 0 50%; }
+  flex: 0 0 50%;
+  text-shadow: 0 0 5px #000; }
 
 .contact-form__heading {
   font-family: 'Josefin Sans', sans-serif;
@@ -919,7 +921,8 @@ body {
   color: var(--color-white);
   text-decoration: underline;
   text-decoration-color: var(--color-primary);
-  text-decoration-thickness: 2px; }
+  text-decoration-thickness: 2px;
+  text-shadow: 0 0 5px #000; }
 
 .contact-form__input-box {
   font-size: 1.8rem;
@@ -932,8 +935,30 @@ body {
     font-family: inherit;
     font-weight: inherit; }
 
+.careers-banner__heading {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 4.5rem;
+  text-shadow: 0 0 5px #000;
+  font-weight: 300; }
+
 .benefits__item {
   text-align: center; }
+
+.benefits__heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px #000;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 2px;
+  text-shadow: 0 0 5px #000; }
+
+.benefits__description {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  text-shadow: 0 0 5px #000;
+  font-weight: 300; }
 
 .navigation {
   z-index: 9999;
@@ -1695,7 +1720,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: 0;
-    background-image: linear-gradient(to right bottom, rgba(41, 122, 122, 0.562), rgba(27, 63, 63, 0.664)); }
+    background-image: linear-gradient(to bottom, #080808, rgba(8, 8, 8, 0.6), #080808); }
   .careers-banner__heading {
     position: relative;
     z-index: 1;
@@ -1709,13 +1734,16 @@ body {
   justify-content: center;
   align-items: stretch;
   gap: 3rem;
-  padding: 10rem 15rem 10rem 15rem; }
+  padding: 6.5rem 15rem 6.5rem 15rem; }
   .benefits__item {
-    text-align: center; }
+    text-align: center;
+    flex: 17.6rem; }
   .benefits ion-icon {
     font-size: 16rem;
     color: var(--color-white);
     --ionicon-stroke-width: 16px; }
+  .benefits__heading {
+    margin-bottom: 1rem; }
 
 /* ion-icon {
     --ionicon-stroke-width: 16px;
