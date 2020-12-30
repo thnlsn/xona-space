@@ -96,6 +96,7 @@ const Contact = () => {
                     className='contact-form__input'
                     placeholder='Email'
                     id='email'
+                    required
                   />
                 </div>
                 <label htmlFor='email' className='form__label'>

@@ -1081,7 +1081,7 @@ body {
     border: none;
     background-color: transparent;
     color: var(--color-white);
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: all 0.25s;
     vertical-align: top; }
     .subscribe-form__input:focus {
@@ -1322,7 +1322,7 @@ body {
   padding: 0rem 30rem 6.5rem 30rem; }
 
 .careers {
-  margin-top: calc(var(--nav-height) - 1rem);
+  margin-top: calc(var(--nav-height));
   padding: 0rem 0rem 0rem 0rem; }
 
 .home-banner {
@@ -1705,6 +1705,8 @@ body {
     background-color: transparent;
     color: var(--color-white);
     transition: all 0.25s; }
+    .contact-form__input:hover {
+      border-bottom: 4px solid var(--color-grey-dark-3); }
     .contact-form__input:focus {
       outline: none;
       border-bottom: 4px solid var(--color-primary-light); }
@@ -1741,7 +1743,8 @@ body {
   align-items: stretch;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 6rem 15rem 6rem 15rem; }
+  padding: 6rem 15rem 6.5rem 15rem;
+  border-bottom: 2px dotted var(--color-grey-dark-5); }
   .benefits__item {
     text-align: center;
     flex: 17.6%;
@@ -1774,8 +1777,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  padding: 6.5rem 0;
   background-image: linear-gradient(to bottom, var(--color-background), var(--color-grey-dark-5));
-  padding-bottom: 6.5rem; }
+  border-top: 2px solid var(--color-grey-dark-5); }
 
 .position {
   display: flex;

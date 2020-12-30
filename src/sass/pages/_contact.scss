@@ -149,6 +149,10 @@
 
     transition: all 0.25s;
 
+    &:hover {
+      border-bottom: 4px solid var(--color-grey-dark-3);
+    }
+
     &:focus {
       outline: none;
       border-bottom: 4px solid var(--color-primary-light);

@@ -39,7 +39,8 @@
   flex-wrap: wrap;
   gap: 2rem;
 
-  padding: 6rem 15rem 6rem 15rem;
+  padding: 6rem 15rem 6.5rem 15rem;
+  border-bottom: 2px dotted var(--color-grey-dark-5);
 
   // The individual benefit item, with the icon, heading, and description text
   &__item {
@@ -91,13 +92,15 @@
 
   gap: 5rem;
 
+  padding: 6.5rem 0;
+
   background-image: linear-gradient(
     to bottom,
     var(--color-background),
     var(--color-grey-dark-5)
   );
 
-  padding-bottom: 6.5rem;
+  border-top: 2px solid var(--color-grey-dark-5);
 
   &__positions {
   }
