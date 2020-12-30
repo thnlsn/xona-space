@@ -36,3 +36,16 @@
   margin-top: calc(var(--nav-height));
   padding: 0rem 0rem 0rem 0rem;
 }
+
+// ▓▓▓ APPLY PAGE LAYOUT ▓▓▓
+.apply {
+  margin-top: calc(var(--nav-height));
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+// ▓▓▓ 404 PAGE LAYOUT ▓▓▓
+.not-found {
+  height: calc(100vh - var(--nav-height));
+  margin-top: calc(var(--nav-height));
+  padding: 0rem 0rem 0rem 0rem;
+}

@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, useLocation } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  useLocation,
+  Switch,
+} from 'react-router-dom';
 import './css/style.css';
 
 // AOS library
@@ -16,6 +21,7 @@ import About from './components/Pages/About';
 import Contact from './components/Pages/Contact';
 import Careers from './components/Pages/Careers';
 import News from './components/Pages/News';
+import NotFound from './components/Pages/NotFound';
 
 // Importing all data for this component from the database file
 import { socials } from './data/database';
@@ -51,6 +57,10 @@ const App = () => {
       exact: true,
       main: () => <News />,
     },
+    {
+      path: '/',
+      main: () => <NotFound />,
+    },
   ];
 
   return (
@@ -66,14 +76,16 @@ const App = () => {
           ]}
         />
         <main className='main'>
-          {routes.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              exact={route.exact}
-              children={<route.main />}
-            />
-          ))}
+          <Switch>
+            {routes.map((route, index) => (
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                children={<route.main />}
+              />
+            ))}
+          </Switch>
         </main>
         <Footer socials={socials} />
       </Router>

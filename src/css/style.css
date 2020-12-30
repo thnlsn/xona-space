@@ -1327,6 +1327,15 @@ body {
   margin-top: calc(var(--nav-height));
   padding: 0rem 0rem 0rem 0rem; }
 
+.apply {
+  margin-top: calc(var(--nav-height));
+  padding: 0rem 0rem 0rem 0rem; }
+
+.not-found {
+  height: calc(100vh - var(--nav-height));
+  margin-top: calc(var(--nav-height));
+  padding: 0rem 0rem 0rem 0rem; }
+
 .home-banner {
   background-size: cover;
   padding: 0 20rem 0 20rem;
