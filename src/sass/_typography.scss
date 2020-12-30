@@ -261,6 +261,10 @@ body {
     font-size: 4.5rem;
     text-shadow: 0 0 5px #000;
     font-weight: 300;
+
+    &--sub {
+      font-size: 7.5rem;
+    }
   }
 }
 
@@ -282,10 +286,10 @@ body {
     text-shadow: 0 0 5px #000;
     font-weight: 400;
 
-    text-decoration: underline;
+    /*     text-decoration: underline;
     text-decoration-color: var(--color-primary);
     text-decoration-thickness: 2px;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 5px #000; */
   }
 
   // The short description detailing the benefit

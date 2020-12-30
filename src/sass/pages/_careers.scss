@@ -23,11 +23,29 @@
     );
   }
 
+  &:hover {
+    .careers-banner__heading {
+      opacity: 0;
+      color: var(--color-primary);
+      &--sub {
+        opacity: 1;
+        color: currentColor;
+      }
+    }
+  }
+
   &__heading {
     position: relative; // So that this z-index will work
     z-index: 1;
-
     @include absolute-center(50%, 50%);
+
+    transition: opacity 0.5s, color 1s 0.05s;
+    opacity: 1;
+
+    &--sub {
+      opacity: 0;
+      color: var(--color-primary);
+    }
   }
 }
 
@@ -76,13 +94,6 @@
     padding: 0 1rem;
   }
 }
-
-/* ion-icon {
-    --ionicon-stroke-width: 16px;
-  }
-  ion-icon {
-    font-size: 16rem;
-  } */
 
 .availabilities {
   display: flex;

@@ -16,6 +16,9 @@ const Careers = () => {
         }}
       >
         <div className='careers-banner__heading'>{hero.heading}</div>
+        <div className='careers-banner__heading careers-banner__heading--sub'>
+          {hero.subHeading}
+        </div>
       </div>
       <div className='benefits'>
         {benefits.map((benefit) => (
