@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Importing all data for this component from the database file
 import { careers } from '../../data/database';
@@ -45,14 +46,14 @@ const Careers = () => {
                 </ul>
               </div>
 
-              <a
-                href={`careers/${position.url}`}
+              <Link
+                to={`careers/${position.url}`}
                 className='btn btn--basic'
                 /*                 target='_blank' */
                 rel='noopener noreferrer'
               >
                 {availabilities.buttonText}
-              </a>
+              </Link>
             </summary>
           ))}
         </div>

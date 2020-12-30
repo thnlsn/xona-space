@@ -17,10 +17,11 @@ import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 
 import Home from './components/Pages/Home';
+import News from './components/Pages/News';
 import About from './components/Pages/About';
 import Contact from './components/Pages/Contact';
 import Careers from './components/Pages/Careers';
-import News from './components/Pages/News';
+import Apply from './components/Pages/Apply';
 import NotFound from './components/Pages/NotFound';
 
 // Importing all data for this component from the database file
@@ -38,6 +39,11 @@ const App = () => {
       main: () => <Home />,
     },
     {
+      path: '/xona-space/news',
+      exact: true,
+      main: () => <News />,
+    },
+    {
       path: '/xona-space/about',
       exact: true,
       main: () => <About />,
@@ -53,12 +59,12 @@ const App = () => {
       main: () => <Careers />,
     },
     {
-      path: '/xona-space/news',
+      path: '/xona-space/careers/:careerId',
       exact: true,
-      main: () => <News />,
+      main: () => <Apply />,
     },
     {
-      path: '/',
+      path: '*',
       main: () => <NotFound />,
     },
   ];
