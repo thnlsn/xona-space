@@ -43,6 +43,7 @@
     opacity: 1;
 
     &--sub {
+      transition: opacity 0.5s 0.1s, color 1s 0.05s;
       opacity: 0;
       color: var(--color-primary);
     }

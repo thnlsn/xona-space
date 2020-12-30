@@ -1747,6 +1747,7 @@ body {
     transition: opacity 0.5s, color 1s 0.05s;
     opacity: 1; }
     .careers-banner__heading--sub {
+      transition: opacity 0.5s 0.1s, color 1s 0.05s;
       opacity: 0;
       color: var(--color-primary); }
 
