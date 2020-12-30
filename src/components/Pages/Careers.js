@@ -28,7 +28,7 @@ const Careers = () => {
       </div>
       <div className='availabilities'>
         <div className='availabilities__heading'>{availabilities.heading}</div>
-        <div className='availabilites__positions'>
+        <div className='availabilities__positions'>
           {positions.map((position) => (
             <summary className='position'>
               <div className='position__container'>

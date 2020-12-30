@@ -89,7 +89,15 @@
   justify-content: center;
   align-items: center;
 
-  gap: 2rem;
+  gap: 5rem;
+
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-background),
+    var(--color-grey-dark-5)
+  );
+
+  padding-bottom: 6.5rem;
 
   &__positions {
   }
@@ -97,16 +105,29 @@
 
 .position {
   display: flex;
-  gap: 4rem;
+  align-items: center;
+  gap: 15rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &:not(:first-child) {
+    border-top: 2px solid var(--color-grey-dark-4);
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
 
   &__details {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.75rem;
     list-style-type: none;
 
     :not(:last-child) {
-      padding-right: 0.5rem;
-      border-right: 2px solid var(--color-primary);
+      padding-right: 0.75rem;
+      border-right: 2px solid var(--color-grey-dark-4);
     }
   }
 }

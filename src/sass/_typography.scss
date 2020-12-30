@@ -299,7 +299,7 @@ body {
 
 .availabilities {
   &__heading {
-    font-size: 3rem;
+    font-size: 4rem;
 
     text-decoration: underline;
     text-decoration-color: var(--color-primary);
@@ -314,6 +314,7 @@ body {
   font-size: 2.5rem;
 
   &__details {
+    color: var(--color-grey-light-3);
     font-size: 2rem;
   }
 }
