@@ -46,6 +46,11 @@ const Apply = () => {
           </ul>
         </div>
       </div>
+      <div className='application-info'>
+        {applicationData.description.map((paragraph) => (
+          <div className='application-info__paragraph'>{paragraph}</div>
+        ))}
+      </div>
     </div>
   );
 };

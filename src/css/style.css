@@ -1331,8 +1331,6 @@ body {
 .apply {
   height: 100rem;
   margin-top: calc(var(--nav-height)); }
-  .apply > div {
-    padding: 0rem 40rem; }
 
 .not-found {
   height: calc(100vh - var(--nav-height));
@@ -1841,6 +1839,14 @@ body {
     background-image: linear-gradient(to bottom, var(--color-grey-dark-5), var(--color-grey-dark-5), transparent);
     background-clip: text;
     color: transparent; }
+
+.apply-banner {
+  padding: 0rem 40rem; }
+
+.application-info {
+  padding: 0rem 40rem; }
+  .application-info__paragraph {
+    margin: 1rem 0; }
 
 /*
 
