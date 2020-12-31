@@ -969,11 +969,12 @@ body {
   text-decoration-thickness: 2px;
   text-shadow: 0 0 5px #000; }
 
-.position {
+.position__heading {
   font-size: 2.5rem; }
-  .position__details {
-    color: var(--color-grey-light-3);
-    font-size: 2rem; }
+
+.position__details {
+  color: var(--color-grey-light-3);
+  font-size: 2rem; }
 
 .navigation {
   z-index: 9999;
