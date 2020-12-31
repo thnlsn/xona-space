@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+// Importing all job application positions information
+import careers, { positions } from '../../data/database';
+
 // This component needs the ID of the job.
 // With that, it will find the job with the matching ID and display the application questions, etc.
 

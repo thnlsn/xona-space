@@ -542,7 +542,7 @@ const careers = {
   // Every available position should be listed in this array
   positions: [
     {
-      // url is simply the ID for that specific job. Make sure not to use the same one for another position
+      // _uid is simply the unique ID for that specific job. Make sure not to use the same one for another position
       url: 'SrEng1',
       title: 'Sr. Software Engineer',
       area: 'Engineering',
@@ -569,8 +569,8 @@ const careers = {
       ],
     },
     {
-      // url is simply the ID for that specific job. Make sure not to use the same one for another position
-      url: 'JrEng1',
+      // _uid is simply the unique ID for that specific job. Make sure not to use the same one for another position
+      _uid: 'JrEng1',
       title: 'Jr. Software Engineer',
       area: 'Engineering',
       location: 'San Mateo, CA',
