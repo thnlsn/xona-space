@@ -47,7 +47,7 @@ const Careers = () => {
               </div>
 
               <Link
-                to={`careers/${position.url}`}
+                to={`careers/${position._uid}`}
                 className='btn btn--basic'
                 /*                 target='_blank' */
                 rel='noopener noreferrer'
