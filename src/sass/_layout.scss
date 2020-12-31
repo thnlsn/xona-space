@@ -39,8 +39,13 @@
 
 // ▓▓▓ APPLY PAGE LAYOUT ▓▓▓
 .apply {
+  height: 100rem;
   margin-top: calc(var(--nav-height));
-  padding: 0rem 0rem 0rem 0rem;
+
+  // All direct children will have this consistent padding on the left and right
+  & > div {
+    padding: 0rem 40rem;
+  }
 }
 
 // ▓▓▓ 404 PAGE LAYOUT ▓▓▓

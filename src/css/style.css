@@ -1329,8 +1329,10 @@ body {
   padding: 0rem 0rem 0rem 0rem; }
 
 .apply {
-  margin-top: calc(var(--nav-height));
-  padding: 0rem 0rem 0rem 0rem; }
+  height: 100rem;
+  margin-top: calc(var(--nav-height)); }
+  .apply > div {
+    padding: 0rem 40rem; }
 
 .not-found {
   height: calc(100vh - var(--nav-height));
@@ -1801,6 +1803,7 @@ body {
 
 .position {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 15rem; }
   .position__container {
