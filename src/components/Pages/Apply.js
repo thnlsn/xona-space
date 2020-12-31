@@ -47,12 +47,35 @@ const Apply = () => {
           </ul>
         </div>
       </div>
+
       {/* Info */}
       <div className='application-info'>
         {applicationData.description.map((paragraph) => (
           <div className='application-info__paragraph'>{paragraph}</div>
         ))}
+
+        <h3 className='application-info__heading'>
+          Desired Qualifications (not all are expected)
+        </h3>
+        <ul className='application-info__qualifications-list'>
+          {applicationData.desiredQualifications.map((qualification) => (
+            <li className='application-info__list-item'>{qualification}</li>
+          ))}
+        </ul>
+
+        <h3 className='application-info__heading'>Required Qualifications</h3>
+        <ul className='application-info__qualifications-list'>
+          {applicationData.requiredQualifications.map((qualification) => (
+            <li className='application-info__list-item'>{qualification}</li>
+          ))}
+        </ul>
+
+        <h3 className='application-info__heading'>Location</h3>
+        <div className='application-info__paragraph'>
+          {applicationData.location}
+        </div>
       </div>
+
       {/* Application */}
       <div className='job-application'>
         <form action='#' className='application-form'>
