@@ -60,7 +60,7 @@ const Apply = () => {
           {/* Resume Input */}
           <div className='application-form__input-group'>
             <label htmlFor='resume' className='application-form__label'>
-              Resume
+              Resume <span className='application-form__required'>*</span>
             </label>
             <input
               type='file'
@@ -73,7 +73,7 @@ const Apply = () => {
           {/* Full Name Input */}
           <div className='application-form__input-group'>
             <label htmlFor='full-name' className='application-form__label'>
-              Full name
+              Full name <span className='application-form__required'>*</span>
             </label>
             <input
               type='text'
@@ -86,7 +86,7 @@ const Apply = () => {
           {/* Email Input */}
           <div className='application-form__input-group'>
             <label htmlFor='email' className='application-form__label'>
-              Email
+              Email <span className='application-form__required'>*</span>
             </label>
             <input
               type='email'
@@ -99,7 +99,7 @@ const Apply = () => {
           {/* Phone Number Input */}
           <div className='application-form__input-group'>
             <label htmlFor='phone-number' className='application-form__label'>
-              Phone
+              Phone <span className='application-form__required'>*</span>
             </label>
             <input
               type='tel'
@@ -108,6 +108,22 @@ const Apply = () => {
               id='phone-number'
               pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
             />
+          </div>
+
+          {/* Position Input */}
+          <div className='application-form__input-group'>
+            <label htmlFor='position' className='application-form__label'>
+              Position <span className='application-form__required'>*</span>
+            </label>
+            <select
+              className='application-form__input'
+              id='position'
+              name='position'
+            >
+              {positions.map((position) => (
+                <option value={position.title}>{position.title}</option>
+              ))}
+            </select>
           </div>
 
           <h3 className='application-form__sub-heading'>Links</h3>
@@ -159,7 +175,7 @@ const Apply = () => {
             <span className='application-form__required'>*</span>
           </div>
 
-          <div className='application-form__input-group'>
+          <div className='application-form__input-group application-form__input-group--radio'>
             <input
               type='radio'
               name='visa-sponsorship'
@@ -173,6 +189,8 @@ const Apply = () => {
             >
               Yes
             </label>
+          </div>
+          <div className='application-form__input-group application-form__input-group--radio'>
             <input
               type='radio'
               name='visa-sponsorship'
@@ -190,16 +208,72 @@ const Apply = () => {
 
           {/* How did you hear about us Textare Input */}
           <div className='application-form__input-group application-form__input-group--textarea'>
-            <label htmlFor='message' className='form__label'>
+            <label
+              htmlFor='hear-about-xona'
+              className='application-form__label'
+            >
               How did you hear about Xona Space Systems? {''}
               <span className='application-form__required'>*</span>
             </label>
-            <div className='contact-form__input-box'>
+            <div className='application-form__input-box'>
               <textarea
-                type='text'
-                className='contact-form__input'
+                className='application-form__input'
                 placeholder='Answer'
-                id='message'
+                id='hear-about-xona'
+              />
+            </div>
+          </div>
+
+          {/* How did you hear about us Textare Input */}
+          <div className='application-form__input-group application-form__input-group--textarea'>
+            <label htmlFor='achievement' className='application-form__label'>
+              Please tell us, in a few sentences, about the most impressive
+              thing that you have built or achieved. This can be in relation to
+              work, school, external activities, etc. If you are describing a
+              team effort or group project, please be specific about your
+              personal contribution. {''}
+              <span className='application-form__required'>*</span>
+            </label>
+            <div className='application-form__input-box'>
+              <textarea
+                className='application-form__input'
+                placeholder='Answer'
+                id='achievement'
+              />
+            </div>
+          </div>
+
+          {/* How did you hear about us Textare Input */}
+          <div className='application-form__input-group application-form__input-group--textarea'>
+            <label
+              htmlFor='three-activities'
+              className='application-form__label'
+            >
+              List three activities you enjoy doing: {''}
+              <span className='application-form__required'>*</span>
+            </label>
+            <div className='application-form__input-box'>
+              <textarea
+                className='application-form__input'
+                placeholder='Answer'
+                id='three-activities'
+              />
+            </div>
+          </div>
+
+          {/* How did you hear about us Textare Input */}
+          <div className='application-form__input-group application-form__input-group--textarea'>
+            <label
+              htmlFor='additional-info'
+              className='application-form__label'
+            >
+              Additional information:
+            </label>
+            <div className='application-form__input-box'>
+              <textarea
+                className='application-form__input'
+                placeholder='Add a cover letter or anything else you want to share.'
+                id='additional-info'
               />
             </div>
           </div>

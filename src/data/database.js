@@ -544,6 +544,9 @@ const careers = {
     {
       // _uid is simply the unique ID for that specific job. Make sure not to use the same one for another position
       _uid: 'SrEng1',
+      // titles should also be unique because on the application form, the dropdown list when the applicant has to choose which position they are applying for will loop through all positions and display them there, so if two are the same there won't be a way to tell which one is which
+      // So if you're hiring 2 Sr. Software Engineers maybe name the second one "Sr. Software Engineer 2" or a more specific title alltogether.
+      // There actually is a way to differenciate them in the code (using the _uid value above), but for the sake of the applicant, it would probably be better to just have the titles be different
       title: 'Sr. Software Engineer',
       area: 'Engineering',
       location: 'San Mateo, CA',
