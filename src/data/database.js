@@ -598,5 +598,7 @@ const careers = {
   ],
 };
 
+const application = {};
+
 // EXPORT
-export { logos, home, about, contact, careers, socials };
+export { logos, home, about, contact, careers, application, socials };

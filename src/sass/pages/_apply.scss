@@ -1,10 +1,22 @@
-.apply-banner {
-  padding: 0rem 40rem;
+.application-banner {
+  padding: 5rem 40rem;
+  background-color: var(--color-grey-dark-5);
 }
 
 .application-info {
-  padding: 0rem 40rem;
+  padding: 3.5rem 40rem;
   &__paragraph {
     margin: 1rem 0;
+  }
+}
+
+.job-application {
+  padding: 3.5rem 40rem;
+  background-color: var(--color-grey-dark-5);
+}
+
+.application-form {
+  &__heading {
+    // Heading styles
   }
 }

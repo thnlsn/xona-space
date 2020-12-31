@@ -976,6 +976,29 @@ body {
   color: var(--color-grey-light-3);
   font-size: 2rem; }
 
+.application-banner {
+  padding: 5rem 40rem;
+  background-color: var(--color-grey-dark-5); }
+
+.application-info {
+  padding: 3.5rem 40rem; }
+  .application-info__paragraph {
+    margin: 1rem 0; }
+
+.job-application {
+  padding: 3.5rem 40rem;
+  background-color: var(--color-grey-dark-5); }
+
+.application-form {
+  display: flex;
+  flex-direction: column; }
+  .application-form__heading {
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px;
+    text-shadow: 0 0 5px #000; }
+
 .navigation {
   z-index: 9999;
   background-color: rgba(8, 8, 8, 0.8);
@@ -1328,7 +1351,7 @@ body {
   margin-top: calc(var(--nav-height));
   padding: 0rem 0rem 0rem 0rem; }
 
-.apply {
+.application {
   height: 100rem;
   margin-top: calc(var(--nav-height)); }
 
@@ -1840,13 +1863,18 @@ body {
     background-clip: text;
     color: transparent; }
 
-.apply-banner {
-  padding: 0rem 40rem; }
+.application-banner {
+  padding: 5rem 40rem;
+  background-color: var(--color-grey-dark-5); }
 
 .application-info {
-  padding: 0rem 40rem; }
+  padding: 3.5rem 40rem; }
   .application-info__paragraph {
     margin: 1rem 0; }
+
+.job-application {
+  padding: 3.5rem 40rem;
+  background-color: var(--color-grey-dark-5); }
 
 /*
 

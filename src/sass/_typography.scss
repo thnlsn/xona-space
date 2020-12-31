@@ -324,3 +324,35 @@ body {
     font-size: 2rem;
   }
 }
+
+// ▓▓▓ APPLICATION PAGE TYPOGRAPHY ▓▓▓
+
+.application-banner {
+  padding: 5rem 40rem;
+  background-color: var(--color-grey-dark-5);
+}
+
+.application-info {
+  padding: 3.5rem 40rem;
+  &__paragraph {
+    margin: 1rem 0;
+  }
+}
+
+.job-application {
+  padding: 3.5rem 40rem;
+  background-color: var(--color-grey-dark-5);
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px;
+    text-shadow: 0 0 5px #000;
+  }
+}
