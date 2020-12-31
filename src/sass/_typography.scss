@@ -354,5 +354,15 @@ body {
     text-decoration-color: var(--color-primary);
     text-decoration-thickness: 2px;
     text-shadow: 0 0 5px #000;
+
+    margin-bottom: 1rem;
+  }
+
+  &__sub-heading {
+    margin-top: 1rem;
+  }
+
+  &__required {
+    color: var(--color-invalid);
   }
 }

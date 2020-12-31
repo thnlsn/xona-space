@@ -58,49 +58,151 @@ const Apply = () => {
         <form action='#' className='application-form'>
           <h2 className='application-form__heading'>Application</h2>
           {/* Resume Input */}
-          <label htmlFor='resume' className='application-form__label'>
-            Resume
-          </label>
-          <input
-            type='file'
-            className='application-form__file'
-            placeholder='Attach Resume +'
-            id='resume'
-          />
+          <div className='application-form__input-group'>
+            <label htmlFor='resume' className='application-form__label'>
+              Resume
+            </label>
+            <input
+              type='file'
+              className='application-form__file'
+              placeholder='Attach Resume +'
+              id='resume'
+            />
+          </div>
 
           {/* Full Name Input */}
-          <label htmlFor='full-name' className='application-form__label'>
-            Full name
-          </label>
-          <input
-            type='text'
-            className='application-form__input'
-            placeholder='Full name'
-            id='full-name'
-          />
+          <div className='application-form__input-group'>
+            <label htmlFor='full-name' className='application-form__label'>
+              Full name
+            </label>
+            <input
+              type='text'
+              className='application-form__input'
+              placeholder='Full name'
+              id='full-name'
+            />
+          </div>
 
-          {/* Last Name Input */}
-          <label htmlFor='email' className='application-form__label'>
-            Email
-          </label>
-          <input
-            type='email'
-            className='application-form__input'
-            placeholder='Email'
-            id='email'
-          />
+          {/* Email Input */}
+          <div className='application-form__input-group'>
+            <label htmlFor='email' className='application-form__label'>
+              Email
+            </label>
+            <input
+              type='email'
+              className='application-form__input'
+              placeholder='Email'
+              id='email'
+            />
+          </div>
 
-          {/* First Name Input */}
-          <label htmlFor='phone-number' className='application-form__label'>
-            Phone
-          </label>
-          <input
-            type='tel'
-            className='application-form__input'
-            placeholder='Phone number'
-            id='phone-number'
-            pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
-          />
+          {/* Phone Number Input */}
+          <div className='application-form__input-group'>
+            <label htmlFor='phone-number' className='application-form__label'>
+              Phone
+            </label>
+            <input
+              type='tel'
+              className='application-form__input'
+              placeholder='Phone number'
+              id='phone-number'
+              pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
+            />
+          </div>
+
+          <h3 className='application-form__sub-heading'>Links</h3>
+
+          {/* LinkedIn Input */}
+          <div className='application-form__input-group'>
+            <label htmlFor='linked-in' className='application-form__label'>
+              LinkedIn URL
+            </label>
+            <input
+              type='text'
+              className='application-form__input'
+              placeholder='LinkedIn link'
+              id='linked-in'
+            />
+          </div>
+
+          {/* Portfolio Input */}
+          <div className='application-form__input-group'>
+            <label htmlFor='portfolio' className='application-form__label'>
+              Portfolio URL
+            </label>
+            <input
+              type='text'
+              className='application-form__input'
+              placeholder='Portfolio link'
+              id='portfolio'
+            />
+          </div>
+
+          {/* Other Website Input */}
+          <div className='application-form__input-group'>
+            <label htmlFor='other-website' className='application-form__label'>
+              Other website
+            </label>
+            <input
+              type='text'
+              className='application-form__input'
+              placeholder='Link'
+              id='other-website'
+            />
+          </div>
+
+          <h3 className='application-form__sub-heading'>General Questions</h3>
+
+          {/* Radio Visa Sponsorship Input */}
+          <div className='application-form__question'>
+            Do you require U.S. visa sponsorship? {''}
+            <span className='application-form__required'>*</span>
+          </div>
+
+          <div className='application-form__input-group'>
+            <input
+              type='radio'
+              name='visa-sponsorship'
+              className='application-form__input'
+              id='visa-sponsorship-yes'
+              value='yes'
+            />
+            <label
+              htmlFor='visa-sponsorship'
+              className='application-form__label'
+            >
+              Yes
+            </label>
+            <input
+              type='radio'
+              name='visa-sponsorship'
+              className='application-form__input'
+              id='visa-sponsorship-no'
+              value='no'
+            />
+            <label
+              htmlFor='visa-sponsorship'
+              className='application-form__label'
+            >
+              No
+            </label>
+          </div>
+
+          {/* How did you hear about us Textare Input */}
+          <div className='application-form__input-group application-form__input-group--textarea'>
+            <label htmlFor='message' className='form__label'>
+              How did you hear about Xona Space Systems? {''}
+              <span className='application-form__required'>*</span>
+            </label>
+            <div className='contact-form__input-box'>
+              <textarea
+                type='text'
+                className='contact-form__input'
+                placeholder='Answer'
+                id='message'
+              />
+            </div>
+          </div>
         </form>
       </div>
     </div>
