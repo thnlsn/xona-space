@@ -79,4 +79,61 @@
   &__question {
     margin-left: 1rem;
   }
+
+  &__input-group {
+    display: flex;
+    align-items: flex-start;
+
+    .application-form__input-box {
+      border: 1.5px solid var(--color-white);
+    }
+
+    &--textarea {
+      flex-direction: column;
+      align-items: stretch;
+      flex: 1;
+
+      .application-form__input-box {
+        border: 1.5px solid var(--color-white);
+        height: 100%;
+
+        textarea {
+          height: 100%;
+          width: 100%;
+          resize: none;
+          overflow: auto;
+        }
+      }
+    }
+
+    label {
+      flex: 0 0 15%;
+    }
+  }
+
+  &__input {
+    padding: 1rem; // Spacing inside the input so the text/placeholder isn't cramped
+    border: none;
+    border-bottom: 4px solid transparent;
+    vertical-align: bottom;
+
+    background-color: transparent;
+    color: var(--color-white);
+
+    transition: all 0.25s;
+
+    &:hover {
+      border-bottom: 4px solid var(--color-grey-dark-3);
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 4px solid var(--color-primary-light);
+
+      &:invalid {
+        // Only on a focused element, should this apply (and only when it is invalid)
+        border-bottom: 4px solid var(--color-invalid);
+      }
+    }
+  }
 }

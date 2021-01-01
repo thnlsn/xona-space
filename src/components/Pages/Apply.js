@@ -100,12 +100,14 @@ const Apply = () => {
             <label htmlFor='full-name' className='application-form__label'>
               Full name <span className='application-form__required'>*</span>
             </label>
-            <input
-              type='text'
-              className='application-form__input'
-              placeholder='Full name'
-              id='full-name'
-            />
+            <div className='application-form__input-box'>
+              <input
+                type='text'
+                className='application-form__input'
+                placeholder='Full name'
+                id='full-name'
+              />
+            </div>
           </div>
 
           {/* Email Input */}
@@ -113,12 +115,14 @@ const Apply = () => {
             <label htmlFor='email' className='application-form__label'>
               Email <span className='application-form__required'>*</span>
             </label>
-            <input
-              type='email'
-              className='application-form__input'
-              placeholder='Email'
-              id='email'
-            />
+            <div className='application-form__input-box'>
+              <input
+                type='email'
+                className='application-form__input'
+                placeholder='Email'
+                id='email'
+              />
+            </div>
           </div>
 
           {/* Phone Number Input */}
@@ -126,13 +130,15 @@ const Apply = () => {
             <label htmlFor='phone-number' className='application-form__label'>
               Phone <span className='application-form__required'>*</span>
             </label>
-            <input
-              type='tel'
-              className='application-form__input'
-              placeholder='Phone number'
-              id='phone-number'
-              pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
-            />
+            <div className='application-form__input-box'>
+              <input
+                type='tel'
+                className='application-form__input'
+                placeholder='Phone number'
+                id='phone-number'
+                pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
+              />
+            </div>
           </div>
 
           {/* Position Input */}
@@ -158,12 +164,14 @@ const Apply = () => {
             <label htmlFor='linked-in' className='application-form__label'>
               LinkedIn URL
             </label>
-            <input
-              type='text'
-              className='application-form__input'
-              placeholder='LinkedIn link'
-              id='linked-in'
-            />
+            <div className='application-form__input-box'>
+              <input
+                type='text'
+                className='application-form__input'
+                placeholder='LinkedIn link'
+                id='linked-in'
+              />
+            </div>
           </div>
 
           {/* Portfolio Input */}
@@ -171,12 +179,14 @@ const Apply = () => {
             <label htmlFor='portfolio' className='application-form__label'>
               Portfolio URL
             </label>
-            <input
-              type='text'
-              className='application-form__input'
-              placeholder='Portfolio link'
-              id='portfolio'
-            />
+            <div className='application-form__input-box'>
+              <input
+                type='text'
+                className='application-form__input'
+                placeholder='Portfolio link'
+                id='portfolio'
+              />
+            </div>
           </div>
 
           {/* Other Website Input */}
@@ -184,12 +194,14 @@ const Apply = () => {
             <label htmlFor='other-website' className='application-form__label'>
               Other website
             </label>
-            <input
-              type='text'
-              className='application-form__input'
-              placeholder='Link'
-              id='other-website'
-            />
+            <div className='application-form__input-box'>
+              <input
+                type='text'
+                className='application-form__input'
+                placeholder='Link'
+                id='other-website'
+              />
+            </div>
           </div>
 
           <h3 className='application-form__sub-heading'>General Questions</h3>
@@ -204,7 +216,7 @@ const Apply = () => {
             <input
               type='radio'
               name='visa-sponsorship'
-              className='application-form__input'
+              className='application-form__input-radio'
               id='visa-sponsorship-yes'
               value='yes'
             />
@@ -219,7 +231,7 @@ const Apply = () => {
             <input
               type='radio'
               name='visa-sponsorship'
-              className='application-form__input'
+              className='application-form__input-radio'
               id='visa-sponsorship-no'
               value='no'
             />
