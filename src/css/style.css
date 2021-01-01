@@ -1001,6 +1001,7 @@ body {
   font-size: 1.8rem; }
   .application-form__heading {
     font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
     text-decoration: underline;
     text-decoration-color: var(--color-white);
     text-decoration-thickness: 2px;
@@ -1932,7 +1933,7 @@ body {
     margin-bottom: 1rem; }
   .application-form__sub-heading {
     margin-top: 2rem; }
-  .application-form__input-group {
+  .application-form__input-group, .application-form__question {
     margin-left: 1rem; }
 
 /*

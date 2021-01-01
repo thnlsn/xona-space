@@ -355,6 +355,7 @@ body {
 
   &__heading {
     font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
     @include underline-text(var(--color-white));
   }
 
