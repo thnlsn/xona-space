@@ -147,7 +147,7 @@ const Apply = () => {
               Position <span className='application-form__required'>*</span>
             </label>
             <select
-              className='application-form__input'
+              className='application-form__input-select'
               id='position'
               name='position'
             >
@@ -221,7 +221,7 @@ const Apply = () => {
               value='yes'
             />
             <label
-              htmlFor='visa-sponsorship'
+              htmlFor='visa-sponsorship-yes'
               className='application-form__label'
             >
               Yes
@@ -236,7 +236,7 @@ const Apply = () => {
               value='no'
             />
             <label
-              htmlFor='visa-sponsorship'
+              htmlFor='visa-sponsorship-no'
               className='application-form__label'
             >
               No
@@ -289,7 +289,7 @@ const Apply = () => {
               List three activities you enjoy doing: {''}
               <span className='application-form__required'>*</span>
             </label>
-            <div className='application-form__input-box'>
+            <div className='application-form__input-box u-height-small'>
               <textarea
                 className='application-form__input'
                 placeholder='Answer'

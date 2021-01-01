@@ -763,6 +763,9 @@ body {
 .u-marbot-small {
   margin-bottom: 0.5rem; }
 
+.u-height-small {
+  height: 5rem !important; }
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: var(--default-font-size);
@@ -1924,7 +1927,7 @@ body {
 
 .application-form {
   border-radius: 10px;
-  padding: 2rem 3rem;
+  padding: 4.5rem 5rem;
   border-bottom: 2px solid var(--color-grey-dark-4);
   border-top: 2px solid var(--color-grey-dark-4);
   border-radius: 25px;
@@ -1934,7 +1937,8 @@ body {
   .application-form__sub-heading {
     margin-top: 2rem; }
   .application-form__input-group, .application-form__question {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    margin-bottom: 0.5rem; }
   .application-form__input-group {
     display: flex;
     align-items: flex-start; }
@@ -1942,11 +1946,10 @@ body {
       border: 1.5px solid var(--color-white); }
     .application-form__input-group--textarea {
       flex-direction: column;
-      align-items: stretch;
-      flex: 1; }
+      align-items: stretch; }
       .application-form__input-group--textarea .application-form__input-box {
         border: 1.5px solid var(--color-white);
-        height: 100%; }
+        height: 15rem; }
         .application-form__input-group--textarea .application-form__input-box textarea {
           height: 100%;
           width: 100%;
