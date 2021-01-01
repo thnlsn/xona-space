@@ -20,10 +20,12 @@ const Apply = () => {
     return positions.find((position) => position._uid === id);
   };
 
+  // Get the job posting from the db where the path matches the uid
+  const job = findJob(getJobId(location));
+  console.log(job);
+
   // Initialize state for the current job accessed as null
-  const [applicationData, setApplicationData] = useState(
-    findJob(getJobId(location))
-  );
+  const [applicationData, setApplicationData] = useState(positions[1]);
 
   useEffect(() => {
     // Set state to the object of the specific job posting
@@ -73,9 +75,7 @@ const Apply = () => {
         </ul>
 
         <h3 className='application-info__heading'>Location</h3>
-        <div className='application-info__paragraph'>
-          {applicationData.location}
-        </div>
+        <div className='application-info__text'>{applicationData.location}</div>
       </div>
 
       {/* Application */}

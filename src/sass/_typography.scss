@@ -340,6 +340,7 @@ body {
 
   &__heading {
     font-family: 'Josefin Sans', sans-serif;
+    @include underline-text(var(--color-primary));
   }
 
   &__paragraph {
@@ -353,14 +354,13 @@ body {
   font-size: 1.8rem;
 
   &__heading {
-    font-size: 3rem;
+    font-size: 4rem;
     @include underline-text(var(--color-white));
-
-    margin-bottom: 1rem;
   }
 
   &__sub-heading {
-    margin-top: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    @include underline-text(var(--color-white));
   }
 
   &__required {

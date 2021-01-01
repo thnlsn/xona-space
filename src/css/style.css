@@ -991,19 +991,26 @@ body {
   font-size: 2rem;
   font-weight: 400; }
   .application-info__heading {
-    font-family: 'Josefin Sans', sans-serif; }
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 2px;
+    text-shadow: 0 0 5px #000; }
 
 .application-form {
   font-size: 1.8rem; }
   .application-form__heading {
-    font-size: 3rem;
+    font-size: 4rem;
     text-decoration: underline;
     text-decoration-color: var(--color-white);
     text-decoration-thickness: 2px;
-    text-shadow: 0 0 5px #000;
-    margin-bottom: 1rem; }
+    text-shadow: 0 0 5px #000; }
   .application-form__sub-heading {
-    margin-top: 1rem; }
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: var(--color-white);
+    text-decoration-thickness: 2px;
+    text-shadow: 0 0 5px #000; }
   .application-form__required {
     color: var(--color-invalid); }
 
@@ -1358,6 +1365,11 @@ body {
 .careers {
   margin-top: calc(var(--nav-height));
   padding: 0rem 0rem 0rem 0rem; }
+
+.application {
+  padding: 0 0 6.5rem 0;
+  background-image: url("../images/backgroundImages/dotted.jpg");
+  background-repeat: repeat; }
 
 .not-found {
   height: calc(100vh - var(--nav-height));
@@ -1869,7 +1881,7 @@ body {
 
 .application-banner {
   padding: calc(var(--nav-height) + 5rem) 40rem 5rem 40rem;
-  background-color: var(--color-grey-dark-5);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.502), #131313);
   display: flex;
   justify-content: flex-start; }
   .application-banner .position__container {
@@ -1884,20 +1896,44 @@ body {
   .application-info__paragraphs {
     margin-bottom: 4rem; }
   .application-info__paragraph {
-    margin: 1rem 0; }
+    margin-bottom: 1rem; }
+  .application-info__heading {
+    margin-bottom: 0.5rem; }
   .application-info__qualifications-list {
     margin: 0 3rem;
     margin-bottom: 4rem; }
   .application-info__list-item {
-    list-style-type: square; }
+    list-style-type: none; }
+    .application-info__list-item::before {
+      content: '\2219';
+      /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: var(--color-primary);
+      /* Change the color */
+      font-weight: bold;
+      /* If you want it to be bold */
+      display: inline-block;
+      /* Needed to add space between the bullet and the text */
+      width: 1rem;
+      /* Also needed for space (tweak if needed) */
+      margin-left: -1rem;
+      /* Also needed for space (tweak if needed) */ }
 
 .job-application {
-  padding: 3.5rem 40rem;
-  background-color: var(--color-background); }
-  .job-application form {
-    border-radius: 10px;
-    background-color: var(--color-grey-dark-5);
-    padding: 2rem 3rem; }
+  padding: 0rem 40rem; }
+
+.application-form {
+  border-radius: 10px;
+  padding: 2rem 3rem;
+  border-bottom: 2px solid var(--color-grey-dark-4);
+  border-top: 2px solid var(--color-grey-dark-4);
+  border-radius: 25px;
+  background-color: #131313; }
+  .application-form__heading, .application-form__sub-heading {
+    margin-bottom: 1rem; }
+  .application-form__sub-heading {
+    margin-top: 2rem; }
+  .application-form__input-group {
+    margin-left: 1rem; }
 
 /*
 

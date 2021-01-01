@@ -1,6 +1,11 @@
 .application-banner {
   padding: calc(var(--nav-height) + 5rem) 40rem 5rem 40rem;
-  background-color: var(--color-grey-dark-5);
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(14, 14, 14, 0.502),
+    rgb(19, 19, 19)
+  );
 
   display: flex;
   justify-content: flex-start;
@@ -22,7 +27,11 @@
   }
 
   &__paragraph {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    margin-bottom: 0.5rem;
   }
 
   &__qualifications-list {
@@ -31,23 +40,42 @@
   }
 
   &__list-item {
-    list-style-type: square;
+    list-style-type: none;
+
+    &::before {
+      content: '\2219'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: var(--color-primary); /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1rem; /* Also needed for space (tweak if needed) */
+      margin-left: -1rem; /* Also needed for space (tweak if needed) */
+    }
   }
 }
 
 .job-application {
-  padding: 3.5rem 40rem;
-  background-color: var(--color-background);
-
-  form {
-    border-radius: 10px;
-    background-color: var(--color-grey-dark-5);
-    padding: 2rem 3rem;
-  }
+  padding: 0rem 40rem;
 }
 
 .application-form {
-  &__heading {
-    // Heading styles
+  border-radius: 10px;
+  padding: 2rem 3rem;
+
+  border-bottom: 2px solid var(--color-grey-dark-4);
+  border-top: 2px solid var(--color-grey-dark-4);
+  border-radius: 25px;
+  background-color: rgb(19, 19, 19);
+
+  &__heading,
+  &__sub-heading {
+    margin-bottom: 1rem;
+  }
+
+  &__sub-heading {
+    margin-top: 2rem;
+  }
+
+  &__input-group {
+    margin-left: 1rem;
   }
 }
