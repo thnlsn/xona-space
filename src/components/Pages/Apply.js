@@ -50,9 +50,11 @@ const Apply = () => {
 
       {/* Info */}
       <div className='application-info'>
-        {applicationData.description.map((paragraph) => (
-          <div className='application-info__paragraph'>{paragraph}</div>
-        ))}
+        <div className='application-info__paragraphs'>
+          {applicationData.description.map((paragraph) => (
+            <div className='application-info__paragraph'>{paragraph}</div>
+          ))}
+        </div>
 
         <h3 className='application-info__heading'>
           Desired Qualifications (not all are expected)

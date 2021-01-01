@@ -16,3 +16,10 @@
   left: $left;
   transform: translate(-50%, -50%);
 }
+
+@mixin underline-text($color: #fff, $thickness: 2px) {
+  text-decoration: underline;
+  text-decoration-color: $color;
+  text-decoration-thickness: $thickness;
+  text-shadow: 0 0 5px #000;
+}

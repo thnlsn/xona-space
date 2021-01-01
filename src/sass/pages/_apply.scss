@@ -1,18 +1,49 @@
 .application-banner {
-  padding: 5rem 40rem;
+  padding: calc(var(--nav-height) + 5rem) 40rem 5rem 40rem;
   background-color: var(--color-grey-dark-5);
+
+  display: flex;
+  justify-content: flex-start;
+
+  .position__container {
+    padding: 0 2rem;
+    border-left: 4px solid var(--color-grey-dark-4);
+    border-right: 4px solid var(--color-grey-dark-4);
+    border-radius: 5px;
+  }
 }
 
 .application-info {
   padding: 3.5rem 40rem;
+  border-top: 2px dotted var(--color-grey-dark-5);
+
+  &__paragraphs {
+    margin-bottom: 4rem;
+  }
+
   &__paragraph {
     margin: 1rem 0;
+  }
+
+  &__qualifications-list {
+    margin: 0 3rem;
+    margin-bottom: 4rem;
+  }
+
+  &__list-item {
+    list-style-type: square;
   }
 }
 
 .job-application {
   padding: 3.5rem 40rem;
-  background-color: var(--color-grey-dark-5);
+  background-color: var(--color-background);
+
+  form {
+    border-radius: 10px;
+    background-color: var(--color-grey-dark-5);
+    padding: 2rem 3rem;
+  }
 }
 
 .application-form {
