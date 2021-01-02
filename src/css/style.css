@@ -1005,12 +1005,15 @@ body {
   .application-form__heading {
     font-size: 4rem;
     font-family: 'Josefin Sans', sans-serif;
+    color: var(--color-grey-light-2);
     text-decoration: underline;
-    text-decoration-color: var(--color-white);
+    text-decoration-color: var(--color-primary);
     text-decoration-thickness: 2px;
     text-shadow: 0 0 5px #000; }
   .application-form__sub-heading {
+    font-size: 3rem;
     font-family: 'Josefin Sans', sans-serif;
+    color: var(--color-grey-light-2);
     text-decoration: underline;
     text-decoration-color: var(--color-white);
     text-decoration-thickness: 2px;
@@ -1935,7 +1938,9 @@ body {
   .application-form__heading, .application-form__sub-heading {
     margin-bottom: 1rem; }
   .application-form__sub-heading {
-    margin-top: 2rem; }
+    margin-top: 2.25rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--color-grey-dark-4); }
   .application-form__input-group, .application-form__question {
     margin-left: 1rem;
     margin-bottom: 0.5rem; }
@@ -1957,6 +1962,8 @@ body {
           overflow: auto; }
     .application-form__input-group label {
       flex: 0 0 15%; }
+    .application-form__input-group--radio {
+      margin-bottom: 1rem; }
   .application-form__input {
     padding: 1rem;
     border: none;

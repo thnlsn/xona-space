@@ -73,7 +73,9 @@
   }
 
   &__sub-heading {
-    margin-top: 2rem;
+    margin-top: 2.25rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--color-grey-dark-4);
   }
 
   &__input-group,
@@ -111,6 +113,10 @@
 
     label {
       flex: 0 0 15%;
+    }
+
+    &--radio {
+      margin-bottom: 1rem;
     }
   }
 

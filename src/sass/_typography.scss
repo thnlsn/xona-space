@@ -356,11 +356,14 @@ body {
   &__heading {
     font-size: 4rem;
     font-family: 'Josefin Sans', sans-serif;
-    @include underline-text(var(--color-white));
+    color: var(--color-grey-light-2);
+    @include underline-text(var(--color-primary));
   }
 
   &__sub-heading {
+    font-size: 3rem;
     font-family: 'Josefin Sans', sans-serif;
+    color: var(--color-grey-light-2);
     @include underline-text(var(--color-white));
   }
 
