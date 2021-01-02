@@ -226,8 +226,6 @@ const Apply = () => {
             >
               Yes
             </label>
-          </div>
-          <div className='application-form__input-group application-form__input-group--radio'>
             <input
               type='radio'
               name='visa-sponsorship'
