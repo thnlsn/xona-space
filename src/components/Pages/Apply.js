@@ -11,22 +11,31 @@ const { positions } = careers;
 const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
 const SHEET_ID = process.env.REACT_APP_SHEET_ID;
 const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
-const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY;
+const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY.replace(
+  /\\n/g,
+  '\n'
+); // Replace all the newline characters so they aren't actually in the key
 
-// Initializing the sheet with the spreadsheet id ID
+console.log(PRIVATE_KEY);
+
+// Initializing the sheet with the spreadsheet ID
 const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
 
 const addPosition = async (row) => {
   try {
     await doc.useServiceAccountAuth({
       client_email: CLIENT_EMAIL,
-      private_key: PRIVATE_KEY,
+      // Sanitizing the key removed the begin and end markers, so we add that back into the string
+      private_key: `-----BEGIN PRIVATE KEY-----${PRIVATE_KEY}-----END PRIVATE KEY-----`,
     });
     // loads document properties and worksheets
     await doc.loadInfo();
+    console.log(doc.title);
 
     const sheet = doc.sheetsById[SHEET_ID];
     const result = await sheet.addRow(row);
+    console.log(sheet.title);
+    console.log(sheet.rowCount);
 
     const rows = await sheet.getRows();
     console.log(rows);
@@ -43,7 +52,7 @@ const newPosition = {
   timeCommitment: 'Part-time',
 };
 
-/* addPosition(newPosition); */
+addPosition(newPosition);
 
 const Apply = () => {
   // Get the current location as the url path
