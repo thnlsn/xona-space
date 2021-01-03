@@ -16,8 +16,6 @@ const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY.replace(
   '\n'
 ); // Replace all the newline characters so they aren't actually in the key
 
-console.log(PRIVATE_KEY);
-
 // Initializing the sheet with the spreadsheet ID
 const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
 
@@ -44,7 +42,7 @@ const addPosition = async (row) => {
   }
 };
 
-const newPosition = {
+/* const newPosition = {
   _uid: 'JrWbDev1',
   title: 'Jr. Web Developer',
   area: 'Engineering',
@@ -52,7 +50,7 @@ const newPosition = {
   timeCommitment: 'Part-time',
 };
 
-addPosition(newPosition);
+addPosition(newPosition); */
 
 const Apply = () => {
   // Get the current location as the url path
