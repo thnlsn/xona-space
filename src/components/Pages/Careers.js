@@ -22,8 +22,8 @@ const Careers = () => {
         </div>
       </div>
       <div className='benefits'>
-        {benefits.map((benefit) => (
-          <div className='benefits__item'>
+        {benefits.map((benefit, index) => (
+          <div className='benefits__item' key={index}>
             <ion-icon name={benefit.icon}></ion-icon>
             <div className='benefits__heading'>{benefit.heading}</div>
             <div className='benefits__description'>{benefit.text}</div>
