@@ -42,16 +42,6 @@ const addPosition = async (row) => {
   }
 };
 
-/* const newPosition = {
-  _uid: 'JrWbDev1',
-  title: 'Jr. Web Developer',
-  area: 'Engineering',
-  location: 'San Mateo, CA',
-  timeCommitment: 'Part-time',
-};
-
-addPosition(newPosition); */
-
 const Apply = () => {
   // Get the current location as the url path
   const location = useLocation().pathname;
@@ -67,13 +57,22 @@ const Apply = () => {
   const job = findJob(getJobId(location));
 
   // Initialize state for the current job accessed as null
-  const [applicationData, setApplicationData] = useState(positions[1]);
+  const [applicationData, setApplicationData] = useState(positions[1]); // STATIC TESTING OF READING JOB DATA FROM DB
 
   useEffect(() => {
     // Set state to the object of the specific job posting
     //--1) location is the full url path
     //--2) GetJobId uses location and is returned as the last item in the path
     //--3) Then findJob uses that, which is the id, to find the job with that id, and returns all its information
+    const newPosition = {
+      _uid: 'JrWbDev1',
+      title: 'Jr. Web Developer',
+      area: 'Engineering',
+      location: 'San Mateo, CA',
+      timeCommitment: 'Part-time',
+    };
+
+    addPosition(newPosition);
   }, []);
 
   return (

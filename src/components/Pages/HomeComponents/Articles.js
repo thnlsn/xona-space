@@ -13,7 +13,6 @@ const Articles = ({ heading, articles, amount }) => {
         {(() => {
           let articlesArr = [];
           for (let i = 0; i < amount; i++) {
-            console.log(articles[i]);
             articlesArr.push(
               <Article
                 date={articles[i].date}

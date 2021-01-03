@@ -15,8 +15,8 @@ const XonaPulsar = ({ icon, name, description, abilities }) => {
         <div className='xona-pulsar__text'>{description}</div>
       </div>
       <div className='xona-pulsar__images'>
-        {abilities.map((ability) => (
-          <Ability ability={ability} />
+        {abilities.map((ability, index) => (
+          <Ability ability={ability} key={index} />
         ))}
       </div>
     </Fragment>
