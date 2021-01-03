@@ -1,11 +1,5 @@
 import React from 'react';
 
-// Importing all data for this component from the database file
-import { logos } from '../../data/database';
-
-// Destructuring the data we need for this component
-const { iconWhite } = logos;
-
 const Footer = ({ socials }) => {
   return (
     <footer className='footer'>

@@ -27,13 +27,23 @@ const addPosition = async (row) => {
 
     const sheet = doc.sheetsById[SHEET_ID];
     const result = await sheet.addRow(row);
+
+    const rows = await sheet.getRows();
+    console.log(rows);
   } catch (error) {
     console.error('Error: ', error);
   }
 };
 
-// This component needs the ID of the job.
-// With that, it will find the job with the matching ID and display the application questions, etc.
+const newPosition = {
+  _uid: 'JrWbDev1',
+  title: 'Jr. Web Developer',
+  area: 'Engineering',
+  location: 'San Mateo, CA',
+  timeCommitment: 'Part-time',
+};
+
+/* addPosition(newPosition); */
 
 const Apply = () => {
   // Get the current location as the url path
@@ -48,7 +58,6 @@ const Apply = () => {
 
   // Get the job posting from the db where the path matches the uid
   const job = findJob(getJobId(location));
-  console.log(job);
 
   // Initialize state for the current job accessed as null
   const [applicationData, setApplicationData] = useState(positions[1]);
@@ -79,8 +88,10 @@ const Apply = () => {
       {/* Info */}
       <div className='application-info'>
         <div className='application-info__paragraphs'>
-          {applicationData.description.map((paragraph) => (
-            <div className='application-info__paragraph'>{paragraph}</div>
+          {applicationData.description.map((paragraph, index) => (
+            <div className='application-info__paragraph' key={index}>
+              {paragraph}
+            </div>
           ))}
         </div>
 
@@ -88,16 +99,22 @@ const Apply = () => {
           Desired Qualifications (not all are expected)
         </h3>
         <ul className='application-info__qualifications-list'>
-          {applicationData.desiredQualifications.map((qualification) => (
-            <li className='application-info__list-item'>{qualification}</li>
+          {applicationData.desiredQualifications.map((qualification, index) => (
+            <li className='application-info__list-item' key={index}>
+              {qualification}
+            </li>
           ))}
         </ul>
 
         <h3 className='application-info__heading'>Required Qualifications</h3>
         <ul className='application-info__qualifications-list'>
-          {applicationData.requiredQualifications.map((qualification) => (
-            <li className='application-info__list-item'>{qualification}</li>
-          ))}
+          {applicationData.requiredQualifications.map(
+            (qualification, index) => (
+              <li className='application-info__list-item' key={index}>
+                {qualification}
+              </li>
+            )
+          )}
         </ul>
 
         <h3 className='application-info__heading'>Location</h3>
@@ -177,8 +194,10 @@ const Apply = () => {
               id='position'
               name='position'
             >
-              {positions.map((position) => (
-                <option value={position.title}>{position.title}</option>
+              {positions.map((position, index) => (
+                <option value={position.title} key={index}>
+                  {position.title}
+                </option>
               ))}
             </select>
           </div>

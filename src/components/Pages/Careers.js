@@ -33,8 +33,8 @@ const Careers = () => {
       <div className='availabilities'>
         <div className='availabilities__heading'>{availabilities.heading}</div>
         <div className='availabilities__positions'>
-          {positions.map((position) => (
-            <summary className='position'>
+          {positions.map((position, index) => (
+            <summary className='position' key={index}>
               <div className='position__container'>
                 <div className='position__heading'>{position.title}</div>
                 <ul className='position__details'>
