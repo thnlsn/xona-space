@@ -16,7 +16,7 @@ const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY.replace(
   '\n'
 ); // Replace all the newline characters so they aren't actually in the key
 
-// Initializing the sheet with the spreadsheet ID
+// Initializing the sheet with the spreadsheet ID (The specific sheet)
 const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -34,29 +34,27 @@ const Apply = () => {
   // Initialize state for the current job accessed as null
   const [applicationData] = useState(job); // Set state to the current job
 
+  const readSpreadsheet = async () => {
+    try {
+      await doc.useServiceAccountAuth({
+        client_email: CLIENT_EMAIL,
+        private_key: `-----BEGIN PRIVATE KEY-----${PRIVATE_KEY}-----END PRIVATE KEY-----`,
+      }); // Authorize service account
+
+      await doc.loadInfo(); // loads document properties and worksheets (all of them)
+      const sheet = doc.sheetsById[SHEET_ID]; // loads the specific sheet we want to read (the available positions one)
+      console.log(sheet.title);
+      console.log(sheet.rowCount);
+
+      const rows = await sheet.getRows();
+      console.log(rows);
+    } catch (error) {
+      console.error('Error: ', error);
+    }
+  };
+
   useEffect(() => {
-    const addPosition = async (row) => {
-      try {
-        await doc.useServiceAccountAuth({
-          client_email: CLIENT_EMAIL,
-          // Sanitizing the key removed the begin and end markers, so we add that back into the string
-          private_key: `-----BEGIN PRIVATE KEY-----${PRIVATE_KEY}-----END PRIVATE KEY-----`,
-        });
-        // loads document properties and worksheets
-        await doc.loadInfo();
-        console.log(doc.title);
-
-        const sheet = doc.sheetsById[SHEET_ID];
-        const result = await sheet.addRow(row);
-        console.log(sheet.title);
-        console.log(sheet.rowCount);
-
-        const rows = await sheet.getRows();
-        console.log(rows);
-      } catch (error) {
-        console.error('Error: ', error);
-      }
-    };
+    readSpreadsheet(); // This will get ALL the jobs
   }, []);
 
   return (
