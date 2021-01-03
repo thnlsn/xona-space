@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 // Importing all job application positions information
 import { careers, application } from '../../data/database';
 
 const { positions } = careers;
+
+// Config variables
+const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
+const SHEET_ID = process.env.REACT_APP_SHEET_ID;
+const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
+const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY;
 
 // This component needs the ID of the job.
 // With that, it will find the job with the matching ID and display the application questions, etc.
