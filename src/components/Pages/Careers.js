@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 // Importing all data for this component from the database file
 import { careers } from '../../data/database';
@@ -7,7 +9,50 @@ import { careers } from '../../data/database';
 // Destructuring the data we need for this component
 const { hero, benefits, availabilities, positions } = careers;
 
+// Config variables
+const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
+const SHEET_ID = process.env.REACT_APP_SHEET_ID;
+const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
+const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY.replace(
+  /\\n/g,
+  '\n'
+); // Replace all the newline characters so they aren't actually in the key
+
+// Initializing the sheet with the spreadsheet ID (The specific sheet)
+const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 const Careers = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [availablePositions, setAvailablePositions] = useState([]);
+
+  useEffect(() => {
+    /*     setAvailablePositions(readSpreadsheet()); // This will get ALL the jobs */
+    /* console.log(readSpreadsheet()); */
+
+    const readSpreadsheet = async () => {
+      try {
+        await doc.useServiceAccountAuth({
+          client_email: CLIENT_EMAIL,
+          private_key: `-----BEGIN PRIVATE KEY-----${PRIVATE_KEY}-----END PRIVATE KEY-----`,
+        }); // Authorize service account
+
+        setIsLoading(true);
+        await doc.loadInfo(); // loads document properties and worksheets (all of them)
+        const sheet = doc.sheetsById[SHEET_ID]; // loads the specific sheet we want to read (the available positions one)
+        const rows = await sheet.getRows();
+        setAvailablePositions(rows);
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error: ', error);
+        return [];
+      }
+    };
+    readSpreadsheet();
+  }, []);
+
   return (
     <div className='careers'>
       <div
@@ -33,29 +78,33 @@ const Careers = () => {
       <div className='availabilities'>
         <div className='availabilities__heading'>{availabilities.heading}</div>
         <div className='availabilities__positions'>
-          {positions.map((position, index) => (
-            <summary className='position' key={index}>
-              <div className='position__container'>
-                <div className='position__heading'>{position.title}</div>
-                <ul className='position__details'>
-                  <li className='position__area'>{position.area}</li>
-                  <li className='position__location'>{position.location}</li>
-                  <li className='position__time-commitment'>
-                    {position.timeCommitment}
-                  </li>
-                </ul>
-              </div>
+          {isLoading ? (
+            <div className='loading'>LOADING DATA...</div>
+          ) : (
+            availablePositions.map((position, index) => (
+              <summary className='position' key={index}>
+                <div className='position__container'>
+                  <div className='position__heading'>{position.title}</div>
+                  <ul className='position__details'>
+                    <li className='position__area'>{position.area}</li>
+                    <li className='position__location'>{position.location}</li>
+                    <li className='position__time-commitment'>
+                      {position.timeCommitment}
+                    </li>
+                  </ul>
+                </div>
 
-              <Link
-                to={`careers/${position._uid}`}
-                className='btn btn--basic'
-                /*                 target='_blank' */
-                rel='noopener noreferrer'
-              >
-                {availabilities.buttonText}
-              </Link>
-            </summary>
-          ))}
+                <Link
+                  to={`careers/${position._uid}`}
+                  className='btn btn--basic'
+                  /*                 target='_blank' */
+                  rel='noopener noreferrer'
+                >
+                  {availabilities.buttonText}
+                </Link>
+              </summary>
+            ))
+          )}
         </div>
       </div>
     </div>
