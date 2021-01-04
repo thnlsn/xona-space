@@ -15,8 +15,8 @@ const { positions } = careers;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const Apply = () => {
-  const { id } = this.props.location.state;
-  console.log(id); // "bar"
+  const [applicationData] = useState(positions[1]); // TESTING
+  const [isLoading, setIsLoading] = useState(false);
 
   /*   const location = useLocation().pathname; // Get the current location as the url path
   const getJobId = (path) => path.substring(path.lastIndexOf('/') + 1); // Splice it into just the last item, i.e. the job ID
@@ -29,6 +29,11 @@ const Apply = () => {
   const [applicationData] = useState(job); // Set state to the current job */
 
   /*   useEffect(() => {}, []); */
+
+  let data = useLocation();
+  console.log(data);
+
+  useEffect(() => {}, []);
 
   return (
     <div className='application'>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
 // Components
@@ -10,7 +9,7 @@ import Loading from '../Components/Loading';
 import { careers } from '../../data/database';
 
 // Destructuring the data we need for this component
-const { hero, benefits, availabilities, positions } = careers;
+const { hero, benefits, availabilities } = careers;
 
 // Config variables
 const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
@@ -32,15 +31,12 @@ const Careers = () => {
   const [availablePositions, setAvailablePositions] = useState([]);
 
   useEffect(() => {
-    /*     setAvailablePositions(readSpreadsheet()); // This will get ALL the jobs */
-    /* console.log(readSpreadsheet()); */
-
     const readSpreadsheet = async () => {
       try {
         await doc.useServiceAccountAuth({
           client_email: CLIENT_EMAIL,
-          private_key: `-----BEGIN PRIVATE KEY-----${PRIVATE_KEY}-----END PRIVATE KEY-----`,
-        }); // Authorize service account
+          private_key: `-----BEGIN PRIVATE KEY-----\n${PRIVATE_KEY}\n-----END PRIVATE KEY-----\n`,
+        }); // Authorize service account (if it stops working, try removing the \n characters above)
 
         setIsLoading(true);
         await doc.loadInfo(); // loads document properties and worksheets (all of them)
@@ -103,7 +99,6 @@ const Careers = () => {
                     state: { id: position._uid },
                   }}
                   className='btn btn--basic'
-                  /*                 target='_blank' */
                   rel='noopener noreferrer'
                 >
                   {availabilities.buttonText}
