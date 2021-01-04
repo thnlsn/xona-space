@@ -30,6 +30,14 @@ const Careers = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [availablePositions, setAvailablePositions] = useState([]);
 
+  const generateArrays = (object) => {
+    let keys = Object.keys(object);
+    console.log(keys);
+    // Check the keys of the object for keys that have the same string but numbers at the end
+
+    // For the ones that do, create an array of all those values with the same string
+  };
+
   useEffect(() => {
     const readSpreadsheet = async () => {
       try {
@@ -92,7 +100,7 @@ const Careers = () => {
                     </li>
                   </ul>
                 </div>
-                {console.log(position)}
+                {generateArrays(availablePositions[0])}
                 <Link
                   to={{
                     pathname: `careers/${position._uid}`,
@@ -101,9 +109,9 @@ const Careers = () => {
                       area: position.area,
                       location: position.location,
                       timeCommitment: position.timeCommitment,
-                      description: position.description,
+                      /*                       description: position.description,
                       desiredQualifications: position.desiredQualifications,
-                      requiredQualifications: position.requiredQualifications,
+                      requiredQualifications: position.requiredQualifications, */
                     },
                   }}
                   className='btn btn--basic'
