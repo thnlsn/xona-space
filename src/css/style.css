@@ -1374,7 +1374,7 @@ body {
   padding: 0rem 0rem 0rem 0rem; }
 
 .application {
-  padding: 0 0 6.5rem 0;
+  padding: calc(var(--nav-height)) 0 6.5rem 0;
   background-image: url("../images/backgroundImages/dotted.jpg");
   background-repeat: repeat; }
 
@@ -1887,7 +1887,7 @@ body {
     color: transparent; }
 
 .application-banner {
-  padding: calc(var(--nav-height) + 5rem) 40rem 5rem 40rem;
+  padding: 5rem 40rem 5rem 40rem;
   background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.502), #131313);
   display: flex;
   justify-content: flex-start; }
