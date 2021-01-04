@@ -1,115 +1,101 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { useLocation } from 'react-router-dom';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
+
+// Components
+import Loading from '../Components/Loading';
 
 // Importing all job application positions information
 import { careers, application } from '../../data/database';
 
 const { positions } = careers;
 
-// Config variables
-const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
-const SHEET_ID = process.env.REACT_APP_SHEET_ID;
-const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
-const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY.replace(
-  /\\n/g,
-  '\n'
-); // Replace all the newline characters so they aren't actually in the key
-
-// Initializing the sheet with the spreadsheet ID (The specific sheet)
-const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const Apply = () => {
-  const location = useLocation().pathname; // Get the current location as the url path
+  const { id } = this.props.location.state;
+  console.log(id); // "bar"
+
+  /*   const location = useLocation().pathname; // Get the current location as the url path
   const getJobId = (path) => path.substring(path.lastIndexOf('/') + 1); // Splice it into just the last item, i.e. the job ID
   const findJob = (id) => {
     return positions.find((position) => position._uid === id); // Find in the positions array, the job listing with the same ID as the ending item in the url path
   }; // Get the job posting from the db where the path matches the uid
   const job = findJob(getJobId(location));
-
   // Initialize state for the current job accessed as null
-  const [applicationData] = useState(job); // Set state to the current job
+  const [isLoading, setIsLoading] = useState(false);
+  const [applicationData] = useState(job); // Set state to the current job */
 
-  const readSpreadsheet = async () => {
-    try {
-      await doc.useServiceAccountAuth({
-        client_email: CLIENT_EMAIL,
-        private_key: `-----BEGIN PRIVATE KEY-----${PRIVATE_KEY}-----END PRIVATE KEY-----`,
-      }); // Authorize service account
-
-      await doc.loadInfo(); // loads document properties and worksheets (all of them)
-      const sheet = doc.sheetsById[SHEET_ID]; // loads the specific sheet we want to read (the available positions one)
-      console.log(sheet.title);
-      console.log(sheet.rowCount);
-
-      const rows = await sheet.getRows();
-      console.log(rows);
-    } catch (error) {
-      console.error('Error: ', error);
-    }
-  };
-
-  useEffect(() => {
-    readSpreadsheet(); // This will get ALL the jobs
-  }, []);
+  /*   useEffect(() => {}, []); */
 
   return (
     <div className='application'>
-      {/* Banner */}
-      <div className='application-banner'>
-        <div className='position__container'>
-          <div className='position__heading'>{applicationData.title}</div>
-          <ul className='position__details'>
-            <li className='position__area'>{applicationData.area}</li>
-            <li className='position__location'>{applicationData.location}</li>
-            <li className='position__time-commitment'>
-              {applicationData.timeCommitment}
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Info */}
-      <div className='application-info'>
-        <div className='application-info__paragraphs'>
-          {applicationData.description.map((paragraph, index) => (
-            <div className='application-info__paragraph' key={index}>
-              {paragraph}
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <Fragment>
+          {/* Banner */}
+          <div className='application-banner'>
+            <div className='position__container'>
+              <div className='position__heading'>{applicationData.title}</div>
+              <ul className='position__details'>
+                <li className='position__area'>{applicationData.area}</li>
+                <li className='position__location'>
+                  {applicationData.location}
+                </li>
+                <li className='position__time-commitment'>
+                  {applicationData.timeCommitment}
+                </li>
+              </ul>
             </div>
-          ))}
-        </div>
+          </div>
 
-        <h3 className='application-info__heading'>
-          Desired Qualifications (not all are expected)
-        </h3>
-        <ul className='application-info__qualifications-list'>
-          {applicationData.desiredQualifications.map((qualification, index) => (
-            <li className='application-info__list-item' key={index}>
-              {qualification}
-            </li>
-          ))}
-        </ul>
+          {/* Info */}
+          <div className='application-info'>
+            <div className='application-info__paragraphs'>
+              {applicationData.description.map((paragraph, index) => (
+                <div className='application-info__paragraph' key={index}>
+                  {paragraph}
+                </div>
+              ))}
+            </div>
 
-        <h3 className='application-info__heading'>Required Qualifications</h3>
-        <ul className='application-info__qualifications-list'>
-          {applicationData.requiredQualifications.map(
-            (qualification, index) => (
-              <li className='application-info__list-item' key={index}>
-                {qualification}
-              </li>
-            )
-          )}
-        </ul>
+            <h3 className='application-info__heading'>
+              Desired Qualifications (not all are expected)
+            </h3>
+            <ul className='application-info__qualifications-list'>
+              {applicationData.desiredQualifications.map(
+                (qualification, index) => (
+                  <li className='application-info__list-item' key={index}>
+                    {qualification}
+                  </li>
+                )
+              )}
+            </ul>
 
-        <h3 className='application-info__heading'>Location</h3>
-        <div className='application-info__text'>{applicationData.location}</div>
-      </div>
+            <h3 className='application-info__heading'>
+              Required Qualifications
+            </h3>
+            <ul className='application-info__qualifications-list'>
+              {applicationData.requiredQualifications.map(
+                (qualification, index) => (
+                  <li className='application-info__list-item' key={index}>
+                    {qualification}
+                  </li>
+                )
+              )}
+            </ul>
 
-      {/* Application */}
+            <h3 className='application-info__heading'>Location</h3>
+            <div className='application-info__text'>
+              {applicationData.location}
+            </div>
+          </div>
+        </Fragment>
+      )}
+      ;{/* Application */}
       <div className='job-application'>
         <form action='#' className='application-form'>
           <h2 className='application-form__heading'>Application</h2>

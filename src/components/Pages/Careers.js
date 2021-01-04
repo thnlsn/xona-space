@@ -96,9 +96,12 @@ const Careers = () => {
                     </li>
                   </ul>
                 </div>
-
+                {console.log(position)}
                 <Link
-                  to={`careers/${position._uid}`}
+                  to={{
+                    pathname: `careers/${position._uid}`,
+                    state: { id: position._uid },
+                  }}
                   className='btn btn--basic'
                   /*                 target='_blank' */
                   rel='noopener noreferrer'
