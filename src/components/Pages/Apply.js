@@ -15,8 +15,8 @@ const { positions } = careers;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 const Apply = () => {
-  const [applicationData] = useState(positions[1]); // TESTING
-  const [isLoading, setIsLoading] = useState(false);
+  const [applicationData, setApplicationData] = useState(positions[1]); // TESTING
+  const [isLoading, setIsLoading] = useState(true);
 
   /*   const location = useLocation().pathname; // Get the current location as the url path
   const getJobId = (path) => path.substring(path.lastIndexOf('/') + 1); // Splice it into just the last item, i.e. the job ID
@@ -33,7 +33,9 @@ const Apply = () => {
   let data = useLocation();
   console.log(data);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    setApplicationData(data.state);
+  }, []);
 
   return (
     <div className='application'>
@@ -100,7 +102,7 @@ const Apply = () => {
           </div>
         </Fragment>
       )}
-      ;{/* Application */}
+      {/* Application */}
       <div className='job-application'>
         <form action='#' className='application-form'>
           <h2 className='application-form__heading'>Application</h2>

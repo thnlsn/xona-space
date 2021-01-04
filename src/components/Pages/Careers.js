@@ -96,7 +96,15 @@ const Careers = () => {
                 <Link
                   to={{
                     pathname: `careers/${position._uid}`,
-                    state: { id: position._uid },
+                    state: {
+                      title: position.title,
+                      area: position.area,
+                      location: position.location,
+                      timeCommitment: position.timeCommitment,
+                      description: position.description,
+                      desiredQualifications: position.desiredQualifications,
+                      requiredQualifications: position.requiredQualifications,
+                    },
                   }}
                   className='btn btn--basic'
                   rel='noopener noreferrer'
