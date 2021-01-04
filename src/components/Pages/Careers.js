@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
+// Components
+import Loading from '../Components/Loading';
+
 // Importing all data for this component from the database file
 import { careers } from '../../data/database';
 
@@ -79,7 +82,7 @@ const Careers = () => {
         <div className='availabilities__heading'>{availabilities.heading}</div>
         <div className='availabilities__positions'>
           {isLoading ? (
-            <div className='loading'>LOADING DATA...</div>
+            <Loading />
           ) : (
             availablePositions.map((position, index) => (
               <summary className='position' key={index}>
