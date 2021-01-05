@@ -59,7 +59,7 @@
 
 .application-form {
   border-radius: 10px;
-  padding: 4.5rem 5rem;
+  padding: 4.5rem 5rem 4rem 4.5rem;
 
   border-bottom: 2px solid var(--color-grey-dark-4);
   border-top: 2px solid var(--color-grey-dark-4);
@@ -69,7 +69,7 @@
   // Spacing
   &__heading,
   &__sub-heading {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
 
   &__sub-heading {
@@ -78,10 +78,14 @@
     border-top: 2px solid var(--color-grey-dark-4);
   }
 
-  &__input-group,
+  &__input-group {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
   &__question {
     margin-left: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   // Styles
@@ -97,6 +101,10 @@
       flex-direction: column;
       align-items: stretch;
       // flex: 1;
+      // For the little border that is on the left of each textarea input
+      border-left: 2px solid var(--color-grey-dark-4);
+      padding: 0.5rem 0 1rem 1.5rem;
+      border-radius: 5px;
 
       .application-form__input-box {
         border: 1.5px solid var(--color-white);
@@ -111,13 +119,20 @@
       }
     }
 
-    label {
-      flex: 0 0 15%;
-    }
-
     &--radio {
-      margin-bottom: 1rem;
+      flex-direction: column;
     }
+  }
+
+  &__label {
+    flex: 0 0 15%;
+
+    &--textarea {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__radio-group {
   }
 
   &__input {

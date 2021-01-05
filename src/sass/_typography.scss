@@ -367,6 +367,24 @@ body {
     @include underline-text(var(--color-white));
   }
 
+  ::placeholder {
+    font-size: 1.6rem;
+  }
+
+  &__input-box {
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
+    input,
+    textarea {
+      font-size: inherit;
+      font-style: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+    }
+  }
+
   &__required {
     color: var(--color-invalid);
   }

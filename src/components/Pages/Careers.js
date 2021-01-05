@@ -29,6 +29,13 @@ const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
 const Careers = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [availablePositions, setAvailablePositions] = useState([]);
+  const [allTitles, setAllTitles] = useState([]);
+
+  const getTitles = async (rows) => {
+    let titles = await rows.map((position) => titles.push(position.title));
+    setAllTitles(titles);
+    console.log(allTitles);
+  };
 
   const generateArrays = (object) => {
     let keys = Object.keys(object);
@@ -51,7 +58,7 @@ const Careers = () => {
         await doc.loadInfo(); // loads document properties and worksheets (all of them)
         const sheet = doc.sheetsById[SHEET_ID]; // loads the specific sheet we want to read (the available positions one)
         const rows = await sheet.getRows();
-        console.log(rows);
+        /* console.log(rows); */
         setAvailablePositions(rows);
         setIsLoading(false);
       } catch (error) {
@@ -102,7 +109,7 @@ const Careers = () => {
                     </li>
                   </ul>
                 </div>
-                {generateArrays(availablePositions[0])}
+                {/* {generateArrays(availablePositions[0])} */}
                 <Link
                   to={{
                     pathname: `careers/${position._uid}`,

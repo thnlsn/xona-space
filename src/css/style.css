@@ -1009,6 +1009,18 @@ body {
     text-decoration-color: var(--color-white);
     text-decoration-thickness: 2px;
     text-shadow: 0 0 5px #000; }
+  .application-form ::placeholder {
+    font-size: 1.6rem; }
+  .application-form__input-box {
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; }
+    .application-form__input-box input,
+    .application-form__input-box textarea {
+      font-size: inherit;
+      font-style: inherit;
+      font-family: inherit;
+      font-weight: inherit; }
   .application-form__required {
     color: var(--color-invalid); }
 
@@ -1937,20 +1949,23 @@ body {
 
 .application-form {
   border-radius: 10px;
-  padding: 4.5rem 5rem;
+  padding: 4.5rem 5rem 4rem 4.5rem;
   border-bottom: 2px solid var(--color-grey-dark-4);
   border-top: 2px solid var(--color-grey-dark-4);
   border-radius: 25px;
   background-color: #131313; }
   .application-form__heading, .application-form__sub-heading {
-    margin-bottom: 1rem; }
+    margin-bottom: 1.25rem; }
   .application-form__sub-heading {
     margin-top: 2.25rem;
     padding-top: 2rem;
     border-top: 2px solid var(--color-grey-dark-4); }
-  .application-form__input-group, .application-form__question {
+  .application-form__input-group {
     margin-left: 1rem;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 1.5rem; }
+  .application-form__question {
+    margin-left: 1rem;
+    margin-bottom: 1rem; }
   .application-form__input-group {
     display: flex;
     align-items: flex-start; }
@@ -1958,7 +1973,10 @@ body {
       border: 1.5px solid var(--color-white); }
     .application-form__input-group--textarea {
       flex-direction: column;
-      align-items: stretch; }
+      align-items: stretch;
+      border-left: 2px solid var(--color-grey-dark-4);
+      padding: 0.5rem 0 1rem 1.5rem;
+      border-radius: 5px; }
       .application-form__input-group--textarea .application-form__input-box {
         border: 1.5px solid var(--color-white);
         height: 15rem; }
@@ -1967,10 +1985,12 @@ body {
           width: 100%;
           resize: none;
           overflow: auto; }
-    .application-form__input-group label {
-      flex: 0 0 15%; }
     .application-form__input-group--radio {
-      margin-bottom: 1rem; }
+      flex-direction: column; }
+  .application-form__label {
+    flex: 0 0 15%; }
+    .application-form__label--textarea {
+      margin-bottom: 1.5rem; }
   .application-form__input {
     padding: 1rem;
     border: none;
