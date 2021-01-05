@@ -13,7 +13,7 @@ const { hero, benefits, availabilities } = careers;
 
 // Config variables
 const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
-const SHEET_ID = process.env.REACT_APP_SHEET_ID;
+const SHEET_ID = process.env.REACT_APP_SHEET_ID_AVAILABLE_POSITIONS;
 const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
 const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY.replace(
   /\\n/g,
@@ -46,10 +46,12 @@ const Careers = () => {
           private_key: `-----BEGIN PRIVATE KEY-----\n${PRIVATE_KEY}\n-----END PRIVATE KEY-----\n`,
         }); // Authorize service account (if it stops working, try removing the \n characters above)
 
+        // If there are no rows ADD A CONDITON FOR THIS AND MAKE IT SAY THERE ARE NO POSITONS AVALALBE AT THE MOMENT
         setIsLoading(true);
         await doc.loadInfo(); // loads document properties and worksheets (all of them)
         const sheet = doc.sheetsById[SHEET_ID]; // loads the specific sheet we want to read (the available positions one)
         const rows = await sheet.getRows();
+        console.log(rows);
         setAvailablePositions(rows);
         setIsLoading(false);
       } catch (error) {
@@ -105,6 +107,7 @@ const Careers = () => {
                   to={{
                     pathname: `careers/${position._uid}`,
                     state: {
+                      // If the position selection is neccesary, send an array of all positions in addition to the below state
                       title: position.title,
                       area: position.area,
                       location: position.location,
