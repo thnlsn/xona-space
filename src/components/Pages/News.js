@@ -77,7 +77,11 @@ const News = () => {
               />
             ))}
           </div>
-          <Link to={'/xona-space'} className='btn btn__arrow' data-aos='fade'>
+          <Link
+            to={'/xona-space'}
+            className='btn btn__arrow u-horizontal-margins-medium'
+            data-aos='fade'
+          >
             <span className='btn__arrow--larr'>&larr;</span> Go home
           </Link>
         </Fragment>
