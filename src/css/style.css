@@ -1976,7 +1976,8 @@ body {
       align-items: stretch;
       border-left: 2px solid var(--color-grey-dark-4);
       padding: 0.5rem 0 1rem 1.5rem;
-      border-radius: 5px; }
+      border-radius: 5px;
+      margin-bottom: 3rem; }
       .application-form__input-group--textarea .application-form__input-box {
         border: 1.5px solid var(--color-white);
         height: 15rem; }
@@ -1986,7 +1987,8 @@ body {
           resize: none;
           overflow: auto; }
     .application-form__input-group--radio {
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 3rem; }
   .application-form__label {
     flex: 0 0 15%; }
     .application-form__label--textarea {

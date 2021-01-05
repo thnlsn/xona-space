@@ -57,9 +57,9 @@ const JobApplication = ({ positions }) => {
             <input
               type='tel'
               className='application-form__input'
-              placeholder='Phone number'
+              placeholder='(xxx) xxx-xxxx'
               id='phone-number'
-              pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}'
+              /*               pattern='[0-9]{3}-[0-9]{2}-[0-9]{3}' */
             />
           </div>
         </div>

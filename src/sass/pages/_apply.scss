@@ -106,6 +106,8 @@
       padding: 0.5rem 0 1rem 1.5rem;
       border-radius: 5px;
 
+      margin-bottom: 3rem;
+
       .application-form__input-box {
         border: 1.5px solid var(--color-white);
         height: 15rem;
@@ -121,6 +123,8 @@
 
     &--radio {
       flex-direction: column;
+
+      margin-bottom: 3rem;
     }
   }
 
