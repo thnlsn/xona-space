@@ -11,7 +11,7 @@ import { home } from '../../data/database';
 
 // Destructure only what we need for this page
 const {
-  news: { newsArchiveHeading /* articles */ },
+  news: { newsArchiveHeading, articles },
 } = home;
 
 // Config variables
@@ -32,7 +32,7 @@ const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
 
 const News = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [articles, setArticles] = useState([]);
+  const [, /* articles */ setArticles] = useState([]);
 
   useEffect(() => {
     const readSpreadsheet = async () => {
