@@ -1389,11 +1389,11 @@ body {
   padding: 0rem 15rem 6.5rem 15rem; }
 
 .about {
-  margin-top: calc(var(--nav-height));
+  margin-top: calc(var(--nav-height) + 2rem);
   padding: 0rem 25rem 3.5rem 25rem; }
 
 .contact {
-  margin-top: calc(var(--nav-height) + 2rem);
+  margin-top: calc(var(--nav-height) + 1rem);
   padding: 0rem 30rem 6.5rem 30rem; }
 
 .careers {

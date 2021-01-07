@@ -12,7 +12,7 @@ const Navigation = ({ items }) => {
   const [scrolled, setScrolled] = useState(false);
 
   const changeScrolled = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 1) {
       setScrolled(true);
     } else {
       setScrolled(false);
