@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/xona-space/static/css/main.507a4e18.chunk.css",
-    "main.js": "/xona-space/static/js/main.3bdc9b4f.chunk.js",
-    "main.js.map": "/xona-space/static/js/main.3bdc9b4f.chunk.js.map",
+    "main.js": "/xona-space/static/js/main.480de968.chunk.js",
+    "main.js.map": "/xona-space/static/js/main.480de968.chunk.js.map",
     "runtime-main.js": "/xona-space/static/js/runtime-main.b98b0967.js",
     "runtime-main.js.map": "/xona-space/static/js/runtime-main.b98b0967.js.map",
     "static/js/2.2bc09e6e.chunk.js": "/xona-space/static/js/2.2bc09e6e.chunk.js",
     "static/js/2.2bc09e6e.chunk.js.map": "/xona-space/static/js/2.2bc09e6e.chunk.js.map",
     "index.html": "/xona-space/index.html",
-    "precache-manifest.0113e6338c2a5012ae8a48009da3c5b9.js": "/xona-space/precache-manifest.0113e6338c2a5012ae8a48009da3c5b9.js",
+    "precache-manifest.6a6902c1a23ceaff73a11a458eba3b0c.js": "/xona-space/precache-manifest.6a6902c1a23ceaff73a11a458eba3b0c.js",
     "service-worker.js": "/xona-space/service-worker.js",
     "static/css/main.507a4e18.chunk.css.map": "/xona-space/static/css/main.507a4e18.chunk.css.map",
     "static/js/2.2bc09e6e.chunk.js.LICENSE.txt": "/xona-space/static/js/2.2bc09e6e.chunk.js.LICENSE.txt",
@@ -47,6 +47,6 @@
     "static/js/runtime-main.b98b0967.js",
     "static/js/2.2bc09e6e.chunk.js",
     "static/css/main.507a4e18.chunk.css",
-    "static/js/main.3bdc9b4f.chunk.js"
+    "static/js/main.480de968.chunk.js"
   ]
 }
