@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/xona-space/precache-manifest.f6b9c3ca7641a7409701f81b90d816e5.js"
+  "/xona-space/precache-manifest.3481bfaf1cacb1f4c6fe55c826618603.js"
 );
 
 self.addEventListener('message', (event) => {
