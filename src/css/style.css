@@ -1046,7 +1046,7 @@ body {
 
 .navigation {
   z-index: 9999;
-  background-color: rgba(8, 8, 8, 0.8);
+  background-color: rgba(8, 8, 8, 0.1);
   backdrop-filter: blur(15px);
   /* border-bottom-right-radius: 128px; */
   /* background-color: var(--color-black); */
@@ -1062,6 +1062,10 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around; }
+  .navigation.active {
+    transition: all 0.2s;
+    background-color: rgba(8, 8, 8, 0.8);
+    backdrop-filter: blur(15px); }
   .navigation__brand {
     object-fit: contain;
     height: var(--logo-height); }
@@ -2001,6 +2005,10 @@ body {
     flex: 0 0 15%; }
     .application-form__label--textarea {
       margin-bottom: 1.5rem; }
+    .application-form__label--radio {
+      margin-left: 1rem; }
+  .application-form__radio-label-container {
+    display: flex; }
   .application-form__input {
     padding: 1rem;
     border: none;

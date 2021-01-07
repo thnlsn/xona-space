@@ -129,7 +129,6 @@
 
     &--radio {
       flex-direction: column;
-
       margin-bottom: 3rem;
     }
   }
@@ -140,9 +139,14 @@
     &--textarea {
       margin-bottom: 1.5rem;
     }
+
+    &--radio {
+      margin-left: 1rem;
+    }
   }
 
-  &__radio-group {
+  &__radio-label-container {
+    display: flex;
   }
 
   &__input {

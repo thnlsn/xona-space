@@ -1,10 +1,16 @@
 .navigation {
   z-index: 9999; // Highest z-index on the site
 
-  background-color: rgba($color: #080808, $alpha: 0.8);
+  background-color: rgba($color: #080808, $alpha: 0.1);
   backdrop-filter: blur(15px);
   /* border-bottom-right-radius: 128px; */
   /* background-color: var(--color-black); */
+
+  &.active {
+    transition: all 0.2s;
+    background-color: rgba($color: #080808, $alpha: 0.8);
+    backdrop-filter: blur(15px);
+  }
 
   position: fixed;
   top: 0;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import NavItem from './NavItem';
@@ -9,8 +9,19 @@ import { logos } from '../../data/database';
 const { logo } = logos;
 
 const Navigation = ({ items }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  const changeScrolled = () => {
+    if (window.scrollY >= 80) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+  window.addEventListener('scroll', changeScrolled);
+
   return (
-    <nav className='navigation'>
+    <nav className={`navigation ${scrolled ? 'active' : ''}`}>
       {/* This is set up to route to the homepage, as that is what is first in the array */}
       <Link to={items[0].path}>
         <img src={logo} alt='Xona Logo' className='navigation__brand'></img>
