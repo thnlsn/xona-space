@@ -1063,8 +1063,8 @@ body {
   display: flex;
   justify-content: space-around; }
   .navigation.active {
-    transition: all 0.2s;
-    background-color: rgba(8, 8, 8, 0.8);
+    transition: all 0.45s;
+    background-color: rgba(8, 8, 8, 0.75);
     backdrop-filter: blur(15px); }
   .navigation__brand {
     object-fit: contain;
