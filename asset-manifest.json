@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/xona-space/static/css/main.507a4e18.chunk.css",
-    "main.js": "/xona-space/static/js/main.480de968.chunk.js",
-    "main.js.map": "/xona-space/static/js/main.480de968.chunk.js.map",
+    "main.css": "/xona-space/static/css/main.a29ce743.chunk.css",
+    "main.js": "/xona-space/static/js/main.3bdc9b4f.chunk.js",
+    "main.js.map": "/xona-space/static/js/main.3bdc9b4f.chunk.js.map",
     "runtime-main.js": "/xona-space/static/js/runtime-main.b98b0967.js",
     "runtime-main.js.map": "/xona-space/static/js/runtime-main.b98b0967.js.map",
     "static/js/2.2bc09e6e.chunk.js": "/xona-space/static/js/2.2bc09e6e.chunk.js",
     "static/js/2.2bc09e6e.chunk.js.map": "/xona-space/static/js/2.2bc09e6e.chunk.js.map",
     "index.html": "/xona-space/index.html",
-    "precache-manifest.6a6902c1a23ceaff73a11a458eba3b0c.js": "/xona-space/precache-manifest.6a6902c1a23ceaff73a11a458eba3b0c.js",
+    "precache-manifest.f6b9c3ca7641a7409701f81b90d816e5.js": "/xona-space/precache-manifest.f6b9c3ca7641a7409701f81b90d816e5.js",
     "service-worker.js": "/xona-space/service-worker.js",
-    "static/css/main.507a4e18.chunk.css.map": "/xona-space/static/css/main.507a4e18.chunk.css.map",
+    "static/css/main.a29ce743.chunk.css.map": "/xona-space/static/css/main.a29ce743.chunk.css.map",
     "static/js/2.2bc09e6e.chunk.js.LICENSE.txt": "/xona-space/static/js/2.2bc09e6e.chunk.js.LICENSE.txt",
     "static/media/adrien-perkins.jpg": "/xona-space/static/media/adrien-perkins.ace257e6.jpg",
     "static/media/aerial-mobility.jpg": "/xona-space/static/media/aerial-mobility.91281300.jpg",
@@ -46,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.b98b0967.js",
     "static/js/2.2bc09e6e.chunk.js",
-    "static/css/main.507a4e18.chunk.css",
-    "static/js/main.480de968.chunk.js"
+    "static/css/main.a29ce743.chunk.css",
+    "static/js/main.3bdc9b4f.chunk.js"
   ]
 }
