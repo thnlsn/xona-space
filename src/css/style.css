@@ -1590,6 +1590,10 @@ body {
   /* opacity: 1; */
 }
 
+.home {
+  overflow-y: hidden;
+}
+
 .news-archive {
   margin-top: calc(var(--nav-height));
   padding: 0rem 15rem 6.5rem 15rem;
