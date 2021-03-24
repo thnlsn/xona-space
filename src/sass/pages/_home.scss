@@ -240,7 +240,7 @@
 // ▓▓▓ APPLICATIONS SECTION
 .applications {
   text-align: center;
-  padding: 7.5rem 20rem 6.5rem 20rem;
+  padding: 7.5rem 20rem 11.5rem 20rem;
 
   background-image: radial-gradient(
     circle,
@@ -250,62 +250,63 @@
   );
 }
 
+// APPS
 .apps {
-  display: flex;
-  justify-content: center; // So that if another app is added, it will wrap and be centered on the next row (if theres only 1)
-  flex-wrap: wrap;
+  position: relative;
+  height: 50rem;
 
-  margin: 0rem 0;
+  &__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    outline: none;
 
-  &__app {
-    flex: 0 0 50%;
-    padding: 5rem;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+
+    &--left {
+      left: 6%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--right {
+      right: 6%;
+      transform: translate(50%, -50%);
+    }
   }
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
 
   &__container {
-    border-radius: 15px;
-    height: 25rem;
+    height: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    /*     border: 1rem solid var(--color-primary); */
 
-    background-clip: border-box;
-
-    position: relative; // For the images which I will attempt to make able to pass through in the component rather than here
-
-    // For the hover effect
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0px 5px 29px 13px rgba(0, 0, 0, 0.55);
-
-    // To offset the text from center
-    padding-top: 9rem;
-
-    /*     &:hover {
-      transform: scale(1.04);
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
-    } */
+    // For animation
+    transition: transform 1s;
   }
 
   &__text {
-    justify-self: center;
-    border-radius: 5px;
-    padding: 0.1rem 1rem 0.35rem 1rem;
-
-    font-weight: 300;
-
-    /* width: 100%; */
-
-    background-image: linear-gradient(
-      rgba(10, 10, 10, 0.25),
-      rgba(0, 0, 0, 0.05)
-    );
-
-    backdrop-filter: blur(3px);
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.25rem 1.75rem;
+    margin-bottom: 6rem;
+    border-radius: 20px;
   }
 }
 

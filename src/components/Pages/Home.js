@@ -6,6 +6,7 @@ import Hero from './HomeComponents/Hero';
 import DocumentLink from './HomeComponents/DocumentLink';
 import XonaPulsar from './HomeComponents/XonaPulsar';
 import Applications from './HomeComponents/Applications';
+import Slider from './HomeComponents/Slider';
 import Articles from './HomeComponents/Articles';
 
 // Importing all data for this component from the database file
