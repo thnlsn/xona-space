@@ -4,6 +4,19 @@ import Slider from './Slider';
 const Applications = ({ heading, logo, applications }) => {
   const [slide, setSlide] = useState(0);
 
+  /*   const createDots = (curr) => {
+    for (let i; i > applications.length; i++) {
+      return (
+        <div
+          className={`apps__dot apps__dot--${
+            slide === index ? 'active' : 'inactive'
+          }`}
+        >
+          &bull;
+        </div>
+      );
+    } */
+
   return (
     <Fragment>
       {/* <h1 className='applications__heading'>{heading}</h1> */}
@@ -24,7 +37,15 @@ const Applications = ({ heading, logo, applications }) => {
                 transform: `translateX(${(index - slide) * 100}%)`,
               }}
             >
-              <div className='app__text'>{app.text}</div>
+              <div
+                className='app__text'
+                style={{
+                  transform: `translateX(${(index - slide) * 100}%)`,
+                  opacity: `${slide === index ? 1 : 0}`,
+                }}
+              >
+                {app.text}
+              </div>
             </div>
           </div>
         ))}
@@ -43,6 +64,18 @@ const Applications = ({ heading, logo, applications }) => {
           className='apps__btn apps__btn--right'
         >
           &raquo;
+        </div>
+        <div className='apps__dots'>
+          {applications.map((_, index) => (
+            <div
+              onClick={() => {
+                setSlide(index);
+              }}
+              className={`apps__dot apps__dot--${
+                slide === index ? 'active' : 'inactive'
+              }`}
+            />
+          ))}
         </div>
       </div>
     </Fragment>
