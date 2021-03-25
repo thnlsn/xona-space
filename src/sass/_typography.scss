@@ -91,7 +91,7 @@ body {
 }
 
 .app__text {
-  font-size: 4rem;
+  font-size: 6rem;
   text-shadow: 0 0 30px #000;
 }
 
@@ -388,4 +388,17 @@ body {
   &__required {
     color: var(--color-invalid);
   }
+}
+
+.apps__heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+  // font-weight: 600;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 3px;
+  text-shadow: 0 0 5px #000;
 }

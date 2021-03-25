@@ -1,7 +1,7 @@
 // ▓▓▓ HOME BANNER
 .home-banner {
   background-size: cover;
-  padding: 0 20rem 0 20rem;
+  padding: 0 var(--padding-home) 0 var(--padding-home);
   height: calc(100vh /*  - var(--nav-height) */);
 
   position: relative; // For the primary heading
@@ -51,7 +51,7 @@
 .main-quote {
   position: relative;
 
-  padding: 20.5rem 20rem 24.5rem 20rem; // The 25rem is to account for the lost space made by the polygon clip path, which 75% leaves out 5rem, so we add that back
+  padding: 20.5rem var(--padding-home) 24.5rem var(--padding-home); // The 25rem is to account for the lost space made by the polygon clip path, which 75% leaves out 5rem, so we add that back
   z-index: 100;
 
   display: flex;
@@ -121,7 +121,7 @@
 .xona-pulsar {
   margin-top: -14rem;
 
-  padding: 22.5rem 20rem 4.5rem 20rem; // The spacing of the container of the pulsar info
+  padding: 22.5rem var(--padding-home) 4.5rem var(--padding-home); // The spacing of the container of the pulsar info
 
   /*   display: flex;
   justify-content: space-between;
@@ -239,21 +239,38 @@
 
 // ▓▓▓ APPLICATIONS SECTION
 .applications {
-  text-align: center;
-  padding: 7.5rem 20rem 11.5rem 20rem;
+  // text-align: center;
+  // padding: 7.5rem 0 /* 11.5rem */ 0 0;
 
-  background-image: radial-gradient(
+  /*   background-image: radial-gradient(
     circle,
     rgba(8, 8, 8, 1) 0%,
     rgba(33, 138, 136, 1) 0%,
     rgba(14, 58, 58, 1) 100%
-  );
+  ); */
 }
 
 // APPS
 .apps {
   position: relative;
   height: 50rem;
+
+  &__heading-container {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 20.5%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__logo {
+    height: 8rem;
+    width: 8rem;
+  }
 
   &__btn {
     position: absolute;
@@ -262,14 +279,18 @@
     outline: none;
 
     border: none;
-    background: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
     font-family: inherit;
-    color: #333;
-    border-radius: 50%;
+    color: var(--color-white);
     height: 5.5rem;
     width: 5.5rem;
-    font-size: 3.25rem;
+    font-size: 11.25rem;
+    line-height: 0;
+
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
 
     &--left {
       left: 6%;
@@ -291,7 +312,7 @@
 
   &__container {
     height: 100%;
-    background-size: cover;
+    background-position: center top;
 
     display: flex;
     align-items: center;
@@ -303,16 +324,17 @@
 
   &__text {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.3);
     padding: 1.25rem 1.75rem;
-    margin-bottom: 6rem;
-    border-radius: 20px;
+    margin-top: 16rem;
+    line-height: 1;
+    // border-radius: 20px;
   }
 }
 
 // ▓▓▓ NEWS SECTION
 .news {
-  padding: 6.5rem 20rem;
+  padding: 6.5rem var(--padding-home);
   text-align: center;
 
   &__heading {

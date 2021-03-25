@@ -57,6 +57,7 @@ const Home = () => {
       <section className='applications'>
         <Applications
           heading={applications.heading}
+          logo={applications.logo}
           applications={applications.items}
         />
       </section>

@@ -72,6 +72,7 @@ const home = {
   applications: {
     // The main heading of the section
     heading: 'Applications',
+    logo: require('../images/logos/xona-icon-white.png'),
     items: [
       // Each item in this array is one application, you can just remove or add another object {text: '', image: ''} and it will be added to the list
       {
