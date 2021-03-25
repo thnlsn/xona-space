@@ -274,9 +274,9 @@
 
   &__btn {
     position: absolute;
-    top: 50%;
+    top: 60%;
     z-index: 10;
-    outline: none;
+    // outline: none;
 
     border: none;
     background-color: transparent;
@@ -382,7 +382,7 @@
     // @include absolute-center(70%, 50%);
     margin-top: 18rem;
     transition: transform 1.5s, opacity 0.5s;
-    animation-fill-mode: forwards;
+
     position: absolute;
   }
 }

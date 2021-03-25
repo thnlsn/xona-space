@@ -1,21 +1,18 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import Slider from './Slider';
 
 const Applications = ({ heading, logo, applications }) => {
   const [slide, setSlide] = useState(0);
 
-  /*   const createDots = (curr) => {
-    for (let i; i > applications.length; i++) {
-      return (
-        <div
-          className={`apps__dot apps__dot--${
-            slide === index ? 'active' : 'inactive'
-          }`}
-        >
-          &bull;
-        </div>
-      );
-    } */
+  useEffect(() => {
+    let sliderInterval = setInterval(() => {
+      const newSlide = slide + 1;
+      setSlide(newSlide);
+    }, 1000);
+    return () => {
+      clearInterval(sliderInterval);
+    };
+  }, []);
 
   return (
     <Fragment>

@@ -1842,9 +1842,8 @@ body {
 }
 .apps__btn {
   position: absolute;
-  top: 50%;
+  top: 60%;
   z-index: 10;
-  outline: none;
   border: none;
   background-color: transparent;
   font-family: inherit;
@@ -1916,7 +1915,6 @@ body {
   line-height: 1; */
   margin-top: 18rem;
   transition: transform 1.5s, opacity 0.5s;
-  animation-fill-mode: forwards;
   position: absolute;
 }
 
