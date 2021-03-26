@@ -5,6 +5,9 @@
 
 // ▓▓▓ DEFAULT TYPOGRAPHY ▓▓▓
 
+@use './variables' as *;
+@use './mixins' as *;
+
 // These is the default typography for the site
 body {
   font-family: 'Lato', sans-serif;

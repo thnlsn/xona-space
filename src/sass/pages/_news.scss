@@ -1,3 +1,5 @@
+@use '../mixins' as *;
+
 .archive {
   // display: flex;
   display: grid;

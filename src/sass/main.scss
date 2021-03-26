@@ -1,35 +1,21 @@
-// Abstracts
-@import 'mixins';
-@import 'variables';
+@use 'variables';
+@use 'base';
+@use 'animations';
+@use 'typography';
+@use 'layout';
 
-// Aos
-@import './aos/core';
-@import './aos/easing';
-@import './aos/animations';
+@use 'pages/about';
+@use 'pages/apply';
+@use 'pages/careers';
+@use 'pages/contact';
+@use 'pages/home';
+@use 'pages/news';
 
-// Base
-@import 'animations';
-@import 'base';
-@import 'typography';
-@import 'utilities';
-
-// Components
-@import './components/navigation'; // Navbar
-@import './components/footer'; // Footer
-@import './components/button'; // Buttons
-@import './components/article'; // Single article card
-@import './components/member'; // Single team member card
-
-// Layout
-@import 'layout';
-
-// Pages
-@import './pages/home';
-@import './pages/about';
-@import './pages/contact';
-@import './pages/careers';
-@import './pages/news';
-@import './pages/apply';
+@use 'components/article';
+@use 'components/button';
+@use 'components/footer';
+@use 'components/member';
+@use 'components/navigation';
 
 /*
 
