@@ -6,13 +6,12 @@ const Applications = ({ heading, logo, applications }) => {
 
   useEffect(() => {
     let sliderInterval = setInterval(() => {
-      const newSlide = slide + 1;
-      setSlide(newSlide);
-    }, 1000);
+      setSlide(slide === applications.length - 1 ? 0 : slide + 1);
+    }, 5500);
     return () => {
       clearInterval(sliderInterval);
     };
-  }, []);
+  }, [slide]);
 
   return (
     <Fragment>

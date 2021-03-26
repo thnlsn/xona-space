@@ -1456,7 +1456,6 @@ body {
 
 .article {
   height: 50rem;
-  flex: 0 1 22.5%;
   margin-bottom: 4.25rem;
   display: flex;
   flex-direction: column;
@@ -1505,7 +1504,7 @@ body {
 }
 
 .member {
-  flex: 0 0 22.5%;
+  flex: 1 0 22.5%;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
@@ -1519,6 +1518,7 @@ body {
   border-radius: 5px;
   background-image: linear-gradient(180deg, #131313 0%, rgba(8, 8, 8, 0.5018382353) 50%, #131313 100%);
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: flex-end;
   margin-bottom: 0.5rem;
@@ -1622,13 +1622,12 @@ body {
 }
 
 .contact {
-  margin-top: calc(var(--nav-height) + 1rem);
+  margin-top: calc(var(--nav-height) + 2rem);
   padding: 0rem 30rem 6.5rem 30rem;
 }
 
 .careers {
   margin-top: calc(var(--nav-height));
-  padding: 0rem 0rem 0rem 0rem;
 }
 
 .application {
@@ -1927,7 +1926,8 @@ body {
 }
 
 .articles {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   justify-content: center;
   align-items: center;
   gap: 3.333333333%;
@@ -2031,9 +2031,13 @@ body {
 }
 .xona-team__members {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 3.333333333%;
   flex-wrap: wrap;
+}
+.xona-team__members::after {
+  content: "";
+  flex-grow: 999;
 }
 
 .google-maps {
@@ -2274,11 +2278,12 @@ body {
 }
 
 .archive {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 40rem));
+  justify-content: space-around;
   align-items: center;
-  gap: 3.333333333%;
-  flex-wrap: wrap;
+  column-gap: 5rem;
+  row-gap: 2.5rem;
 }
 
 .news-archive {
