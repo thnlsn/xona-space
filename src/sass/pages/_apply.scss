@@ -1,4 +1,6 @@
+@use '../breakpoints';
 @use '../mixins' as *;
+
 .application-banner {
   padding: 5rem 40rem 5rem 40rem;
 

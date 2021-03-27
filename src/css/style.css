@@ -27,6 +27,16 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.5%;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 52.5%;
+  }
+}
 
 *,
 *::before,
@@ -438,6 +448,16 @@ body {
   margin-top: calc(var(--nav-height) + 2rem);
   padding: 0rem 25rem 3.5rem 25rem;
 }
+@media only screen and (max-width: 103.125em) {
+  .about {
+    padding: 0rem 10rem 3.5rem 10rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .about {
+    padding: 0rem 2rem 3.5rem 2rem;
+  }
+}
 
 .contact {
   margin-top: calc(var(--nav-height) + 2rem);
@@ -482,6 +502,11 @@ body {
   border-radius: 0 0 0 20px;
   background-size: cover;
 }
+@media only screen and (max-width: 62.5em) {
+  .about-banner__left {
+    border-radius: 0;
+  }
+}
 .about-banner__left--spacer {
   border-bottom: none;
 }
@@ -498,6 +523,11 @@ body {
 .about-banner__right {
   border-left: 1px solid var(--color-grey-dark-4);
   border-radius: 0 0 20px 0;
+}
+@media only screen and (max-width: 62.5em) {
+  .about-banner__right {
+    border-radius: 0;
+  }
 }
 .about-banner__right--spacer {
   border-bottom: none;
@@ -547,6 +577,11 @@ body {
   position: relative;
   border-top: 2px solid var(--color-grey-dark-4);
   border-radius: 20px;
+}
+@media only screen and (max-width: 62.5em) {
+  .xona-team {
+    padding: 5rem 2rem 0 2rem;
+  }
 }
 .xona-team__heading {
   position: absolute;
@@ -1604,6 +1639,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  display: none;
 }
 .navigation.active {
   transition: all 0.45s;

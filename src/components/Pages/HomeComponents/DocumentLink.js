@@ -8,14 +8,11 @@ const DocumentLink = ({ text, url, explanation }) => {
         href={url}
         target='_blank'
         rel='noopener noreferrer' // For security purposes
-        data-aos='fade-up'
       >
         {text}
         <span className='main-quote__rarr'>&rarr;</span>
       </a>
-      <div className='main-quote__text' data-aos='fade-up'>
-        {explanation}
-      </div>
+      <div className='main-quote__text'>{explanation}</div>
     </Fragment>
   );
 };

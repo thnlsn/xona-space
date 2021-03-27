@@ -1,4 +1,6 @@
+@use '../breakpoints';
 @use '../mixins' as *;
+
 // ▓▓▓ HOME BANNER
 .home-banner {
   background-size: cover;

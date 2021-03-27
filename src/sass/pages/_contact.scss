@@ -1,4 +1,6 @@
+@use '../breakpoints';
 @use '../mixins' as *;
+
 .google-maps {
   border: 2px solid var(--color-primary);
   width: 100%;

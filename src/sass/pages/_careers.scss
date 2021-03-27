@@ -1,4 +1,6 @@
+@use '../breakpoints';
 @use '../mixins' as *;
+
 .careers-banner {
   height: 40rem;
   background-size: cover;

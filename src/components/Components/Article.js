@@ -2,7 +2,7 @@ import React from 'react';
 
 const Article = ({ date, image, title, description, url }) => {
   return (
-    <article className='article' data-aos='fade-up'>
+    <article className='article'>
       <div className='article__date'>{date}</div>
       <img src={image} alt='Article' className='article__image' />
       <div className='article__title'>{title}</div>

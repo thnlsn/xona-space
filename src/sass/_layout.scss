@@ -1,3 +1,5 @@
+@use 'breakpoints';
+
 .main {
   /*   height: 500rem; // Testing */
 
@@ -24,6 +26,12 @@
 .about {
   margin-top: calc(var(--nav-height) + 2rem);
   padding: 0rem 25rem 3.5rem 25rem; // 3.5 because 6.5 - 3 -- this is because of the bottom-margin of 3rem under each member component
+  @media only screen and (max-width: breakpoints.$bp-largest) {
+    padding: 0rem 10rem 3.5rem 10rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-large) {
+    padding: 0rem 2rem 3.5rem 2rem;
+  }
 }
 
 // ▓▓▓ CONTACT PAGE LAYOUT ▓▓▓

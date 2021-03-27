@@ -1,3 +1,5 @@
+@use '../breakpoints';
+
 .btn {
   // This selection is only for <button/> elements, since they do not come with :link & :visited states, we have to target itself
   // link and visited are pseudo-classes, so we write the style for these specific states of the anchor element

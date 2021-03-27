@@ -1,3 +1,5 @@
+@use '../breakpoints';
+
 .navigation {
   z-index: 9999; // Highest z-index on the site
 
@@ -80,6 +82,7 @@
       transform: translateY(-0.5px); */
     //}
   }
+  display: none;
 }
 
 .underline {
