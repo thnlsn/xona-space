@@ -122,6 +122,7 @@
     margin-bottom: 2rem;
   }
 
+  // Container of name, email, and subject
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -143,6 +144,10 @@
     // All inputs take 50% space so that they wrap in groups of 2
     flex: 0 0 45%;
 
+    @media only screen and (max-width: breakpoints.$bp-phone-small) {
+      flex: 0 0 100%;
+    }
+
     margin-bottom: 2rem;
 
     &--message {
@@ -163,6 +168,12 @@
     .contact-form__input-box {
       border: 1.5px solid var(--color-white);
       width: 100%;
+
+      @media only screen and (max-width: breakpoints.$bp-phone-large) {
+        textarea {
+          height: 15rem;
+        }
+      }
     }
   }
 

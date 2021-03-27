@@ -1091,6 +1091,11 @@ body {
   flex: 0 0 45%;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 25em) {
+  .contact-form__group {
+    flex: 0 0 100%;
+  }
+}
 .contact-form__group--message {
   flex: 1;
 }
@@ -1106,6 +1111,11 @@ body {
 .contact-form__group .contact-form__input-box {
   border: 1.5px solid var(--color-white);
   width: 100%;
+}
+@media only screen and (max-width: 31.25em) {
+  .contact-form__group .contact-form__input-box textarea {
+    height: 15rem;
+  }
 }
 .contact-form__input {
   width: 100%;
