@@ -632,7 +632,7 @@ body {
   .about-description {
     width: 100%;
     border: none;
-    padding: 5rem 4rem 5rem 4rem;
+    padding: 5rem 4rem 7rem 4rem;
   }
 }
 
@@ -657,6 +657,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--color-background);
+}
+@media only screen and (max-width: 22.8125em) {
+  .xona-team__heading {
+    width: 80vw;
+  }
 }
 .xona-team__members {
   display: flex;
@@ -1518,6 +1523,11 @@ body {
     padding: 4rem 5rem;
   }
 }
+@media only screen and (max-width: 25em) {
+  .footer {
+    padding: 4rem 2.5rem;
+  }
+}
 .footer__logo {
   justify-self: center;
   height: 3rem;
@@ -1527,19 +1537,25 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 37.5em) {
   .footer__container {
     flex-direction: column;
-    align-items: flex-start;
   }
   .footer__container > * {
-    flex: 0 1;
+    flex: 0 0;
     margin-bottom: 2rem;
   }
 }
 .footer__section {
   display: flex;
   flex-direction: column;
+}
+.footer__section:nth-child(1) {
+  align-self: center;
+  align-items: center;
+}
+.footer__section:nth-child(2) {
+  align-self: center;
 }
 .footer__heading {
   color: var(--color-white);
@@ -1549,10 +1565,30 @@ body {
   color: var(--color-grey-dark-1);
   text-align: left;
 }
+@media only screen and (max-width: 50em) {
+  .footer__copyright {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__copyright {
+    text-align: center;
+    margin-top: 0rem;
+  }
+}
 .footer__socials {
   display: flex;
-  gap: 1rem;
-  margin: 1rem 0 0 0;
+  margin-top: 1rem;
+}
+.footer__socials > *:not(:last-child) {
+  margin-right: 1rem;
+}
+@media only screen and (max-width: 25em) {
+  .footer__socials {
+    justify-content: flex-end;
+    transform: translateY(-132.5%);
+    margin-bottom: -3.75rem;
+  }
 }
 .footer__svg {
   padding: 3px;
@@ -1574,6 +1610,22 @@ body {
   border: 1.5px solid var(--color-white);
   /*   border-radius: 7.5px; */
   overflow: hidden;
+}
+@media only screen and (max-width: 25em) {
+  .subscribe-form {
+    height: 100%;
+    flex-direction: column;
+    border: none;
+  }
+  .subscribe-form__input {
+    margin-bottom: 1rem;
+  }
+  .subscribe-form__btn {
+    align-self: start;
+  }
+  .subscribe-form__input, .subscribe-form__btn {
+    border: 1.5px solid var(--color-white) !important;
+  }
 }
 .subscribe-form__input {
   padding: 1rem;
