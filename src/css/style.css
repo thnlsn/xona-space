@@ -458,6 +458,11 @@ body {
     padding: 0rem 2rem 3.5rem 2rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .about {
+    padding: 0rem 0rem 3.5rem 0rem;
+  }
+}
 
 .contact {
   margin-top: calc(var(--nav-height) + 2rem);
@@ -512,6 +517,12 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 37.5em) {
+  .about-banner {
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .about-banner__left, .about-banner__right {
   flex: 0 0 50%;
   display: flex;
@@ -519,6 +530,13 @@ body {
   align-items: center;
   position: relative;
   border-bottom: 2px solid var(--color-grey-dark-4);
+}
+@media only screen and (max-width: 37.5em) {
+  .about-banner__left, .about-banner__right {
+    flex: 0 0 100%;
+    border-bottom: none;
+    padding: 4rem 0;
+  }
 }
 .about-banner__left--spacer, .about-banner__right--spacer {
   background-image: none;
@@ -531,6 +549,11 @@ body {
 @media only screen and (max-width: 62.5em) {
   .about-banner__left {
     border-radius: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .about-banner__left {
+    border: none;
   }
 }
 .about-banner__left--spacer {
@@ -572,6 +595,12 @@ body {
   z-index: 1;
   text-shadow: 0 0 5px #000;
 }
+@media only screen and (max-width: 37.5em) {
+  .about-banner__heading-left, .about-banner__heading-right {
+    width: 85% !important;
+    text-align: center !important;
+  }
+}
 .about-banner__heading-left {
   width: 30rem;
   text-align: right;
@@ -585,6 +614,11 @@ body {
 .about-banner--spacer {
   height: 10vh;
 }
+@media only screen and (max-width: 37.5em) {
+  .about-banner--spacer {
+    display: none;
+  }
+}
 
 .about-description {
   text-align: center;
@@ -593,6 +627,13 @@ body {
   margin: 0 auto;
   border-bottom: 2px solid var(--color-grey-dark-4);
   border-radius: 20px;
+}
+@media only screen and (max-width: 37.5em) {
+  .about-description {
+    width: 100%;
+    border: none;
+    padding: 5rem 4rem 5rem 4rem;
+  }
 }
 
 .xona-team {
@@ -607,6 +648,7 @@ body {
 @media only screen and (max-width: 62.5em) {
   .xona-team {
     padding: 5rem 2rem 0 2rem;
+    border-radius: 0;
   }
 }
 .xona-team__heading {

@@ -7,10 +7,20 @@
   width: 100%;
   margin: 0 auto;
 
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    flex-direction: column;
+    height: 100%;
+  }
+
   // LEFT AND RIGHT HERO HALVES
   &__left,
   &__right {
     flex: 0 0 50%;
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      flex: 0 0 100%;
+      border-bottom: none;
+      padding: 4rem 0;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +40,9 @@
 
     @media only screen and (max-width: breakpoints.$bp-large) {
       border-radius: 0;
+    }
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      border: none;
     }
 
     &--spacer {
@@ -93,6 +106,11 @@
   &__heading-right {
     z-index: 1;
     text-shadow: 0 0 5px #000;
+
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      width: 85% !important;
+      text-align: center !important;
+    }
   }
 
   &__heading-left {
@@ -111,6 +129,9 @@
 
   &--spacer {
     height: 10vh;
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      display: none;
+    }
   }
 }
 
@@ -122,6 +143,12 @@
   margin: 0 auto;
   border-bottom: 2px solid var(--color-grey-dark-4);
   border-radius: 20px;
+
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    width: 100%;
+    border: none;
+    padding: 5rem 4rem 5rem 4rem;
+  }
 }
 
 .xona-team {
@@ -130,6 +157,7 @@
   padding: 5rem 4rem 0 4rem;
   @media only screen and (max-width: breakpoints.$bp-large) {
     padding: 5rem 2rem 0 2rem;
+    border-radius: 0;
   }
 
   margin: 0 auto;
