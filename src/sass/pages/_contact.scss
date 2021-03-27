@@ -6,6 +6,16 @@
   width: 100%;
   height: 35rem;
   border-radius: 10px;
+
+  @media only screen and (max-width: breakpoints.$bp-large) {
+    height: 32.5rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-medium) {
+    height: 27.5rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    height: 25rem;
+  }
 }
 
 .contact-banner {
@@ -14,6 +24,21 @@
   column-gap: 10rem;
   /*   justify-content: center;
   align-items: center; */
+  @media only screen and (max-width: breakpoints.$bp-medium) {
+    column-gap: 5rem;
+    padding: 2.5rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    border-radius: 0;
+  }
+  @media only screen and (max-width: breakpoints.$bp-phone-large) {
+    grid-template-columns: 1fr;
+    row-gap: 5.5rem;
+
+    border-width: 1px;
+    border-bottom: none;
+    padding: 2.5rem 2.5rem 6.5rem 2.5rem;
+  }
 
   padding: 5rem;
   border-bottom: 2px solid var(--color-grey-dark-4);

@@ -40,7 +40,19 @@
 // ▓▓▓ CONTACT PAGE LAYOUT ▓▓▓
 .contact {
   margin-top: calc(var(--nav-height) + 2rem);
-  padding: 0rem 30rem 6.5rem 30rem;
+  padding: 0rem 18.5vw 6.5rem 18.5vw;
+  @media only screen and (max-width: breakpoints.$bp-largest) {
+    padding: 0rem 15vw 6.5rem 15vw;
+  }
+  @media only screen and (max-width: breakpoints.$bp-larger) {
+    padding: 0rem 10vw 6.5rem 10vw;
+  }
+  @media only screen and (max-width: breakpoints.$bp-large) {
+    padding: 0rem 7.5vw 6.5rem 7.5vw;
+  }
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    padding: 0rem 0rem 0rem 0rem;
+  }
 }
 
 // ▓▓▓ CAREERS PAGE LAYOUT ▓▓▓
