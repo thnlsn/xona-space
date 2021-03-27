@@ -155,9 +155,19 @@
   text-align: center;
   width: 100%;
   padding: 5rem 4rem 0 4rem;
+
   @media only screen and (max-width: breakpoints.$bp-large) {
     padding: 5rem 2rem 0 2rem;
     border-radius: 0;
+  }
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    padding: 5rem 6rem 0 6rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-phone-large) {
+    padding: 5rem 4rem 0 4rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-phone-small) {
+    padding: 5rem 2rem 0 2rem;
   }
 
   margin: 0 auto;
@@ -179,14 +189,17 @@
 
   // The container of all the xona team members
   &__members {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     justify-content: center;
-    gap: 3.333333333%; // The flex is 22.5%, and with 4 articles that leaves 10%, so the 3 gaps should split that into 3.333%
-    flex-wrap: wrap;
+    gap: 4rem; // The flex is 22.5%, and with 4 articles that leaves 10%, so the 3 gaps should split that into 3.333%
 
-    &::after {
-      content: '';
-      flex-grow: 999;
+    @media only screen and (max-width: breakpoints.$bp-medium) {
+      grid-template-columns: repeat(auto-fill, minmax(27.5rem, 1fr));
+      gap: 3rem;
+    }
+    @media only screen and (max-width: breakpoints.$bp-smallest) {
+      grid-template-columns: repeat(auto-fill, 1fr);
     }
   }
 }

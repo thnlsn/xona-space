@@ -52,10 +52,19 @@
 
     &:nth-child(1) {
       align-self: center;
-      align-items: center;
+
+      @media only screen and (max-width: breakpoints.$bp-small) {
+        align-items: center;
+      }
     }
     &:nth-child(2) {
-      align-self: center;
+      //align-self: s;
+      @media only screen and (max-width: breakpoints.$bp-medium) {
+        align-items: center;
+      }
+      @media only screen and (max-width: breakpoints.$bp-phone-small) {
+        align-items: stretch;
+      }
     }
   }
 
