@@ -7,6 +7,10 @@
 
   position: relative;
 
+  @media only screen and (max-width: breakpoints.$bp-medium) {
+    height: 50vh;
+  }
+
   // Overlay to give a tint to the banner
   &:after {
     content: '';
@@ -42,6 +46,11 @@
     z-index: 1;
     @include absolute-center(50%, 50%);
 
+    @media only screen and (max-width: breakpoints.$bp-medium) {
+      width: 80%;
+      text-align: center;
+    }
+
     transition: opacity 0.5s, color 1s 0.05s;
     opacity: 1;
 
@@ -63,6 +72,13 @@
 
   padding: 6rem 15rem 6.5rem 15rem;
   border-bottom: 2px dotted var(--color-grey-dark-5);
+
+  @media only screen and (max-width: breakpoints.$bp-medium) {
+    padding: 6rem 10rem 6.5rem 10rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    padding: 6rem 5rem 6.5rem 5rem;
+  }
 
   // The individual benefit item, with the icon, heading, and description text
   &__item {
