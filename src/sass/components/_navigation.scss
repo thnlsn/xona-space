@@ -31,17 +31,51 @@
   display: flex;
   justify-content: space-around;
 
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__brand {
     object-fit: contain;
     height: var(--logo-height);
+
+    @media only screen and (max-width: breakpoints.$bp-medium) {
+      height: 7.5rem;
+      // margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      height: 11vw;
+      margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: breakpoints.$bp-phone-small) {
+      height: 13vw;
+    }
   }
 
   &__list {
     // Organize and space out the navigation links
     display: flex;
     align-items: flex-end;
-    gap: 3rem;
     padding-bottom: 1rem;
+
+    & > *:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      padding-bottom: 0rem;
+      & > *:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+    @media only screen and (max-width: breakpoints.$bp-phone-small) {
+      padding-bottom: 0rem;
+      & > *:not(:last-child) {
+        margin-right: 1.25rem;
+      }
+    }
   }
 
   &__item {

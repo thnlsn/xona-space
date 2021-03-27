@@ -28,10 +28,12 @@ html {
   font-size: 62.5%;
   /*   @media only screen and (max-width: breakpoints.$bp-larger) {
     font-size: 56.5%;
-  }
-  @media only screen and (max-width: breakpoints.$bp-large) {
-    font-size: 52.5%;
   } */
+}
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 52.5%;
+  }
 }
 
 *,
@@ -1822,15 +1824,56 @@ body {
   background-color: rgba(8, 8, 8, 0.75);
   backdrop-filter: blur(15px);
 }
+@media only screen and (max-width: 37.5em) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .navigation__brand {
   object-fit: contain;
   height: var(--logo-height);
 }
+@media only screen and (max-width: 50em) {
+  .navigation__brand {
+    height: 7.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__brand {
+    height: 11vw;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .navigation__brand {
+    height: 13vw;
+  }
+}
 .navigation__list {
   display: flex;
   align-items: flex-end;
-  gap: 3rem;
   padding-bottom: 1rem;
+}
+.navigation__list > *:not(:last-child) {
+  margin-right: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__list {
+    padding-bottom: 0rem;
+  }
+  .navigation__list > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .navigation__list {
+    padding-bottom: 0rem;
+  }
+  .navigation__list > *:not(:last-child) {
+    margin-right: 1.25rem;
+  }
 }
 .navigation__item {
   /*       background-color: $color-primary;
