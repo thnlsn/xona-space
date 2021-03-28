@@ -833,8 +833,42 @@ body {
 }
 
 .job-application {
-  display: none;
   padding: 0rem 40rem;
+}
+@media only screen and (max-width: 103.125em) {
+  .job-application {
+    padding: 0 25rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .job-application {
+    padding: 0 12.5rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .job-application {
+    padding: 0 10rem;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .job-application {
+    padding: 0 5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .job-application {
+    padding: 0 2.5rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .job-application {
+    padding: 0 2.5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .job-application {
+    padding: 0;
+  }
 }
 
 .application-form {
@@ -847,6 +881,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 25em) {
+  .application-form {
+    border-radius: 0;
+  }
+}
 .application-form__heading {
   margin-bottom: 3.25rem;
 }
@@ -857,6 +896,9 @@ body {
   margin-top: 2.25rem;
   padding-top: 2rem;
   border-top: 2px solid var(--color-grey-dark-4);
+}
+.application-form__file {
+  width: 100%;
 }
 .application-form__input-group {
   margin-left: 1rem;
@@ -870,8 +912,18 @@ body {
   display: flex;
   align-items: flex-start;
 }
+@media only screen and (max-width: 22.8125em) {
+  .application-form__input-group {
+    flex-direction: column;
+  }
+}
 .application-form__input-group .application-form__input-box {
   border: 1.5px solid var(--color-white);
+}
+@media only screen and (max-width: 22.8125em) {
+  .application-form__input-group .application-form__input-box {
+    margin-top: 1rem;
+  }
 }
 .application-form__input-group--textarea {
   flex-direction: column;
@@ -896,7 +948,32 @@ body {
   margin-bottom: 3rem;
 }
 .application-form__label {
-  flex: 0 0 15%;
+  flex: 0 0 20%;
+}
+@media only screen and (max-width: 103.125em) {
+  .application-form__label {
+    flex: 0 0 25%;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .application-form__label {
+    flex: 0 0 30%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .application-form__label {
+    flex: 0 0 35%;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .application-form__label {
+    flex: 0 0 40%;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .application-form__label {
+    flex: 0 0 40%;
+  }
 }
 .application-form__label--textarea {
   margin-bottom: 1.5rem;
@@ -912,6 +989,7 @@ body {
   border: none;
   border-bottom: 4px solid transparent;
   vertical-align: bottom;
+  width: 100%;
   background-color: transparent;
   color: var(--color-white);
   transition: all 0.25s;
