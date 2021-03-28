@@ -20,6 +20,15 @@
 .news-archive {
   margin-top: calc(var(--nav-height));
   padding: 0rem 15rem 6.5rem 15rem;
+  @media only screen and (max-width: breakpoints.$bp-largest) {
+    padding: 0rem 9rem 6.5rem 9rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-phone-large) {
+    padding: 0rem 2rem 6.5rem 2rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-smallest) {
+    padding: 0rem 0rem 0rem 0rem;
+  }
 }
 
 // ▓▓▓ ABOUT  PAGE LAYOUT ▓▓▓
@@ -29,10 +38,8 @@
   @media only screen and (max-width: breakpoints.$bp-largest) {
     padding: 0rem 10rem 3.5rem 10rem;
   }
+
   @media only screen and (max-width: breakpoints.$bp-large) {
-    padding: 0rem 2rem 3.5rem 2rem;
-  }
-  @media only screen and (max-width: breakpoints.$bp-small) {
     padding: 0rem 0rem 3.5rem 0rem;
   }
 }
@@ -57,7 +64,7 @@
 
 // ▓▓▓ CAREERS PAGE LAYOUT ▓▓▓
 .careers {
-  margin-top: calc(var(--nav-height));
+  margin-top: calc(var(--nav-height) + 2rem);
   // padding: 0rem 0rem 0rem 0rem;
 }
 

@@ -4,10 +4,12 @@
 .archive {
   // display: flex;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 40rem));
-  justify-content: space-around;
+
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+  justify-content: center;
   align-items: center;
-  column-gap: 5rem;
+
+  column-gap: 2.5rem;
   row-gap: 2.5rem; // The flex is 22.5%, and with 4 articles that leaves 10%, so the 3 gaps should split that into 3.333%
   // flex-wrap: wrap;
 }
@@ -16,7 +18,8 @@
   text-align: center;
   &__heading {
     text-align: center;
-    margin: 0 0 0 0;
+    display: none;
+    // margin: 0 0 0 0;
     font-size: 22.5rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;

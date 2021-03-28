@@ -84,6 +84,8 @@
   &__item {
     text-align: center;
     flex: 17.6%; // This number is to account for the gap
+    max-width: 28.7rem;
+    min-width: 17rem;
 
     display: flex;
     flex-direction: column;
