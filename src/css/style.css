@@ -170,6 +170,21 @@ body {
   text-transform: uppercase;
   text-shadow: 0 0 5px #000;
 }
+@media only screen and (max-width: 31.25em) {
+  .heading-primary {
+    font-size: 5.5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .heading-primary {
+    font-size: 4.7rem;
+  }
+}
+@media only screen and (max-width: 22.8125em) {
+  .heading-primary {
+    font-size: 3.7rem;
+  }
+}
 
 .heading-secondary {
   font-family: "Lato", sans-serif;
@@ -1458,6 +1473,39 @@ body {
   top: 50%;
   left: 70%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 62.5em) {
+  .home-heading {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width: 50em) {
+  .home-heading {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .home-heading {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .home-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
 }
 .home-heading .emphasis {
   display: block;

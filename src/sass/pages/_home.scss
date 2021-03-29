@@ -41,6 +41,20 @@
 .home-heading {
   @include absolute-center(50%, 70%);
 
+  @media only screen and (max-width: breakpoints.$bp-large) {
+    @include absolute-center(50%, 65%);
+  }
+  @media only screen and (max-width: breakpoints.$bp-medium) {
+    @include absolute-center(50%, 60%);
+  }
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    @include absolute-center(50%, 55%);
+  }
+  @media only screen and (max-width: breakpoints.$bp-phone-large) {
+    @include absolute-center(50%, 50%);
+    width: 90%;
+  }
+
   .emphasis {
     display: block;
     color: var(--color-primary);
