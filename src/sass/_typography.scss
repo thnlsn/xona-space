@@ -62,6 +62,18 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10rem;
     letter-spacing: 0.001rem;
+
+    @media only screen and (max-width: breakpoints.$bp-medium) {
+      font-size: 8.3rem;
+    }
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      font-size: 6.75rem;
+      // white-space: nowrap;
+    }
+    @media only screen and (max-width: breakpoints.$bp-phone-large) {
+      font-size: 4.955rem;
+      // white-space: wrap;
+    }
   }
   &__text {
     font-family: 'Lato', sans-serif;

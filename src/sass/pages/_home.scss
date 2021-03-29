@@ -126,10 +126,6 @@
 
   padding: 22.5rem var(--padding-home) 4.5rem var(--padding-home); // The spacing of the container of the pulsar info
 
-  /*   display: flex;
-  justify-content: space-between;
-  align-items: center; */
-
   background-size: cover;
   position: relative;
 
@@ -161,12 +157,37 @@
     z-index: 1;
 
     padding: 4rem 10rem;
+
+    @media only screen and (max-width: breakpoints.$bp-larger) {
+      padding: 4rem 6rem;
+    }
+    @media only screen and (max-width: breakpoints.$bp-large) {
+      padding: 4rem 4rem;
+    }
+    @media only screen and (max-width: breakpoints.$bp-medium) {
+      padding: 4rem 2rem;
+    }
+    @media only screen and (max-width: breakpoints.$bp-medium) {
+      padding: 4rem 2rem;
+    }
+
     background-image: linear-gradient(
       rgba(19, 19, 19, 0.35),
       rgba(19, 19, 19, 0.5),
       rgba(0, 0, 0, 0.8)
     );
 
+    @media only screen and (max-width: breakpoints.$bp-smallest) {
+      background-image: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(19, 19, 19, 0.35),
+        rgba(19, 19, 19, 0.5),
+        rgba(0, 0, 0, 0.8)
+      );
+      border-radius: 0;
+      margin-bottom: -2px; // Small glitch causing a tiny margin below fix
+    }
     /* backdrop-filter: blur(1px); */
 
     border-radius: 15px;
@@ -177,6 +198,21 @@
     // So it is placed next to the tm text
     display: inline-block;
     margin-right: 1rem;
+
+    img {
+      @media only screen and (max-width: breakpoints.$bp-medium) {
+        width: 6rem;
+        height: 6rem;
+      }
+      @media only screen and (max-width: breakpoints.$bp-small) {
+        width: 5rem;
+        height: 5rem;
+      }
+      @media only screen and (max-width: breakpoints.$bp-phone-large) {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
   }
 
   // ║║║ TRADEMARK TEXT
@@ -197,6 +233,7 @@
   // ║║║ MAIN TEXT
   &__text {
     padding-top: 2rem;
+    // text-align: left;
   }
 
   // ║║║ XONA PULSAR ABILITIES IMAGES

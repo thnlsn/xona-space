@@ -51,7 +51,7 @@
 }
 @media only screen and (max-width: 25em) {
   :root {
-    --padding-home: 5rem;
+    --padding-home: 3rem;
     --logo-height: 16vw;
   }
 }
@@ -198,6 +198,21 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 10rem;
   letter-spacing: 0.001rem;
+}
+@media only screen and (max-width: 50em) {
+  .xona-pulsar__tm {
+    font-size: 8.3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .xona-pulsar__tm {
+    font-size: 6.75rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .xona-pulsar__tm {
+    font-size: 4.955rem;
+  }
 }
 .xona-pulsar__text {
   font-family: "Lato", sans-serif;
@@ -1494,9 +1509,6 @@ body {
 .xona-pulsar {
   margin-top: -14rem;
   padding: 22.5rem var(--padding-home) 4.5rem var(--padding-home);
-  /*   display: flex;
-  justify-content: space-between;
-  align-items: center; */
   background-size: cover;
   position: relative;
   --image-width: 28.367rem;
@@ -1526,9 +1538,54 @@ body {
   /* backdrop-filter: blur(1px); */
   border-radius: 15px;
 }
+@media only screen and (max-width: 75em) {
+  .xona-pulsar__banner {
+    padding: 4rem 6rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .xona-pulsar__banner {
+    padding: 4rem 4rem;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .xona-pulsar__banner {
+    padding: 4rem 2rem;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .xona-pulsar__banner {
+    padding: 4rem 2rem;
+  }
+}
+@media only screen and (max-width: 22.8125em) {
+  .xona-pulsar__banner {
+    background-image: linear-gradient(to bottom, transparent, rgba(19, 19, 19, 0.35), rgba(19, 19, 19, 0.5), rgba(0, 0, 0, 0.8));
+    border-radius: 0;
+    margin-bottom: -2px;
+  }
+}
 .xona-pulsar__icon {
   display: inline-block;
   margin-right: 1rem;
+}
+@media only screen and (max-width: 50em) {
+  .xona-pulsar__icon img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .xona-pulsar__icon img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .xona-pulsar__icon img {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 .xona-pulsar__tm {
   background-image: linear-gradient(to bottom, var(--color-primary-light), var(--color-primary), var(--color-primary-dark));
