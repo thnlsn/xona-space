@@ -1479,22 +1479,26 @@ body {
   clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
   background-color: var(--color-background);
 }
+@media only screen and (max-width: 22.8125em) {
+  .main-quote__heading, .main-quote__text {
+    padding: 0 2rem;
+  }
+}
 .main-quote__heading:link, .main-quote__heading:visited {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   text-shadow: 0 0 5px #000;
   color: currentColor;
   text-decoration: none;
   position: relative;
   cursor: pointer;
   transition: linear 0.1s;
-  border-bottom: 1px solid var(--color-grey-light-1);
+  text-decoration: underline;
   /* 
   transform: translateY(10rem); */
 }
 .main-quote__heading:hover {
   color: var(--color-grey-dark-2);
-  border-bottom: 1px solid currentColor;
 }
 .main-quote__heading:hover > .main-quote__rarr {
   color: var(--color-primary-light);
@@ -1511,9 +1515,22 @@ body {
 }
 .main-quote__text {
   max-width: 50%;
-  /* 
-  // Initial animation state
-  transform: translateY(10rem); */
+  font-size: 2.75rem;
+}
+@media only screen and (max-width: 75em) {
+  .main-quote__text {
+    max-width: 75%;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .main-quote__text {
+    max-width: 85%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .main-quote__text {
+    max-width: 100%;
+  }
 }
 
 .xona-pulsar {
@@ -1525,6 +1542,11 @@ body {
   /*   @media only screen and (max-width: breakpoints.$bp-small) {
     --image-width: 18rem;
   } */
+}
+@media only screen and (max-width: 22.8125em) {
+  .xona-pulsar {
+    margin-top: -15.7rem;
+  }
 }
 .xona-pulsar:after {
   content: "";
@@ -1556,11 +1578,6 @@ body {
 @media only screen and (max-width: 62.5em) {
   .xona-pulsar__banner {
     padding: 4rem 4rem;
-  }
-}
-@media only screen and (max-width: 50em) {
-  .xona-pulsar__banner {
-    padding: 4rem 2rem;
   }
 }
 @media only screen and (max-width: 50em) {

@@ -66,12 +66,19 @@
   clip-path: polygon(0 0, 0 100%, 100% 85%, 100% 0);
   background-color: var(--color-background);
 
+  @media only screen and (max-width: breakpoints.$bp-smallest) {
+    &__heading,
+    &__text {
+      padding: 0 2rem;
+    }
+  }
+
   // THE QUOTE ITSELF (link to gps document)
   &__heading {
     &:link,
     &:visited {
       display: inline-block; //
-      text-align: center; //
+      text-align: left; //
       text-shadow: 0 0 5px #000;
       color: currentColor; //
 
@@ -82,7 +89,8 @@
       cursor: pointer;
 
       transition: linear 0.1s;
-      border-bottom: 1px solid var(--color-grey-light-1);
+      text-decoration: underline;
+      // border-bottom: 1px solid var(--color-grey-light-1);
       /* 
       transform: translateY(10rem); */
     }
@@ -90,7 +98,7 @@
     // When :hover, animate the link text
     &:hover {
       color: var(--color-grey-dark-2);
-      border-bottom: 1px solid currentColor;
+      // border-bottom: 1px solid currentColor;
     }
     // When :hover, animate the right arrow
     &:hover > .main-quote__rarr {
@@ -114,15 +122,28 @@
   // THE TEXT UNDER THE QUOTE LINK
   &__text {
     max-width: 50%;
-    /* 
-    // Initial animation state
-    transform: translateY(10rem); */
+    font-size: 2.75rem;
+    @media only screen and (max-width: breakpoints.$bp-larger) {
+      max-width: 75%;
+      // font-size: 2.75rem;
+    }
+    @media only screen and (max-width: breakpoints.$bp-large) {
+      max-width: 85%;
+      // font-size: 2.75rem;
+    }
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      max-width: 100%;
+      // font-size: 2.75rem;
+    }
   }
 }
 
 // ▓▓▓ XONA PULSAR SECTION (with the banner and images showcase it's applications)
 .xona-pulsar {
   margin-top: -14rem;
+  @media only screen and (max-width: breakpoints.$bp-smallest) {
+    margin-top: -15.7rem;
+  }
 
   padding: 22.5rem var(--padding-home) 4.5rem var(--padding-home); // The spacing of the container of the pulsar info
 
@@ -163,9 +184,6 @@
     }
     @media only screen and (max-width: breakpoints.$bp-large) {
       padding: 4rem 4rem;
-    }
-    @media only screen and (max-width: breakpoints.$bp-medium) {
-      padding: 4rem 2rem;
     }
     @media only screen and (max-width: breakpoints.$bp-medium) {
       padding: 4rem 2rem;
