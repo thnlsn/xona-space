@@ -222,6 +222,16 @@ body {
   color: var(--color-grey-light-1);
   text-shadow: 0 0 5px #000;
 }
+@media only screen and (max-width: 31.25em) {
+  .xona-pulsar__text {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .xona-pulsar__text {
+    font-size: 2rem;
+  }
+}
 .xona-pulsar__application {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
