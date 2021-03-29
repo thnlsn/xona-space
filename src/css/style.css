@@ -1765,6 +1765,9 @@ body {
 .apps {
   position: relative;
   height: 60rem;
+  /*   @media only screen and (max-width: breakpoints.$bp-small) {
+    height: 55rem;
+  } */
 }
 .apps__heading-container {
   z-index: 10;
@@ -1793,6 +1796,23 @@ body {
   cursor: pointer;
   transition: transform 0.25s;
   font-weight: 300;
+}
+@media only screen and (max-width: 62.5em) {
+  .apps__btn {
+    top: 65%;
+    font-size: 15rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .apps__btn {
+    top: 70%;
+    font-size: 12.5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .apps__btn {
+    top: 75%;
+  }
 }
 .apps__btn--left {
   left: 6%;
@@ -1851,6 +1871,30 @@ body {
   margin-top: 18rem;
   transition: transform 1.5s, opacity 0.5s;
   position: absolute;
+}
+@media only screen and (max-width: 50em) {
+  .app__text {
+    font-size: 5.5rem !important;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .app__text {
+    margin-left: 0.75rem;
+    font-size: 4.5rem !important;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .app__text {
+    margin-left: 0rem;
+    font-size: 4rem !important;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .app__text {
+    margin-left: 0.5rem;
+    font-size: 3.5rem !important;
+    text-align: center;
+  }
 }
 
 .news {
