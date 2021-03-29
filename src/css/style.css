@@ -1499,6 +1499,10 @@ body {
   align-items: center; */
   background-size: cover;
   position: relative;
+  --image-width: 28.367rem;
+  /*   @media only screen and (max-width: breakpoints.$bp-small) {
+    --image-width: 18rem;
+  } */
 }
 .xona-pulsar:after {
   content: "";
@@ -1539,10 +1543,55 @@ body {
   padding-top: 2rem;
 }
 .xona-pulsar__images {
+  width: 100%;
+  /*     display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, min-content));
+  align-items: stretch;
+  gap: 1rem; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 5rem 0;
   border: 1px solid transparent;
+}
+@media only screen and (max-width: 37.5em) {
+  .xona-pulsar__images {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .xona-pulsar__images > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 22.8125em) {
+  .xona-pulsar__images {
+    padding-top: 0;
+  }
+  .xona-pulsar__images > *:not(:last-child) {
+    margin-bottom: 0rem;
+    padding-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .xona-pulsar {
+    --image-width: 26rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .xona-pulsar {
+    --image-width: 24rem;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .xona-pulsar {
+    --image-width: 20rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .xona-pulsar {
+    --image-width: calc(100%);
+  }
 }
 .xona-pulsar__ability {
   display: flex;
@@ -1550,17 +1599,23 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  width: var(--image-width);
   z-index: 1;
-  flex: 0 0 26.2rem;
   text-align: center;
   padding: 1rem 1rem;
   border-radius: 15px;
   background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(0, 0, 0, 0.5));
 }
+@media only screen and (max-width: 22.8125em) {
+  .xona-pulsar__ability {
+    border-radius: 0;
+  }
+}
 .xona-pulsar__ability img {
   border-radius: 15px;
   overflow: hidden;
   object-fit: contain;
+  width: calc(var(--image-width) - 2rem);
 }
 .xona-pulsar__ability__image-description {
   width: 50%;
@@ -1661,11 +1716,6 @@ body {
   transition: transform 1s;
 }
 .app__text {
-  /*     display: inline-block;
-  // background-color: rgba(0, 0, 0, 0.3);
-  padding: 1.25rem 1.75rem;
-  margin-top: 16rem;
-  line-height: 1; */
   margin-top: 18rem;
   transition: transform 1.5s, opacity 0.5s;
   position: absolute;

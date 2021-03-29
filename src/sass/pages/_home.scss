@@ -201,23 +201,63 @@
 
   // ║║║ XONA PULSAR ABILITIES IMAGES
   &__images {
+    width: 100%;
+    /*     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, min-content));
+    align-items: stretch;
+    gap: 1rem; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     padding: 5rem 0;
 
     border: 1px solid transparent;
+
+    @media only screen and (max-width: breakpoints.$bp-small) {
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+    @media only screen and (max-width: breakpoints.$bp-smallest) {
+      & > *:not(:last-child) {
+        margin-bottom: 0rem;
+        padding-bottom: 4rem;
+      }
+      padding-top: 0;
+    }
   }
   // ║║║ SPECIFIC ABILITY IMAGE
+  --image-width: 28.367rem;
+  @media only screen and (max-width: breakpoints.$bp-larger) {
+    --image-width: 26rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-large) {
+    --image-width: 24rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-medium) {
+    --image-width: 20rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    --image-width: calc(100%);
+  }
+  /*   @media only screen and (max-width: breakpoints.$bp-small) {
+    --image-width: 18rem;
+  } */
+
   &__ability {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    width: var(--image-width);
 
     z-index: 1;
-
-    flex: 0 0 26.2rem; // So that the text will forcefully wrap after its gone past the approximate width of the image
 
     text-align: center;
 
@@ -228,10 +268,15 @@
       rgba(0, 0, 0, 0.5)
     );
 
+    @media only screen and (max-width: breakpoints.$bp-smallest) {
+      border-radius: 0;
+    }
+
     img {
       border-radius: 15px;
       overflow: hidden;
       object-fit: contain;
+      width: calc(var(--image-width) - 2rem);
     }
 
     &__image-description {
@@ -375,14 +420,6 @@
   }
 
   &__text {
-    /*     display: inline-block;
-    // background-color: rgba(0, 0, 0, 0.3);
-    padding: 1.25rem 1.75rem;
-    margin-top: 16rem;
-    line-height: 1; */
-    // border-radius: 20px;
-
-    // @include absolute-center(70%, 50%);
     margin-top: 18rem;
     transition: transform 1.5s, opacity 0.5s;
 
