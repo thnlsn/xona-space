@@ -398,14 +398,31 @@
   &__heading {
     margin-bottom: 5rem;
   }
+
+  @media only screen and (max-width: breakpoints.$bp-phone-large) {
+    &__heading {
+      font-size: 6rem;
+      padding-left: 1.5rem;
+    }
+
+    .btn__arrow {
+      font-size: 3rem !important;
+    }
+  }
 }
 
 // ║║║ Container for the articles
 .articles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  justify-content: center;
-  align-items: center;
-  gap: 3.333333333%; // The flex is 22.5%, and with 4 articles that leaves 10%, so the 3 gaps should split that into 3.333%
-  flex-wrap: wrap;
+
+  grid-template-columns: repeat(4, minmax(32rem, 1fr));
+  @media only screen and (max-width: breakpoints.$bp-largest) {
+    grid-template-columns: repeat(2, minmax(32rem, 1fr));
+  }
+  @media only screen and (max-width: breakpoints.$bp-larger) {
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+  }
+
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
 }

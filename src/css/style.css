@@ -22,6 +22,41 @@
   --nav-height: calc(var(--logo-height) + (var(--nav-padding) * 2));
   --padding-home: 20rem;
 }
+@media only screen and (max-width: 103.125em) {
+  :root {
+    --padding-home: 15rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  :root {
+    --padding-home: 10rem;
+  }
+}
+@media only screen and (max-width: 50em) {
+  :root {
+    --padding-home: 5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  :root {
+    --padding-home: 5rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  :root {
+    --padding-home: 5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  :root {
+    --padding-home: 5rem;
+  }
+}
+@media only screen and (max-width: 22.8125em) {
+  :root {
+    --padding-home: 0rem;
+  }
+}
 
 html {
   box-sizing: border-box;
@@ -1640,14 +1675,31 @@ body {
 .news__heading {
   margin-bottom: 5rem;
 }
+@media only screen and (max-width: 31.25em) {
+  .news__heading {
+    font-size: 6rem;
+    padding-left: 1.5rem;
+  }
+  .news .btn__arrow {
+    font-size: 3rem !important;
+  }
+}
 
 .articles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  justify-content: center;
-  align-items: center;
-  gap: 3.333333333%;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(4, minmax(32rem, 1fr));
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+}
+@media only screen and (max-width: 103.125em) {
+  .articles {
+    grid-template-columns: repeat(2, minmax(32rem, 1fr));
+  }
+}
+@media only screen and (max-width: 75em) {
+  .articles {
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+  }
 }
 
 .archive {

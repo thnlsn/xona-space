@@ -1,3 +1,5 @@
+@use './breakpoints';
+
 :root {
   // Color
   --color-primary: #28a8a6;
@@ -31,4 +33,27 @@
   --nav-height: calc(var(--logo-height) + (var(--nav-padding) * 2));
 
   --padding-home: 20rem;
+
+  @media only screen and (max-width: breakpoints.$bp-largest) {
+    --padding-home: 15rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-larger) {
+    --padding-home: 10rem;
+  }
+
+  @media only screen and (max-width: breakpoints.$bp-medium) {
+    --padding-home: 5rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-small) {
+    --padding-home: 5rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-phone-large) {
+    --padding-home: 5rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-phone-small) {
+    --padding-home: 5rem;
+  }
+  @media only screen and (max-width: breakpoints.$bp-smallest) {
+    --padding-home: 0rem;
+  }
 }
