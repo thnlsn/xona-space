@@ -41,18 +41,8 @@
     object-fit: contain;
     height: var(--logo-height);
 
-    @media only screen and (max-width: breakpoints.$bp-medium) {
-      height: 7.5rem;
-      // margin-bottom: 1rem;
-    }
-    @media only screen and (max-width: breakpoints.$bp-small) {
-      height: 11vw;
-    }
     @media only screen and (max-width: breakpoints.$bp-phone-large) {
       margin-bottom: 1rem;
-    }
-    @media only screen and (max-width: breakpoints.$bp-phone-small) {
-      height: 16vw;
     }
   }
 

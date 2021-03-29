@@ -35,11 +35,13 @@
 @media only screen and (max-width: 50em) {
   :root {
     --padding-home: 5rem;
+    --logo-height: 7.5rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
   :root {
     --padding-home: 5rem;
+    --logo-height: 11vw;
   }
 }
 @media only screen and (max-width: 31.25em) {
@@ -50,6 +52,7 @@
 @media only screen and (max-width: 25em) {
   :root {
     --padding-home: 5rem;
+    --logo-height: 16vw;
   }
 }
 @media only screen and (max-width: 22.8125em) {
@@ -2195,24 +2198,9 @@ body {
   object-fit: contain;
   height: var(--logo-height);
 }
-@media only screen and (max-width: 50em) {
-  .navigation__brand {
-    height: 7.5rem;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .navigation__brand {
-    height: 11vw;
-  }
-}
 @media only screen and (max-width: 31.25em) {
   .navigation__brand {
     margin-bottom: 1rem;
-  }
-}
-@media only screen and (max-width: 25em) {
-  .navigation__brand {
-    height: 16vw;
   }
 }
 .navigation__list {
