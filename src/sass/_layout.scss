@@ -2,6 +2,7 @@
 
 .main {
   /*   height: 500rem; // Testing */
+  min-height: 100vh;
 
   /* opacity: 1; */
   // -moz-animation: fadeIn 1s; /* Firefox */
@@ -18,7 +19,7 @@
 
 // ▓▓▓ ARCHIVE PAGE LAYOUT ▓▓▓
 .news-archive {
-  margin-top: calc(var(--nav-height));
+  margin-top: calc(var(--nav-height) + 5rem);
   padding: 0rem 15rem 6.5rem 15rem;
   @media only screen and (max-width: breakpoints.$bp-largest) {
     padding: 0rem 9rem 6.5rem 9rem;
@@ -27,7 +28,7 @@
     padding: 0rem 2rem 6.5rem 2rem;
   }
   @media only screen and (max-width: breakpoints.$bp-smallest) {
-    padding: 0rem 0rem 0rem 0rem;
+    padding: 0;
   }
 }
 
