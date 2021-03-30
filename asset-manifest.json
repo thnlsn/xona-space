@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/xona-space/static/css/main.366b9cbc.chunk.css",
-    "main.js": "/xona-space/static/js/main.3bdc9b4f.chunk.js",
-    "main.js.map": "/xona-space/static/js/main.3bdc9b4f.chunk.js.map",
+    "main.css": "/xona-space/static/css/main.052f9b72.chunk.css",
+    "main.js": "/xona-space/static/js/main.c49fd7f5.chunk.js",
+    "main.js.map": "/xona-space/static/js/main.c49fd7f5.chunk.js.map",
     "runtime-main.js": "/xona-space/static/js/runtime-main.b98b0967.js",
     "runtime-main.js.map": "/xona-space/static/js/runtime-main.b98b0967.js.map",
-    "static/js/2.2bc09e6e.chunk.js": "/xona-space/static/js/2.2bc09e6e.chunk.js",
-    "static/js/2.2bc09e6e.chunk.js.map": "/xona-space/static/js/2.2bc09e6e.chunk.js.map",
+    "static/js/2.28d603bc.chunk.js": "/xona-space/static/js/2.28d603bc.chunk.js",
+    "static/js/2.28d603bc.chunk.js.map": "/xona-space/static/js/2.28d603bc.chunk.js.map",
     "index.html": "/xona-space/index.html",
-    "precache-manifest.3481bfaf1cacb1f4c6fe55c826618603.js": "/xona-space/precache-manifest.3481bfaf1cacb1f4c6fe55c826618603.js",
+    "precache-manifest.058716645fe9080b9d0a4dfdbe48f60d.js": "/xona-space/precache-manifest.058716645fe9080b9d0a4dfdbe48f60d.js",
     "service-worker.js": "/xona-space/service-worker.js",
-    "static/css/main.366b9cbc.chunk.css.map": "/xona-space/static/css/main.366b9cbc.chunk.css.map",
-    "static/js/2.2bc09e6e.chunk.js.LICENSE.txt": "/xona-space/static/js/2.2bc09e6e.chunk.js.LICENSE.txt",
+    "static/css/main.052f9b72.chunk.css.map": "/xona-space/static/css/main.052f9b72.chunk.css.map",
+    "static/js/2.28d603bc.chunk.js.LICENSE.txt": "/xona-space/static/js/2.28d603bc.chunk.js.LICENSE.txt",
     "static/media/adrien-perkins.jpg": "/xona-space/static/media/adrien-perkins.ace257e6.jpg",
     "static/media/aerial-mobility.jpg": "/xona-space/static/media/aerial-mobility.91281300.jpg",
     "static/media/all-weather-autonomy.jpg": "/xona-space/static/media/all-weather-autonomy.54ed7e60.jpg",
@@ -26,7 +26,7 @@
     "static/media/hello-tomorrow-deep-tech-pioneer.jpg": "/xona-space/static/media/hello-tomorrow-deep-tech-pioneer.a48acf7a.jpg",
     "static/media/instagram.svg": "/xona-space/static/media/instagram.662a4f14.svg",
     "static/media/linkedin.svg": "/xona-space/static/media/linkedin.619231ff.svg",
-    "static/media/maritime.jpg": "/xona-space/static/media/maritime.11ff33f8.jpg",
+    "static/media/maritime.jpg": "/xona-space/static/media/maritime.65983246.jpg",
     "static/media/participation-smallsat-symposium-competition2020.jpg": "/xona-space/static/media/participation-smallsat-symposium-competition2020.60d440a7.jpg",
     "static/media/rtca-award.jpg": "/xona-space/static/media/rtca-award.ee51e19a.jpg",
     "static/media/sat-magazine.jpg": "/xona-space/static/media/sat-magazine.de5634f3.jpg",
@@ -45,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b98b0967.js",
-    "static/js/2.2bc09e6e.chunk.js",
-    "static/css/main.366b9cbc.chunk.css",
-    "static/js/main.3bdc9b4f.chunk.js"
+    "static/js/2.28d603bc.chunk.js",
+    "static/css/main.052f9b72.chunk.css",
+    "static/js/main.c49fd7f5.chunk.js"
   ]
 }
