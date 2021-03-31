@@ -498,6 +498,11 @@
   &__container {
     height: 100%;
     background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 
     display: flex;
     align-items: center;
