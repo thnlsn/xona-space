@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/xona-space/static/css/main.099836a9.chunk.css",
+    "main.css": "/xona-space/static/css/main.89c71d25.chunk.css",
     "main.js": "/xona-space/static/js/main.cc7cdfed.chunk.js",
     "main.js.map": "/xona-space/static/js/main.cc7cdfed.chunk.js.map",
     "runtime-main.js": "/xona-space/static/js/runtime-main.b98b0967.js",
@@ -8,9 +8,9 @@
     "static/js/2.28d603bc.chunk.js": "/xona-space/static/js/2.28d603bc.chunk.js",
     "static/js/2.28d603bc.chunk.js.map": "/xona-space/static/js/2.28d603bc.chunk.js.map",
     "index.html": "/xona-space/index.html",
-    "precache-manifest.5f5d661d00312d1594aefc3e16ba2c5f.js": "/xona-space/precache-manifest.5f5d661d00312d1594aefc3e16ba2c5f.js",
+    "precache-manifest.ce830647bad1d1d708d7b83a26ea1b45.js": "/xona-space/precache-manifest.ce830647bad1d1d708d7b83a26ea1b45.js",
     "service-worker.js": "/xona-space/service-worker.js",
-    "static/css/main.099836a9.chunk.css.map": "/xona-space/static/css/main.099836a9.chunk.css.map",
+    "static/css/main.89c71d25.chunk.css.map": "/xona-space/static/css/main.89c71d25.chunk.css.map",
     "static/js/2.28d603bc.chunk.js.LICENSE.txt": "/xona-space/static/js/2.28d603bc.chunk.js.LICENSE.txt",
     "static/media/adrien-perkins.jpg": "/xona-space/static/media/adrien-perkins.ace257e6.jpg",
     "static/media/aerial-mobility.jpg": "/xona-space/static/media/aerial-mobility.91281300.jpg",
@@ -46,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.b98b0967.js",
     "static/js/2.28d603bc.chunk.js",
-    "static/css/main.099836a9.chunk.css",
+    "static/css/main.89c71d25.chunk.css",
     "static/js/main.cc7cdfed.chunk.js"
   ]
 }
