@@ -296,7 +296,7 @@ const about = {
   // SECTION ONE (The banner of the about page, so the left and right images and the text headings within them)
   hero: {
     leftHeading: 'What Drives Us',
-    leftImage: require('../images/backgroundImages/team.jpg'),
+    leftImage: require('../images/backgroundImages/earth.jpg'),
     rightHeading:
       'Enabling intelligent systems to operate safely in any environment',
     rightImage: require('../images/backgroundImages/city.jpg'),
