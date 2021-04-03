@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/xona-space/static/css/main.89c71d25.chunk.css",
-    "main.js": "/xona-space/static/js/main.cc7cdfed.chunk.js",
-    "main.js.map": "/xona-space/static/js/main.cc7cdfed.chunk.js.map",
+    "main.js": "/xona-space/static/js/main.19818cd2.chunk.js",
+    "main.js.map": "/xona-space/static/js/main.19818cd2.chunk.js.map",
     "runtime-main.js": "/xona-space/static/js/runtime-main.b98b0967.js",
     "runtime-main.js.map": "/xona-space/static/js/runtime-main.b98b0967.js.map",
-    "static/js/2.28d603bc.chunk.js": "/xona-space/static/js/2.28d603bc.chunk.js",
-    "static/js/2.28d603bc.chunk.js.map": "/xona-space/static/js/2.28d603bc.chunk.js.map",
+    "static/js/2.3c646d20.chunk.js": "/xona-space/static/js/2.3c646d20.chunk.js",
+    "static/js/2.3c646d20.chunk.js.map": "/xona-space/static/js/2.3c646d20.chunk.js.map",
     "index.html": "/xona-space/index.html",
-    "precache-manifest.ce830647bad1d1d708d7b83a26ea1b45.js": "/xona-space/precache-manifest.ce830647bad1d1d708d7b83a26ea1b45.js",
+    "precache-manifest.21b908b0e160ace93a29f46d90c786bf.js": "/xona-space/precache-manifest.21b908b0e160ace93a29f46d90c786bf.js",
     "service-worker.js": "/xona-space/service-worker.js",
     "static/css/main.89c71d25.chunk.css.map": "/xona-space/static/css/main.89c71d25.chunk.css.map",
-    "static/js/2.28d603bc.chunk.js.LICENSE.txt": "/xona-space/static/js/2.28d603bc.chunk.js.LICENSE.txt",
+    "static/js/2.3c646d20.chunk.js.LICENSE.txt": "/xona-space/static/js/2.3c646d20.chunk.js.LICENSE.txt",
     "static/media/adrien-perkins.jpg": "/xona-space/static/media/adrien-perkins.ace257e6.jpg",
     "static/media/aerial-mobility.jpg": "/xona-space/static/media/aerial-mobility.91281300.jpg",
     "static/media/all-weather-autonomy.jpg": "/xona-space/static/media/all-weather-autonomy.54ed7e60.jpg",
@@ -35,7 +35,6 @@
     "static/media/sky-large.jpg": "/xona-space/static/media/sky-large.a40b8b09.jpg",
     "static/media/smart-agriculture.jpg": "/xona-space/static/media/smart-agriculture.5cac1830.jpg",
     "static/media/star-trails.jpg": "/xona-space/static/media/star-trails.e6ccb019.jpg",
-    "static/media/team.jpg": "/xona-space/static/media/team.9dc1275d.jpg",
     "static/media/twitter.svg": "/xona-space/static/media/twitter.20d9f515.svg",
     "static/media/virtus-best-westcoast-startup.jpg": "/xona-space/static/media/virtus-best-westcoast-startup.1cbb0842.jpg",
     "static/media/weather-data.jpg": "/xona-space/static/media/weather-data.b4688aaf.jpg",
@@ -45,8 +44,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b98b0967.js",
-    "static/js/2.28d603bc.chunk.js",
+    "static/js/2.3c646d20.chunk.js",
     "static/css/main.89c71d25.chunk.css",
-    "static/js/main.cc7cdfed.chunk.js"
+    "static/js/main.19818cd2.chunk.js"
   ]
 }
