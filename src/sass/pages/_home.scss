@@ -540,10 +540,18 @@
 // ▓▓▓ NEWS SECTION
 .news {
   padding: 6.5rem var(--padding-home);
+  @media only screen and (min-width: breakpoints.$bp-largest) {
+    padding: 6.5rem 15rem;
+  }
+
   text-align: center;
 
   &__heading {
     margin-bottom: 5rem;
+  }
+
+  .btn__arrow {
+    margin-top: 6rem !important;
   }
 
   @media only screen and (max-width: breakpoints.$bp-phone-large) {

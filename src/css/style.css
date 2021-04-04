@@ -1907,8 +1907,16 @@ body {
   padding: 6.5rem var(--padding-home);
   text-align: center;
 }
+@media only screen and (min-width: 103.125em) {
+  .news {
+    padding: 6.5rem 15rem;
+  }
+}
 .news__heading {
   margin-bottom: 5rem;
+}
+.news .btn__arrow {
+  margin-top: 6rem !important;
 }
 @media only screen and (max-width: 31.25em) {
   .news__heading {
