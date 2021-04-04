@@ -1189,17 +1189,14 @@ body {
 .availabilities {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 6.5rem 2rem;
   background-image: linear-gradient(to bottom, var(--color-background), var(--color-grey-dark-5));
   border-top: 2px solid var(--color-grey-dark-5);
 }
-.availabilities > *:first-child {
-  margin-bottom: 5rem;
-}
 .availabilities__heading {
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .position {
@@ -1208,6 +1205,7 @@ body {
   justify-content: space-between;
   align-items: center;
   column-gap: 15rem;
+  row-gap: 1rem;
 }
 @media only screen and (max-width: 37.5em) {
   .position {
@@ -1267,6 +1265,7 @@ body {
 }
 .position .btn {
   white-space: nowrap;
+  text-align: center;
 }
 
 .google-maps {
