@@ -1,5 +1,10 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  HashRouter,
+  Switch,
+} from 'react-router-dom';
 import './css/style.css';
 
 import ScrollToTop from './components/Components/ScrollToTop';
@@ -21,67 +26,67 @@ import { socials } from './data/database';
 const App = () => {
   const routes = [
     {
-      path: '/xona-space',
+      path: '/',
       exact: true,
       main: () => <Home />,
     },
     {
-      path: '/xona-space/news',
+      path: '/news',
       exact: true,
       main: () => <News />,
     },
     {
-      path: '/xona-space/about',
+      path: '/about',
       exact: true,
       main: () => <About />,
     },
     {
-      path: '/xona-space/contact',
+      path: '/contact',
       exact: true,
       main: () => <Contact />,
     },
     {
-      path: '/xona-space/careers',
+      path: '/careers',
       exact: true,
       main: () => <Careers />,
     },
     {
-      path: '/xona-space/careers/:careerId',
+      path: '/careers/:careerId',
       exact: true,
       main: () => <Apply />,
     },
-    {
+    /*     {
       path: '*',
       main: () => <NotFound />,
-    },
+    }, */
   ];
 
   return (
     <div className='App'>
-      <Router>
+      <HashRouter>
         <ScrollToTop />
         <Navigation
           items={[
-            { name: 'Home', path: '/xona-space', exact: true },
-            { name: 'About', path: '/xona-space/about', exact: false },
-            { name: 'Contact', path: '/xona-space/contact', exact: false },
-            { name: 'Careers', path: '/xona-space/careers', exact: false },
+            { name: 'Home', path: '/', exact: true },
+            { name: 'About', path: '/about', exact: false },
+            { name: 'Contact', path: '/contact', exact: false },
+            { name: 'Careers', path: '/careers', exact: false },
           ]}
         />
         <main className='main'>
-          <Switch>
-            {routes.map((route, index) => (
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                children={<route.main />}
-              />
-            ))}
-          </Switch>
+          {/* <Switch> */}
+          {routes.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              exact={route.exact}
+              children={<route.main />}
+            />
+          ))}
+          {/* </Switch> */}
         </main>
         <Footer socials={socials} />
-      </Router>
+      </HashRouter>
     </div>
   );
 };
