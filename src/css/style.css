@@ -1383,11 +1383,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
   border-top: 2px solid var(--color-grey-dark-5);
   padding: 2rem 0 0 0;
   flex: 0 0 45%;
   margin-bottom: 2rem;
+}
+.contact-form__group > * {
+  margin-bottom: 0.5rem;
 }
 @media only screen and (max-width: 25em) {
   .contact-form__group {
