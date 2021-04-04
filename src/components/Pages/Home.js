@@ -70,7 +70,7 @@ const Home = () => {
           amount={news.amountShown}
         />
         <Link
-          to={'/xona-space/news'}
+          to={'/news'}
           className='btn btn__arrow u-horizontal-margins-medium'
         >
           View all news <span className='btn__arrow--rarr'>&rarr;</span>
