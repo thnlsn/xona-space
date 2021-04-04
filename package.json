@@ -2,7 +2,7 @@
   "name": "xona-space",
   "version": "0.1.0",
   "description": "Xona Space Systems | Precision Navigation | United States",
-  "private": true,
+  "private": false,
   "homepage": "https://thnlsn.github.io/xona-space",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
