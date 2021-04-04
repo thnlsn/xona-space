@@ -1693,9 +1693,19 @@ body {
   align-items: stretch;
   gap: 1rem; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 5rem 0;
   border: 1px solid transparent;
+}
+@media only screen and (max-width: 75em) {
+  .xona-pulsar__images {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .xona-pulsar__images {
+    justify-content: space-between;
+  }
 }
 @media only screen and (max-width: 37.5em) {
   .xona-pulsar__images {
