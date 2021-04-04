@@ -65,8 +65,10 @@
   &__info {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 2rem;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
   }
 
   &__sub-heading {
@@ -92,7 +94,10 @@
   /////////////////////////////////////////////////////////
   &__socials {
     display: flex;
-    gap: 1rem;
+
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 
   &__svg {

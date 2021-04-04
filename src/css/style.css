@@ -1327,7 +1327,8 @@ body {
 .contact-banner__info {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+}
+.contact-banner__info > * {
   margin-bottom: 2rem;
 }
 .contact-banner__sub-heading {
@@ -1345,7 +1346,9 @@ body {
 }
 .contact-banner__socials {
   display: flex;
-  gap: 1rem;
+}
+.contact-banner__socials > *:not(:last-child) {
+  margin-right: 1rem;
 }
 .contact-banner__svg {
   padding: 3px;
