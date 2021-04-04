@@ -4,12 +4,39 @@
   <img src="../assets/home.png?raw=true" />
 </p> -->
 
-![Home](../assets/home.png?raw=true)
+<!-- ![Home](../assets/home.png?raw=true)
 ![about](../assets/about.png?raw=true)
 ![Contact](../assets/contact.png?raw=true)
 ![Careers](../assets/careers.png?raw=true)
 ![Availabilities](../assets/availabilities.png?raw=true)
-![News](../assets/news.png?raw=true)
+![News](../assets/news.png?raw=true) -->
+
+<table>
+  <tr>
+    <td>
+      <img src='../assets/home.png?raw=true'>
+    </td>
+    <td>
+      <img src='../assets/about.png?raw=true'>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src='../assets/contact.png?raw=true'>
+    </td>
+    <td>
+      <img src='../assets/careers.png?raw=true'>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src='../assets/availabilities.png?raw=true'>
+    </td>
+    <td>
+      <img src='../assets/news.png?raw=true'>
+    </td>
+  </tr>
+</table>
 
 <!-- ABOUT THE PROJECT -->
 
