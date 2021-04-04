@@ -1885,7 +1885,8 @@ body {
   transition: transform 1s;
 }
 .app__text {
-  margin-top: 18rem;
+  position: absolute;
+  top: 58.5%;
   transition: transform 1.5s, opacity 0.5s;
   position: absolute;
 }
@@ -1979,6 +1980,9 @@ body {
   background-image: linear-gradient(to bottom, var(--color-grey-dark-5), var(--color-grey-dark-5), transparent);
   background-clip: text;
   color: transparent;
+}
+.news-archive .btn__arrow {
+  margin-top: 6rem !important;
 }
 
 .article {

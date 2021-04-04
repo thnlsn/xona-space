@@ -513,7 +513,8 @@
   }
 
   &__text {
-    margin-top: 18rem;
+    position: absolute;
+    top: 58.5%;
     transition: transform 1.5s, opacity 0.5s;
 
     @media only screen and (max-width: breakpoints.$bp-medium) {
