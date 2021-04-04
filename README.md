@@ -17,6 +17,8 @@
 
 A freelance project I took up to redesign and rebuild the Xona Space Systems website. In addition to building the entire site from scratch with React/Sass, I also made it easier to maintain by having all static data populating from a single file for the client to easily update in the future. All components are custom made and scalable to as much data as neccesary. As for read-only backend data such as the job postings and news articles, I utilized the Google Sheets API as a pseudo-database which was a suggestion I offered in order to keep their in-house workflow for adding/removing job postings as unaltered, simple, and cheap as possible.
 
+When the project is deployed, all forms will be handled using Netlify Forms.
+
 ## Live Link: [https://thnlsn.github.io/xona-space/](https://thnlsn.github.io/xona-space/)
 
 Check it out on your phone or tablet, it's fully responsive!
