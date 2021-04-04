@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2fa85e28d50135f477e1aeda587983d1",
+    "revision": "13c2fc94e6b6967d88d91523a61ca03a",
     "url": "/xona-space/index.html"
   },
   {
-    "revision": "8a282b78aaf8183c392d",
-    "url": "/xona-space/static/css/main.89064ad3.chunk.css"
+    "revision": "9855d1b45b94d8c1e1b3",
+    "url": "/xona-space/static/css/main.2cfbf3db.chunk.css"
   },
   {
     "revision": "a5f2a0eeadd50dd71ca2",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/xona-space/static/js/2.3c646d20.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8a282b78aaf8183c392d",
+    "revision": "9855d1b45b94d8c1e1b3",
     "url": "/xona-space/static/js/main.19818cd2.chunk.js"
   },
   {
